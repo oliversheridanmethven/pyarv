@@ -1,0 +1,5 @@
+nav:
+    - Home: README.md
+    - Documentation: docs
+    - Source: src
+    - ...

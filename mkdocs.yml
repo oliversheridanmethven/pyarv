@@ -1,0 +1,75 @@
+site_name: Testing
+
+docs_dir: .
+site_dir: site
+site_url: https://oliversheridanmethven.github.io/testing
+site_description: The testing suite.
+site_author: Dr Oliver Sheridan-Methven
+repo_name: testing
+repo_url: https://github.com/oliversheridanmethven/testing
+
+use_directory_urls: false
+# Because we use the `README.md` convention rather than
+# the `index.md` convention, this ensures hyperlinks resolve
+# correctly.
+
+markdown_extensions:
+  - admonition # Gives nice highlight fields.
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.tabs.sticky
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - navigation.footer
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    primary: custom
+
+extra_css:
+  - docs/colour_scheme.css
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/oliversheridanmethven/testing
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/oliver-sheridan-methven/
+    - icon: fontawesome/solid/envelope
+      link: mailto:oliver.sheridan-methven@hotmail.co.uk
+  version:
+    provider: mike
+
+plugins:
+  - search
+  - social
+  - exclude:
+      glob:
+        - venv/*
+        - "*license.html"
+        - "*LICENSE.html"
+        - _skbuild/*
+        - cmake-build*/*
+        - .cache/*
+        - .cmake/*
+        - Testing/*
+        - testing.egg-info/*
+        - CMakeFiles/*
+        - build/*
+
+  - same-dir # Allows us to operate from the root directory.
+  - awesome-pages:
+      collapse_single_pages: true
+  - git-revision-date-localized:
+      enable_creation_date: true
+#  - git-committers:
+#      repository: oliversheridanmethven/testing
+#      branch: main

@@ -1,0 +1,102 @@
+<!--
+When using the CLion IDE, which files it tries to look in
+to for scanning and indexing can go a bit wild (for some
+unknown reason). Notably it seems to want to include
+/Library/Developer/CommandLineTools stuff and stuff in
+$USER_HOME. If I try and exclude these, excluding $USER_HOME
+is too restrictive and masks the project. Hence I have had to
+resort to this ugly solution that might need to be
+copied (in part) into .idea/misc.xml
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
+  <component name="CidrRootsConfiguration">
+    <sourceRoots>
+      <file path="$PROJECT_DIR$/src" />
+    </sourceRoots>
+    <excludeRoots>
+      <file path="/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks" />
+      <file path="/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/_AppIntents_AppKit.framework/Modules" />
+      <file path="/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include" />
+      <file path="$PROJECT_DIR$/build" />
+      <file path="$PROJECT_DIR$/docs" />
+      <file path="$PROJECT_DIR$/site" />
+      <file path="/usr/local/Cellar/pcre2/10.42/include" />
+      <file path="/usr/local/include" />
+      <file path="/usr/local/opt/gettext/include" />
+<!-- Annoyingly USER_HOME seems hardwired. So I enumerated all the projects under it. -->
+<!--
+      <file path="$USER_HOME$" />
+-->
+      <file path="$USER_HOME$/.adobe" />
+      <file path="$USER_HOME$/.android" />
+      <file path="$USER_HOME$/.bash_sessions" />
+      <file path="$USER_HOME$/.cache" />
+      <file path="$USER_HOME$/.cisco" />
+      <file path="$USER_HOME$/.config" />
+      <file path="$USER_HOME$/.cups" />
+      <file path="$USER_HOME$/.dropbox" />
+      <file path="$USER_HOME$/.emacs.d" />
+      <file path="$USER_HOME$/.git-credential-cache" />
+      <file path="$USER_HOME$/.gnome2" />
+      <file path="$USER_HOME$/.gnupg" />
+      <file path="$USER_HOME$/.gnupg_pre_2.1" />
+      <file path="$USER_HOME$/.grip" />
+      <file path="$USER_HOME$/.idlerc" />
+      <file path="$USER_HOME$/.ipe" />
+      <file path="$USER_HOME$/.ipython" />
+      <file path="$USER_HOME$/.jupyter" />
+      <file path="$USER_HOME$/.lldb" />
+      <file path="$USER_HOME$/.local" />
+      <file path="$USER_HOME$/.matlab" />
+      <file path="$USER_HOME$/.matplotlib" />
+      <file path="$USER_HOME$/.mcafee" />
+      <file path="$USER_HOME$/.mono" />
+      <file path="$USER_HOME$/.npm" />
+      <file path="$USER_HOME$/.oracle_jre_usage" />
+      <file path="$USER_HOME$/.pip" />
+      <file path="$USER_HOME$/.PyCharm40" />
+      <file path="$USER_HOME$/.rstudio-desktop" />
+      <file path="$USER_HOME$/.ssh" />
+      <file path="$USER_HOME$/.subversion" />
+      <file path="$USER_HOME$/.Trash" />
+      <file path="$USER_HOME$/.Trash-1000" />
+      <file path="$USER_HOME$/.vscode" />
+      <file path="$USER_HOME$/Applications" />
+      <file path="$USER_HOME$/Applications (Parallels)" />
+      <file path="$USER_HOME$/cdflib" />
+      <file path="$USER_HOME$/Creative Cloud Files" />
+      <file path="$USER_HOME$/Criterion" />
+      <file path="$USER_HOME$/cubew-4.6" />
+      <file path="$USER_HOME$/Desktop" />
+      <file path="$USER_HOME$/Documents" />
+      <file path="$USER_HOME$/Downloads" />
+      <file path="$USER_HOME$/Dropbox" />
+      <file path="$USER_HOME$/gcc-11" />
+      <file path="$USER_HOME$/gcc-13" />
+      <file path="$USER_HOME$/Google Drive" />
+      <file path="$USER_HOME$/gsl" />
+      <file path="$USER_HOME$/ipe-7.2.7" />
+      <file path="$USER_HOME$/Library" />
+      <file path="$USER_HOME$/misc" />
+      <file path="$USER_HOME$/Movies" />
+      <file path="$USER_HOME$/Music" />
+      <file path="$USER_HOME$/ncdu-1.15.1" />
+      <file path="$USER_HOME$/OneDrive" />
+      <file path="$USER_HOME$/opari2" />
+      <file path="$USER_HOME$/openmpi" />
+      <file path="$USER_HOME$/otf2" />
+      <file path="$USER_HOME$/pdf2pptx" />
+      <file path="$USER_HOME$/Pictures" />
+      <file path="$USER_HOME$/Public" />
+      <file path="$USER_HOME$/PycharmProjects" />
+      <file path="$USER_HOME$/qpdf-9.1.0" />
+      <file path="$USER_HOME$/scorep" />
+      <file path="$USER_HOME$/synctunes" />
+      <file path="$USER_HOME$/temp" />
+    </excludeRoots>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7" project-jdk-type="Python SDK" />
+</project>
