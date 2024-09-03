@@ -1,2 +1,0 @@
-add_executable(logging_demo_cpp demo.cpp)
-target_link_libraries(logging_demo_cpp logging)

@@ -1,5 +1,2 @@
 add_subdirectory(arv)
 add_subdirectory(pyarv)
-add_subdirectory(testing)
-add_subdirectory(version)
-add_subdirectory(logging)

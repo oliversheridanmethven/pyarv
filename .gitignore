@@ -22,4 +22,4 @@ Testing/
 install_manifest.txt
 .cmake/
 *.log
-/src/version/version.c
+/src/arv/version/version.c

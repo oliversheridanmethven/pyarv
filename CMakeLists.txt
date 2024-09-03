@@ -9,7 +9,7 @@ find_program(CMAKE_CXX_COMPILER NAMES $ENV{CXX} clang++-mp-16 clang++-16 clang++
 #find_program(CMAKE_C_COMPILER NAMES $ENV{CC} gcc-13 PATHS ENV PATH NO_DEFAULT_PATH)
 #find_program(CMAKE_CXX_COMPILER NAMES $ENV{CXX} g++-13 PATHS ENV PATH NO_DEFAULT_PATH)
 
-project(testing C CXX) # We use a mix of C and C++.
+project(pyarv C CXX) # We use a mix of C and C++.
 
 # We want to use the latest standards.
 # Only some of the latest and greatest compilers offer the appropriate level of support.

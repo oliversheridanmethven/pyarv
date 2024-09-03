@@ -1,7 +1,7 @@
 # Some basic examples.
-add_subdirectory(tests)
-add_subdirectory(benchmarks)
+add_subdirectory(bindings)
 add_subdirectory(gaussian)
 
-add_library(binding INTERFACE)
-target_include_directories(binding INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/..)
+
+add_library(pyarv INTERFACE)
+target_include_directories(pyarv INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/..)

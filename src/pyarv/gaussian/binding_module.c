@@ -1,18 +1,18 @@
+#include "bindings/wrappers.h"
 #include "examples_bindings.h"
-#include "binding/wrappers.h"
 
 static PyMethodDef examples_methods[] = {
-        {"hello_world",       PyFunc(hello_world_),       METH_VARARGS | METH_KEYWORDS,
-                                       "Says hello world."},
-        {"foo",               PyFunc(foo_),               METH_VARARGS | METH_KEYWORDS,
-                                       "Prints an arg and kwarg argument."},
-        {"fatal_failure",     PyFunc(fatal_failure_),     METH_VARARGS | METH_KEYWORDS,
-                                       "Fails and calls exit()."},
+        {"hello_world", PyFunc(hello_world_), METH_VARARGS | METH_KEYWORDS,
+         "Says hello world."},
+        {"foo", PyFunc(foo_), METH_VARARGS | METH_KEYWORDS,
+         "Prints an arg and kwarg argument."},
+        {"fatal_failure", PyFunc(fatal_failure_), METH_VARARGS | METH_KEYWORDS,
+         "Fails and calls exit()."},
         {"non_fatal_failure", PyFunc(non_fatal_failure_), METH_VARARGS | METH_KEYWORDS,
-                                       "Fails in a way Python can catch."},
-        {"set_at_exit",       PyFunc(set_at_exit_),       METH_VARARGS | METH_KEYWORDS,
-                                       "Sets functionality to execute on exiting."},
-        {NULL,                NULL, 0, NULL} /* Sentinel */
+         "Fails in a way Python can catch."},
+        {"set_at_exit", PyFunc(set_at_exit_), METH_VARARGS | METH_KEYWORDS,
+         "Sets functionality to execute on exiting."},
+        {NULL, NULL, 0, NULL} /* Sentinel */
 };
 
 static struct PyModuleDef examples_module = {
@@ -23,9 +23,11 @@ static struct PyModuleDef examples_module = {
         examples_methods};
 
 PyMODINIT_FUNC
-PyInit_examples_bindings(void) {
+PyInit_examples_bindings(void)
+{
     PyObject *module = PyModule_Create(&examples_module);
-    if (!module) {
+    if (!module)
+    {
         fprintf(stderr, "Unable to create the examples module.");
         return nullptr;
     }
