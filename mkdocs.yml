@@ -1,9 +1,9 @@
-site_name: PyARV
+site_name: pyarv
 
 docs_dir: .
 site_dir: site
 site_url: https://oliversheridanmethven.github.io/pyarv
-site_description: Approximate random variables.
+site_description: The pyarv suite.
 site_author: Dr Oliver Sheridan-Methven
 repo_name: pyarv
 repo_url: https://github.com/oliversheridanmethven/pyarv
@@ -34,13 +34,12 @@ theme:
     primary: custom
 
 extra_css:
-  - docs/colour_scheme.css
-
+  - mkdoc_scripts/colour_scheme.css
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/oliversheridanmethven/testing
+      link: https://github.com/oliversheridanmethven/pyarv
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/oliver-sheridan-methven/
     - icon: fontawesome/solid/envelope
@@ -51,27 +50,30 @@ extra:
 plugins:
   - search
   - social
+  - gen-files:
+      scripts:
+        - mkdoc_scripts/generate_documentation_pages.py
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            docstring_style: numpy
   - exclude:
       glob:
         - venv/*
+        - lib/*
+        - bin/*
         - "*license.html"
         - "*LICENSE.html"
         - _skbuild/*
-        - cmake-build*/*
         - .cache/*
-        - .cmake/*
-        - Testing/*
-        - testing.egg-info/*
-        - CMakeFiles/*
-        - build/*
-        - bin/*
-        - lib/*
+        - pyarv.egg-info/*
 
   - same-dir # Allows us to operate from the root directory.
   - awesome-pages:
       collapse_single_pages: true
   - git-revision-date-localized:
       enable_creation_date: true
-#  - git-committers:
-#      repository: oliversheridanmethven/pyarv
-#      branch: main
+  - literate-nav:
+      nav_file: SUMMARY.md

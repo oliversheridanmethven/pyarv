@@ -1,5 +1,8 @@
 nav:
     - Home: README.md
-    - Documentation: docs
-    - Source: src
+    - License: LICENSE.md
     - ...
+
+
+
+
