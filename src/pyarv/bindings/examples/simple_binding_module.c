@@ -1,4 +1,4 @@
-#include "pyarv/bindings/examples/examples_bindings.h"
+#include "pyarv/bindings/examples/simple_examples_bindings.h"
 #include "pyarv/bindings/wrappers.h"
 
 static PyMethodDef examples_methods[] = {
@@ -17,18 +17,18 @@ static PyMethodDef examples_methods[] = {
 
 static struct PyModuleDef examples_module = {
         PyModuleDef_HEAD_INIT,
-        "examples",
+        "simple_examples",
         "A simple module giving examples to demonstrate C bindings.",
         -1,
         examples_methods};
 
 PyMODINIT_FUNC
-PyInit_examples_bindings(void)
+PyInit_simple_examples_bindings(void)
 {
     PyObject *module = PyModule_Create(&examples_module);
     if (!module)
     {
-        fprintf(stderr, "Unable to create the examples module.");
+        fprintf(stderr, "Unable to create the simple examples module.");
         return nullptr;
     }
 

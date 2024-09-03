@@ -112,7 +112,8 @@ enable_testing()
 message(DEBUG "Just printing this to supress a warning: ${PYTHON_EXECUTABLE}")
 set(Python3_FIND_VIRTUALENV FIRST)
 set(Python3_ROOT_DIR "${PROJECT_SOURCE_DIR}/venv")
-find_package(Python3 COMPONENTS Interpreter Development)
+find_package(Python3 COMPONENTS Interpreter Development NumPy)
+add_compile_definitions(NPY_NO_DEPRECATED_API=NPY_1_7_API_VERSION)
 
 # We use scikit-build to build our CMake project and setup our python wrappers.
 if(SKBUILD)
@@ -129,7 +130,9 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/")
 MESSAGE(STATUS "Looking for the python libraries.")
 # We will include and link to all the targets henceforth.
 include_directories(SYSTEM ${Python3_INCLUDE_DIRS})
+include_directories(SYSTEM Python3::NumPy)
 link_libraries(${Python3_LIBRARIES})
+link_libraries(Python3::NumPy)
 
 find_package(Boost REQUIRED)
 include_directories(SYSTEM ${Boost_INCLUDE_DIRS})

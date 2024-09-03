@@ -1,6 +1,7 @@
 #define PY_SSIZE_T_CLEAN
 
-#include "arv/examples/examples.h"
+#include "pyarv/bindings/examples/simple_examples_bindings.h"
+#include "arv/examples/simple_examples.h"
 #include <Python.h>
 #include <stdio.h>
 #include <stdlib.h>
