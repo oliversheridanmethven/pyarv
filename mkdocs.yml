@@ -1,12 +1,12 @@
-site_name: Testing
+site_name: PyARV
 
 docs_dir: .
 site_dir: site
-site_url: https://oliversheridanmethven.github.io/testing
-site_description: The testing suite.
+site_url: https://oliversheridanmethven.github.io/pyarv
+site_description: Approximate random variables.
 site_author: Dr Oliver Sheridan-Methven
-repo_name: testing
-repo_url: https://github.com/oliversheridanmethven/testing
+repo_name: pyarv
+repo_url: https://github.com/oliversheridanmethven/pyarv
 
 use_directory_urls: false
 # Because we use the `README.md` convention rather than
@@ -64,6 +64,8 @@ plugins:
         - testing.egg-info/*
         - CMakeFiles/*
         - build/*
+        - bin/*
+        - lib/*
 
   - same-dir # Allows us to operate from the root directory.
   - awesome-pages:
@@ -71,5 +73,5 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
 #  - git-committers:
-#      repository: oliversheridanmethven/testing
+#      repository: oliversheridanmethven/pyarv
 #      branch: main
