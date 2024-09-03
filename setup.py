@@ -14,6 +14,23 @@ setup(
     setup_requires=["setuptools-git-versioning<2"],
     install_requires=["numpy"],
     tests_require=["varname"],
+    extras_require={
+        'dev': [
+            "mkdocs",
+            "mkdocs-material",
+            "mkdocs-exclude",
+            "mkdocs-same-dir",
+            "mkdocs-awesome-pages-plugin",
+            "mkdocs-git-revision-date-localized-plugin",
+            "mkdocs-material[imaging]",
+            "mkdocstrings",
+            "mkdocstrings-python",
+            "mkdocs-literate-nav",
+            "mkdocs-section-index",
+            "mkdocs-gen-files",
+            "mike"
+        ]
+    },
     packages=package_dirs.keys(),
     package_dir=package_dirs,
     python_requires=">=3.10",
