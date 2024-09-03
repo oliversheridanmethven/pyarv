@@ -1,19 +1,22 @@
-#include "version_bindings.h"
-#include "version.h"
+#include "pyarv/version/version_bindings.h"
+#include "arv/version/version.h"
 
-
-PyObject *repo_name_(PyObject *self, PyObject *args, PyObject *kwargs) {
+PyObject *repo_name_(PyObject *self, PyObject *args, PyObject *kwargs)
+{
     return PyUnicode_FromString(repo_name());
 }
 
-PyObject *repo_version_(PyObject *self, PyObject *args, PyObject *kwargs) {
+PyObject *repo_version_(PyObject *self, PyObject *args, PyObject *kwargs)
+{
     return PyUnicode_FromString(repo_version());
 }
 
-PyObject *repo_author_(PyObject *self, PyObject *args, PyObject *kwargs) {
+PyObject *repo_author_(PyObject *self, PyObject *args, PyObject *kwargs)
+{
     return PyUnicode_FromString(repo_author());
 }
 
-PyObject *repo_email_(PyObject *self, PyObject *args, PyObject *kwargs) {
+PyObject *repo_email_(PyObject *self, PyObject *args, PyObject *kwargs)
+{
     return PyUnicode_FromString(repo_email());
 }

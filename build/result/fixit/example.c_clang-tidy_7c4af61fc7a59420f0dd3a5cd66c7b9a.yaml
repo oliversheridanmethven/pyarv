@@ -1,0 +1,72 @@
+---
+MainSourceFile:  '/Users/oliver/ClionProjects/testing/src/testing/tests/example.c'
+Diagnostics:
+  - DiagnosticName:  cert-err33-c
+    DiagnosticMessage:
+      Message:         the value returned by this function should be used
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/testing/tests/example.c'
+      FileOffset:      709
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/testing/tests/example.c'
+          FileOffset:      709
+          Length:          28
+    Notes:
+      - Message:         cast the expression to void to silence this warning
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/testing/tests/example.c'
+        FileOffset:      709
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/testing/tests'
+  - DiagnosticName:  cert-err33-c
+    DiagnosticMessage:
+      Message:         the value returned by this function should be used
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/testing/tests/example.c'
+      FileOffset:      833
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/testing/tests/example.c'
+          FileOffset:      833
+          Length:          24
+    Notes:
+      - Message:         cast the expression to void to silence this warning
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/testing/tests/example.c'
+        FileOffset:      833
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/testing/tests'
+  - DiagnosticName:  cert-err33-c
+    DiagnosticMessage:
+      Message:         the value returned by this function should be used
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/testing/tests/example.c'
+      FileOffset:      954
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/testing/tests/example.c'
+          FileOffset:      954
+          Length:          24
+    Notes:
+      - Message:         cast the expression to void to silence this warning
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/testing/tests/example.c'
+        FileOffset:      954
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/testing/tests'
+  - DiagnosticName:  cert-err33-c
+    DiagnosticMessage:
+      Message:         the value returned by this function should be used
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/testing/tests/example.c'
+      FileOffset:      1158
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/testing/tests/example.c'
+          FileOffset:      1158
+          Length:          28
+    Notes:
+      - Message:         cast the expression to void to silence this warning
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/testing/tests/example.c'
+        FileOffset:      1158
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/testing/tests'
+...

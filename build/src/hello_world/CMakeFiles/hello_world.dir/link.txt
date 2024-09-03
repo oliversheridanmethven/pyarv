@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libhello_world.a CMakeFiles/hello_world.dir/hello_world.c.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libhello_world.a

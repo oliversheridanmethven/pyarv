@@ -1,0 +1,15 @@
+example_c 4 0.282519
+version_test 4 0.480743
+example 4 0.548384
+basic_python 4 0.147342
+basic_python_again 4 0.147262
+logging_test 4 0.650712
+error_codes 4 0.807456
+binding_import 2 0.192595
+version_example 5 0.23101
+testing_example 5 0.281082
+logging_example 5 0.0983479
+error_codes_example 5 0.135859
+bindings_example 2 0.402105
+version_bindings 3 0.183496
+---

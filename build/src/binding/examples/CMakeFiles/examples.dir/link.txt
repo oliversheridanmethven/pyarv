@@ -1,0 +1,2 @@
+/opt/local/bin/ar qc libexamples.a CMakeFiles/examples.dir/examples.c.o
+/usr/local/opt/llvm/bin/llvm-ranlib libexamples.a

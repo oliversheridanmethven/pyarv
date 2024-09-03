@@ -1,0 +1,497 @@
+---
+MainSourceFile:  '/Users/oliver/ClionProjects/testing/src/rubiks/paths/tests/paths.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid value ''c++23'' in ''-std=c++23'''
+      FilePath:        ''
+      FileOffset:      0
+      Replacements:    []
+    Notes:
+      - Message:         'use ''c++98'' or ''c++03'' for ''ISO C++ 1998 with amendments'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++98'' or ''gnu++03'' for ''ISO C++ 1998 with amendments and GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''c++11'' for ''ISO C++ 2011 with amendments'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++11'' for ''ISO C++ 2011 with amendments and GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''c++14'' for ''ISO C++ 2014 with amendments'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++14'' for ''ISO C++ 2014 with amendments and GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''c++17'' for ''ISO C++ 2017 with amendments'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++17'' for ''ISO C++ 2017 with amendments and GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''c++20'' for ''ISO C++ 2020 DIS'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++20'' for ''ISO C++ 2020 DIS with GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''c++2b'' for ''Working draft for ISO C++ 2023 DIS'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++2b'' for ''Working draft for ISO C++ 2023 DIS with GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  ''
+  - DiagnosticName:  bugprone-exception-escape
+    DiagnosticMessage:
+      Message:         'an exception may be thrown in function ''Move'' which should not throw exceptions'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+      FileOffset:      257
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'parameter ''description'' is passed by value and only copied once; consider moving it to avoid unnecessary copies'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+      FileOffset:      501
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+          Offset:          179
+          Length:          0
+          ReplacementText: "#include <utility>\n"
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+          Offset:          501
+          Length:          0
+          ReplacementText: 'std::move('
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+          Offset:          512
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'parameter ''forward_indices'' is passed by value and only copied once; consider moving it to avoid unnecessary copies'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+      FileOffset:      523
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+          Offset:          523
+          Length:          0
+          ReplacementText: 'std::move('
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+          Offset:          538
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  google-build-using-namespace
+    DiagnosticMessage:
+      Message:         'do not use namespace using-directives; use using-declarations instead'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/path.hpp'
+      FileOffset:      156
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         '''auto'' not allowed in function prototype'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/path.hpp'
+      FileOffset:      563
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/path.hpp'
+          FileOffset:      563
+          Length:          4
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  google-build-using-namespace
+    DiagnosticMessage:
+      Message:         'do not use namespace using-directives; use using-declarations instead'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/tests/paths.cpp'
+      FileOffset:      119
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  google-build-using-namespace
+    DiagnosticMessage:
+      Message:         'do not use namespace using-directives; use using-declarations instead'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/tests/paths.cpp'
+      FileOffset:      150
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  performance-for-range-copy
+    DiagnosticMessage:
+      Message:         'loop variable is copied but only used as const reference; consider making it a const reference'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/tests/paths.cpp'
+      FileOffset:      1100
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/tests/paths.cpp'
+          Offset:          1095
+          Length:          0
+          ReplacementText: 'const '
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/tests/paths.cpp'
+          Offset:          1099
+          Length:          0
+          ReplacementText: '&'
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no member named ''ranges'' in namespace ''std'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/tests/paths.cpp'
+      FileOffset:      1744
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/tests/paths.cpp'
+          FileOffset:      1739
+          Length:          5
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  google-build-using-namespace
+    DiagnosticMessage:
+      Message:         'do not use namespace using-directives; use using-declarations instead'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      456
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  google-build-using-namespace
+    DiagnosticMessage:
+      Message:         'do not use namespace using-directives; use using-declarations instead'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      495
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  google-build-using-namespace
+    DiagnosticMessage:
+      Message:         'do not use namespace using-directives; use using-declarations instead'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      534
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  cppcoreguidelines-special-member-functions
+    DiagnosticMessage:
+      Message:         'class ''Shape'' defines a non-default destructor but does not define a copy constructor, a copy assignment operator, a move constructor or a move assignment operator'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      611
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_t'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      728
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+        FileOffset:      728
+        Replacements:
+          - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+            Offset:          92
+            Length:          0
+            ReplacementText: "#include <cstddef>\n"
+          - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+            Offset:          728
+            Length:          0
+            ReplacementText: 'static_cast<size_t>('
+          - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+            Offset:          736
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+            FileOffset:      728
+            Length:          15
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+        FileOffset:      728
+        Replacements:
+          - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+            Offset:          728
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+            Offset:          732
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+            FileOffset:      728
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'unknown type name ''requires'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      5054
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no template named ''is_base_of_v'' in namespace ''std''; did you mean ''is_base_of''?'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      5068
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+          Offset:          5068
+          Length:          12
+          ReplacementText: is_base_of
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+          FileOffset:      5063
+          Length:          5
+    Notes:
+      - Message:         '''is_base_of'' declared here'
+        FilePath:        '/usr/local/opt/llvm/include/c++/v1/__type_traits/is_base_of.h'
+        FileOffset:      698
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         no variable template matches partial specialization
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      5068
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'expected '';'' at end of declaration'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      5118
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+          Offset:          5118
+          Length:          0
+          ReplacementText: ';'
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         expected unqualified-id
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      5119
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  google-build-using-namespace
+    DiagnosticMessage:
+      Message:         'do not use namespace using-directives; use using-declarations instead'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/tile.hpp'
+      FileOffset:      151
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  google-explicit-constructor
+    DiagnosticMessage:
+      Message:         single-argument constructors must be marked explicit to avoid unintentional implicit conversions
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/tile.hpp'
+      FileOffset:      384
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/tile.hpp'
+          Offset:          384
+          Length:          0
+          ReplacementText: 'explicit '
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         '''auto'' not allowed in function prototype'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/utils/printing_cubic_shapes.hpp'
+      FileOffset:      286
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/utils/printing_cubic_shapes.hpp'
+          FileOffset:      286
+          Length:          4
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         '''auto'' not allowed in function prototype'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/utils/printing_cubic_shapes.hpp'
+      FileOffset:      305
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/utils/printing_cubic_shapes.hpp'
+          FileOffset:      305
+          Length:          4
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  cppcoreguidelines-special-member-functions
+    DiagnosticMessage:
+      Message:         'class ''Volume'' defines a non-default destructor but does not define a copy constructor, a copy assignment operator, a move constructor or a move assignment operator'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      312
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_1'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      4297
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_2'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      4588
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_3'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      4836
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_4'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      5084
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_5'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      5330
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_6'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      5577
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_7'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      5826
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_8'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      6070
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_9'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      6316
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  cppcoreguidelines-special-member-functions
+    DiagnosticMessage:
+      Message:         'class ''CaptureStdOut'' defines a default destructor but does not define a copy constructor, a copy assignment operator, a move constructor or a move assignment operator'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/testing/testing.h'
+      FileOffset:      184
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+  - DiagnosticName:  cppcoreguidelines-virtual-class-destructor
+    DiagnosticMessage:
+      Message:         'destructor of ''CaptureStdOut'' is protected and virtual'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/testing/testing.h'
+      FileOffset:      184
+      Replacements:    []
+    Notes:
+      - Message:         make it protected and non-virtual
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/testing/testing.h'
+        FileOffset:      184
+        Replacements:
+          - FilePath:        '/Users/oliver/ClionProjects/testing/src/testing/testing.h'
+            Offset:          287
+            Length:          14
+            ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests'
+...

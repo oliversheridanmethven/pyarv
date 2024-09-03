@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+b85437fe346120a4c55cadce419281b3 /Users/oliver/ClionProjects/testing/src/version/version.c

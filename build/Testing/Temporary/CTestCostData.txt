@@ -1,0 +1,63 @@
+test_example 83 0.000898803
+logging_test 188 0.00079266
+version_test 115 0.001289
+cli_arguments_0 148 0.00102097
+cli_arguments_version 128 0.00117673
+example 134 0.00110887
+basic_python_test 6 0.0105848
+basic_python_test_again 3 0.0211947
+binding_import 53 0.00175974
+basic_python 90 0.000706701
+basic_python.py 12 0.00952901
+basic_python_again.py 11 0.0058933
+binding_import.py 5 0
+test_basic_python_again 1 0.067741
+test_binding_import 0 0
+basic_python_again 89 0.000720376
+error_codes 74 0.0019686
+/Users/oliver/ClionProjects/testing/src/common/tests/__init__ 0 0
+/Users/oliver/ClionProjects/testing/src/common/tests/arguments 0 0
+/Users/oliver/ClionProjects/testing/src/common/tests/files 0 0
+/Users/oliver/ClionProjects/testing/src/common/tests/output 0 0
+/Users/oliver/ClionProjects/testing/src/common/tests/timing 0 0
+/Users/oliver/ClionProjects/testing/src/common/tests/variables 0 0
+hello_world_test 85 0.00176075
+/Users/oliver/ClionProjects/testing/src/binding/tests/binding_import 0 0
+arguments 46 0.00224309
+files 33 0
+output 31 0.00259498
+timing 21 0
+variables 28 0.00229434
+output_supressor_c_extension 3 0.0156925
+output_supression 0 0
+output_suppression 38 0.00159667
+output_suppressor_c_extension 50 0.000884516
+output_suppression_failure 0 0
+suppressor 36 0.00415608
+cli_print_logs 0 0
+logger 0 0
+version_bindings 0 0
+images 6 0.088443
+window 0 0
+example_cpp 9 0
+example.test_failure 0 0
+example.test_expect 3 0.0104196
+example.test_fail 3 0.00900802
+logging.test_exit 0 0
+hello_world_test_cpp 6 0
+logging_test_cpp 7 0.0264935
+shapes_cpp 6 0.0263947
+shapes 0 0
+shuffles 0 0
+solvers 0 0
+---
+hello_world_test_cpp
+example_cpp
+version_bindings
+cli_print_logs
+logger
+timing
+window
+shapes
+shuffles
+solvers

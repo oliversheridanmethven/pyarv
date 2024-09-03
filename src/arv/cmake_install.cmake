@@ -1,4 +1,4 @@
-# Install script for directory: /Users/oliver/ClionProjects/testing/src/binding
+# Install script for directory: /Users/oliver/ClionProjects/pyarv/src/arv
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -39,16 +39,26 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/oliver/ClionProjects/testing/src/binding/tests/cmake_install.cmake")
+  include("/Users/oliver/ClionProjects/pyarv/src/arv/version/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/oliver/ClionProjects/testing/src/binding/benchmarks/cmake_install.cmake")
+  include("/Users/oliver/ClionProjects/pyarv/src/arv/testing/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/oliver/ClionProjects/testing/src/binding/examples/cmake_install.cmake")
+  include("/Users/oliver/ClionProjects/pyarv/src/arv/logging/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/oliver/ClionProjects/pyarv/src/arv/error_codes/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/oliver/ClionProjects/pyarv/src/arv/examples/cmake_install.cmake")
 endif()
 

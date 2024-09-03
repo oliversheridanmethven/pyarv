@@ -1,0 +1,183 @@
+---
+MainSourceFile:  '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''self'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      164
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''args'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      180
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''kwargs'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      196
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'use of undeclared identifier ''nullptr'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      246
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''self'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      309
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'use of undeclared identifier ''nullptr'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      748
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  cert-err33-c
+    DiagnosticMessage:
+      Message:         the value returned by this function should be used
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      834
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+          FileOffset:      834
+          Length:          53
+    Notes:
+      - Message:         cast the expression to void to silence this warning
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+        FileOffset:      834
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  cert-err33-c
+    DiagnosticMessage:
+      Message:         the value returned by this function should be used
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      928
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+          FileOffset:      928
+          Length:          21
+    Notes:
+      - Message:         cast the expression to void to silence this warning
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+        FileOffset:      928
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''self'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      987
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''args'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      1003
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''kwargs'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      1019
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''self'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      1106
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''args'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      1122
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''kwargs'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      1138
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''self'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      1231
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''args'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      1247
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''kwargs'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      1263
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  cert-err33-c
+    DiagnosticMessage:
+      Message:         the value returned by this function should be used
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      1277
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+          FileOffset:      1277
+          Length:          68
+    Notes:
+      - Message:         cast the expression to void to silence this warning
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+        FileOffset:      1277
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'use of undeclared identifier ''nullptr'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c'
+      FileOffset:      1467
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+...

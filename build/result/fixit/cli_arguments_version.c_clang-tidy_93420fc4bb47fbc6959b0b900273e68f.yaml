@@ -1,0 +1,60 @@
+---
+MainSourceFile:  '/Users/oliver/ClionProjects/testing/src/cli/tests/cli_arguments_version.c'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''arg'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/cli/tests/cli_arguments_version.c'
+      FileOffset:      327
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/cli/tests'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''state'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/cli/tests/cli_arguments_version.c'
+      FileOffset:      351
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/cli/tests'
+  - DiagnosticName:  clang-diagnostic-missing-field-initializers
+    DiagnosticMessage:
+      Message:         'missing field ''group'' initializer'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/cli/tests/cli_arguments_version.c'
+      FileOffset:      668
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/cli/tests'
+  - DiagnosticName:  clang-diagnostic-missing-field-initializers
+    DiagnosticMessage:
+      Message:         'missing field ''args_doc'' initializer'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/cli/tests/cli_arguments_version.c'
+      FileOffset:      739
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/cli/tests'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'use of undeclared identifier ''nullptr'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/cli/tests/cli_testing.h'
+      FileOffset:      547
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/cli/tests'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'use of undeclared identifier ''nullptr'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/cli/tests/cli_testing.h'
+      FileOffset:      595
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/cli/tests'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_t'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/cli/tests/cli_testing.h'
+      FileOffset:      1589
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/cli/tests'
+...

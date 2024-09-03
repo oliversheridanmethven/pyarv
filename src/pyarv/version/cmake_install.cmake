@@ -1,4 +1,4 @@
-# Install script for directory: /Users/oliver/ClionProjects/testing/src/version
+# Install script for directory: /Users/oliver/ClionProjects/pyarv/src/pyarv/version
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -39,23 +39,23 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/oliver/ClionProjects/testing/src/version/tests/cmake_install.cmake")
+  include("/Users/oliver/ClionProjects/pyarv/src/pyarv/version/tests/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/Users/oliver/ClionProjects/testing/src/version/version_bindings.so")
+   "/Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_bindings.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/Users/oliver/ClionProjects/testing/src/version" TYPE MODULE FILES "/Users/oliver/ClionProjects/testing/lib/version_bindings.so")
-  if(EXISTS "$ENV{DESTDIR}/Users/oliver/ClionProjects/testing/src/version/version_bindings.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/oliver/ClionProjects/testing/src/version/version_bindings.so")
+  file(INSTALL DESTINATION "/Users/oliver/ClionProjects/pyarv/src/pyarv/version" TYPE MODULE FILES "/Users/oliver/ClionProjects/pyarv/lib/version_bindings.so")
+  if(EXISTS "$ENV{DESTDIR}/Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_bindings.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_bindings.so")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/local/opt/llvm/bin/llvm-strip" -x "$ENV{DESTDIR}/Users/oliver/ClionProjects/testing/src/version/version_bindings.so")
+      execute_process(COMMAND "/opt/local/bin/strip" -x "$ENV{DESTDIR}/Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_bindings.so")
     endif()
   endif()
 endif()

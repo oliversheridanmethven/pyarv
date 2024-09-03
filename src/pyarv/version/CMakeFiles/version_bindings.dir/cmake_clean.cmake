@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../../lib/version_bindings.pdb"
-  "../../lib/version_bindings.so"
+  "../../../lib/version_bindings.pdb"
+  "../../../lib/version_bindings.so"
   "CMakeFiles/version_bindings.dir/version_bindings.c.o"
   "CMakeFiles/version_bindings.dir/version_bindings.c.o.d"
   "CMakeFiles/version_bindings.dir/version_module.c.o"

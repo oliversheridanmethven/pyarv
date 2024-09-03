@@ -1,0 +1,37 @@
+---
+MainSourceFile:  '/Users/oliver/ClionProjects/testing/src/binding/examples/binding_module.c'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-missing-field-initializers
+    DiagnosticMessage:
+      Message:         'missing field ''m_slots'' initializer'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/binding_module.c'
+      FileOffset:      1177
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  cert-err33-c
+    DiagnosticMessage:
+      Message:         the value returned by this function should be used
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/binding_module.c'
+      FileOffset:      1314
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/binding_module.c'
+          FileOffset:      1314
+          Length:          56
+    Notes:
+      - Message:         cast the expression to void to silence this warning
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/binding_module.c'
+        FileOffset:      1314
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'use of undeclared identifier ''nullptr'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/binding/examples/binding_module.c'
+      FileOffset:      1387
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples'
+...

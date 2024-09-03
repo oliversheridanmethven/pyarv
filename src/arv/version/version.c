@@ -2,11 +2,11 @@
 
 /* These I will read from git and cmake. */
 char *repo_name(void) {
-    return "testing";
+    return "pyarv";
 }
 
 char *repo_version(void) {
-    return "v0.0.10-3-gb298b5d-dirty";
+    return "v0.0.1-1-gbb7a8c1-dirty";
 }
 
 

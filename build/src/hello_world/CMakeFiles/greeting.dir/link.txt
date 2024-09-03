@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libgreeting.a CMakeFiles/greeting.dir/greeting.c.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libgreeting.a

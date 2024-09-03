@@ -1,0 +1,206 @@
+[
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/hello_world",
+    "command": "/usr/local/opt/llvm/bin/clang  -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fcolor-diagnostics -o CMakeFiles/hello_world_c.dir/hello_world.c.o -c /Users/oliver/ClionProjects/testing/src/hello_world/hello_world.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/hello_world/hello_world.c",
+    "output": "src/hello_world/CMakeFiles/hello_world_c.dir/hello_world.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/hello_world",
+    "command": "/usr/local/opt/llvm/bin/clang++  -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -g -O0 -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier  -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function  -g -std=c++23 -mmacosx-version-min=12.7 -fcolor-diagnostics -o CMakeFiles/hello_world_cpp.dir/hello_world.cpp.o -c /Users/oliver/ClionProjects/testing/src/hello_world/hello_world.cpp",
+    "file": "/Users/oliver/ClionProjects/testing/src/hello_world/hello_world.cpp",
+    "output": "src/hello_world/CMakeFiles/hello_world_cpp.dir/hello_world.cpp.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/hello_world",
+    "command": "/usr/local/opt/llvm/bin/clang  -I/Users/oliver/ClionProjects/testing/src/hello_world/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fcolor-diagnostics -o CMakeFiles/hello_world_example_c.dir/hello_world_example.c.o -c /Users/oliver/ClionProjects/testing/src/hello_world/hello_world_example.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/hello_world/hello_world_example.c",
+    "output": "src/hello_world/CMakeFiles/hello_world_example_c.dir/hello_world_example.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/hello_world",
+    "command": "/usr/local/opt/llvm/bin/clang++  -I/Users/oliver/ClionProjects/testing/src/hello_world/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -g -O0 -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier  -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function  -g -std=c++23 -mmacosx-version-min=12.7 -fcolor-diagnostics -o CMakeFiles/hello_world_example_cpp.dir/hello_world_example.cpp.o -c /Users/oliver/ClionProjects/testing/src/hello_world/hello_world_example.cpp",
+    "file": "/Users/oliver/ClionProjects/testing/src/hello_world/hello_world_example.cpp",
+    "output": "src/hello_world/CMakeFiles/hello_world_example_cpp.dir/hello_world_example.cpp.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/hello_world/tests",
+    "command": "/usr/local/opt/llvm/bin/clang  -I/Users/oliver/ClionProjects/testing/src/testing/.. -I/Users/oliver/ClionProjects/testing/src/hello_world/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fcolor-diagnostics -o CMakeFiles/hello_world_test.dir/hello_world.c.o -c /Users/oliver/ClionProjects/testing/src/hello_world/tests/hello_world.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/hello_world/tests/hello_world.c",
+    "output": "src/hello_world/tests/CMakeFiles/hello_world_test.dir/hello_world.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/hello_world/tests",
+    "command": "/usr/local/opt/llvm/bin/clang++  -I/Users/oliver/ClionProjects/testing/src/testing/.. -I/Users/oliver/ClionProjects/testing/src/hello_world/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -g -O0 -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier  -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function  -g -std=c++23 -mmacosx-version-min=12.7 -fcolor-diagnostics -o CMakeFiles/hello_world_test_cpp.dir/hello_world.cpp.o -c /Users/oliver/ClionProjects/testing/src/hello_world/tests/hello_world.cpp",
+    "file": "/Users/oliver/ClionProjects/testing/src/hello_world/tests/hello_world.cpp",
+    "output": "src/hello_world/tests/CMakeFiles/hello_world_test_cpp.dir/hello_world.cpp.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/error_codes",
+    "command": "/usr/local/opt/llvm/bin/clang  -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fcolor-diagnostics -o CMakeFiles/error_codes.dir/error_codes.c.o -c /Users/oliver/ClionProjects/testing/src/error_codes/error_codes.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/error_codes/error_codes.c",
+    "output": "src/error_codes/CMakeFiles/error_codes.dir/error_codes.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/error_codes/tests",
+    "command": "/usr/local/opt/llvm/bin/clang  -I/Users/oliver/ClionProjects/testing/src/error_codes/.. -I/Users/oliver/ClionProjects/testing/src/testing/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fcolor-diagnostics -o CMakeFiles/_error_codes.dir/error_codes.c.o -c /Users/oliver/ClionProjects/testing/src/error_codes/tests/error_codes.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/error_codes/tests/error_codes.c",
+    "output": "src/error_codes/tests/CMakeFiles/_error_codes.dir/error_codes.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples",
+    "command": "/usr/local/opt/llvm/bin/clang  -I/Users/oliver/ClionProjects/testing/src/error_codes/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fcolor-diagnostics -o CMakeFiles/examples.dir/examples.c.o -c /Users/oliver/ClionProjects/testing/src/binding/examples/examples.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/binding/examples/examples.c",
+    "output": "src/binding/examples/CMakeFiles/examples.dir/examples.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples",
+    "command": "/usr/local/opt/llvm/bin/clang -Dexamples_bindings_EXPORTS -I/Users/oliver/ClionProjects/testing/src/binding/examples/.. -I/Users/oliver/ClionProjects/testing/src/error_codes/.. -I/Users/oliver/ClionProjects/testing/src/binding/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fPIC -fcolor-diagnostics -o CMakeFiles/examples_bindings.dir/examples_bindings.c.o -c /Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/binding/examples/examples_bindings.c",
+    "output": "src/binding/examples/CMakeFiles/examples_bindings.dir/examples_bindings.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/binding/examples",
+    "command": "/usr/local/opt/llvm/bin/clang -Dexamples_bindings_EXPORTS -I/Users/oliver/ClionProjects/testing/src/binding/examples/.. -I/Users/oliver/ClionProjects/testing/src/error_codes/.. -I/Users/oliver/ClionProjects/testing/src/binding/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fPIC -fcolor-diagnostics -o CMakeFiles/examples_bindings.dir/binding_module.c.o -c /Users/oliver/ClionProjects/testing/src/binding/examples/binding_module.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/binding/examples/binding_module.c",
+    "output": "src/binding/examples/CMakeFiles/examples_bindings.dir/binding_module.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/testing/tests",
+    "command": "/usr/local/opt/llvm/bin/clang  -I/Users/oliver/ClionProjects/testing/src/testing/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fcolor-diagnostics -o CMakeFiles/example.dir/example.c.o -c /Users/oliver/ClionProjects/testing/src/testing/tests/example.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/testing/tests/example.c",
+    "output": "src/testing/tests/CMakeFiles/example.dir/example.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/testing/tests",
+    "command": "/usr/local/opt/llvm/bin/clang++  -I/Users/oliver/ClionProjects/testing/src/testing/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -g -O0 -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier  -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function  -g -std=c++23 -mmacosx-version-min=12.7 -fcolor-diagnostics -o CMakeFiles/example_cpp.dir/example.cpp.o -c /Users/oliver/ClionProjects/testing/src/testing/tests/example.cpp",
+    "file": "/Users/oliver/ClionProjects/testing/src/testing/tests/example.cpp",
+    "output": "src/testing/tests/CMakeFiles/example_cpp.dir/example.cpp.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/logging/tests",
+    "command": "/usr/local/opt/llvm/bin/clang -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/Users/oliver/ClionProjects/testing/src/testing/.. -I/Users/oliver/ClionProjects/testing/src/logging/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include -isystem /usr/local/Cellar/glib/2.78.4/include/glib-2.0 -isystem /usr/local/Cellar/glib/2.78.4/lib/glib-2.0/include -isystem /usr/local/opt/gettext/include -isystem /usr/local/Cellar/pcre2/10.42/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fcolor-diagnostics -Wno-constant-logical-operand -o CMakeFiles/logging_test.dir/logging.c.o -c /Users/oliver/ClionProjects/testing/src/logging/tests/logging.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/logging/tests/logging.c",
+    "output": "src/logging/tests/CMakeFiles/logging_test.dir/logging.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/logging/tests",
+    "command": "/usr/local/opt/llvm/bin/clang++ -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/Users/oliver/ClionProjects/testing/src/testing/.. -I/Users/oliver/ClionProjects/testing/src/logging/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include -isystem /usr/local/Cellar/glib/2.78.4/include/glib-2.0 -isystem /usr/local/Cellar/glib/2.78.4/lib/glib-2.0/include -isystem /usr/local/opt/gettext/include -isystem /usr/local/Cellar/pcre2/10.42/include  -g -O0 -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier  -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function  -g -std=c++23 -mmacosx-version-min=12.7 -fcolor-diagnostics -Wno-constant-logical-operand -o CMakeFiles/logging_test_cpp.dir/logging.cpp.o -c /Users/oliver/ClionProjects/testing/src/logging/tests/logging.cpp",
+    "file": "/Users/oliver/ClionProjects/testing/src/logging/tests/logging.cpp",
+    "output": "src/logging/tests/CMakeFiles/logging_test_cpp.dir/logging.cpp.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/logging/demo",
+    "command": "/usr/local/opt/llvm/bin/clang++ -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/Users/oliver/ClionProjects/testing/src/logging/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include -isystem /usr/local/Cellar/glib/2.78.4/include/glib-2.0 -isystem /usr/local/Cellar/glib/2.78.4/lib/glib-2.0/include -isystem /usr/local/opt/gettext/include -isystem /usr/local/Cellar/pcre2/10.42/include  -g -O0 -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier  -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function  -g -std=c++23 -mmacosx-version-min=12.7 -fcolor-diagnostics -Wno-constant-logical-operand -o CMakeFiles/logging_demo_cpp.dir/demo.cpp.o -c /Users/oliver/ClionProjects/testing/src/logging/demo/demo.cpp",
+    "file": "/Users/oliver/ClionProjects/testing/src/logging/demo/demo.cpp",
+    "output": "src/logging/demo/CMakeFiles/logging_demo_cpp.dir/demo.cpp.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/version",
+    "command": "/usr/local/opt/llvm/bin/clang  -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fcolor-diagnostics -o CMakeFiles/version.dir/version.c.o -c /Users/oliver/ClionProjects/testing/src/version/version.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/version/version.c",
+    "output": "src/version/CMakeFiles/version.dir/version.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/version",
+    "command": "/usr/local/opt/llvm/bin/clang -Dversion_bindings_EXPORTS -I/Users/oliver/ClionProjects/testing/src/binding/.. -I/Users/oliver/ClionProjects/testing/src/version/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fPIC -fcolor-diagnostics -o CMakeFiles/version_bindings.dir/version_bindings.c.o -c /Users/oliver/ClionProjects/testing/src/version/version_bindings.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/version/version_bindings.c",
+    "output": "src/version/CMakeFiles/version_bindings.dir/version_bindings.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/version",
+    "command": "/usr/local/opt/llvm/bin/clang -Dversion_bindings_EXPORTS -I/Users/oliver/ClionProjects/testing/src/binding/.. -I/Users/oliver/ClionProjects/testing/src/version/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fPIC -fcolor-diagnostics -o CMakeFiles/version_bindings.dir/version_module.c.o -c /Users/oliver/ClionProjects/testing/src/version/version_module.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/version/version_module.c",
+    "output": "src/version/CMakeFiles/version_bindings.dir/version_module.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/version/tests",
+    "command": "/usr/local/opt/llvm/bin/clang -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/Users/oliver/ClionProjects/testing/src/version/.. -I/Users/oliver/ClionProjects/testing/src/testing/.. -I/Users/oliver/ClionProjects/testing/src/logging/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include -isystem /usr/local/Cellar/glib/2.78.4/include/glib-2.0 -isystem /usr/local/Cellar/glib/2.78.4/lib/glib-2.0/include -isystem /usr/local/opt/gettext/include -isystem /usr/local/Cellar/pcre2/10.42/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fcolor-diagnostics -Wno-constant-logical-operand -o CMakeFiles/version_example.dir/version.c.o -c /Users/oliver/ClionProjects/testing/src/version/tests/version.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/version/tests/version.c",
+    "output": "src/version/tests/CMakeFiles/version_example.dir/version.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/cli/tests",
+    "command": "/usr/local/opt/llvm/bin/clang -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/Users/oliver/ClionProjects/testing/src/testing/.. -I/Users/oliver/ClionProjects/testing/src/logging/.. -I/Users/oliver/ClionProjects/testing/src/version/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include -isystem /usr/local/Cellar/glib/2.78.4/include/glib-2.0 -isystem /usr/local/Cellar/glib/2.78.4/lib/glib-2.0/include -isystem /usr/local/opt/gettext/include -isystem /usr/local/Cellar/pcre2/10.42/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fcolor-diagnostics -Wno-constant-logical-operand -o CMakeFiles/cli_arguments_0.dir/cli_arguments_0.c.o -c /Users/oliver/ClionProjects/testing/src/cli/tests/cli_arguments_0.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/cli/tests/cli_arguments_0.c",
+    "output": "src/cli/tests/CMakeFiles/cli_arguments_0.dir/cli_arguments_0.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/cli/tests",
+    "command": "/usr/local/opt/llvm/bin/clang -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/Users/oliver/ClionProjects/testing/src/testing/.. -I/Users/oliver/ClionProjects/testing/src/logging/.. -I/Users/oliver/ClionProjects/testing/src/version/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include -isystem /usr/local/Cellar/glib/2.78.4/include/glib-2.0 -isystem /usr/local/Cellar/glib/2.78.4/lib/glib-2.0/include -isystem /usr/local/opt/gettext/include -isystem /usr/local/Cellar/pcre2/10.42/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fcolor-diagnostics -Wno-constant-logical-operand -o CMakeFiles/cli_arguments_version.dir/cli_arguments_version.c.o -c /Users/oliver/ClionProjects/testing/src/cli/tests/cli_arguments_version.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/cli/tests/cli_arguments_version.c",
+    "output": "src/cli/tests/CMakeFiles/cli_arguments_version.dir/cli_arguments_version.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/common/suppressor",
+    "command": "/usr/local/opt/llvm/bin/clang  -I/Users/oliver/ClionProjects/testing/src/error_codes/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fcolor-diagnostics -o CMakeFiles/suppressor.dir/suppressor.c.o -c /Users/oliver/ClionProjects/testing/src/common/suppressor/suppressor.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/common/suppressor/suppressor.c",
+    "output": "src/common/suppressor/CMakeFiles/suppressor.dir/suppressor.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/common/suppressor",
+    "command": "/usr/local/opt/llvm/bin/clang -Dsuppressor_bindings_EXPORTS -I/Users/oliver/ClionProjects/testing/src/common/suppressor/.. -I/Users/oliver/ClionProjects/testing/src/error_codes/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fPIC -fcolor-diagnostics -o CMakeFiles/suppressor_bindings.dir/suppressor_bindings.c.o -c /Users/oliver/ClionProjects/testing/src/common/suppressor/suppressor_bindings.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/common/suppressor/suppressor_bindings.c",
+    "output": "src/common/suppressor/CMakeFiles/suppressor_bindings.dir/suppressor_bindings.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/common/suppressor/tests",
+    "command": "/usr/local/opt/llvm/bin/clang  -I/Users/oliver/ClionProjects/testing/src/testing/.. -I/Users/oliver/ClionProjects/testing/src/common/suppressor/.. -I/Users/oliver/ClionProjects/testing/src/error_codes/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include  -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier -Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types -std=c2x -g -std=c2x -mmacosx-version-min=12.7 -fcolor-diagnostics -o CMakeFiles/_suppressor.dir/suppressor.c.o -c /Users/oliver/ClionProjects/testing/src/common/suppressor/tests/suppressor.c",
+    "file": "/Users/oliver/ClionProjects/testing/src/common/suppressor/tests/suppressor.c",
+    "output": "src/common/suppressor/tests/CMakeFiles/_suppressor.dir/suppressor.c.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/colours",
+    "command": "/usr/local/opt/llvm/bin/clang++ -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/Users/oliver/ClionProjects/testing/src/logging/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include -isystem /usr/local/Cellar/glib/2.78.4/include/glib-2.0 -isystem /usr/local/Cellar/glib/2.78.4/lib/glib-2.0/include -isystem /usr/local/opt/gettext/include -isystem /usr/local/Cellar/pcre2/10.42/include  -g -O0 -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier  -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function  -g -std=c++23 -mmacosx-version-min=12.7 -fcolor-diagnostics -Wno-constant-logical-operand -o CMakeFiles/colours.dir/colour_palette.cpp.o -c /Users/oliver/ClionProjects/testing/src/rubiks/colours/colour_palette.cpp",
+    "file": "/Users/oliver/ClionProjects/testing/src/rubiks/colours/colour_palette.cpp",
+    "output": "src/rubiks/colours/CMakeFiles/colours.dir/colour_palette.cpp.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths",
+    "command": "/usr/local/opt/llvm/bin/clang++ -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/Users/oliver/ClionProjects/testing/src/logging/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include -isystem /usr/local/Cellar/glib/2.78.4/include/glib-2.0 -isystem /usr/local/Cellar/glib/2.78.4/lib/glib-2.0/include -isystem /usr/local/opt/gettext/include -isystem /usr/local/Cellar/pcre2/10.42/include  -g -O0 -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier  -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function  -g -std=c++23 -mmacosx-version-min=12.7 -fcolor-diagnostics -Wno-constant-logical-operand -o CMakeFiles/paths.dir/path.cpp.o -c /Users/oliver/ClionProjects/testing/src/rubiks/paths/path.cpp",
+    "file": "/Users/oliver/ClionProjects/testing/src/rubiks/paths/path.cpp",
+    "output": "src/rubiks/paths/CMakeFiles/paths.dir/path.cpp.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths/tests",
+    "command": "/usr/local/opt/llvm/bin/clang++ -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/Users/oliver/ClionProjects/testing/src/testing/.. -I/Users/oliver/ClionProjects/testing/src/logging/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include -isystem /usr/local/Cellar/glib/2.78.4/include/glib-2.0 -isystem /usr/local/Cellar/glib/2.78.4/lib/glib-2.0/include -isystem /usr/local/opt/gettext/include -isystem /usr/local/Cellar/pcre2/10.42/include  -g -O0 -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier  -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function  -g -std=c++23 -mmacosx-version-min=12.7 -fcolor-diagnostics -Wno-constant-logical-operand -o CMakeFiles/paths_cpp.dir/paths.cpp.o -c /Users/oliver/ClionProjects/testing/src/rubiks/paths/tests/paths.cpp",
+    "file": "/Users/oliver/ClionProjects/testing/src/rubiks/paths/tests/paths.cpp",
+    "output": "src/rubiks/paths/tests/CMakeFiles/paths_cpp.dir/paths.cpp.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shapes/tests",
+    "command": "/usr/local/opt/llvm/bin/clang++ -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/Users/oliver/ClionProjects/testing/src/testing/.. -I/Users/oliver/ClionProjects/testing/src/logging/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include -isystem /usr/local/Cellar/glib/2.78.4/include/glib-2.0 -isystem /usr/local/Cellar/glib/2.78.4/lib/glib-2.0/include -isystem /usr/local/opt/gettext/include -isystem /usr/local/Cellar/pcre2/10.42/include  -g -O0 -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier  -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function  -g -std=c++23 -mmacosx-version-min=12.7 -fcolor-diagnostics -Wno-constant-logical-operand -o CMakeFiles/shapes_cpp.dir/shapes.cpp.o -c /Users/oliver/ClionProjects/testing/src/rubiks/shapes/tests/shapes.cpp",
+    "file": "/Users/oliver/ClionProjects/testing/src/rubiks/shapes/tests/shapes.cpp",
+    "output": "src/rubiks/shapes/tests/CMakeFiles/shapes_cpp.dir/shapes.cpp.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/tests",
+    "command": "/usr/local/opt/llvm/bin/clang++ -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/Users/oliver/ClionProjects/testing/src/testing/.. -I/Users/oliver/ClionProjects/testing/src/logging/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include -isystem /usr/local/Cellar/glib/2.78.4/include/glib-2.0 -isystem /usr/local/Cellar/glib/2.78.4/lib/glib-2.0/include -isystem /usr/local/opt/gettext/include -isystem /usr/local/Cellar/pcre2/10.42/include  -g -O0 -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier  -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function  -g -std=c++23 -mmacosx-version-min=12.7 -fcolor-diagnostics -Wno-constant-logical-operand -o CMakeFiles/shufflers_cpp.dir/shufflers.cpp.o -c /Users/oliver/ClionProjects/testing/src/rubiks/shufflers/tests/shufflers.cpp",
+    "file": "/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/tests/shufflers.cpp",
+    "output": "src/rubiks/shufflers/tests/CMakeFiles/shufflers_cpp.dir/shufflers.cpp.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos",
+    "command": "/usr/local/opt/llvm/bin/clang++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/Users/oliver/ClionProjects/testing/src/logging/.. -I/Users/oliver/ClionProjects/testing/src/common/.. -I/Users/oliver/ClionProjects/testing/src/version/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include -isystem /usr/local/Cellar/glib/2.78.4/include/glib-2.0 -isystem /usr/local/Cellar/glib/2.78.4/lib/glib-2.0/include -isystem /usr/local/opt/gettext/include -isystem /usr/local/Cellar/pcre2/10.42/include  -g -O0 -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier  -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function  -g -std=c++23 -mmacosx-version-min=12.7 -fcolor-diagnostics -Wno-constant-logical-operand -o CMakeFiles/shuffler_demo_cpp.dir/shufflers_demo.cpp.o -c /Users/oliver/ClionProjects/testing/src/rubiks/shufflers/demos/shufflers_demo.cpp",
+    "file": "/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/demos/shufflers_demo.cpp",
+    "output": "src/rubiks/shufflers/demos/CMakeFiles/shuffler_demo_cpp.dir/shufflers_demo.cpp.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/solvers/tests",
+    "command": "/usr/local/opt/llvm/bin/clang++ -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/Users/oliver/ClionProjects/testing/src/testing/.. -I/Users/oliver/ClionProjects/testing/src/logging/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include -isystem /usr/local/Cellar/glib/2.78.4/include/glib-2.0 -isystem /usr/local/Cellar/glib/2.78.4/lib/glib-2.0/include -isystem /usr/local/opt/gettext/include -isystem /usr/local/Cellar/pcre2/10.42/include  -g -O0 -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier  -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function  -g -std=c++23 -mmacosx-version-min=12.7 -fcolor-diagnostics -Wno-constant-logical-operand -o CMakeFiles/solvers_cpp.dir/solvers.cpp.o -c /Users/oliver/ClionProjects/testing/src/rubiks/solvers/tests/solvers.cpp",
+    "file": "/Users/oliver/ClionProjects/testing/src/rubiks/solvers/tests/solvers.cpp",
+    "output": "src/rubiks/solvers/tests/CMakeFiles/solvers_cpp.dir/solvers.cpp.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/solvers/demos",
+    "command": "/usr/local/opt/llvm/bin/clang++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/Users/oliver/ClionProjects/testing/src/logging/.. -I/Users/oliver/ClionProjects/testing/src/common/.. -I/Users/oliver/ClionProjects/testing/src/version/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include -isystem /usr/local/Cellar/glib/2.78.4/include/glib-2.0 -isystem /usr/local/Cellar/glib/2.78.4/lib/glib-2.0/include -isystem /usr/local/opt/gettext/include -isystem /usr/local/Cellar/pcre2/10.42/include  -g -O0 -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier  -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function  -g -std=c++23 -mmacosx-version-min=12.7 -fcolor-diagnostics -Wno-constant-logical-operand -o CMakeFiles/solver_demo_cpp.dir/solver.cpp.o -c /Users/oliver/ClionProjects/testing/src/rubiks/solvers/demos/solver.cpp",
+    "file": "/Users/oliver/ClionProjects/testing/src/rubiks/solvers/demos/solver.cpp",
+    "output": "src/rubiks/solvers/demos/CMakeFiles/solver_demo_cpp.dir/solver.cpp.o"
+  },
+  {
+    "directory": "/Users/oliver/ClionProjects/testing/cmake-build-debug/misc",
+    "command": "/usr/local/opt/llvm/bin/clang++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/Users/oliver/ClionProjects/testing/src/common/.. -I/Users/oliver/ClionProjects/testing/src/version/.. -I/Users/oliver/ClionProjects/testing/src/logging/.. -isystem /Library/Frameworks/Python.framework/Versions/3.11/include/python3.11 -isystem /usr/local/include -isystem /usr/local/Cellar/glib/2.78.4/include/glib-2.0 -isystem /usr/local/Cellar/glib/2.78.4/lib/glib-2.0/include -isystem /usr/local/opt/gettext/include -isystem /usr/local/Cellar/pcre2/10.42/include  -g -O0 -Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic -Wreserved-identifier  -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function  -g -std=c++23 -mmacosx-version-min=12.7 -fcolor-diagnostics -Wno-constant-logical-operand -o CMakeFiles/misc.dir/misc.cpp.o -c /Users/oliver/ClionProjects/testing/misc/misc.cpp",
+    "file": "/Users/oliver/ClionProjects/testing/misc/misc.cpp",
+    "output": "misc/CMakeFiles/misc.dir/misc.cpp.o"
+  }
+]

@@ -1,0 +1,662 @@
+---
+MainSourceFile:  '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/demos/shufflers_demo.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid value ''c++23'' in ''-std=c++23'''
+      FilePath:        ''
+      FileOffset:      0
+      Replacements:    []
+    Notes:
+      - Message:         'use ''c++98'' or ''c++03'' for ''ISO C++ 1998 with amendments'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++98'' or ''gnu++03'' for ''ISO C++ 1998 with amendments and GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''c++11'' for ''ISO C++ 2011 with amendments'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++11'' for ''ISO C++ 2011 with amendments and GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''c++14'' for ''ISO C++ 2014 with amendments'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++14'' for ''ISO C++ 2014 with amendments and GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''c++17'' for ''ISO C++ 2017 with amendments'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++17'' for ''ISO C++ 2017 with amendments and GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''c++20'' for ''ISO C++ 2020 DIS'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++20'' for ''ISO C++ 2020 DIS with GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''c++2b'' for ''Working draft for ISO C++ 2023 DIS'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++2b'' for ''Working draft for ISO C++ 2023 DIS with GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  ''
+  - DiagnosticName:  performance-unnecessary-copy-initialization
+    DiagnosticMessage:
+      Message:         'the variable ''last'' is copy-constructed from a const reference but is only used as const reference; consider making it a const reference'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/common/cli.hpp'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/common/cli.hpp'
+          Offset:          664
+          Length:          0
+          ReplacementText: 'const '
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/common/cli.hpp'
+          Offset:          675
+          Length:          0
+          ReplacementText: '&'
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  performance-unnecessary-copy-initialization
+    DiagnosticMessage:
+      Message:         'the variable ''cur'' is copy-constructed from a const reference but is only used as const reference; consider making it a const reference'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/common/cli.hpp'
+      FileOffset:      774
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/common/cli.hpp'
+          Offset:          762
+          Length:          0
+          ReplacementText: 'const '
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/common/cli.hpp'
+          Offset:          773
+          Length:          0
+          ReplacementText: '&'
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'the parameter ''description'' is copied for each invocation but only used as a const reference; consider making it a const reference'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/common/cli.hpp'
+      FileOffset:      2257
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/common/cli.hpp'
+          Offset:          2245
+          Length:          0
+          ReplacementText: 'const '
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/common/cli.hpp'
+          Offset:          2256
+          Length:          0
+          ReplacementText: '&'
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  bugprone-exception-escape
+    DiagnosticMessage:
+      Message:         'an exception may be thrown in function '''' which should not throw exceptions'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/common/cli.hpp'
+      FileOffset:      3214
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'the parameter ''options'' is copied for each invocation but only used as a const reference; consider making it a const reference'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/common/cli.hpp'
+      FileOffset:      3242
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/common/cli.hpp'
+          Offset:          3218
+          Length:          0
+          ReplacementText: 'const '
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/common/cli.hpp'
+          Offset:          3241
+          Length:          0
+          ReplacementText: '&'
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'parameter ''description'' is passed by value and only copied once; consider moving it to avoid unnecessary copies'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+      FileOffset:      501
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+          Offset:          179
+          Length:          0
+          ReplacementText: "#include <utility>\n"
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+          Offset:          501
+          Length:          0
+          ReplacementText: 'std::move('
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+          Offset:          512
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'parameter ''forward_indices'' is passed by value and only copied once; consider moving it to avoid unnecessary copies'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+      FileOffset:      523
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+          Offset:          523
+          Length:          0
+          ReplacementText: 'std::move('
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+          Offset:          538
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  google-build-using-namespace
+    DiagnosticMessage:
+      Message:         'do not use namespace using-directives; use using-declarations instead'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/path.hpp'
+      FileOffset:      156
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         '''auto'' not allowed in function prototype'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/path.hpp'
+      FileOffset:      563
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/path.hpp'
+          FileOffset:      563
+          Length:          4
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  google-build-using-namespace
+    DiagnosticMessage:
+      Message:         'do not use namespace using-directives; use using-declarations instead'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      456
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  google-build-using-namespace
+    DiagnosticMessage:
+      Message:         'do not use namespace using-directives; use using-declarations instead'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      495
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  google-build-using-namespace
+    DiagnosticMessage:
+      Message:         'do not use namespace using-directives; use using-declarations instead'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      534
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  cppcoreguidelines-special-member-functions
+    DiagnosticMessage:
+      Message:         'class ''Shape'' defines a non-default destructor but does not define a copy constructor, a copy assignment operator, a move constructor or a move assignment operator'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      611
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_t'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      728
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+        FileOffset:      728
+        Replacements:
+          - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+            Offset:          92
+            Length:          0
+            ReplacementText: "#include <cstddef>\n"
+          - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+            Offset:          728
+            Length:          0
+            ReplacementText: 'static_cast<size_t>('
+          - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+            Offset:          736
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+            FileOffset:      728
+            Length:          15
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+        FileOffset:      728
+        Replacements:
+          - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+            Offset:          728
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+            Offset:          732
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+            FileOffset:      728
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'unknown type name ''requires'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      5054
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no template named ''is_base_of_v'' in namespace ''std''; did you mean ''is_base_of''?'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      5068
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+          Offset:          5068
+          Length:          12
+          ReplacementText: is_base_of
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+          FileOffset:      5063
+          Length:          5
+    Notes:
+      - Message:         '''is_base_of'' declared here'
+        FilePath:        '/usr/local/opt/llvm/include/c++/v1/__type_traits/is_base_of.h'
+        FileOffset:      698
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         no variable template matches partial specialization
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      5068
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'expected '';'' at end of declaration'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      5118
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+          Offset:          5118
+          Length:          0
+          ReplacementText: ';'
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         expected unqualified-id
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/shape.hpp'
+      FileOffset:      5119
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  google-build-using-namespace
+    DiagnosticMessage:
+      Message:         'do not use namespace using-directives; use using-declarations instead'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/tile.hpp'
+      FileOffset:      151
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  google-explicit-constructor
+    DiagnosticMessage:
+      Message:         single-argument constructors must be marked explicit to avoid unintentional implicit conversions
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/tile.hpp'
+      FileOffset:      384
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/tile.hpp'
+          Offset:          384
+          Length:          0
+          ReplacementText: 'explicit '
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         '''auto'' not allowed in function prototype'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/utils/printing_cubic_shapes.hpp'
+      FileOffset:      286
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/utils/printing_cubic_shapes.hpp'
+          FileOffset:      286
+          Length:          4
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         '''auto'' not allowed in function prototype'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/utils/printing_cubic_shapes.hpp'
+      FileOffset:      305
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/utils/printing_cubic_shapes.hpp'
+          FileOffset:      305
+          Length:          4
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  cppcoreguidelines-special-member-functions
+    DiagnosticMessage:
+      Message:         'class ''Volume'' defines a non-default destructor but does not define a copy constructor, a copy assignment operator, a move constructor or a move assignment operator'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      312
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_1'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      4297
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_2'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      4588
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_3'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      4836
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_4'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      5084
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_5'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      5330
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_6'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      5577
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_7'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      5826
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_8'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      6070
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  cert-err58-cpp
+    DiagnosticMessage:
+      Message:         'initialization of ''move_9'' with static storage duration may throw an exception that cannot be caught'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shapes/volume.hpp'
+      FileOffset:      6316
+      Replacements:    []
+    Notes:
+      - Message:         possibly throwing constructor declared here
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+        FileOffset:      420
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  google-build-using-namespace
+    DiagnosticMessage:
+      Message:         'do not use namespace using-directives; use using-declarations instead'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/demos/shufflers_demo.cpp'
+      FileOffset:      172
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  google-build-using-namespace
+    DiagnosticMessage:
+      Message:         'do not use namespace using-directives; use using-declarations instead'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/demos/shufflers_demo.cpp'
+      FileOffset:      212
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  bugprone-exception-escape
+    DiagnosticMessage:
+      Message:         'an exception may be thrown in function ''main'' which should not throw exceptions'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/demos/shufflers_demo.cpp'
+      FileOffset:      252
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no template named ''optional'' in namespace ''std''; did you mean ''boost::optional''?'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/seed.hpp'
+      FileOffset:      121
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/seed.hpp'
+          Offset:          121
+          Length:          13
+          ReplacementText: 'boost::optional'
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/seed.hpp'
+          FileOffset:      121
+          Length:          5
+    Notes:
+      - Message:         '''boost::optional'' declared here'
+        FilePath:        '/usr/local/include/boost/program_options/detail/value_semantic.hpp'
+        FileOffset:      381
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  google-build-using-namespace
+    DiagnosticMessage:
+      Message:         'do not use namespace using-directives; use using-declarations instead'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+      FileOffset:      274
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         '''auto'' not allowed in function prototype'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+      FileOffset:      356
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+          FileOffset:      356
+          Length:          4
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         '''auto'' not allowed in function prototype'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+      FileOffset:      1000
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+          FileOffset:      1000
+          Length:          4
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no template named ''variant'' in namespace ''std'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+      FileOffset:      1017
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+          FileOffset:      1012
+          Length:          5
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no member named ''nullopt'' in namespace ''std'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+      FileOffset:      1074
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+          FileOffset:      1069
+          Length:          5
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'unknown type name ''ShapesAndPaths'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+      FileOffset:      1206
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'unknown type name ''ShapesAndPaths'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+      FileOffset:      1275
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no member named ''holds_alternative'' in namespace ''std'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+      FileOffset:      1392
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+          FileOffset:      1387
+          Length:          5
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'expected ''('' for function-style cast or type construction'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+      FileOffset:      1421
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+          FileOffset:      1410
+          Length:          11
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'use of class template ''tuple'' requires template arguments'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+      FileOffset:      3466
+      Replacements:    []
+    Notes:
+      - Message:         template is declared here
+        FilePath:        '/usr/local/opt/llvm/include/c++/v1/tuple'
+        FileOffset:      25456
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/local/opt/llvm/include/c++/v1/tuple'
+            FileOffset:      25405
+            Length:          23
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         '''auto'' not allowed in function prototype'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+      FileOffset:      3525
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/shufflers/shufflers.hpp'
+          FileOffset:      3525
+          Length:          4
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/shufflers/demos'
+...

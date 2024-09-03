@@ -1,0 +1,100 @@
+---
+MainSourceFile:  '/Users/oliver/ClionProjects/testing/src/version/version_bindings.c'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''self'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/version/version_bindings.c'
+      FileOffset:      84
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/version'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''args'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/version/version_bindings.c'
+      FileOffset:      100
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/version'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''kwargs'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/version/version_bindings.c'
+      FileOffset:      116
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/version'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''self'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/version/version_bindings.c'
+      FileOffset:      209
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/version'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''args'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/version/version_bindings.c'
+      FileOffset:      225
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/version'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''kwargs'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/version/version_bindings.c'
+      FileOffset:      241
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/version'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''self'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/version/version_bindings.c'
+      FileOffset:      336
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/version'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''args'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/version/version_bindings.c'
+      FileOffset:      352
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/version'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''kwargs'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/version/version_bindings.c'
+      FileOffset:      368
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/version'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''self'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/version/version_bindings.c'
+      FileOffset:      461
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/version'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''args'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/version/version_bindings.c'
+      FileOffset:      477
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/version'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''kwargs'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/version/version_bindings.c'
+      FileOffset:      493
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/version'
+...

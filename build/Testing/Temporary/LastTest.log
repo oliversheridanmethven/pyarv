@@ -1,0 +1,659 @@
+Start testing: Sep 07 19:53 CEST
+----------------------------------------------------------
+1/29 Testing: hello_world_test
+1/29 Test: hello_world_test
+Command: "/Users/oliver/ClionProjects/testing/build/src/hello_world/tests/hello_world_test"
+Directory: /Users/oliver/ClionProjects/testing/build/src/hello_world/tests
+"hello_world_test" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20230817-4868-3xc7f8/googletest-1.14.0/googletest/src/gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"hello_world_test" end time: Sep 07 19:53 CEST
+"hello_world_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/29 Testing: hello_world_test_cpp
+2/29 Test: hello_world_test_cpp
+Command: "/Users/oliver/ClionProjects/testing/build/src/hello_world/tests/hello_world_test_cpp"
+Directory: /Users/oliver/ClionProjects/testing/build/src/hello_world/tests
+"hello_world_test_cpp" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20230817-4868-3xc7f8/googletest-1.14.0/googletest/src/gtest_main.cc
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from hello_world
+[ RUN      ] hello_world.hello_world_to_stdout
+/Users/oliver/ClionProjects/testing/src/hello_world/tests/hello_world.cpp:7: Failure
+Expected equality of these values:
+  "Hello world."
+  testing::internal::GetCapturedStdout()
+    Which is: "Hello world.\n"
+
+[  FAILED  ] hello_world.hello_world_to_stdout (2 ms)
+[----------] 1 test from hello_world (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] hello_world.hello_world_to_stdout
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Failed.
+"hello_world_test_cpp" end time: Sep 07 19:53 CEST
+"hello_world_test_cpp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/29 Testing: error_codes
+3/29 Test: error_codes
+Command: "/Users/oliver/ClionProjects/testing/build/src/error_codes/tests/_error_codes"
+Directory: /Users/oliver/ClionProjects/testing/build/src/error_codes/tests
+"error_codes" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20230817-4868-3xc7f8/googletest-1.14.0/googletest/src/gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"error_codes" end time: Sep 07 19:53 CEST
+"error_codes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/29 Testing: binding_import
+4/29 Test: binding_import
+Command: "/Users/oliver/ClionProjects/testing/venv/bin/python3.11" "/Users/oliver/ClionProjects/testing/src/binding/tests/binding_import.py"
+Directory: /Users/oliver/ClionProjects/testing/build/src/binding/tests
+"binding_import" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+.['/Users/oliver/ClionProjects/testing/src/binding/tests', '/Users/oliver/ClionProjects/testing/build/src/binding/tests', '/Library/Frameworks/Python.framework/Versions/3.11/lib/python311.zip', '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11', '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/lib-dynload', '/Users/oliver/ClionProjects/testing/venv/lib/python3.11/site-packages']
+We are fatally failing now.
+Hello world from within C.
+The input values are: a = 1 and b = foo
+.A non-fatal error from C in our Python binding.
+.
+----------------------------------------------------------------------
+Ran 3 tests in 0.009s
+
+OK
+We were successfully able to catch an exception: Raising a non-fatal error from C in our Python binding up to Python.
+
+Hello world from within C.
+The input values are: a = 1 and b = foo
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"binding_import" end time: Sep 07 19:53 CEST
+"binding_import" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/29 Testing: example
+5/29 Test: example
+Command: "/Users/oliver/ClionProjects/testing/build/src/testing/tests/example"
+Directory: /Users/oliver/ClionProjects/testing/build/src/testing/tests
+"example" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20230817-4868-3xc7f8/googletest-1.14.0/googletest/src/gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"example" end time: Sep 07 19:53 CEST
+"example" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/29 Testing: basic_python
+6/29 Test: basic_python
+Command: "/Users/oliver/ClionProjects/testing/venv/bin/python3.11" "/Users/oliver/ClionProjects/testing/src/testing/tests/basic_python.py"
+Directory: /Users/oliver/ClionProjects/testing/build/src/testing/tests
+"basic_python" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"basic_python" end time: Sep 07 19:53 CEST
+"basic_python" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/29 Testing: basic_python_again
+7/29 Test: basic_python_again
+Command: "/Users/oliver/ClionProjects/testing/venv/bin/python3.11" "/Users/oliver/ClionProjects/testing/src/testing/tests/basic_python_again.py"
+Directory: /Users/oliver/ClionProjects/testing/build/src/testing/tests
+"basic_python_again" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"basic_python_again" end time: Sep 07 19:53 CEST
+"basic_python_again" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/29 Testing: example_cpp
+8/29 Test: example_cpp
+Command: "/Users/oliver/ClionProjects/testing/build/src/testing/tests/example_cpp"
+Directory: /Users/oliver/ClionProjects/testing/build/src/testing/tests
+"example_cpp" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20230817-4868-3xc7f8/googletest-1.14.0/googletest/src/gtest_main.cc
+[==========] Running 4 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 3 tests from example
+[ RUN      ] example.test_failure
+/Users/oliver/ClionProjects/testing/src/testing/tests/example.cpp:8: Failure
+Expected equality of these values:
+  1
+  2
+This should fail.
+
+[  FAILED  ] example.test_failure (0 ms)
+[ RUN      ] example.test_expect
+[       OK ] example.test_expect (0 ms)
+[ RUN      ] example.test_fail
+[       OK ] example.test_fail (0 ms)
+[----------] 3 tests from example (0 ms total)
+
+[----------] 1 test from logging
+[ RUN      ] logging.test_exit
+/Users/oliver/ClionProjects/testing/src/testing/tests/example.cpp:21: Failure
+Death test: exit(1)
+    Result: died but not with expected error.
+  Expected: contains regular expression "Should exit."
+Actual msg:
+[  DEATH   ] 
+
+[  FAILED  ] logging.test_exit (1 ms)
+[----------] 1 test from logging (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 2 test suites ran. (1 ms total)
+[  PASSED  ] 2 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] example.test_failure
+[  FAILED  ] logging.test_exit
+
+ 2 FAILED TESTS
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Failed.
+"example_cpp" end time: Sep 07 19:53 CEST
+"example_cpp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/29 Testing: logging_test
+9/29 Test: logging_test
+Command: "/Users/oliver/ClionProjects/testing/build/src/logging/tests/logging_test"
+Directory: /Users/oliver/ClionProjects/testing/build/src/logging/tests
+"logging_test" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20230817-4868-3xc7f8/googletest-1.14.0/googletest/src/gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"logging_test" end time: Sep 07 19:53 CEST
+"logging_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/29 Testing: logging_test_cpp
+10/29 Test: logging_test_cpp
+Command: "/Users/oliver/ClionProjects/testing/build/src/logging/tests/logging_test_cpp"
+Directory: /Users/oliver/ClionProjects/testing/build/src/logging/tests
+"logging_test_cpp" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20230817-4868-3xc7f8/googletest-1.14.0/googletest/src/gtest_main.cc
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from logging
+[ RUN      ] logging.minimal_strings
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W20230907 19:53:15.896229 7638041 logging.cpp:7] some warning
+[       OK ] logging.minimal_strings (0 ms)
+[ RUN      ] logging.variable_args
+[       OK ] logging.variable_args (0 ms)
+[ RUN      ] logging.error_fails
+E20230907 19:53:15.896984 7638041 logging.cpp:15] some error
+[       OK ] logging.error_fails (0 ms)
+[----------] 3 tests from logging (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.19 sec
+----------------------------------------------------------
+Test Passed.
+"logging_test_cpp" end time: Sep 07 19:53 CEST
+"logging_test_cpp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/29 Testing: version_test
+11/29 Test: version_test
+Command: "/Users/oliver/ClionProjects/testing/build/src/version/tests/version_example"
+Directory: /Users/oliver/ClionProjects/testing/build/src/version/tests
+"version_test" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20230817-4868-3xc7f8/googletest-1.14.0/googletest/src/gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"version_test" end time: Sep 07 19:53 CEST
+"version_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/29 Testing: version_bindings
+12/29 Test: version_bindings
+Command: "/Users/oliver/ClionProjects/testing/venv/bin/python3.11" "/Users/oliver/ClionProjects/testing/src/version/tests/version_bindings.py"
+Directory: /Users/oliver/ClionProjects/testing/build/src/version/tests
+"version_bindings" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/oliver/ClionProjects/testing/src/version/tests/version_bindings.py", line 4, in <module>
+    import version
+ModuleNotFoundError: No module named 'version'
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"version_bindings" end time: Sep 07 19:53 CEST
+"version_bindings" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/29 Testing: cli_arguments_0
+13/29 Test: cli_arguments_0
+Command: "/Users/oliver/ClionProjects/testing/build/src/cli/tests/cli_arguments_0"
+Directory: /Users/oliver/ClionProjects/testing/build/src/cli/tests
+"cli_arguments_0" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20230817-4868-3xc7f8/googletest-1.14.0/googletest/src/gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"cli_arguments_0" end time: Sep 07 19:53 CEST
+"cli_arguments_0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/29 Testing: cli_arguments_version
+14/29 Test: cli_arguments_version
+Command: "/Users/oliver/ClionProjects/testing/build/src/cli/tests/cli_arguments_version"
+Directory: /Users/oliver/ClionProjects/testing/build/src/cli/tests
+"cli_arguments_version" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20230817-4868-3xc7f8/googletest-1.14.0/googletest/src/gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"cli_arguments_version" end time: Sep 07 19:53 CEST
+"cli_arguments_version" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/29 Testing: arguments
+15/29 Test: arguments
+Command: "/Users/oliver/ClionProjects/testing/venv/bin/python3.11" "/Users/oliver/ClionProjects/testing/src/common/tests/arguments.py"
+Directory: /Users/oliver/ClionProjects/testing/build/src/common/tests
+"arguments" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.013s
+
+OK
+['/Users/oliver/ClionProjects/testing/src/common/tests', '/Users/oliver/ClionProjects/testing/build/src/common/tests', '/Library/Frameworks/Python.framework/Versions/3.11/lib/python311.zip', '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11', '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/lib-dynload', '/Users/oliver/ClionProjects/testing/venv/lib/python3.11/site-packages']
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"arguments" end time: Sep 07 19:53 CEST
+"arguments" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/29 Testing: cli_print_logs
+16/29 Test: cli_print_logs
+Command: "/Users/oliver/ClionProjects/testing/venv/bin/python3.11" "/Users/oliver/ClionProjects/testing/src/common/tests/cli_print_logs.py"
+Directory: /Users/oliver/ClionProjects/testing/build/src/common/tests
+"cli_print_logs" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/oliver/ClionProjects/testing/src/common/tests/cli_print_logs.py", line 3, in <module>
+    from common import cli
+  File "/Users/oliver/ClionProjects/testing/venv/lib/python3.11/site-packages/common/cli.py", line 10, in <module>
+    import version
+ModuleNotFoundError: No module named 'version'
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"cli_print_logs" end time: Sep 07 19:53 CEST
+"cli_print_logs" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/29 Testing: logger
+17/29 Test: logger
+Command: "/Users/oliver/ClionProjects/testing/venv/bin/python3.11" "/Users/oliver/ClionProjects/testing/src/common/tests/logger.py"
+Directory: /Users/oliver/ClionProjects/testing/build/src/common/tests
+"logger" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/oliver/ClionProjects/testing/src/common/tests/logger.py", line 8, in <module>
+    import cli_print_logs
+  File "/Users/oliver/ClionProjects/testing/src/common/tests/cli_print_logs.py", line 3, in <module>
+    from common import cli
+  File "/Users/oliver/ClionProjects/testing/venv/lib/python3.11/site-packages/common/cli.py", line 10, in <module>
+    import version
+ModuleNotFoundError: No module named 'version'
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Failed.
+"logger" end time: Sep 07 19:53 CEST
+"logger" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/29 Testing: output
+18/29 Test: output
+Command: "/Users/oliver/ClionProjects/testing/venv/bin/python3.11" "/Users/oliver/ClionProjects/testing/src/common/tests/output.py"
+Directory: /Users/oliver/ClionProjects/testing/build/src/common/tests
+"output" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.005s
+
+OK
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"output" end time: Sep 07 19:53 CEST
+"output" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/29 Testing: output_suppressor_c_extension
+19/29 Test: output_suppressor_c_extension
+Command: "/Users/oliver/ClionProjects/testing/venv/bin/python3.11" "/Users/oliver/ClionProjects/testing/src/common/tests/output_suppressor_c_extension.py"
+Directory: /Users/oliver/ClionProjects/testing/build/src/common/tests
+"output_suppressor_c_extension" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Hello world from within C.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"output_suppressor_c_extension" end time: Sep 07 19:53 CEST
+"output_suppressor_c_extension" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/29 Testing: timing
+20/29 Test: timing
+Command: "/Users/oliver/ClionProjects/testing/venv/bin/python3.11" "/Users/oliver/ClionProjects/testing/src/common/tests/timing.py"
+Directory: /Users/oliver/ClionProjects/testing/build/src/common/tests
+"timing" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+['/Users/oliver/ClionProjects/testing/src/common/tests', '/Users/oliver/ClionProjects/testing/build/src/common/tests', '/Library/Frameworks/Python.framework/Versions/3.11/lib/python311.zip', '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11', '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/lib-dynload', '/Users/oliver/ClionProjects/testing/venv/lib/python3.11/site-packages']
+Traceback (most recent call last):
+  File "/Users/oliver/ClionProjects/testing/src/common/tests/timing.py", line 9, in <module>
+    from common.timing import time_function, Timeout, TimeoutError
+ImportError: cannot import name 'Timeout' from 'common.timing' (/Users/oliver/ClionProjects/testing/venv/lib/python3.11/site-packages/common/timing.py)
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"timing" end time: Sep 07 19:53 CEST
+"timing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/29 Testing: variables
+21/29 Test: variables
+Command: "/Users/oliver/ClionProjects/testing/venv/bin/python3.11" "/Users/oliver/ClionProjects/testing/src/common/tests/variables.py"
+Directory: /Users/oliver/ClionProjects/testing/build/src/common/tests
+"variables" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"variables" end time: Sep 07 19:53 CEST
+"variables" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/29 Testing: output_suppression
+22/29 Test: output_suppression
+Command: "/Users/oliver/ClionProjects/testing/src/common/tests/output_suppressor_c_extension.sh" "/Users/oliver/ClionProjects/testing/src/common/tests/output_suppressor_c_extension.py" "--suppress_output"
+Directory: /Users/oliver/ClionProjects/testing/build/src/common/tests
+"output_suppression" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Testing suppression:
+script: /Users/oliver/ClionProjects/testing/src/common/tests/output_suppressor_c_extension.py
+args: --suppress_output
+The suppressor worked and no output was detected. Output = ""
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"output_suppression" end time: Sep 07 19:53 CEST
+"output_suppression" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/29 Testing: suppressor
+23/29 Test: suppressor
+Command: "/Users/oliver/ClionProjects/testing/build/src/common/suppressor/tests/_suppressor"
+Directory: /Users/oliver/ClionProjects/testing/build/src/common/suppressor/tests
+"suppressor" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20230817-4868-3xc7f8/googletest-1.14.0/googletest/src/gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"suppressor" end time: Sep 07 19:53 CEST
+"suppressor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/29 Testing: images
+24/29 Test: images
+Command: "/Users/oliver/ClionProjects/testing/venv/bin/python3.11" "/Users/oliver/ClionProjects/testing/src/media/tests/images.py"
+Directory: /Users/oliver/ClionProjects/testing/build/src/media/tests
+"images" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+........
+----------------------------------------------------------------------
+Ran 8 tests in 0.310s
+
+OK
+<end of output>
+Test time =   0.53 sec
+----------------------------------------------------------
+Test Passed.
+"images" end time: Sep 07 19:53 CEST
+"images" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/29 Testing: window
+25/29 Test: window
+Command: "/Users/oliver/ClionProjects/testing/venv/bin/python3.11" "/Users/oliver/ClionProjects/testing/src/media/tests/window.py"
+Directory: /Users/oliver/ClionProjects/testing/build/src/media/tests
+"window" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/oliver/ClionProjects/testing/src/media/tests/window.py", line 5, in <module>
+    from media.window import ascii_from_camera, stream_from_camera
+  File "/Users/oliver/ClionProjects/testing/venv/lib/python3.11/site-packages/media/window.py", line 17, in <module>
+    from common.cli import standard_parser_setup
+  File "/Users/oliver/ClionProjects/testing/venv/lib/python3.11/site-packages/common/cli.py", line 10, in <module>
+    import version
+ModuleNotFoundError: No module named 'version'
+<end of output>
+Test time =   0.29 sec
+----------------------------------------------------------
+Test Failed.
+"window" end time: Sep 07 19:53 CEST
+"window" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/29 Testing: shapes
+26/29 Test: shapes
+Command: "/Users/oliver/ClionProjects/testing/venv/bin/python3.11" "/Users/oliver/ClionProjects/testing/src/rubik/tests/shapes.py"
+Directory: /Users/oliver/ClionProjects/testing/build/src/rubik/tests
+"shapes" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/oliver/ClionProjects/testing/src/rubik/tests/shapes.py", line 8, in <module>
+    from rubik import shapes
+ModuleNotFoundError: No module named 'rubik'
+<end of output>
+Test time =   0.19 sec
+----------------------------------------------------------
+Test Failed.
+"shapes" end time: Sep 07 19:53 CEST
+"shapes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/29 Testing: shuffles
+27/29 Test: shuffles
+Command: "/Users/oliver/ClionProjects/testing/venv/bin/python3.11" "/Users/oliver/ClionProjects/testing/src/rubik/tests/shuffles.py"
+Directory: /Users/oliver/ClionProjects/testing/build/src/rubik/tests
+"shuffles" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/oliver/ClionProjects/testing/src/rubik/tests/shuffles.py", line 3, in <module>
+    from rubik.shuffles.difficulty import specific, god
+ModuleNotFoundError: No module named 'rubik'
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"shuffles" end time: Sep 07 19:53 CEST
+"shuffles" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/29 Testing: solvers
+28/29 Test: solvers
+Command: "/Users/oliver/ClionProjects/testing/venv/bin/python3.11" "/Users/oliver/ClionProjects/testing/src/rubik/tests/solvers.py"
+Directory: /Users/oliver/ClionProjects/testing/build/src/rubik/tests
+"solvers" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/oliver/ClionProjects/testing/src/rubik/tests/solvers.py", line 4, in <module>
+    from rubik import shapes
+ModuleNotFoundError: No module named 'rubik'
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"solvers" end time: Sep 07 19:53 CEST
+"solvers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/29 Testing: shapes_cpp
+29/29 Test: shapes_cpp
+Command: "/Users/oliver/ClionProjects/testing/build/src/rubik/tests/shapes_cpp"
+Directory: /Users/oliver/ClionProjects/testing/build/src/rubik/tests
+"shapes_cpp" start time: Sep 07 19:53 CEST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20230817-4868-3xc7f8/googletest-1.14.0/googletest/src/gtest_main.cc
+[==========] Running 5 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 5 tests from ShapeTest/0, where TypeParam = Volume
+[ RUN      ] ShapeTest/0.printing
+[       OK ] ShapeTest/0.printing (0 ms)
+[ RUN      ] ShapeTest/0.equality
+[       OK ] ShapeTest/0.equality (0 ms)
+[ RUN      ] ShapeTest/0.hashing
+[       OK ] ShapeTest/0.hashing (0 ms)
+[ RUN      ] ShapeTest/0.moves_equality
+[       OK ] ShapeTest/0.moves_equality (0 ms)
+[ RUN      ] ShapeTest/0.single_moves
+[       OK ] ShapeTest/0.single_moves (0 ms)
+[----------] 5 tests from ShapeTest/0 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 5 tests.
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"shapes_cpp" end time: Sep 07 19:53 CEST
+"shapes_cpp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 07 19:53 CEST

@@ -1,0 +1,137 @@
+---
+MainSourceFile:  '/Users/oliver/ClionProjects/testing/src/rubiks/paths/path.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid value ''c++23'' in ''-std=c++23'''
+      FilePath:        ''
+      FileOffset:      0
+      Replacements:    []
+    Notes:
+      - Message:         'use ''c++98'' or ''c++03'' for ''ISO C++ 1998 with amendments'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++98'' or ''gnu++03'' for ''ISO C++ 1998 with amendments and GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''c++11'' for ''ISO C++ 2011 with amendments'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++11'' for ''ISO C++ 2011 with amendments and GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''c++14'' for ''ISO C++ 2014 with amendments'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++14'' for ''ISO C++ 2014 with amendments and GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''c++17'' for ''ISO C++ 2017 with amendments'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++17'' for ''ISO C++ 2017 with amendments and GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''c++20'' for ''ISO C++ 2020 DIS'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++20'' for ''ISO C++ 2020 DIS with GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''c++2b'' for ''Working draft for ISO C++ 2023 DIS'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'use ''gnu++2b'' for ''Working draft for ISO C++ 2023 DIS with GNU extensions'' standard'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  ''
+  - DiagnosticName:  bugprone-exception-escape
+    DiagnosticMessage:
+      Message:         'an exception may be thrown in function ''Move'' which should not throw exceptions'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+      FileOffset:      257
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'parameter ''description'' is passed by value and only copied once; consider moving it to avoid unnecessary copies'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+      FileOffset:      501
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+          Offset:          179
+          Length:          0
+          ReplacementText: "#include <utility>\n"
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+          Offset:          501
+          Length:          0
+          ReplacementText: 'std::move('
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+          Offset:          512
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'parameter ''forward_indices'' is passed by value and only copied once; consider moving it to avoid unnecessary copies'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+      FileOffset:      523
+      Replacements:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+          Offset:          523
+          Length:          0
+          ReplacementText: 'std::move('
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/moves/move.hpp'
+          Offset:          538
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no member named ''ranges'' in namespace ''std'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/path.cpp'
+      FileOffset:      396
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/path.cpp'
+          FileOffset:      391
+          Length:          5
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths'
+  - DiagnosticName:  google-build-using-namespace
+    DiagnosticMessage:
+      Message:         'do not use namespace using-directives; use using-declarations instead'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/path.hpp'
+      FileOffset:      156
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         '''auto'' not allowed in function prototype'
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/path.hpp'
+      FileOffset:      563
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/rubiks/paths/path.hpp'
+          FileOffset:      563
+          Length:          4
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/rubiks/paths'
+...

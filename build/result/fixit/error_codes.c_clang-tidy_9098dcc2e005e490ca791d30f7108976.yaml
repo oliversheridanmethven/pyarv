@@ -1,0 +1,29 @@
+---
+MainSourceFile:  '/Users/oliver/ClionProjects/testing/src/error_codes/error_codes.c'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'use of undeclared identifier ''nullptr'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/error_codes/error_codes.c'
+      FileOffset:      192
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/error_codes'
+  - DiagnosticName:  cert-err33-c
+    DiagnosticMessage:
+      Message:         the value returned by this function should be used
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/error_codes/error_codes.c'
+      FileOffset:      302
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/Users/oliver/ClionProjects/testing/src/error_codes/error_codes.c'
+          FileOffset:      302
+          Length:          36
+    Notes:
+      - Message:         cast the expression to void to silence this warning
+        FilePath:        '/Users/oliver/ClionProjects/testing/src/error_codes/error_codes.c'
+        FileOffset:      302
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/error_codes'
+...

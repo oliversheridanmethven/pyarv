@@ -1,0 +1,20 @@
+---
+MainSourceFile:  '/Users/oliver/ClionProjects/testing/src/hello_world/hello_world_example.c'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''argc'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/hello_world/hello_world_example.c'
+      FileOffset:      39
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/hello_world'
+  - DiagnosticName:  clang-diagnostic-unused-parameter
+    DiagnosticMessage:
+      Message:         'unused parameter ''argv'''
+      FilePath:        '/Users/oliver/ClionProjects/testing/src/hello_world/hello_world_example.c'
+      FileOffset:      52
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/Users/oliver/ClionProjects/testing/cmake-build-debug/src/hello_world'
+...

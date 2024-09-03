@@ -1,0 +1,2 @@
+/opt/local/bin/ar qc libcolours.a CMakeFiles/colours.dir/colour_palette.cpp.o
+/usr/local/opt/llvm/bin/llvm-ranlib libcolours.a

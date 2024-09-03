@@ -1,7 +1,7 @@
 #include "arv/logging/logging.h"
 #include "testing/testing.h"
 
-Test(logging, minimal_strings, .init = show_all_logging)
+Test(logging, minimal_strings)
 {
     LOG_INFO("some info");
     LOG_MESSAGE("some message");
