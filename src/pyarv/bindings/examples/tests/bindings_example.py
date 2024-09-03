@@ -7,7 +7,7 @@ import sys
 print(sys.path)
 
 import unittest
-from pyarv.gaussian import foo, hello_world, fatal_failure, non_fatal_failure
+from pyarv.bindings.examples import foo, hello_world, fatal_failure, non_fatal_failure
 import multiprocessing as mp
 
 

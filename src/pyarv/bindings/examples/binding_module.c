@@ -1,5 +1,5 @@
-#include "bindings/wrappers.h"
-#include "examples_bindings.h"
+#include "pyarv/bindings/examples/examples_bindings.h"
+#include "pyarv/bindings/wrappers.h"
 
 static PyMethodDef examples_methods[] = {
         {"hello_world", PyFunc(hello_world_), METH_VARARGS | METH_KEYWORDS,

@@ -1,6 +1,6 @@
 #define PY_SSIZE_T_CLEAN
 
-#include "../../arv/examples.h"
+#include "arv/examples/examples.h"
 #include <Python.h>
 #include <stdio.h>
 #include <stdlib.h>
