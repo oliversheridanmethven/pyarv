@@ -109,7 +109,7 @@ enable_testing()
 # ^ This must be before any calls to add_subdirectory to ensure it is enabled recursively.
 # cf. https://stackoverflow.com/questions/54550939/ctest-add-tests-in-subdirectories#comment109191766_55835742
 
-message(DEBUG "Just printing this to supress a warning: ${PYTHON_EXECUTABLE}")
+#message(DEBUG "Just printing this to supress a warning: ${PYTHON_EXECUTABLE}")
 set(Python3_FIND_VIRTUALENV FIRST)
 set(Python3_ROOT_DIR "${PROJECT_SOURCE_DIR}/venv")
 find_package(Python3 COMPONENTS Interpreter Development NumPy)
@@ -178,4 +178,6 @@ endfunction()
 
 # Where we find the source files for our builds.
 add_subdirectory(src)
+
+add_subdirectory(misc)
 

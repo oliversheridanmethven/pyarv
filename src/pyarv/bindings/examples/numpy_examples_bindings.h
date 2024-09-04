@@ -1,10 +1,9 @@
 #ifndef TESTING_EXAMPLES_BINDINGS_H
 #define TESTING_EXAMPLES_BINDINGS_H
 
+#define PY_SSIZE_T_CLEAN
 #include <Python.h>
-#include <numpy/arrayobject.h>
 
-PyObject *multiply_(PyObject *self, PyObject *args, PyObject *kwargs);
-PyObject *multiply_into_(PyObject *self, PyObject *args);
+PyObject *multiply_into(PyObject *Py_UNUSED(m), PyObject *args, PyObject *kwargs);
 
 #endif//TESTING_EXAMPLES_BINDINGS_H
