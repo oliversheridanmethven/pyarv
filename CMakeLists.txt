@@ -4,26 +4,18 @@ cmake_minimum_required(VERSION 3.25)  # Use the latest and greatest.
 # compilers, so we set our paths to the compilers first.
 # cf: https://stackoverflow.com/a/29904501/5134817
 
-find_program(CMAKE_C_COMPILER NAMES $ENV{CXX} clang-mp-16 clang-16 clang PATHS ENV PATH NO_DEFAULT_PATH)
-find_program(CMAKE_CXX_COMPILER NAMES $ENV{CXX} clang++-mp-16 clang++-16 clang++ PATHS ENV PATH NO_DEFAULT_PATH)
-#find_program(CMAKE_C_COMPILER NAMES $ENV{CC} gcc-13 PATHS ENV PATH NO_DEFAULT_PATH)
-#find_program(CMAKE_CXX_COMPILER NAMES $ENV{CXX} g++-13 PATHS ENV PATH NO_DEFAULT_PATH)
+find_program(CMAKE_C_COMPILER NAMES $ENV{CC} gcc-14 gcc clang-18 clang PATHS ENV PATH NO_DEFAULT_PATH)
 
-project(pyarv C CXX) # We use a mix of C and C++.
+project(pyarv C) # We use a mix of C and C++.
 
 # We want to use the latest standards.
 # Only some of the latest and greatest compilers offer the appropriate level of support.
 set(CMAKE_C_STANDARD 23)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS OFF)
-set(CMAKE_CXX_STANDARD 23)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(CC ${CMAKE_C_COMPILER})
-set(CXX ${CMAKE_CXX_COMPILER})
 message(STATUS "We think we are using the C compiler: ${CMAKE_C_COMPILER_ID} ${CMAKE_C_COMPILER_VERSION}")
-message(STATUS "We think we are using the C++ compiler: ${CMAKE_CXX_COMPILER_ID} ${CMAKE_CXX_COMPILER_VERSION}")
 
 set(CMAKE_GENERATOR "Unix Makefiles")
 
@@ -38,43 +30,28 @@ endif()
 
 set(IGNORE_ERROR_FLAGS "-Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types")
 set(IGNORE_ERROR_FLAGS_C ${IGNORE_ERROR_FLAGS})
-set(IGNORE_ERROR_FLAGS_CXX ${IGNORE_ERROR_FLAGS})
-# Not all flags exist for both languages, so we possibly filter some out or add some in.
-message(DEBUG "The CXX error flags before filtering: ${IGNORE_ERROR_FLAGS_CXX}")
+# Not all flags exist for both C and C++, so we possibly filter some out or add some in.
 set(C_ONLY_FLAGS "-Wno-int-conversion;-Wno-incompatible-pointer-types")
-foreach(C_ONLY_FLAG ${C_ONLY_FLAGS})
-string(REPLACE "${C_ONLY_FLAG}" "" IGNORE_ERROR_FLAGS_CXX ${IGNORE_ERROR_FLAGS_CXX})
-endforeach ()
-message(DEBUG "The CXX error flags after filtering: ${IGNORE_ERROR_FLAGS_CXX}")
 
 set(ERROR_FLAGS_C "${ERROR_FLAGS} ${IGNORE_ERROR_FLAGS_C}")
-set(ERROR_FLAGS_CXX "${ERROR_FLAGS} ${IGNORE_ERROR_FLAGS_CXX}")
 message(DEBUG "The C compiler flags are: ${CMAKE_C_FLAGS}")
 
 message(STATUS "Compiling in mode: ${CMAKE_BUILD_TYPE}")
 if(CMAKE_BUILD_TYPE STREQUAL "Release")
     message(STATUS "Adding optimisation flags.")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2")
+    set(CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS} -O3 -fopenmp-simd -S")
 elseif (CMAKE_BUILD_TYPE STREQUAL "Debug")
     message(STATUS "Adding debug flags.")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0")
+    set(CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS} -g -O0")
 endif()
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${ERROR_FLAGS_C}")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${ERROR_FLAGS_CXX}")
 
 cmake_host_system_information(RESULT N_CORES QUERY NUMBER_OF_LOGICAL_CORES)
 message(STATUS "We think we have ${N_CORES} cores on this machine.")
 if(NOT N_CORES EQUAL 0)
     message(STATUS "Trying to set the build and tests to use parallel cores.")
     message(STATUS "Our default make tool is: ${CMAKE_MAKE_PROGRAM}")
-#    set(CMAKE_MAKE_PROGRAM "${CMAKE_MAKE_PROGRAM} -j${N_CORES}")
-#    set(CTEST_BUILD_FLAGS "--parallel ${N_CORES}")
-#    set(CMAKE_CTEST_ARGUMENTS "--parallel ${N_CORES}")
-#    set(CMAKE_CTEST_COMMAND  "${CMAKE_CTEST_COMMAND} --parallel ${N_CORES}")
-#    set(ctest_test_args ${ctest_test_args} PARALLEL_LEVEL ${N_CORES})
-#    set(CTEST_PARALLEL_LEVEL ${N_CORES})
-#    set(CMAKE_BUILD_PARALLEL_LEVEL ${N_CORES})
 endif()
 
 if("${PROJECT_SOURCE_DIR}" STREQUAL "${PROJECT_BINARY_DIR}")
@@ -109,7 +86,8 @@ enable_testing()
 # ^ This must be before any calls to add_subdirectory to ensure it is enabled recursively.
 # cf. https://stackoverflow.com/questions/54550939/ctest-add-tests-in-subdirectories#comment109191766_55835742
 
-#message(DEBUG "Just printing this to supress a warning: ${PYTHON_EXECUTABLE}")
+message(DEBUG "Just printing this to supress a warning: ${PYTHON_EXECUTABLE}")
+message(DEBUG "Just printing this to supress a warning: ${Python_EXECUTABLE}")
 set(Python3_FIND_VIRTUALENV FIRST)
 set(Python3_ROOT_DIR "${PROJECT_SOURCE_DIR}/venv")
 find_package(Python3 COMPONENTS Interpreter Development NumPy)
@@ -133,10 +111,6 @@ include_directories(SYSTEM ${Python3_INCLUDE_DIRS})
 include_directories(SYSTEM Python3::NumPy)
 link_libraries(${Python3_LIBRARIES})
 link_libraries(Python3::NumPy)
-
-find_package(Boost REQUIRED)
-include_directories(SYSTEM ${Boost_INCLUDE_DIRS})
-
 
 function(add_all_python_tests)
     file(GLOB_RECURSE python_files *.py)

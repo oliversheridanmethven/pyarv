@@ -1,20 +1,29 @@
-from pyarv.gaussian.gaussian_bindings import polynomial as _polynomial
+from pyarv.gaussian.gaussian_bindings import linear, cubic
 import numpy as np
-import numpy.typing as npt
+from nptyping import NDArray, Shape
 
 
-def polynomial(*, input: npt.NDArray[np.float32], output: npt.NDArray[np.float32]) -> None:
+def polynomial(*,
+               input: NDArray[Shape["N"], np.float32],
+               output: NDArray[Shape["N"], np.float32],
+               order: int = 1
+               ) -> None:
     """
     Polynomial approximation to the inverse CDF of the Gaussian ditribution.
 
     Parameters
     ----------
-    input :
+    input:
         Uniform random numbers in the range \( (0, 1) \).
-    output :
+    output:
         Approximate Gaussian random variables.
-
+    order:
+        The polynomial order to use:
+        1 = linear.
+        3 = cubic.
     Returns
     -------
     """
-    _polynomial(input=input, output=output)
+    approximations = {1: linear,
+                      3: cubic}
+    approximations[order](input=input, output=output)

@@ -5,8 +5,10 @@
 #include <numpy/arrayobject.h>
 // clang-format on
 
+#include "bindings/wrappers.h"
+
 PyMethodDef gaussian_methods[] = {
-        {"multiply_into", (PyCFunction) multiply_into, METH_VARARGS | METH_KEYWORDS, NULL},
+        {"multiply_into", PyFunc(multiply_into), METH_VARARGS | METH_KEYWORDS, NULL},
         {NULL},
 };
 

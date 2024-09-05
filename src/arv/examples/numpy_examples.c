@@ -6,7 +6,6 @@ void multiply(double *restrict const input,
               const size_t n,
               const double factor)
 {
-#pragma omp simd
     for (size_t i = 0; i < n; i++)
     {
         output[i] = input[i] * factor;

@@ -3,8 +3,7 @@
 #define TABLE_SIZE 16
 #define TABLE_MAX_INDEX (TABLE_SIZE - 1)// Zero indexing...
 
-//#define FLOAT32_AS_UINT32(x) (*((UInt *) &x))
-static inline UInt FLOAT32_AS_UINT32(const Float u)
+UInt float_32_as_uint_32(const Float u)
 {
     const union
     {
@@ -27,37 +26,7 @@ const Float poly_coef_3[TABLE_SIZE] = {0x0.0p+0, 0x1.e6c176d279f78p+1, 0x1.7e068
 #include <stdbool.h>
 #include <stdlib.h>
 
-static inline Float polynomial_approximation(Float u, UInt b)
-{
-/*
-     * Polynomial approximation of a function.
-     *
-     * This assumes a very small polynomial and will exploit Horner's rule
-     * and splits the polynomial into the even and odd terms. This could
-     * (and should) be generalised to bigger polynomials, but more ideally
-     * tailored to constants, piecewise linear, and quadratic. Beyond cubic
-     * and this might be redundant and then a very generalised implementation
-     * might be preferable...
-     *
-     * Input:
-     *      u - Input position.
-     *      b - Index of polynomial coefficient to use.
-     *
-     */
-
-// This would ideally be implemented using vector registers and scatter/gather intrinsics.
-#if (POLYNOMIAL_ORDER == 3)
-    Float z, z_even, z_odd;
-    //  return poly_coef_0[b] + u * (poly_coef_1[b] + u * (poly_coef_2[b] + u * poly_coef_3[b]));
-    Float x = u * u;
-    z_even = poly_coef_0[b] + poly_coef_2[b] * x;
-    z_odd = poly_coef_1[b] + poly_coef_3[b] * x;
-    z = z_even + z_odd * u;
-    return z;
-#endif
-}
-
-static inline UInt get_table_index_from_float_format(Float u)
+UInt get_table_index_from_float_format(const Float u)
 {
     /*
      * Takes the approximate logarithm of a floating point number and maps this to
@@ -67,39 +36,23 @@ static inline UInt get_table_index_from_float_format(Float u)
      *      0.5                 ->          0
      *      [0.25,      0.5)    ->          1
      *      [0.125,     0.25)   ->          2
-     *      ...
+     *      ...                             ...
      *                                      14
      *                                      15
-     *                                      15  <<  Table is capped at 16 entries
-     *                                      15  <<
-     *                                      15  <<
+     *                                      16
      *                                      ...
-     *                                      15  <<
      *
      * Assumes input has a zero in its sign bit.
      *
      */
 
     UInt b;
-    b = FLOAT32_AS_UINT32(u) >> N_MANTISSA_32;    // Keeping only the exponent, and removing the mantissa.
-    b = FLOAT32_EXPONENT_BIAS_TABLE_OFFSET - b;   // Getting the table index.
-    b = b > TABLE_MAX_INDEX ? TABLE_MAX_INDEX : b;// Ensuring we don't overflow out of the table.
+    b = float_32_as_uint_32(u) >> N_MANTISSA_32;// Keeping only the exponent, and removing the mantissa.
+    b = FLOAT32_EXPONENT_BIAS_TABLE_OFFSET - b; // Getting the table index.
     return b;
 }
 
-void polynomial(const Float *restrict const input,
-                Float *restrict const output,
-                const size_t input_buffer_size)
+UInt cap_index(const UInt b, const UInt cap)
 {
-    for (size_t i = 0; i < input_buffer_size; i++)
-    {
-        Float x, z;
-        x = input[i];
-        bool predicate = x < 0.5f;
-        x = predicate ? x : 1.0f - x;
-        UInt b = get_table_index_from_float_format(x);
-        z = polynomial_approximation(x, b);
-        z = predicate ? z : -z;
-        output[i] = z;
-    }
+    return b > cap ? cap : b;// Ensuring we don't overflow out of the table.
 }

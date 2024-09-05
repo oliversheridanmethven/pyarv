@@ -5,8 +5,11 @@
 #include <numpy/arrayobject.h>
 // clang-format on
 
+#include "bindings/wrappers.h"
+
 PyMethodDef gaussian_methods[] = {
-        {"polynomial", (PyCFunction) polynomial_, METH_VARARGS | METH_KEYWORDS, NULL},
+        {"linear", PyFunc(linear_), METH_VARARGS | METH_KEYWORDS, NULL},
+        {"cubic", PyFunc(cubic_), METH_VARARGS | METH_KEYWORDS, NULL},
         {NULL},
 };
 
