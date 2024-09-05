@@ -6,7 +6,7 @@
 // clang-format on
 
 PyMethodDef gaussian_methods[] = {
-        {"linear", (PyCFunction) linear, METH_VARARGS | METH_KEYWORDS, NULL},
+        {"polynomial", (PyCFunction) polynomial_, METH_VARARGS | METH_KEYWORDS, NULL},
         {NULL},
 };
 

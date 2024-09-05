@@ -28,6 +28,7 @@ setup(
             "mkdocs-literate-nav",
             "mkdocs-section-index",
             "mkdocs-gen-files",
+            "python-markdown-math",
             "mike"
         ]
     },

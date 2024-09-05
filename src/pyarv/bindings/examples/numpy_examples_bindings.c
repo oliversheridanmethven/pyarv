@@ -1,5 +1,5 @@
 // clang-format off
-#include "pyarv/bindings/examples/numpy_examples_bindings.h"
+#include "numpy_examples_bindings.h"
 #define NO_IMPORT_ARRAY
 #define PY_ARRAY_UNIQUE_SYMBOL ARV_ARRAY_API
 #define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION

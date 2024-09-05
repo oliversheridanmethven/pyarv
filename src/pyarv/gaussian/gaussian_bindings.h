@@ -4,6 +4,6 @@
 #define PY_SSIZE_T_CLEAN
 #include <Python.h>
 
-PyObject *linear(PyObject *Py_UNUSED(m), PyObject *args, PyObject *kwargs);
+PyObject *polynomial_(PyObject *Py_UNUSED(self), PyObject *args, PyObject *kwargs);
 
 #endif//TESTING_EXAMPLES_BINDINGS_H

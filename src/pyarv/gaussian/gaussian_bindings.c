@@ -6,12 +6,13 @@
 #include <numpy/arrayobject.h>
 // clang-format on
 
+#include "gaussian/polynomial.h"
+
 PyObject *
-linear(PyObject *Py_UNUSED(m), PyObject *args, PyObject *kwargs)
+polynomial_(PyObject *Py_UNUSED(self), PyObject *args, PyObject *kwargs)
 {
     PyArrayObject *input_array;
     PyArrayObject *output_array;
-    double factor = 1.0;
 #define N_ARRAYS 2
     PyArrayObject **arrays[N_ARRAYS] = {&input_array, &output_array};
     char *arg_names[] = {
@@ -34,12 +35,12 @@ linear(PyObject *Py_UNUSED(m), PyObject *args, PyObject *kwargs)
         PyObject *array = *arrays[i];
         if (PyArray_NDIM(array) != 1)
         {
-            PyErr_SetString(PyExc_ValueError, "Array must be 1-dimensional");
+            PyErr_SetString(PyExc_ValueError, "Array must be 1-dimensional.");
             return NULL;
         }
-        if (PyArray_TYPE(array) != NPY_DOUBLE)
+        if (PyArray_TYPE(array) != NPY_FLOAT32)
         {
-            PyErr_SetString(PyExc_ValueError, "Array must be of type double");
+            PyErr_SetString(PyExc_ValueError, "Array must be of type float32.");
             return NULL;
         }
 
@@ -50,8 +51,8 @@ linear(PyObject *Py_UNUSED(m), PyObject *args, PyObject *kwargs)
         }
     }
 
-    npy_double *input_buffer = (npy_double *) PyArray_DATA(input_array);
-    npy_double *output_buffer = (npy_double *) PyArray_DATA(output_array);
+    npy_float32 *input_buffer = (npy_float32 *) PyArray_DATA(input_array);
+    npy_float32 *output_buffer = (npy_float32 *) PyArray_DATA(output_array);
     size_t input_buffer_size = PyArray_SIZE(input_array);
     size_t output_buffer_size = PyArray_SIZE(output_array);
 
@@ -64,10 +65,7 @@ linear(PyObject *Py_UNUSED(m), PyObject *args, PyObject *kwargs)
     NPY_BEGIN_THREADS_DEF;
     NPY_BEGIN_THREADS; /* No longer need the Python GIL */
 
-    for (size_t i = 0; i < input_buffer_size; i++)
-    {
-        output_buffer[i] = input_buffer[i] * factor;
-    }
+    polynomial(input_buffer, output_buffer, input_buffer_size);
 
     NPY_END_THREADS; /* We return the Python GIL. */
 
