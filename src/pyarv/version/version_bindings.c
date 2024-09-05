@@ -1,5 +1,5 @@
-#include "pyarv/version/version_bindings.h"
-#include "arv/version/version.h"
+#include "version_bindings.h"
+#include "version/version.h"
 
 PyObject *repo_name_(PyObject *self, PyObject *args, PyObject *kwargs)
 {

@@ -1,4 +1,4 @@
-#include "arv/logging/logging.h"
+#include "logging/logging.h"
 #include "testing/testing.h"
 
 Test(logging, minimal_strings)

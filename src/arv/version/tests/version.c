@@ -1,6 +1,6 @@
-#include "arv/version/version.h"
-#include "arv/logging/logging.h"
-#include "arv/testing/testing.h"
+#include "version/version.h"
+#include "logging/logging.h"
+#include "testing/testing.h"
 #include <regex.h>
 #include <stdio.h>
 #include <string.h>
