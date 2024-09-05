@@ -17,15 +17,6 @@ if __name__ == "__main__":
         z_exact = norm.ppf(u)
         z_approx = np.empty_like(u)
         polynomial(input=u, output=z_approx, order=order)
-        # plt.ion()
-        # plt.clf()
-        # plt.plot(u, z_exact, 'k-')
-        # plt.plot(u, z_approx, 'r-')
-        # plt.show()
-        #
-        # plt.clf()
-        # plt.plot(u, z_exact - z_approx)
-        # plt.show()
 
         n_samples = 10_000_000
         u = np.random.uniform(size=n_samples + 1).astype(np.float32)
@@ -51,6 +42,10 @@ if __name__ == "__main__":
         pyarv_start = time.time()
         polynomial(input=u, output=z_approx, order=order)
         pyarv_end = time.time()
+        uniforms_start = time.time()
+        u = np.random.uniform(size=n_samples + 1).astype(np.float32)
+        uniforms_end = time.time()
         print(f"numpy = {numpy_end - numpy_start}")
         print(f"pyarv + uniforms = {pyarv_numpy_end - pyarv_numpy_start}")
+        print(f"uniforms = {uniforms_end - uniforms_start}")
         print(f"pyarv = {pyarv_end - pyarv_start}")
