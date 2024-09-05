@@ -29,7 +29,10 @@ setup(
             "mkdocs-section-index",
             "mkdocs-gen-files",
             "python-markdown-math",
-            "mike"
+            "mike",
+            "matplotlib",
+            "pandas",
+            "scipy"
         ]
     },
     packages=package_dirs.keys(),

@@ -1,4 +1,4 @@
-from pyarv.gaussian.gaussian_bindings import polynomial as polynomial_
+from pyarv.gaussian.gaussian_bindings import polynomial as _polynomial
 import numpy as np
 import numpy.typing as npt
 
@@ -17,4 +17,4 @@ def polynomial(*, input: npt.NDArray[np.float32], output: npt.NDArray[np.float32
     Returns
     -------
     """
-    polynomial_(input=input, output=output)
+    _polynomial(input=input, output=output)
