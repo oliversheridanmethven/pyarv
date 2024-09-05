@@ -44,7 +44,6 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_bindings.c.o: /Users/o
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/machine/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/machine/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/malloc/_malloc.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/pthread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/pthread/pthread_impl.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/pthread/qos.h \
@@ -54,8 +53,6 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_bindings.c.o: /Users/o
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/secure/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/secure/_string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/secure/_strings.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdint.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/strings.h \
@@ -257,15 +254,13 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_bindings.c.o: /Users/o
   /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/weakrefobject.h \
   /Users/oliver/ClionProjects/pyarv/src/arv/version/version.h \
   /Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_bindings.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg___gnuc_va_list.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg___va_copy.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg_va_arg.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg_va_copy.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg_va_list.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/inttypes.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/limits.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/stdarg.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/stdint.h
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/math.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/stdint.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/stdio.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/limits.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/stdarg.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/stdint.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/syslimits.h
 
 src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_module.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/Availability.h \
@@ -310,7 +305,6 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/machine/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/machine/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/malloc/_malloc.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/pthread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/pthread/pthread_impl.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/pthread/qos.h \
@@ -320,8 +314,6 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/secure/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/secure/_string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/secure/_strings.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdint.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/strings.h \
@@ -523,22 +515,22 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
   /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/weakrefobject.h \
   /Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/wrappers.h \
   /Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_bindings.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg___gnuc_va_list.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg___va_copy.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg_va_arg.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg_va_copy.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg_va_list.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/inttypes.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/limits.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/stdarg.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/stdint.h
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/math.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/stdint.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/stdio.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/limits.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/stdarg.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/stdint.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/syslimits.h
 
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/stdint.h:
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/stdint.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg_va_list.h:
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/stdarg.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg_va_copy.h:
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/stdio.h:
+
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/math.h:
 
 /Users/oliver/ClionProjects/pyarv/src/arv/version/version.h:
 
@@ -557,8 +549,6 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/pythread.h:
 
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/pystrtod.h:
-
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/limits.h:
 
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/pystats.h:
 
@@ -600,15 +590,7 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
 
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/dictobject.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg_va_arg.h:
-
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/unicodeobject.h:
-
-/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/tupleobject.h:
-
-/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/wrappers.h:
-
-/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/traceback.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_ctype.h:
 
@@ -623,8 +605,6 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/pythonrun.h:
 
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/picklebufobject.h:
-
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/stdarg.h:
 
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/objimpl.h:
 
@@ -645,8 +625,6 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/genobject.h:
 
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/floatobject.h:
-
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg___gnuc_va_list.h:
 
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/fileobject.h:
 
@@ -724,11 +702,15 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
 
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/pydebug.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg___va_copy.h:
-
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/fileutils.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_wchar_t.h:
+
+/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/traceback.h:
+
+/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/modsupport.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_useconds_t.h:
 
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/pystate.h:
 
@@ -745,6 +727,10 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/secure/_stdio.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_u_int16_t.h:
+
+/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/fileutils.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_timeval.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_time_t.h:
 
@@ -782,21 +768,17 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_off_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_select.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/alloca.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_nlink_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_mbstate_t.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_uid_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/errno.h:
 
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/limits.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_int8_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_int64_t.h:
+
+/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/tupleobject.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_int32_t.h:
 
@@ -830,9 +812,17 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_clock_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/pthread/sched.h:
+/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/odictobject.h:
+
+/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/bytesobject.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdlib.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_symbol_aliasing.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/pthread/qos.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/pthread/sched.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types.h:
 
@@ -870,27 +860,11 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/cdefs.h:
 
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/stdint.h:
+
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/tupleobject.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_endian.h:
-
-/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/odictobject.h:
-
-/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/bytesobject.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdlib.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_symbol_aliasing.h:
-
-/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/iterobject.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_u_int64_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ctype.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_types/_uint64_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdio.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_fd_isset.h:
 
@@ -906,43 +880,25 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/machine/limits.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_types/_uint32_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/mach/i386/_structs.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_ino_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/stdio.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_types.h:
-
-/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/traceback.h:
-
-/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/modsupport.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_useconds_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/math.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/machine/_mcontext.h:
 
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/osmodule.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/mach/i386/_structs.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/machine/_mcontext.h:
+/Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_bindings.c:
 
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/intrcheck.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_u_int32_t.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_mbstate_t.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/limits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
-
-/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/fileutils.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_timeval.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdint.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_timeval64.h:
 
@@ -960,6 +916,12 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/libkern/i386/_OSByteOrder.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_select.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/alloca.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_nlink_t.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/machine/types.h:
 
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/weakrefobject.h:
@@ -967,6 +929,8 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/i386/types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_timespec.h:
+
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/syslimits.h:
 
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/typeslots.h:
 
@@ -1000,6 +964,10 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_types/_uint64_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ctype.h:
+
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/pyframe.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_null.h:
@@ -1026,11 +994,17 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/stat.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/inttypes.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_dev_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/errno.h:
+
+/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/wrappers.h:
+
+/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/traceback.h:
+
+/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/iterobject.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_u_int64_t.h:
 
 /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/patchlevel.h:
 
@@ -1048,6 +1022,10 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_ct_rune_t.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_ino_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_types/_uint32_t.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_suseconds_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_stdio.h:
@@ -1058,7 +1036,9 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oli
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/machine/endian.h:
 
-/Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_bindings.c:
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/stdio.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_pthread/_pthread_key_t.h:
 

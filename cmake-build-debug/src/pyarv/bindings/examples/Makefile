@@ -172,66 +172,128 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/rule:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/rule
-.PHONY : src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/rule
+src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/rule:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/rule
+.PHONY : src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/rule
 
 # Convenience name for target.
-examples_bindings: src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/rule
-.PHONY : examples_bindings
+simple_examples_bindings: src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/rule
+.PHONY : simple_examples_bindings
 
 # fast build rule for target.
-examples_bindings/fast:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/build
-.PHONY : examples_bindings/fast
+simple_examples_bindings/fast:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/build
+.PHONY : simple_examples_bindings/fast
 
-binding_module.o: binding_module.c.o
-.PHONY : binding_module.o
+# Convenience name for target.
+src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/rule:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/rule
+.PHONY : src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/rule
 
-# target to build an object file
-binding_module.c.o:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/binding_module.c.o
-.PHONY : binding_module.c.o
+# Convenience name for target.
+numpy_examples_bindings: src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/rule
+.PHONY : numpy_examples_bindings
 
-binding_module.i: binding_module.c.i
-.PHONY : binding_module.i
+# fast build rule for target.
+numpy_examples_bindings/fast:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/build
+.PHONY : numpy_examples_bindings/fast
 
-# target to preprocess a source file
-binding_module.c.i:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/binding_module.c.i
-.PHONY : binding_module.c.i
-
-binding_module.s: binding_module.c.s
-.PHONY : binding_module.s
-
-# target to generate assembly for a file
-binding_module.c.s:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/binding_module.c.s
-.PHONY : binding_module.c.s
-
-examples_bindings.o: examples_bindings.c.o
-.PHONY : examples_bindings.o
+numpy_binding_module.o: numpy_binding_module.c.o
+.PHONY : numpy_binding_module.o
 
 # target to build an object file
-examples_bindings.c.o:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/examples_bindings.c.o
-.PHONY : examples_bindings.c.o
+numpy_binding_module.c.o:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/numpy_binding_module.c.o
+.PHONY : numpy_binding_module.c.o
 
-examples_bindings.i: examples_bindings.c.i
-.PHONY : examples_bindings.i
+numpy_binding_module.i: numpy_binding_module.c.i
+.PHONY : numpy_binding_module.i
 
 # target to preprocess a source file
-examples_bindings.c.i:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/examples_bindings.c.i
-.PHONY : examples_bindings.c.i
+numpy_binding_module.c.i:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/numpy_binding_module.c.i
+.PHONY : numpy_binding_module.c.i
 
-examples_bindings.s: examples_bindings.c.s
-.PHONY : examples_bindings.s
+numpy_binding_module.s: numpy_binding_module.c.s
+.PHONY : numpy_binding_module.s
 
 # target to generate assembly for a file
-examples_bindings.c.s:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/examples_bindings.c.s
-.PHONY : examples_bindings.c.s
+numpy_binding_module.c.s:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/numpy_binding_module.c.s
+.PHONY : numpy_binding_module.c.s
+
+numpy_examples_bindings.o: numpy_examples_bindings.c.o
+.PHONY : numpy_examples_bindings.o
+
+# target to build an object file
+numpy_examples_bindings.c.o:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/numpy_examples_bindings.c.o
+.PHONY : numpy_examples_bindings.c.o
+
+numpy_examples_bindings.i: numpy_examples_bindings.c.i
+.PHONY : numpy_examples_bindings.i
+
+# target to preprocess a source file
+numpy_examples_bindings.c.i:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/numpy_examples_bindings.c.i
+.PHONY : numpy_examples_bindings.c.i
+
+numpy_examples_bindings.s: numpy_examples_bindings.c.s
+.PHONY : numpy_examples_bindings.s
+
+# target to generate assembly for a file
+numpy_examples_bindings.c.s:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/numpy_examples_bindings.c.s
+.PHONY : numpy_examples_bindings.c.s
+
+simple_binding_module.o: simple_binding_module.c.o
+.PHONY : simple_binding_module.o
+
+# target to build an object file
+simple_binding_module.c.o:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/simple_binding_module.c.o
+.PHONY : simple_binding_module.c.o
+
+simple_binding_module.i: simple_binding_module.c.i
+.PHONY : simple_binding_module.i
+
+# target to preprocess a source file
+simple_binding_module.c.i:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/simple_binding_module.c.i
+.PHONY : simple_binding_module.c.i
+
+simple_binding_module.s: simple_binding_module.c.s
+.PHONY : simple_binding_module.s
+
+# target to generate assembly for a file
+simple_binding_module.c.s:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/simple_binding_module.c.s
+.PHONY : simple_binding_module.c.s
+
+simple_examples_bindings.o: simple_examples_bindings.c.o
+.PHONY : simple_examples_bindings.o
+
+# target to build an object file
+simple_examples_bindings.c.o:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/simple_examples_bindings.c.o
+.PHONY : simple_examples_bindings.c.o
+
+simple_examples_bindings.i: simple_examples_bindings.c.i
+.PHONY : simple_examples_bindings.i
+
+# target to preprocess a source file
+simple_examples_bindings.c.i:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/simple_examples_bindings.c.i
+.PHONY : simple_examples_bindings.c.i
+
+simple_examples_bindings.s: simple_examples_bindings.c.s
+.PHONY : simple_examples_bindings.s
+
+# target to generate assembly for a file
+simple_examples_bindings.c.s:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/simple_examples_bindings.c.s
+.PHONY : simple_examples_bindings.c.s
 
 # Help Target
 help:
@@ -246,13 +308,20 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... examples_bindings"
-	@echo "... binding_module.o"
-	@echo "... binding_module.i"
-	@echo "... binding_module.s"
-	@echo "... examples_bindings.o"
-	@echo "... examples_bindings.i"
-	@echo "... examples_bindings.s"
+	@echo "... numpy_examples_bindings"
+	@echo "... simple_examples_bindings"
+	@echo "... numpy_binding_module.o"
+	@echo "... numpy_binding_module.i"
+	@echo "... numpy_binding_module.s"
+	@echo "... numpy_examples_bindings.o"
+	@echo "... numpy_examples_bindings.i"
+	@echo "... numpy_examples_bindings.s"
+	@echo "... simple_binding_module.o"
+	@echo "... simple_binding_module.i"
+	@echo "... simple_binding_module.s"
+	@echo "... simple_examples_bindings.o"
+	@echo "... simple_examples_bindings.i"
+	@echo "... simple_examples_bindings.s"
 .PHONY : help
 
 

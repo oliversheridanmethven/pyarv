@@ -77,15 +77,15 @@ src/arv/version/CMakeFiles/version.dir/version.c.o: src/arv/version/CMakeFiles/v
 src/arv/version/CMakeFiles/version.dir/version.c.o: /Users/oliver/ClionProjects/pyarv/src/arv/version/version.c
 src/arv/version/CMakeFiles/version.dir/version.c.o: src/arv/version/CMakeFiles/version.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/arv/version/CMakeFiles/version.dir/version.c.o"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/version && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/arv/version/CMakeFiles/version.dir/version.c.o -MF CMakeFiles/version.dir/version.c.o.d -o CMakeFiles/version.dir/version.c.o -c /Users/oliver/ClionProjects/pyarv/src/arv/version/version.c
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/version && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/arv/version/CMakeFiles/version.dir/version.c.o -MF CMakeFiles/version.dir/version.c.o.d -o CMakeFiles/version.dir/version.c.o -c /Users/oliver/ClionProjects/pyarv/src/arv/version/version.c
 
 src/arv/version/CMakeFiles/version.dir/version.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/version.dir/version.c.i"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/version && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oliver/ClionProjects/pyarv/src/arv/version/version.c > CMakeFiles/version.dir/version.c.i
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/version && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oliver/ClionProjects/pyarv/src/arv/version/version.c > CMakeFiles/version.dir/version.c.i
 
 src/arv/version/CMakeFiles/version.dir/version.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/version.dir/version.c.s"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/version && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oliver/ClionProjects/pyarv/src/arv/version/version.c -o CMakeFiles/version.dir/version.c.s
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/version && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oliver/ClionProjects/pyarv/src/arv/version/version.c -o CMakeFiles/version.dir/version.c.s
 
 # Object files for target version
 version_OBJECTS = \

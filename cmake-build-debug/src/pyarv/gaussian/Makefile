@@ -172,104 +172,66 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/pyarv/gaussian/CMakeFiles/examples.dir/rule:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pyarv/gaussian/CMakeFiles/examples.dir/rule
-.PHONY : src/pyarv/gaussian/CMakeFiles/examples.dir/rule
+src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/rule:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/rule
+.PHONY : src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/rule
 
 # Convenience name for target.
-examples: src/pyarv/gaussian/CMakeFiles/examples.dir/rule
-.PHONY : examples
+gaussian_bindings: src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/rule
+.PHONY : gaussian_bindings
 
 # fast build rule for target.
-examples/fast:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/examples.dir/build.make src/pyarv/gaussian/CMakeFiles/examples.dir/build
-.PHONY : examples/fast
+gaussian_bindings/fast:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/build
+.PHONY : gaussian_bindings/fast
 
-# Convenience name for target.
-src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/rule:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/rule
-.PHONY : src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/rule
-
-# Convenience name for target.
-examples_bindings: src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/rule
-.PHONY : examples_bindings
-
-# fast build rule for target.
-examples_bindings/fast:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/build
-.PHONY : examples_bindings/fast
-
-__/__/arv/examples.o: __/__/arv/examples.c.o
-.PHONY : __/__/arv/examples.o
+gaussian_bindings.o: gaussian_bindings.c.o
+.PHONY : gaussian_bindings.o
 
 # target to build an object file
-__/__/arv/examples.c.o:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/examples.dir/build.make src/pyarv/gaussian/CMakeFiles/examples.dir/__/__/arv/examples.c.o
-.PHONY : __/__/arv/examples.c.o
+gaussian_bindings.c.o:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/gaussian_bindings.c.o
+.PHONY : gaussian_bindings.c.o
 
-__/__/arv/examples.i: __/__/arv/examples.c.i
-.PHONY : __/__/arv/examples.i
+gaussian_bindings.i: gaussian_bindings.c.i
+.PHONY : gaussian_bindings.i
 
 # target to preprocess a source file
-__/__/arv/examples.c.i:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/examples.dir/build.make src/pyarv/gaussian/CMakeFiles/examples.dir/__/__/arv/examples.c.i
-.PHONY : __/__/arv/examples.c.i
+gaussian_bindings.c.i:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/gaussian_bindings.c.i
+.PHONY : gaussian_bindings.c.i
 
-__/__/arv/examples.s: __/__/arv/examples.c.s
-.PHONY : __/__/arv/examples.s
+gaussian_bindings.s: gaussian_bindings.c.s
+.PHONY : gaussian_bindings.s
 
 # target to generate assembly for a file
-__/__/arv/examples.c.s:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/examples.dir/build.make src/pyarv/gaussian/CMakeFiles/examples.dir/__/__/arv/examples.c.s
-.PHONY : __/__/arv/examples.c.s
+gaussian_bindings.c.s:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/gaussian_bindings.c.s
+.PHONY : gaussian_bindings.c.s
 
-binding_module.o: binding_module.c.o
-.PHONY : binding_module.o
+gaussian_module.o: gaussian_module.c.o
+.PHONY : gaussian_module.o
 
 # target to build an object file
-binding_module.c.o:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/binding_module.c.o
-.PHONY : binding_module.c.o
+gaussian_module.c.o:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/gaussian_module.c.o
+.PHONY : gaussian_module.c.o
 
-binding_module.i: binding_module.c.i
-.PHONY : binding_module.i
-
-# target to preprocess a source file
-binding_module.c.i:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/binding_module.c.i
-.PHONY : binding_module.c.i
-
-binding_module.s: binding_module.c.s
-.PHONY : binding_module.s
-
-# target to generate assembly for a file
-binding_module.c.s:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/binding_module.c.s
-.PHONY : binding_module.c.s
-
-examples_bindings.o: examples_bindings.c.o
-.PHONY : examples_bindings.o
-
-# target to build an object file
-examples_bindings.c.o:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/examples_bindings.c.o
-.PHONY : examples_bindings.c.o
-
-examples_bindings.i: examples_bindings.c.i
-.PHONY : examples_bindings.i
+gaussian_module.i: gaussian_module.c.i
+.PHONY : gaussian_module.i
 
 # target to preprocess a source file
-examples_bindings.c.i:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/examples_bindings.c.i
-.PHONY : examples_bindings.c.i
+gaussian_module.c.i:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/gaussian_module.c.i
+.PHONY : gaussian_module.c.i
 
-examples_bindings.s: examples_bindings.c.s
-.PHONY : examples_bindings.s
+gaussian_module.s: gaussian_module.c.s
+.PHONY : gaussian_module.s
 
 # target to generate assembly for a file
-examples_bindings.c.s:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/examples_bindings.dir/examples_bindings.c.s
-.PHONY : examples_bindings.c.s
+gaussian_module.c.s:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/gaussian_module.c.s
+.PHONY : gaussian_module.c.s
 
 # Help Target
 help:
@@ -284,17 +246,13 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... examples"
-	@echo "... examples_bindings"
-	@echo "... __/__/arv/examples.o"
-	@echo "... __/__/arv/examples.i"
-	@echo "... __/__/arv/examples.s"
-	@echo "... binding_module.o"
-	@echo "... binding_module.i"
-	@echo "... binding_module.s"
-	@echo "... examples_bindings.o"
-	@echo "... examples_bindings.i"
-	@echo "... examples_bindings.s"
+	@echo "... gaussian_bindings"
+	@echo "... gaussian_bindings.o"
+	@echo "... gaussian_bindings.i"
+	@echo "... gaussian_bindings.s"
+	@echo "... gaussian_module.o"
+	@echo "... gaussian_module.i"
+	@echo "... gaussian_module.s"
 .PHONY : help
 
 

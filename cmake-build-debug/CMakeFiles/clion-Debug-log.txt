@@ -1,19 +1,16 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -Wno-dev -G "Unix Makefiles" -DPYTHON_EXECUTABLE:FILEPATH=/Users/oliver/ClionProjects/testing/venv/bin/python3 -DCMAKE_OSX_SYSROOT:PATH= -DINSOURCE_BUILD=TRUE -DCMAKE_BUILD_TYPE=Debug -DPython_EXECUTABLE=/Users/oliver/ClionProjects/pyarv/venv/bin/python -DPython3_EXECUTABLE=/Users/oliver/ClionProjects/pyarv/venv/bin/python -S /Users/oliver/ClionProjects/pyarv -B /Users/oliver/ClionProjects/pyarv/cmake-build-debug
--- The C compiler identification is Clang 18.1.8
--- The CXX compiler identification is Clang 18.1.8
+-- The C compiler identification is GNU 14.2.0
+-- Checking whether C compiler has -isysroot
+-- Checking whether C compiler has -isysroot - yes
+-- Checking whether C compiler supports OSX deployment target flag
+-- Checking whether C compiler supports OSX deployment target flag - yes
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/local/opt/llvm/bin/clang - skipped
+-- Check for working C compiler: /usr/local/bin/gcc-14 - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/local/opt/llvm/bin/clang++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- We think we are using the C compiler: Clang 18.1.8
--- We think we are using the C++ compiler: Clang 18.1.8
--- Setting some extra Clang specific flags.
+-- We think we are using the C compiler: GNU 14.2.0
+-- Setting some extra GNU specific flags.
 -- Compiling in mode: Debug
 -- Adding debug flags.
 -- We think we have 8 cores on this machine.
@@ -22,22 +19,18 @@
 -- Using an in source python path.
 -- Performing Test COMPILER_SUPPORTS_C2X
 -- Performing Test COMPILER_SUPPORTS_C2X - Success
--- Compiler /usr/local/opt/llvm/bin/clang appears to have C2X support.
--- Found Python3: /Users/oliver/ClionProjects/pyarv/venv/bin/python (found version "3.12.4") found components: Interpreter Development Development.Module Development.Embed 
+-- Compiler /usr/local/bin/gcc-14 appears to have C2X support.
+-- Found Python3: /Users/oliver/ClionProjects/pyarv/venv/bin/python (found version "3.12.5") found components: Interpreter Development NumPy Development.Module Development.Embed 
 -- Could not find scikit-build for building.
 -- Looking for the python libraries.
--- Found Boost: /usr/local/lib/cmake/Boost-1.84.0/BoostConfig.cmake (found version "1.84.0")  
 -- Found Git: /usr/local/bin/git (found version "2.43.0") 
 -- Found PkgConfig: /usr/local/bin/pkg-config (found version "0.29.2") 
 -- Found Criterion: /usr/local/lib/libcriterion.dylib  
--- Installing the Python target examples_bindings in source at destination: /Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples.
+-- Installing the Python target simple_examples_bindings in source at destination: /Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples.
+-- Installing the Python target numpy_examples_bindings in source at destination: /Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples.
 -- Installing the Python target version_bindings in source at destination: /Users/oliver/ClionProjects/pyarv/src/pyarv/version.
--- Configuring done (3.6s)
--- Generating done (0.1s)
-CMake Warning:
-  Manually-specified variables were not used by the project:
-
-    Python_EXECUTABLE
-
-
+-- Installing the Python target gaussian_bindings in source at destination: /Users/oliver/ClionProjects/pyarv/src/pyarv/gaussian.
+-- Installing the Python target module_examples in source at destination: /Users/oliver/ClionProjects/pyarv/misc.
+-- Configuring done (2.5s)
+-- Generating done (0.2s)
 -- Build files have been written to: /Users/oliver/ClionProjects/pyarv/cmake-build-debug

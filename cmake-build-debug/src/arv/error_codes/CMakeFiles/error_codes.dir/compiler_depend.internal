@@ -15,7 +15,6 @@ src/arv/error_codes/CMakeFiles/error_codes.dir/error_codes.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/machine/types.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/secure/_common.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/secure/_stdio.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdio.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_posix_availability.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_pthread/_pthread_types.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_symbol_aliasing.h
@@ -38,4 +37,6 @@ src/arv/error_codes/CMakeFiles/error_codes.dir/error_codes.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/cdefs.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/stdio.h
  /Users/oliver/ClionProjects/pyarv/src/arv/error_codes/error_codes.h
+ /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/stdio.h
+ /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/stdarg.h
 

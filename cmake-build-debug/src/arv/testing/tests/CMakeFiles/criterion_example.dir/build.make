@@ -73,15 +73,15 @@ src/arv/testing/tests/CMakeFiles/criterion_example.dir/criterion_example.c.o: sr
 src/arv/testing/tests/CMakeFiles/criterion_example.dir/criterion_example.c.o: /Users/oliver/ClionProjects/pyarv/src/arv/testing/tests/criterion_example.c
 src/arv/testing/tests/CMakeFiles/criterion_example.dir/criterion_example.c.o: src/arv/testing/tests/CMakeFiles/criterion_example.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/arv/testing/tests/CMakeFiles/criterion_example.dir/criterion_example.c.o"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/testing/tests && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/arv/testing/tests/CMakeFiles/criterion_example.dir/criterion_example.c.o -MF CMakeFiles/criterion_example.dir/criterion_example.c.o.d -o CMakeFiles/criterion_example.dir/criterion_example.c.o -c /Users/oliver/ClionProjects/pyarv/src/arv/testing/tests/criterion_example.c
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/testing/tests && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/arv/testing/tests/CMakeFiles/criterion_example.dir/criterion_example.c.o -MF CMakeFiles/criterion_example.dir/criterion_example.c.o.d -o CMakeFiles/criterion_example.dir/criterion_example.c.o -c /Users/oliver/ClionProjects/pyarv/src/arv/testing/tests/criterion_example.c
 
 src/arv/testing/tests/CMakeFiles/criterion_example.dir/criterion_example.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/criterion_example.dir/criterion_example.c.i"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/testing/tests && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oliver/ClionProjects/pyarv/src/arv/testing/tests/criterion_example.c > CMakeFiles/criterion_example.dir/criterion_example.c.i
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/testing/tests && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oliver/ClionProjects/pyarv/src/arv/testing/tests/criterion_example.c > CMakeFiles/criterion_example.dir/criterion_example.c.i
 
 src/arv/testing/tests/CMakeFiles/criterion_example.dir/criterion_example.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/criterion_example.dir/criterion_example.c.s"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/testing/tests && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oliver/ClionProjects/pyarv/src/arv/testing/tests/criterion_example.c -o CMakeFiles/criterion_example.dir/criterion_example.c.s
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/testing/tests && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oliver/ClionProjects/pyarv/src/arv/testing/tests/criterion_example.c -o CMakeFiles/criterion_example.dir/criterion_example.c.s
 
 # Object files for target criterion_example
 criterion_example_OBJECTS = \

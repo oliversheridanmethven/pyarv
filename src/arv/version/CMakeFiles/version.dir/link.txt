@@ -1,2 +1,0 @@
-/opt/local/bin/ar qc ../../../lib/libversion.a CMakeFiles/version.dir/version.c.o
-/usr/local/opt/llvm/bin/llvm-ranlib ../../../lib/libversion.a

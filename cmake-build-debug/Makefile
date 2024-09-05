@@ -263,17 +263,43 @@ examples/fast:
 .PHONY : examples/fast
 
 #=============================================================================
-# Target rules for targets named examples_bindings
+# Target rules for targets named gaussian
 
 # Build rule for target.
-examples_bindings: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples_bindings
-.PHONY : examples_bindings
+gaussian: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gaussian
+.PHONY : gaussian
 
 # fast build rule for target.
-examples_bindings/fast:
-	$(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/examples_bindings.dir/build
-.PHONY : examples_bindings/fast
+gaussian/fast:
+	$(MAKE) $(MAKESILENT) -f src/arv/gaussian/CMakeFiles/gaussian.dir/build.make src/arv/gaussian/CMakeFiles/gaussian.dir/build
+.PHONY : gaussian/fast
+
+#=============================================================================
+# Target rules for targets named simple_examples_bindings
+
+# Build rule for target.
+simple_examples_bindings: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simple_examples_bindings
+.PHONY : simple_examples_bindings
+
+# fast build rule for target.
+simple_examples_bindings/fast:
+	$(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/build
+.PHONY : simple_examples_bindings/fast
+
+#=============================================================================
+# Target rules for targets named numpy_examples_bindings
+
+# Build rule for target.
+numpy_examples_bindings: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 numpy_examples_bindings
+.PHONY : numpy_examples_bindings
+
+# fast build rule for target.
+numpy_examples_bindings/fast:
+	$(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/build
+.PHONY : numpy_examples_bindings/fast
 
 #=============================================================================
 # Target rules for targets named version_bindings
@@ -287,6 +313,32 @@ version_bindings: cmake_check_build_system
 version_bindings/fast:
 	$(MAKE) $(MAKESILENT) -f src/pyarv/version/CMakeFiles/version_bindings.dir/build.make src/pyarv/version/CMakeFiles/version_bindings.dir/build
 .PHONY : version_bindings/fast
+
+#=============================================================================
+# Target rules for targets named gaussian_bindings
+
+# Build rule for target.
+gaussian_bindings: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gaussian_bindings
+.PHONY : gaussian_bindings
+
+# fast build rule for target.
+gaussian_bindings/fast:
+	$(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/build
+.PHONY : gaussian_bindings/fast
+
+#=============================================================================
+# Target rules for targets named module_examples
+
+# Build rule for target.
+module_examples: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_examples
+.PHONY : module_examples
+
+# fast build rule for target.
+module_examples/fast:
+	$(MAKE) $(MAKESILENT) -f misc/CMakeFiles/module_examples.dir/build.make misc/CMakeFiles/module_examples.dir/build
+.PHONY : module_examples/fast
 
 # Help Target
 help:
@@ -305,8 +357,12 @@ help:
 	@echo "... criterion_example"
 	@echo "... error_codes"
 	@echo "... examples"
-	@echo "... examples_bindings"
+	@echo "... gaussian"
+	@echo "... gaussian_bindings"
 	@echo "... logging_test"
+	@echo "... module_examples"
+	@echo "... numpy_examples_bindings"
+	@echo "... simple_examples_bindings"
 	@echo "... version"
 	@echo "... version_bindings"
 	@echo "... version_example"

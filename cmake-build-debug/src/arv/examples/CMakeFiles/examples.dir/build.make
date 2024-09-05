@@ -69,31 +69,47 @@ include src/arv/examples/CMakeFiles/examples.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/arv/examples/CMakeFiles/examples.dir/flags.make
 
-src/arv/examples/CMakeFiles/examples.dir/examples.c.o: src/arv/examples/CMakeFiles/examples.dir/flags.make
-src/arv/examples/CMakeFiles/examples.dir/examples.c.o: /Users/oliver/ClionProjects/pyarv/src/arv/examples/examples.c
-src/arv/examples/CMakeFiles/examples.dir/examples.c.o: src/arv/examples/CMakeFiles/examples.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/arv/examples/CMakeFiles/examples.dir/examples.c.o"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/examples && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/arv/examples/CMakeFiles/examples.dir/examples.c.o -MF CMakeFiles/examples.dir/examples.c.o.d -o CMakeFiles/examples.dir/examples.c.o -c /Users/oliver/ClionProjects/pyarv/src/arv/examples/examples.c
+src/arv/examples/CMakeFiles/examples.dir/simple_examples.c.o: src/arv/examples/CMakeFiles/examples.dir/flags.make
+src/arv/examples/CMakeFiles/examples.dir/simple_examples.c.o: /Users/oliver/ClionProjects/pyarv/src/arv/examples/simple_examples.c
+src/arv/examples/CMakeFiles/examples.dir/simple_examples.c.o: src/arv/examples/CMakeFiles/examples.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/arv/examples/CMakeFiles/examples.dir/simple_examples.c.o"
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/examples && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/arv/examples/CMakeFiles/examples.dir/simple_examples.c.o -MF CMakeFiles/examples.dir/simple_examples.c.o.d -o CMakeFiles/examples.dir/simple_examples.c.o -c /Users/oliver/ClionProjects/pyarv/src/arv/examples/simple_examples.c
 
-src/arv/examples/CMakeFiles/examples.dir/examples.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/examples.dir/examples.c.i"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/examples && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oliver/ClionProjects/pyarv/src/arv/examples/examples.c > CMakeFiles/examples.dir/examples.c.i
+src/arv/examples/CMakeFiles/examples.dir/simple_examples.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/examples.dir/simple_examples.c.i"
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/examples && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oliver/ClionProjects/pyarv/src/arv/examples/simple_examples.c > CMakeFiles/examples.dir/simple_examples.c.i
 
-src/arv/examples/CMakeFiles/examples.dir/examples.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/examples.dir/examples.c.s"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/examples && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oliver/ClionProjects/pyarv/src/arv/examples/examples.c -o CMakeFiles/examples.dir/examples.c.s
+src/arv/examples/CMakeFiles/examples.dir/simple_examples.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/examples.dir/simple_examples.c.s"
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/examples && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oliver/ClionProjects/pyarv/src/arv/examples/simple_examples.c -o CMakeFiles/examples.dir/simple_examples.c.s
+
+src/arv/examples/CMakeFiles/examples.dir/numpy_examples.c.o: src/arv/examples/CMakeFiles/examples.dir/flags.make
+src/arv/examples/CMakeFiles/examples.dir/numpy_examples.c.o: /Users/oliver/ClionProjects/pyarv/src/arv/examples/numpy_examples.c
+src/arv/examples/CMakeFiles/examples.dir/numpy_examples.c.o: src/arv/examples/CMakeFiles/examples.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/arv/examples/CMakeFiles/examples.dir/numpy_examples.c.o"
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/examples && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/arv/examples/CMakeFiles/examples.dir/numpy_examples.c.o -MF CMakeFiles/examples.dir/numpy_examples.c.o.d -o CMakeFiles/examples.dir/numpy_examples.c.o -c /Users/oliver/ClionProjects/pyarv/src/arv/examples/numpy_examples.c
+
+src/arv/examples/CMakeFiles/examples.dir/numpy_examples.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/examples.dir/numpy_examples.c.i"
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/examples && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oliver/ClionProjects/pyarv/src/arv/examples/numpy_examples.c > CMakeFiles/examples.dir/numpy_examples.c.i
+
+src/arv/examples/CMakeFiles/examples.dir/numpy_examples.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/examples.dir/numpy_examples.c.s"
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/examples && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oliver/ClionProjects/pyarv/src/arv/examples/numpy_examples.c -o CMakeFiles/examples.dir/numpy_examples.c.s
 
 # Object files for target examples
 examples_OBJECTS = \
-"CMakeFiles/examples.dir/examples.c.o"
+"CMakeFiles/examples.dir/simple_examples.c.o" \
+"CMakeFiles/examples.dir/numpy_examples.c.o"
 
 # External object files for target examples
 examples_EXTERNAL_OBJECTS =
 
-src/arv/examples/libexamples.a: src/arv/examples/CMakeFiles/examples.dir/examples.c.o
+src/arv/examples/libexamples.a: src/arv/examples/CMakeFiles/examples.dir/simple_examples.c.o
+src/arv/examples/libexamples.a: src/arv/examples/CMakeFiles/examples.dir/numpy_examples.c.o
 src/arv/examples/libexamples.a: src/arv/examples/CMakeFiles/examples.dir/build.make
 src/arv/examples/libexamples.a: src/arv/examples/CMakeFiles/examples.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libexamples.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libexamples.a"
 	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/examples && $(CMAKE_COMMAND) -P CMakeFiles/examples.dir/cmake_clean_target.cmake
 	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/arv/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/examples.dir/link.txt --verbose=$(VERBOSE)
 

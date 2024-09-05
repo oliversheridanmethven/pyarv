@@ -1,4 +1,4 @@
-# Install script for directory: /Users/oliver/ClionProjects/testing/src
+# Install script for directory: /Users/oliver/ClionProjects/pyarv/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,58 +32,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
+# Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/local/opt/llvm/bin/llvm-objdump")
+  set(CMAKE_OBJDUMP "/opt/local/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/oliver/ClionProjects/testing/build/src/hello_world/cmake_install.cmake")
+  include("/Users/oliver/ClionProjects/pyarv/build/src/arv/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/oliver/ClionProjects/testing/build/src/error_codes/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/oliver/ClionProjects/testing/build/src/binding/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/oliver/ClionProjects/testing/build/src/testing/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/oliver/ClionProjects/testing/build/src/logging/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/oliver/ClionProjects/testing/build/src/version/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/oliver/ClionProjects/testing/build/src/cli/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/oliver/ClionProjects/testing/build/src/common/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/oliver/ClionProjects/testing/build/src/media/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/oliver/ClionProjects/testing/build/src/rubiks/cmake_install.cmake")
+  include("/Users/oliver/ClionProjects/pyarv/build/src/pyarv/cmake_install.cmake")
 endif()
 

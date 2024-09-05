@@ -14,7 +14,6 @@ src/arv/error_codes/CMakeFiles/error_codes.dir/error_codes.c.o: /Users/oliver/Cl
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/machine/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/secure/_common.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/secure/_stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_posix_availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_pthread/_pthread_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_symbol_aliasing.h \
@@ -36,8 +35,12 @@ src/arv/error_codes/CMakeFiles/error_codes.dir/error_codes.c.o: /Users/oliver/Cl
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_va_list.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/cdefs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/stdio.h \
-  /Users/oliver/ClionProjects/pyarv/src/arv/error_codes/error_codes.h
+  /Users/oliver/ClionProjects/pyarv/src/arv/error_codes/error_codes.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/stdio.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/stdarg.h
 
+
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/stdio.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/stdio.h:
 
@@ -48,6 +51,8 @@ src/arv/error_codes/CMakeFiles/error_codes.dir/error_codes.c.o: /Users/oliver/Cl
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_u_int8_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_u_int16_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_ssize_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_size_t.h:
 
@@ -83,10 +88,6 @@ src/arv/error_codes/CMakeFiles/error_codes.dir/error_codes.c.o: /Users/oliver/Cl
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_posix_availability.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_ssize_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdio.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/secure/_stdio.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/i386/_types.h:
@@ -108,5 +109,7 @@ src/arv/error_codes/CMakeFiles/error_codes.dir/error_codes.c.o: /Users/oliver/Cl
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/AvailabilityVersions.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_symbol_aliasing.h:
+
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/stdarg.h:
 
 /Users/oliver/ClionProjects/pyarv/src/arv/error_codes/error_codes.c:

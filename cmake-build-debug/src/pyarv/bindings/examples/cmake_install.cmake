@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/local/opt/llvm/bin/llvm-objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -44,18 +44,36 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/examples_bindings.so")
+   "/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/simple_examples_bindings.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples" TYPE MODULE FILES "/Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/pyarv/bindings/examples/examples_bindings.so")
-  if(EXISTS "$ENV{DESTDIR}/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/examples_bindings.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/examples_bindings.so")
+  file(INSTALL DESTINATION "/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples" TYPE MODULE FILES "/Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/pyarv/bindings/examples/simple_examples_bindings.so")
+  if(EXISTS "$ENV{DESTDIR}/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/simple_examples_bindings.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/simple_examples_bindings.so")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" -x "$ENV{DESTDIR}/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/examples_bindings.so")
+      execute_process(COMMAND "/usr/bin/strip" -x "$ENV{DESTDIR}/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/simple_examples_bindings.so")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/numpy_examples_bindings.so")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  file(INSTALL DESTINATION "/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples" TYPE MODULE FILES "/Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/pyarv/bindings/examples/numpy_examples_bindings.so")
+  if(EXISTS "$ENV{DESTDIR}/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/numpy_examples_bindings.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/numpy_examples_bindings.so")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" -x "$ENV{DESTDIR}/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/numpy_examples_bindings.so")
     endif()
   endif()
 endif()

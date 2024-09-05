@@ -1,0 +1,5 @@
+#add_compile_definitions(PY_ARRAY_UNIQUE_SYMBOL=EXAMPLE_ARRAY_API)
+add_library(module_examples MODULE module.c module_implementation.c)
+target_include_directories(module_examples PUBLIC Python3::NumPy)
+install_python_target(module_examples misc)
+add_python_test(module_example.py)

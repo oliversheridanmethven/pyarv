@@ -34,12 +34,17 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/local/opt/llvm/bin/llvm-objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("/Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/oliver/ClionProjects/pyarv/cmake-build-debug/misc/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

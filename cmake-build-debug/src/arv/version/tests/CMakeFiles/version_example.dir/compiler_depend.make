@@ -22,7 +22,6 @@ src/arv/version/tests/CMakeFiles/version_example.dir/version.c.o: /Users/oliver/
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/alloca.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/complex.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/i386/_mcontext.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/i386/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/i386/endian.h \
@@ -39,7 +38,6 @@ src/arv/version/tests/CMakeFiles/version_example.dir/version.c.o: /Users/oliver/
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/machine/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/machine/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/malloc/_malloc.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/regex.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/runetype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/secure/_common.h \
@@ -47,8 +45,6 @@ src/arv/version/tests/CMakeFiles/version_example.dir/version.c.o: /Users/oliver/
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/secure/_string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/secure/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/signal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdint.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/strings.h \
@@ -102,33 +98,22 @@ src/arv/version/tests/CMakeFiles/version_example.dir/version.c.o: /Users/oliver/
   /Users/oliver/ClionProjects/pyarv/src/arv/logging/logging.h \
   /Users/oliver/ClionProjects/pyarv/src/arv/testing/testing.h \
   /Users/oliver/ClionProjects/pyarv/src/arv/version/version.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg___gnuc_va_list.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg___va_copy.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg_va_arg.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg_va_copy.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg_va_list.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stddef_max_align_t.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stddef_null.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stddef_nullptr_t.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stddef_offsetof.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stddef_ptrdiff_t.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stddef_size_t.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stddef_unreachable.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stddef_wchar_t.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/float.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/inttypes.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/iso646.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/stdarg.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/stdbool.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/stddef.h \
-  /usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/stdint.h \
+  /usr/local/Cellar/criterion/2.4.2/include/criterion/types.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/math.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/stdint.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/stdio.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/float.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/iso646.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/stdarg.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/stdbool.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/stddef.h \
+  /usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/stdint.h \
   /usr/local/include/criterion/alloc.h \
   /usr/local/include/criterion/assert.h \
   /usr/local/include/criterion/criterion.h \
   /usr/local/include/criterion/abort.h \
   /usr/local/include/criterion/event.h \
   /usr/local/include/criterion/hooks.h \
-  /usr/local/include/criterion/types.h \
   /usr/local/include/criterion/internal/common.h \
   /usr/local/include/criterion/internal/deprecation.h \
   /usr/local/include/criterion/internal/hooks.h \
@@ -194,51 +179,41 @@ src/arv/version/tests/CMakeFiles/version_example.dir/version.c.o: /Users/oliver/
 
 /usr/local/include/criterion/internal/asprintf-compat.h:
 
+/usr/local/include/criterion/types.h:
+
 /usr/local/include/criterion/stats.h:
 
 /usr/local/include/criterion/options.h:
 
 /usr/local/include/criterion/logging.h:
 
-/usr/local/include/criterion/internal/hooks.h:
-
-/usr/local/include/criterion/types.h:
-
-/usr/local/include/criterion/abort.h:
+/usr/local/include/criterion/event.h:
 
 /usr/local/include/criterion/criterion.h:
 
 /usr/local/include/criterion/assert.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/stdint.h:
-
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/stdbool.h:
-
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/inttypes.h:
-
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/float.h:
-
 /usr/local/include/criterion/internal/ordered-set.h:
 
 /usr/local/include/criterion/alloc.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/stdarg.h:
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/stdbool.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stddef_wchar_t.h:
+/usr/local/include/criterion/abort.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stddef_size_t.h:
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/stdarg.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stddef_nullptr_t.h:
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/stddef.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stddef_null.h:
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/float.h:
 
-/usr/local/include/criterion/event.h:
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/stdio.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stddef_max_align_t.h:
+/usr/local/include/criterion/internal/hooks.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg___va_copy.h:
+/usr/local/Cellar/criterion/2.4.2/include/criterion/types.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/wchar.h:
+/Users/oliver/ClionProjects/pyarv/src/arv/version/version.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_types.h:
 
@@ -258,11 +233,13 @@ src/arv/version/tests/CMakeFiles/version_example.dir/version.c.o: /Users/oliver/
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_uintptr_t.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stddef_ptrdiff_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_u_int32_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/mach/machine/_structs.h:
+
+/Users/oliver/ClionProjects/pyarv/src/arv/testing/testing.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_u_int8_t.h:
-
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg___gnuc_va_list.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_uid_t.h:
 
@@ -270,9 +247,9 @@ src/arv/version/tests/CMakeFiles/version_example.dir/version.c.o: /Users/oliver/
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/cdefs.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdint.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_timeval.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_ssize_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_sigset_t.h:
 
@@ -300,7 +277,21 @@ src/arv/version/tests/CMakeFiles/version_example.dir/version.c.o: /Users/oliver/
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/time.h:
 
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/stdint.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_clock_t.h:
+
+/usr/local/include/criterion/internal/assert/stream.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_va_list.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_pid_t.h:
+
+/usr/local/include/criterion/internal/preprocess.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdlib.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_symbol_aliasing.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types.h:
 
@@ -318,39 +309,7 @@ src/arv/version/tests/CMakeFiles/version_example.dir/version.c.o: /Users/oliver/
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_int16_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/float.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/strings.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/wait.h:
-
-/Users/oliver/ClionProjects/pyarv/src/arv/logging/logging.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_types/_uint64_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdio.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_u_int64_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/i386/signal.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/string.h:
-
-/usr/local/include/criterion/internal/assert/stream.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_va_list.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_pid_t.h:
-
-/usr/local/include/criterion/internal/preprocess.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/stdlib.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_symbol_aliasing.h:
-
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg_va_list.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/libkern/_OSByteOrder.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/malloc/_malloc.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_ctype.h:
 
@@ -360,31 +319,21 @@ src/arv/version/tests/CMakeFiles/version_example.dir/version.c.o: /Users/oliver/
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/runetype.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/regex.h:
-
-/Users/oliver/ClionProjects/pyarv/src/arv/version/version.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/math.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/malloc/_malloc.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/signal.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/machine/_mcontext.h:
 
-/Users/oliver/ClionProjects/pyarv/src/arv/testing/testing.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_u_int32_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/mach/machine/_structs.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/mach/i386/_structs.h:
+
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/math.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/libkern/i386/_OSByteOrder.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_types/_uint16_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/secure/_common.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/libkern/_OSByteOrder.h:
 
 /usr/local/include/criterion/internal/assert/memory.h:
 
@@ -394,9 +343,13 @@ src/arv/version/tests/CMakeFiles/version_example.dir/version.c.o: /Users/oliver/
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/i386/types.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_ssize_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_types/_wctype_t.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/stddef.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_timespec.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/i386/_types.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/strings.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_rune_t.h:
 
@@ -412,27 +365,21 @@ src/arv/version/tests/CMakeFiles/version_example.dir/version.c.o: /Users/oliver/
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/signal.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stddef_offsetof.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/AvailabilityInternal.h:
 
 /Users/oliver/ClionProjects/pyarv/src/arv/version/tests/version.c:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_u_int64_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_types/_uint64_t.h:
+
+/Users/oliver/ClionProjects/pyarv/src/arv/logging/logging.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_dev_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_timespec.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/i386/_types.h:
-
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg_va_arg.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_types/_wctype_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_types/_uintmax_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_ct_rune_t.h:
-
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stddef_unreachable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_types/_uint32_t.h:
 
@@ -440,11 +387,19 @@ src/arv/version/tests/CMakeFiles/version_example.dir/version.c.o: /Users/oliver/
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/_types/_intmax_t.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/wait.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/i386/signal.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/string.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/regex.h:
+
 /usr/local/include/criterion/internal/new_asserts.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_u_int16_t.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/__stdarg_va_copy.h:
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include-fixed/stdint.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/inttypes.h:
 
@@ -460,9 +415,11 @@ src/arv/version/tests/CMakeFiles/version_example.dir/version.c.o: /Users/oliver/
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/secure/_strings.h:
 
-/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include/iso646.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/wchar.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/sys/_types/_mode_t.h:
+
+/usr/local/Cellar/gcc/14.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/14/include/iso646.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/machine/endian.h:
 

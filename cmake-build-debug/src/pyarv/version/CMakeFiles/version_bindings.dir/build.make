@@ -73,29 +73,29 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/version_bindings.c.o: src/pyar
 src/pyarv/version/CMakeFiles/version_bindings.dir/version_bindings.c.o: /Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_bindings.c
 src/pyarv/version/CMakeFiles/version_bindings.dir/version_bindings.c.o: src/pyarv/version/CMakeFiles/version_bindings.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/pyarv/version/CMakeFiles/version_bindings.dir/version_bindings.c.o"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/pyarv/version && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/pyarv/version/CMakeFiles/version_bindings.dir/version_bindings.c.o -MF CMakeFiles/version_bindings.dir/version_bindings.c.o.d -o CMakeFiles/version_bindings.dir/version_bindings.c.o -c /Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_bindings.c
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/pyarv/version && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/pyarv/version/CMakeFiles/version_bindings.dir/version_bindings.c.o -MF CMakeFiles/version_bindings.dir/version_bindings.c.o.d -o CMakeFiles/version_bindings.dir/version_bindings.c.o -c /Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_bindings.c
 
 src/pyarv/version/CMakeFiles/version_bindings.dir/version_bindings.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/version_bindings.dir/version_bindings.c.i"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/pyarv/version && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_bindings.c > CMakeFiles/version_bindings.dir/version_bindings.c.i
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/pyarv/version && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_bindings.c > CMakeFiles/version_bindings.dir/version_bindings.c.i
 
 src/pyarv/version/CMakeFiles/version_bindings.dir/version_bindings.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/version_bindings.dir/version_bindings.c.s"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/pyarv/version && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_bindings.c -o CMakeFiles/version_bindings.dir/version_bindings.c.s
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/pyarv/version && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_bindings.c -o CMakeFiles/version_bindings.dir/version_bindings.c.s
 
 src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: src/pyarv/version/CMakeFiles/version_bindings.dir/flags.make
 src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: /Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_module.c
 src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o: src/pyarv/version/CMakeFiles/version_bindings.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/pyarv/version && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o -MF CMakeFiles/version_bindings.dir/version_module.c.o.d -o CMakeFiles/version_bindings.dir/version_module.c.o -c /Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_module.c
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/pyarv/version && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.o -MF CMakeFiles/version_bindings.dir/version_module.c.o.d -o CMakeFiles/version_bindings.dir/version_module.c.o -c /Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_module.c
 
 src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/version_bindings.dir/version_module.c.i"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/pyarv/version && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_module.c > CMakeFiles/version_bindings.dir/version_module.c.i
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/pyarv/version && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_module.c > CMakeFiles/version_bindings.dir/version_module.c.i
 
 src/pyarv/version/CMakeFiles/version_bindings.dir/version_module.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/version_bindings.dir/version_module.c.s"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/pyarv/version && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_module.c -o CMakeFiles/version_bindings.dir/version_module.c.s
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug/src/pyarv/version && /usr/local/bin/gcc-14 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oliver/ClionProjects/pyarv/src/pyarv/version/version_module.c -o CMakeFiles/version_bindings.dir/version_module.c.s
 
 # Object files for target version_bindings
 version_bindings_OBJECTS = \

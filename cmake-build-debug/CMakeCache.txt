@@ -14,14 +14,8 @@
 # EXTERNAL cache entries
 ########################
 
-//The directory containing a CMake configuration file for Boost.
-Boost_DIR:PATH=/usr/local/lib/cmake/Boost-1.84.0
-
-//Path to a file.
-Boost_INCLUDE_DIR:PATH=/usr/local/include
-
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=/usr/local/opt/llvm/bin/llvm-addr2line
+CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
@@ -33,44 +27,16 @@ CMAKE_BUILD_TYPE:STRING=Debug
 //Enable colored diagnostics throughout.
 CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
 
-//CXX compiler
-CMAKE_CXX_COMPILER:STRING=/usr/local/opt/llvm/bin/clang++
-
-//LLVM archiver
-CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/local/Cellar/llvm/18.1.8/bin/llvm-ar
-
-//`clang-scan-deps` dependency scanner
-CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS:FILEPATH=/usr/local/Cellar/llvm/18.1.8/bin/clang-scan-deps
-
-//Generate index for LLVM archive
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/local/Cellar/llvm/18.1.8/bin/llvm-ranlib
-
-//Flags used by the CXX compiler during all build types.
-CMAKE_CXX_FLAGS:STRING=
-
-//Flags used by the CXX compiler during DEBUG builds.
-CMAKE_CXX_FLAGS_DEBUG:STRING=-g
-
-//Flags used by the CXX compiler during MINSIZEREL builds.
-CMAKE_CXX_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
-
-//Flags used by the CXX compiler during RELEASE builds.
-CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
-
-//Flags used by the CXX compiler during RELWITHDEBINFO builds.
-CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
-
 //C compiler
-CMAKE_C_COMPILER:STRING=/usr/local/opt/llvm/bin/clang
+CMAKE_C_COMPILER:STRING=/usr/local/bin/gcc-14
 
-//LLVM archiver
-CMAKE_C_COMPILER_AR:FILEPATH=/usr/local/Cellar/llvm/18.1.8/bin/llvm-ar
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_AR:FILEPATH=/usr/local/bin/gcc-ar-14
 
-//`clang-scan-deps` dependency scanner
-CMAKE_C_COMPILER_CLANG_SCAN_DEPS:FILEPATH=/usr/local/Cellar/llvm/18.1.8/bin/clang-scan-deps
-
-//Generate index for LLVM archive
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/local/Cellar/llvm/18.1.8/bin/llvm-ranlib
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/local/bin/gcc-ranlib-14
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -88,7 +54,7 @@ CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Path to a program.
-CMAKE_DLLTOOL:FILEPATH=/usr/local/opt/llvm/bin/llvm-dlltool
+CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
 
 //Flags used by the linker during all build types.
 CMAKE_EXE_LINKER_FLAGS:STRING=-L/usr/local/opt/llvm/lib
@@ -144,13 +110,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=/usr/local/opt/llvm/bin/llvm-nm
+CMAKE_NM:FILEPATH=/usr/bin/nm
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=/usr/local/opt/llvm/bin/llvm-objcopy
+CMAKE_OBJCOPY:FILEPATH=CMAKE_OBJCOPY-NOTFOUND
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=/usr/local/opt/llvm/bin/llvm-objdump
+CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Build architectures for OSX
 CMAKE_OSX_ARCHITECTURES:STRING=
@@ -172,10 +138,10 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=pyarv
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=/usr/local/opt/llvm/bin/llvm-ranlib
+CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=/usr/local/opt/llvm/bin/llvm-readelf
+CMAKE_READELF:FILEPATH=CMAKE_READELF-NOTFOUND
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -263,9 +229,6 @@ Python3_EXECUTABLE:UNINITIALIZED=/Users/oliver/ClionProjects/pyarv/venv/bin/pyth
 //No help, variable specified on the command line.
 Python_EXECUTABLE:UNINITIALIZED=/Users/oliver/ClionProjects/pyarv/venv/bin/python
 
-//The directory containing a CMake configuration file for boost_headers.
-boost_headers_DIR:PATH=/usr/local/lib/cmake/boost_headers-1.84.0
-
 //Value Computed by CMake
 pyarv_BINARY_DIR:STATIC=/Users/oliver/ClionProjects/pyarv/cmake-build-debug
 
@@ -280,8 +243,6 @@ pyarv_SOURCE_DIR:STATIC=/Users/oliver/ClionProjects/pyarv
 # INTERNAL cache entries
 ########################
 
-//ADVANCED property for variable: Boost_DIR
-Boost_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -300,30 +261,10 @@ CMAKE_COMMAND:INTERNAL=/Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cm
 CMAKE_CPACK_COMMAND:INTERNAL=/Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cpack
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=/Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/ctest
-//ADVANCED property for variable: CMAKE_CXX_COMPILER
-CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_CXX_COMPILER_AR
-CMAKE_CXX_COMPILER_AR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS
-CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_CXX_COMPILER_RANLIB
-CMAKE_CXX_COMPILER_RANLIB-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_CXX_FLAGS
-CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG
-CMAKE_CXX_FLAGS_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_CXX_FLAGS_MINSIZEREL
-CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_CXX_FLAGS_RELEASE
-CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
-CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER
 CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_AR
 CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_COMPILER_CLANG_SCAN_DEPS
-CMAKE_C_COMPILER_CLANG_SCAN_DEPS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
 CMAKE_C_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS
@@ -386,7 +327,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=22
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -445,8 +386,6 @@ COMPILER_SUPPORTS_C2X:INTERNAL=1
 CRITERION_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CRITERION_LIBRARY
 CRITERION_LIBRARY-ADVANCED:INTERNAL=1
-//Details about finding Boost
-FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/local/lib/cmake/Boost-1.84.0/BoostConfig.cmake][c ][v1.84.0()]
 //Details about finding Criterion
 FIND_PACKAGE_MESSAGE_DETAILS_Criterion:INTERNAL=[/usr/local/lib/libcriterion.dylib][/usr/local/include][v()]
 //Details about finding Git
@@ -454,7 +393,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/local/bin/git][v2.43.0()]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/local/bin/pkg-config][v0.29.2()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/Users/oliver/ClionProjects/pyarv/venv/bin/python][/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12][/Library/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib][cfound components: Interpreter Development Development.Module Development.Embed ][v3.12.4()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/Users/oliver/ClionProjects/pyarv/venv/bin/python][/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12][/Library/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib][/Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/core/include][cfound components: Interpreter Development NumPy Development.Module Development.Embed ][v3.12.5()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_ARGN
@@ -471,12 +410,11 @@ _Python3_EXECUTABLE:INTERNAL=/Users/oliver/ClionProjects/pyarv/venv/bin/python
 //Path to a file.
 _Python3_INCLUDE_DIR:INTERNAL=/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;4;64;;cpython-312-darwin;abi3;/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12;/Users/oliver/ClionProjects/pyarv/venv/lib/python3.12;/Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages;/Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;5;64;;cpython-312-darwin;abi3;/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12;/Users/oliver/ClionProjects/pyarv/venv/lib/python3.12;/Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages;/Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=60d395f016bcd55d22f4eaf82ae9aba0
 //Path to a library.
 _Python3_LIBRARY_RELEASE:INTERNAL=/Library/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib
-//NumPy reason failure
-_Python3_NumPy_REASON_FAILURE:INTERNAL=
-//ADVANCED property for variable: boost_headers_DIR
-boost_headers_DIR-ADVANCED:INTERNAL=1
+_Python3_NUMPY_SIGNATURE:INTERNAL=ce6ae770231c73bb6edc2875829210d5
+//Path to a file.
+_Python3_NumPy_INCLUDE_DIR:INTERNAL=/Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/core/include
 

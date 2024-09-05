@@ -2,82 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/index.html</loc>
-         <lastmod>2024-09-03</lastmod>
+         <lastmod>2024-09-05</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/LICENSE.html</loc>
-         <lastmod>2024-09-03</lastmod>
+         <lastmod>2024-09-05</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/developer_notes/advanced.html</loc>
-         <lastmod>2024-09-03</lastmod>
+         <lastmod>2024-09-05</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/developer_notes/dependencies.html</loc>
-         <lastmod>2024-09-03</lastmod>
+         <lastmod>2024-09-05</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/developer_notes/faqs.html</loc>
-         <lastmod>2024-09-03</lastmod>
+         <lastmod>2024-09-05</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/developer_notes/getting_started.html</loc>
-         <lastmod>2024-09-03</lastmod>
+         <lastmod>2024-09-05</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/developer_notes/todo.html</loc>
-         <lastmod>2024-09-03</lastmod>
+         <lastmod>2024-09-05</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/developer_notes/build_instructions/from_source.html</loc>
-         <lastmod>2024-09-03</lastmod>
+         <lastmod>2024-09-05</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/developer_notes/build_instructions/in_source.html</loc>
-         <lastmod>2024-09-03</lastmod>
+         <lastmod>2024-09-05</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/developer_notes/build_instructions/python_bindings.html</loc>
-         <lastmod>2024-09-03</lastmod>
-    </url>
-    <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/src/index.html</loc>
-         <lastmod>2024-09-03</lastmod>
-    </url>
-    <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/src/arv/index.html</loc>
-         <lastmod>2024-09-03</lastmod>
-    </url>
-    <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/src/arv/error_codes/index.html</loc>
-         <lastmod>2024-09-03</lastmod>
-    </url>
-    <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/src/arv/logging/index.html</loc>
-         <lastmod>2024-09-03</lastmod>
-    </url>
-    <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/src/arv/testing/index.html</loc>
-         <lastmod>2024-09-03</lastmod>
-    </url>
-    <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/src/arv/version/index.html</loc>
-         <lastmod>2024-09-03</lastmod>
-    </url>
-    <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/src/pyarv/index.html</loc>
-         <lastmod>2024-09-03</lastmod>
-    </url>
-    <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/src/pyarv/version/index.html</loc>
-         <lastmod>2024-09-03</lastmod>
+         <lastmod>2024-09-05</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/user_documentation/SUMMARY.html</loc>
-         <lastmod>2024-09-03</lastmod>
+         <lastmod>2024-09-05</lastmod>
     </url>
     <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/user_documentation/pyarv/example.html</loc>
-         <lastmod>2024-09-03</lastmod>
+         <loc>https://oliversheridanmethven.github.io/pyarv/user_documentation/arv/gaussian/make_polynomial_coefficients.html</loc>
+         <lastmod>2024-09-05</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/user_documentation/pyarv/gaussian/polynomial.html</loc>
+         <lastmod>2024-09-05</lastmod>
     </url>
 </urlset>

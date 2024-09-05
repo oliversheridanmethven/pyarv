@@ -185,29 +185,53 @@ examples/fast:
 	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/arv/examples/CMakeFiles/examples.dir/build.make src/arv/examples/CMakeFiles/examples.dir/build
 .PHONY : examples/fast
 
-examples.o: examples.c.o
-.PHONY : examples.o
+numpy_examples.o: numpy_examples.c.o
+.PHONY : numpy_examples.o
 
 # target to build an object file
-examples.c.o:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/arv/examples/CMakeFiles/examples.dir/build.make src/arv/examples/CMakeFiles/examples.dir/examples.c.o
-.PHONY : examples.c.o
+numpy_examples.c.o:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/arv/examples/CMakeFiles/examples.dir/build.make src/arv/examples/CMakeFiles/examples.dir/numpy_examples.c.o
+.PHONY : numpy_examples.c.o
 
-examples.i: examples.c.i
-.PHONY : examples.i
+numpy_examples.i: numpy_examples.c.i
+.PHONY : numpy_examples.i
 
 # target to preprocess a source file
-examples.c.i:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/arv/examples/CMakeFiles/examples.dir/build.make src/arv/examples/CMakeFiles/examples.dir/examples.c.i
-.PHONY : examples.c.i
+numpy_examples.c.i:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/arv/examples/CMakeFiles/examples.dir/build.make src/arv/examples/CMakeFiles/examples.dir/numpy_examples.c.i
+.PHONY : numpy_examples.c.i
 
-examples.s: examples.c.s
-.PHONY : examples.s
+numpy_examples.s: numpy_examples.c.s
+.PHONY : numpy_examples.s
 
 # target to generate assembly for a file
-examples.c.s:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/arv/examples/CMakeFiles/examples.dir/build.make src/arv/examples/CMakeFiles/examples.dir/examples.c.s
-.PHONY : examples.c.s
+numpy_examples.c.s:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/arv/examples/CMakeFiles/examples.dir/build.make src/arv/examples/CMakeFiles/examples.dir/numpy_examples.c.s
+.PHONY : numpy_examples.c.s
+
+simple_examples.o: simple_examples.c.o
+.PHONY : simple_examples.o
+
+# target to build an object file
+simple_examples.c.o:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/arv/examples/CMakeFiles/examples.dir/build.make src/arv/examples/CMakeFiles/examples.dir/simple_examples.c.o
+.PHONY : simple_examples.c.o
+
+simple_examples.i: simple_examples.c.i
+.PHONY : simple_examples.i
+
+# target to preprocess a source file
+simple_examples.c.i:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/arv/examples/CMakeFiles/examples.dir/build.make src/arv/examples/CMakeFiles/examples.dir/simple_examples.c.i
+.PHONY : simple_examples.c.i
+
+simple_examples.s: simple_examples.c.s
+.PHONY : simple_examples.s
+
+# target to generate assembly for a file
+simple_examples.c.s:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/arv/examples/CMakeFiles/examples.dir/build.make src/arv/examples/CMakeFiles/examples.dir/simple_examples.c.s
+.PHONY : simple_examples.c.s
 
 # Help Target
 help:
@@ -223,9 +247,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... examples"
-	@echo "... examples.o"
-	@echo "... examples.i"
-	@echo "... examples.s"
+	@echo "... numpy_examples.o"
+	@echo "... numpy_examples.i"
+	@echo "... numpy_examples.s"
+	@echo "... simple_examples.o"
+	@echo "... simple_examples.i"
+	@echo "... simple_examples.s"
 .PHONY : help
 
 
