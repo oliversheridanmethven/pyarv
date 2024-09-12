@@ -160,6 +160,3 @@ endfunction()
 
 # Where we find the source files for our builds.
 add_subdirectory(src)
-
-add_subdirectory(misc)
-
