@@ -36,7 +36,7 @@ We are trying to use a very modern C standard
 (C23 is brand new at the time of writing), and compiler
 support for this is very limited. To ensure `cmake` can find
 a sufficiently new compiler version, it may be necessary to
-hard wire paths to these in your invocation of `cmake`, e.g.:
+hardwire paths to these in your invocation of `cmake`, e.g.:
 
 ```bash
 cmake -D CMAKE_C_COMPILER=/usr/local/Cellar/gcc/13.1.0/bin/gcc-13 -D CMAKE_CXX_COMPILER=/usr/local/Cellar/gcc/13.1.0/bin/g++-13 ..
@@ -49,7 +49,3 @@ can be debugged further by running
 ```bash
 ctest --rerun-failed --output-on-failure
 ```
-
-## Demo
-
-![testing_demo](https://user-images.githubusercontent.com/13259221/260237951-233a3b89-cbf5-4551-a646-2d7344e21882.gif)

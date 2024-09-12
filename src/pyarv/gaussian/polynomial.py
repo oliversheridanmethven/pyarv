@@ -1,11 +1,14 @@
 from pyarv.gaussian.gaussian_bindings import linear, cubic
 import numpy as np
-from nptyping import NDArray, Shape
+import numpy.typing as npt
+from typing import Annotated, Literal
+
+Array = Annotated[npt.NDArray[np.float32], Literal["N"]]
 
 
 def polynomial(*,
-               input: NDArray[Shape["N"], np.float32],
-               output: NDArray[Shape["N"], np.float32],
+               input: Array,
+               output: Array,
                order: int = 1
                ) -> None:
     """
@@ -19,10 +22,13 @@ def polynomial(*,
         Approximate Gaussian random variables.
     order:
         The polynomial order to use:
+
         1 = linear.
         3 = cubic.
     Returns
     -------
+    output:
+        The approximate Gaussian random variables.
     """
     approximations = {1: linear,
                       3: cubic}

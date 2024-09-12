@@ -1,88 +1,82 @@
-# Binding
+# PyARV
 
-A simple hello world example showing how to bind our C code 
-for use in Python. 
- 
+Approximate random variables in Python. 
 
-## Conventions
+## Description
 
-For simplicity (and ease of consistency) we will adopt the following
-principles when constructing our C libraries and possible Python bindings. 
+The goal of this project is to make available to the Python community
+a new source of high speed random numbers. These random numbers should
+be considerably faster than those which come out-of-the-box from the
+likes of NumPy, SciPy, etc., by an order of magnitude (or more).
 
-### Error checking and handling
+### How is this achieved?
 
-We will have a mix of C and Python libraries, designed to
-interoperate and also still function independently. Consequently, 
-there is a grey area in the responsibility for error handling,
-with the following possibilities:
+The source of the improved speed comes from using approximations
+in a popular algorithm for producing random variables, and thus
+produces _approximate random variables_. The algorithm
+is the inverse transform method, which can generate random variables
+from any distribution of interest (and thus is generalisable), and the
+approximation is utilising piecewise polynomials to approximate inverse
+cumulative distribution functions. These approximations are mathematically
+simple and extremely well suited to SIMD execution, so run incredibly fast
+on the latest CPUs and GPUs which have vectorised hardware. The exact
+details are spelled out in the ACM TOMS article:
 
-- Have the C libraries try to check and recover from errors.
-(Made tricky by the limited error handling in C). 
+>Michael B. Giles and Oliver Sheridan-Methven.
+> _Approximating
+inverse cumulative distribution functions to produce
+approximate random variables._
+> ACM Transactions
+on Mathematical Software, 49(3), Article 26, September 2023, 29 pages.
+> [https://doi.org/10.1145/3604935](https://doi.org/10.1145/3604935)
 
-- Have the C libraries make no attempt at error handling.
+### Are approximate random numbers appropriate for my application?
 
-- Have the C extension wrappers try and check 
-the Python input after it has been passed to the C library.
+It is important to note, that the approximate random variables produced
+for a given distribution, are as their name suggests, **approximate**. 
+For users who believe they need numbers exactly following the desired
+distribution, the random numbers produced using this package 
+will not meet this need. Instead, what they will give you are random 
+numbers which follow a distribution with very similar statistics. 
+How closely the approximate distribution matches the exact one
+depends on the quality of the approximation, and the statistics we
+use to measure the difference between the two. The quality of the 
+approximation can be controlled to strike a good balance between
+extremely fast approximations which are very low fidelity, or 
+alternatively higher fidelity approximations which are a little
+slower. 
 
-- Have the Python library check all the input before it gets
-passed to the C library. 
+For users asking themselves: "will I still get the right
+answer if I use these", the answer is "yes", if you use them 
+properly. The authors can't anticipate every use case, but
+if you are using these in Monte Carlo simulations, then the authors 
+have provided a rigorous mathematical analysis detailing how
+to use them correctly in Monte Carlo applications:
 
-- No error checking anywhere.
+> Michael B. Giles and Oliver Sheridan-Methven. 
+> _Analysis of nested multilevel Monte Carlo using approximate
+normal random variables_. 
+> SIAM/ASA Journal on Uncertainty
+Quantification, 10(1):200–226, 2022.
+> [https://doi.org/10.1137/21M1399385](https://doi.org/10.1137/21M1399385)
 
-- etc.
+### Should you chase this level or performance or not?
 
-Clearly there are various options. 
+Lots of applications use random numbers, and many of these need
+lots of random numbers very quickly, such as e.g. Monte Carlo
+simulations in finance. For anyone who faces this problem and
+needs to use Python, this package is for you.
 
-### Type errors
-
-For type checking we will largely rely on the type system of
-C and the compilation rules. For Python, where necessary, 
-we will rely on the Python code to assert the validity of
-any data types before they are passed to the C libraries.
-For the boundary of these two languages, we will rely on the 
-error handling of the python argument and keyword parser.
-
-There is a grey area in between where one language must 
-respect or acknowledge the rules of the other, such as 
-a Python integer being represented as a `long`, but the 
-corresponding Python function expecting an `int`, where
-these two might be of different sizes. Here, we will largely
-put the emphasis on Python to ensure C is happy, as this 
-is typically easier to code and enforce.  
-
-### Runtime errors
-
-Sometimes codes fail for internal problems. An example
-might be a quadratic solver which finds the real roots 
-of polynomials and presented with one with complex roots. 
-Another might be a request for more memory by `malloc` 
-failing, not finding a file, a write to some output 
-failing (`printf` can fail), or a matrix inversion
-not being possible. In most of these cases, we generally
-want to avoid the responsibility of error handling, and 
-we adopt the mentality "if something untoward has happened, 
-then let the program crash and fail in a fast and loud 
-way..." (we may try and also do this gracefully 
-where possible). In C this will generally mean an immediate
-call to `exit`.
-
-## Splitting into two libraries
-
-We follow the convention that for some library, we split this into
-its core functionality, which contains all the core C functionality
-and no Python, and a second library which only implements the Python
-interface. 
-
-### Failing to link to Python C extension libraries on Mac OSX
-
-One of the reasons we split the functionality into two libraries,
-(aside from a more modularity), is because the Python build 
-proceedure typically produces bundles, whereas our 
-C libraries are typically producing dynamic libraries. This can 
-lead to linking errors. 
-
-### Putting module libraries in their own directory
-
-To keep a nice modular structure where the C extensions match 
-the style of Python modules, put any C extensions in their own
-subdirectory which would be the equivalent of a single python file.
+Many critics will say that using Python and worrying about
+performance is an oxymoron, and if you want high performance
+code that needs random numbers quickly, you should switch to a
+lower level compiled language such as e.g. C, C++, Fortran, Rust, etc.
+Somewhat ironically this is an opinion the authors of this package share.
+Nonetheless, the routines offered in this package use low
+level implementations under the hood, so there should not be
+any major loss in performance from switching to Python.
+That being said, the authors can't anticipate the exact hardware
+being run on, the compilers available, etc. For the ultimate in
+performance, don't use Python, but instead use (or take
+inspiration from) our underlying implementations in the underlying
+ARV package. 

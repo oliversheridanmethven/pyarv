@@ -1,6 +1,4 @@
-# Advanced
-
-## Updating the git versions and releases
+# Updating the git versions and releases
 
 To list the git version tags: 
 ```bash
