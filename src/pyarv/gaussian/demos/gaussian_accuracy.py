@@ -24,3 +24,4 @@ if __name__ == "__main__":
     plt.plot(u, z_approx_linear, 'b-', label="Linear")
     plt.legend()
     plt.show()
+    input("Press enter to exit")
