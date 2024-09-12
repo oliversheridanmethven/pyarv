@@ -1,7 +1,7 @@
 from skbuild import setup
 from setuptools import find_packages
 
-packages_to_expose = ['version']
+packages_to_expose = ['pyarv']
 # ^ These typically contain the C modules
 package_dirs = {package: f"src/{package.replace('.', '/')}" for package in find_packages("src/") if any([package_base in package for package_base in packages_to_expose])}
 
@@ -17,6 +17,7 @@ setup(
     extras_require={
         'dev': [
             "mkdocs",
+
             "mkdocs-material",
             "mkdocs-exclude",
             "mkdocs-same-dir",

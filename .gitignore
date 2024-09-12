@@ -23,3 +23,4 @@ install_manifest.txt
 .cmake/
 *.log
 /src/arv/version/version.c
+*.cbp

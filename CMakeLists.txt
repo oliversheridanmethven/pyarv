@@ -4,9 +4,11 @@ cmake_minimum_required(VERSION 3.25)  # Use the latest and greatest.
 # compilers, so we set our paths to the compilers first.
 # cf: https://stackoverflow.com/a/29904501/5134817
 
+#find_program(CMAKE_C_COMPILER NAMES $ENV{CC} clang-18 clang PATHS ENV PATH NO_DEFAULT_PATH)
+#find_program(CMAKE_C_COMPILER NAMES $ENV{CC} gcc-14 gcc PATHS ENV PATH NO_DEFAULT_PATH)
 find_program(CMAKE_C_COMPILER NAMES $ENV{CC} gcc-14 gcc clang-18 clang PATHS ENV PATH NO_DEFAULT_PATH)
 
-project(pyarv C) # We use a mix of C and C++.
+project(pyarv C)
 
 # We want to use the latest standards.
 # Only some of the latest and greatest compilers offer the appropriate level of support.
@@ -39,7 +41,7 @@ message(DEBUG "The C compiler flags are: ${CMAKE_C_FLAGS}")
 message(STATUS "Compiling in mode: ${CMAKE_BUILD_TYPE}")
 if(CMAKE_BUILD_TYPE STREQUAL "Release")
     message(STATUS "Adding optimisation flags.")
-    set(CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS} -O3 -fopenmp-simd -S")
+    set(CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS} -O3 -fopenmp-simd")
 elseif (CMAKE_BUILD_TYPE STREQUAL "Debug")
     message(STATUS "Adding debug flags.")
     set(CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS} -g -O0")
@@ -90,7 +92,12 @@ message(DEBUG "Just printing this to supress a warning: ${PYTHON_EXECUTABLE}")
 message(DEBUG "Just printing this to supress a warning: ${Python_EXECUTABLE}")
 set(Python3_FIND_VIRTUALENV FIRST)
 set(Python3_ROOT_DIR "${PROJECT_SOURCE_DIR}/venv")
-find_package(Python3 COMPONENTS Interpreter Development NumPy)
+find_package(Python 3.12 COMPONENTS Interpreter Development NumPy)
+find_package(Python3 3.12 COMPONENTS Interpreter Development NumPy)
+# Print out the discovered paths
+include(CMakePrintHelpers)
+cmake_print_variables(Python_INCLUDE_DIRS)
+cmake_print_variables(Python_NumPy_INCLUDE_DIRS)
 add_compile_definitions(NPY_NO_DEPRECATED_API=NPY_1_7_API_VERSION)
 
 # We use scikit-build to build our CMake project and setup our python wrappers.
@@ -102,6 +109,7 @@ if(SKBUILD)
 else()
     MESSAGE(STATUS "Could not find scikit-build for building.")
 endif()
+
 
 # We get the python libraries for our wrappers.
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/")

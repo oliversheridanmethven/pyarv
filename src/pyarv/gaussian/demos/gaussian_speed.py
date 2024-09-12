@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-import matplotlib as mpl
-
-mpl.use('TkAgg')
-import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import norm
 import time
