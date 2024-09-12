@@ -122,7 +122,7 @@ link_libraries(Python3::NumPy)
 
 function(add_all_python_tests)
     file(GLOB_RECURSE python_files *.py)
-#    list(REMOVE_ITEM python_files ${CMAKE_CURRENT_SOURCE_DIR}/__init__.py)
+    list(REMOVE_ITEM python_files ${CMAKE_CURRENT_SOURCE_DIR}/__init__.py)
     list(TRANSFORM python_files REPLACE "${CMAKE_CURRENT_SOURCE_DIR}/" "" OUTPUT_VARIABLE python_files_relative)
     message(DEBUG "The python files relative to the current cmake execution is: ${python_files_relative}")
     message(DEBUG "Possibly ignoring the file: ${CMAKE_CURRENT_SOURCE_DIR}/__init__.py")

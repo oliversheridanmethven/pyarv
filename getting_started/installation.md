@@ -6,7 +6,7 @@ To install the latest version run:
 pip install git+https://github.com/oliversheridanmethven/pyarv.git
 ```
 
-To test the installation is working fine run
+To test the installation is working fine run:
 ```bash
-
+pytest --pyargs pyarv
 ```

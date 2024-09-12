@@ -1,3 +1,3 @@
-add_executable(criterion_example criterion_example.c)
+add_executable(criterion_example test_criterion_example.c)
 target_link_libraries(criterion_example testing)
-add_test(NAME testing_example COMMAND criterion_example)
+add_test(NAME test_testing_example COMMAND criterion_example)

@@ -13,8 +13,6 @@ use_directory_urls: false
 # the `index.md` convention, this ensures hyperlinks resolve
 # correctly.
 
-markdown_extensions:
-  - admonition # Gives nice highlight fields.
 
 theme:
   name: material
@@ -56,7 +54,7 @@ plugins:
   - mkdocstrings:
       handlers:
         python:
-          paths: [src]
+          paths: [src/pyarv]
           options:
             docstring_style: numpy
   - exclude:
@@ -82,3 +80,4 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 markdown_extensions:
   - mdx_math
+  - admonition # Gives nice highlight fields.

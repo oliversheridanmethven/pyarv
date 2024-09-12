@@ -17,7 +17,6 @@ setup(
     extras_require={
         'dev': [
             "mkdocs",
-
             "mkdocs-material",
             "mkdocs-exclude",
             "mkdocs-same-dir",

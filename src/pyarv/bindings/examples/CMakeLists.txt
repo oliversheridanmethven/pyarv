@@ -9,5 +9,5 @@ add_library(numpy_examples_bindings MODULE
 
 target_link_libraries(simple_examples_bindings examples bindings)
 target_link_libraries(numpy_examples_bindings examples bindings)
-install_python_target(simple_examples_bindings src/pyarv/binding/examples)
-install_python_target(numpy_examples_bindings src/pyarv/binding/examples)
+install_python_target(simple_examples_bindings src/pyarv/bindings/examples)
+install_python_target(numpy_examples_bindings src/pyarv/bindings/examples)
