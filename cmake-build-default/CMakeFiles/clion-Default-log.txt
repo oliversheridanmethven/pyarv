@@ -1,0 +1,30 @@
+/usr/local/bin/cmake -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/local/opt/llvm/bin/clang -DCMAKE_CXX_COMPILER=/usr/local/opt/llvm/bin/clang++ -DPYTHON_EXECUTABLE:FILEPATH=/Users/oliver/ClionProjects/pyarv/venv/bin/python3 -DINSOURCE_BUILD=TRUE -G "CodeBlocks - Unix Makefiles" -DPython_EXECUTABLE=/Users/oliver/ClionProjects/pyarv/venv/bin/python -DPython3_EXECUTABLE=/Users/oliver/ClionProjects/pyarv/venv/bin/python -S /Users/oliver/ClionProjects/pyarv -B /Users/oliver/ClionProjects/pyarv/cmake-build-default
+CMake Deprecation Warning:
+  Support for "Extra Generators" like
+
+    CodeBlocks
+
+  is deprecated and will be removed from a future version of CMake.  IDEs may
+  use the cmake-file-api(7) to view CMake-generated project build trees.
+
+
+-- We think we are using the C compiler: Clang 18.1.8
+-- Setting some extra Clang specific flags.
+-- Compiling in mode: 
+-- We think we have 8 cores on this machine.
+-- Trying to set the build and tests to use parallel cores.
+-- Our default make tool is: /usr/bin/make
+-- Using an in source python path.
+-- Compiler /usr/local/opt/llvm/bin/clang appears to have C2X support.
+-- Python_INCLUDE_DIRS="/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12"
+-- Python_NumPy_INCLUDE_DIRS="/Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include"
+-- Could not find scikit-build for building.
+-- Looking for the python libraries.
+-- Installing the Python target simple_examples_bindings in source at destination: /Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples.
+-- Installing the Python target numpy_examples_bindings in source at destination: /Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples.
+-- Installing the Python target version_bindings in source at destination: /Users/oliver/ClionProjects/pyarv/src/pyarv/version.
+-- Installing the Python target gaussian_bindings in source at destination: /Users/oliver/ClionProjects/pyarv/src/pyarv/gaussian.
+-- Installing the Python target module_examples in source at destination: /Users/oliver/ClionProjects/pyarv/misc.
+-- Configuring done (0.9s)
+-- Generating done (0.3s)
+-- Build files have been written to: /Users/oliver/ClionProjects/pyarv/cmake-build-default

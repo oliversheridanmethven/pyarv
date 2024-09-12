@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+ee8bd727d9eb3ccf9d551a7efdc8afc0 src/arv/version/version.c

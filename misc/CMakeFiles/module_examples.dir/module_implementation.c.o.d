@@ -258,12 +258,12 @@ misc/CMakeFiles/module_examples.dir/module_implementation.c.o: \
  /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/fileutils.h \
  /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/pyfpe.h \
  /Library/Frameworks/Python.framework/Versions/3.12/include/python3.12/tracemalloc.h \
- /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/core/include/numpy/arrayobject.h \
- /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/core/include/numpy/ndarrayobject.h \
- /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/core/include/numpy/ndarraytypes.h \
- /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/core/include/numpy/npy_common.h \
- /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/core/include/numpy/numpyconfig.h \
- /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/core/include/numpy/_numpyconfig.h \
+ /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include/numpy/arrayobject.h \
+ /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include/numpy/ndarrayobject.h \
+ /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include/numpy/ndarraytypes.h \
+ /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include/numpy/npy_common.h \
+ /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include/numpy/numpyconfig.h \
+ /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include/numpy/_numpyconfig.h \
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/types.h \
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_char.h \
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_short.h \
@@ -276,11 +276,12 @@ misc/CMakeFiles/module_examples.dir/module_implementation.c.o: \
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_errno_t.h \
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
- /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/core/include/numpy/npy_endian.h \
- /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/core/include/numpy/npy_cpu.h \
- /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/core/include/numpy/utils.h \
- /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h \
- /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/core/include/numpy/__multiarray_api.h \
- /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/core/include/numpy/npy_interrupt.h \
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/setjmp.h \
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/signal.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/complex.h \
+ /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include/numpy/npy_endian.h \
+ /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include/numpy/npy_cpu.h \
+ /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include/numpy/utils.h \
+ /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h \
+ /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include/numpy/dtype_api.h \
+ /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include/numpy/__multiarray_api.h \
+ /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include/numpy/_public_dtype_api_table.h \
+ /Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include/numpy/npy_2_compat.h

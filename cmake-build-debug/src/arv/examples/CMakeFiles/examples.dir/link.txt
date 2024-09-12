@@ -1,2 +1,0 @@
-/usr/bin/ar qc libexamples.a CMakeFiles/examples.dir/simple_examples.c.o CMakeFiles/examples.dir/numpy_examples.c.o
-/usr/bin/ranlib libexamples.a

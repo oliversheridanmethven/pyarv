@@ -1,0 +1,10 @@
+version_example 1 0.926585
+testing_example 1 1.64238
+logging_example 1 2.14018
+error_codes_example 1 2.63744
+numpy_bindings_example 1 4.8031
+simple_bindings_example 1 4.82965
+version_bindings 1 3.00648
+gaussian_bindings 1 3.84542
+module_example 1 2.53205
+---

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: PyARV
+Version: 0.0.2.post1+git.408eb3b4.dirty
+Summary: Approximate random variables
+Author: Dr Oliver Sheridan-Methven
+License: MIT
+Requires-Python: >=3.10
+License-File: LICENSE.md
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: mkdocs; extra == "dev"
+Requires-Dist: mkdocs-material; extra == "dev"
+Requires-Dist: mkdocs-exclude; extra == "dev"
+Requires-Dist: mkdocs-same-dir; extra == "dev"
+Requires-Dist: mkdocs-awesome-pages-plugin; extra == "dev"
+Requires-Dist: mkdocs-git-revision-date-localized-plugin; extra == "dev"
+Requires-Dist: mkdocs-material[imaging]; extra == "dev"
+Requires-Dist: mkdocstrings; extra == "dev"
+Requires-Dist: mkdocstrings-python; extra == "dev"
+Requires-Dist: mkdocs-literate-nav; extra == "dev"
+Requires-Dist: mkdocs-section-index; extra == "dev"
+Requires-Dist: mkdocs-gen-files; extra == "dev"
+Requires-Dist: python-markdown-math; extra == "dev"
+Requires-Dist: mike; extra == "dev"
+Requires-Dist: matplotlib; extra == "dev"
+Requires-Dist: pandas; extra == "dev"
+Requires-Dist: scipy; extra == "dev"
