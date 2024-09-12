@@ -185,29 +185,29 @@ _error_codes/fast:
 	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/build.make src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/build
 .PHONY : _error_codes/fast
 
-error_codes.o: error_codes.c.o
-.PHONY : error_codes.o
+test_error_codes.o: test_error_codes.c.o
+.PHONY : test_error_codes.o
 
 # target to build an object file
-error_codes.c.o:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/build.make src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/error_codes.c.o
-.PHONY : error_codes.c.o
+test_error_codes.c.o:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/build.make src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/test_error_codes.c.o
+.PHONY : test_error_codes.c.o
 
-error_codes.i: error_codes.c.i
-.PHONY : error_codes.i
+test_error_codes.i: test_error_codes.c.i
+.PHONY : test_error_codes.i
 
 # target to preprocess a source file
-error_codes.c.i:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/build.make src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/error_codes.c.i
-.PHONY : error_codes.c.i
+test_error_codes.c.i:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/build.make src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/test_error_codes.c.i
+.PHONY : test_error_codes.c.i
 
-error_codes.s: error_codes.c.s
-.PHONY : error_codes.s
+test_error_codes.s: test_error_codes.c.s
+.PHONY : test_error_codes.s
 
 # target to generate assembly for a file
-error_codes.c.s:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/build.make src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/error_codes.c.s
-.PHONY : error_codes.c.s
+test_error_codes.c.s:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/build.make src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/test_error_codes.c.s
+.PHONY : test_error_codes.c.s
 
 # Help Target
 help:
@@ -223,9 +223,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... _error_codes"
-	@echo "... error_codes.o"
-	@echo "... error_codes.i"
-	@echo "... error_codes.s"
+	@echo "... test_error_codes.o"
+	@echo "... test_error_codes.i"
+	@echo "... test_error_codes.s"
 .PHONY : help
 
 

@@ -8,7 +8,7 @@ import mkdocs_gen_files
 nav = mkdocs_gen_files.Nav()
 
 root = Path(__file__).parent.parent
-src = root / "src"
+src = root / "src/pyarv"
 generated_directory_name = "user_documentation"
 
 for path in sorted(src.rglob("*.py")):

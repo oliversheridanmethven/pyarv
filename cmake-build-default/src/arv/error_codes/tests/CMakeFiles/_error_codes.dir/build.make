@@ -69,28 +69,28 @@ include src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/flags.make
 
-src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/error_codes.c.o: src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/flags.make
-src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/error_codes.c.o: /Users/oliver/ClionProjects/pyarv/src/arv/error_codes/tests/error_codes.c
-src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/error_codes.c.o: src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/error_codes.c.o"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default/src/arv/error_codes/tests && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/error_codes.c.o -MF CMakeFiles/_error_codes.dir/error_codes.c.o.d -o CMakeFiles/_error_codes.dir/error_codes.c.o -c /Users/oliver/ClionProjects/pyarv/src/arv/error_codes/tests/error_codes.c
+src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/test_error_codes.c.o: src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/flags.make
+src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/test_error_codes.c.o: /Users/oliver/ClionProjects/pyarv/src/arv/error_codes/tests/test_error_codes.c
+src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/test_error_codes.c.o: src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/test_error_codes.c.o"
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default/src/arv/error_codes/tests && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/test_error_codes.c.o -MF CMakeFiles/_error_codes.dir/test_error_codes.c.o.d -o CMakeFiles/_error_codes.dir/test_error_codes.c.o -c /Users/oliver/ClionProjects/pyarv/src/arv/error_codes/tests/test_error_codes.c
 
-src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/error_codes.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/_error_codes.dir/error_codes.c.i"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default/src/arv/error_codes/tests && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oliver/ClionProjects/pyarv/src/arv/error_codes/tests/error_codes.c > CMakeFiles/_error_codes.dir/error_codes.c.i
+src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/test_error_codes.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/_error_codes.dir/test_error_codes.c.i"
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default/src/arv/error_codes/tests && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oliver/ClionProjects/pyarv/src/arv/error_codes/tests/test_error_codes.c > CMakeFiles/_error_codes.dir/test_error_codes.c.i
 
-src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/error_codes.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/_error_codes.dir/error_codes.c.s"
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default/src/arv/error_codes/tests && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oliver/ClionProjects/pyarv/src/arv/error_codes/tests/error_codes.c -o CMakeFiles/_error_codes.dir/error_codes.c.s
+src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/test_error_codes.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/_error_codes.dir/test_error_codes.c.s"
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default/src/arv/error_codes/tests && /usr/local/opt/llvm/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oliver/ClionProjects/pyarv/src/arv/error_codes/tests/test_error_codes.c -o CMakeFiles/_error_codes.dir/test_error_codes.c.s
 
 # Object files for target _error_codes
 _error_codes_OBJECTS = \
-"CMakeFiles/_error_codes.dir/error_codes.c.o"
+"CMakeFiles/_error_codes.dir/test_error_codes.c.o"
 
 # External object files for target _error_codes
 _error_codes_EXTERNAL_OBJECTS =
 
-src/arv/error_codes/tests/_error_codes: src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/error_codes.c.o
+src/arv/error_codes/tests/_error_codes: src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/test_error_codes.c.o
 src/arv/error_codes/tests/_error_codes: src/arv/error_codes/tests/CMakeFiles/_error_codes.dir/build.make
 src/arv/error_codes/tests/_error_codes: /Library/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib
 src/arv/error_codes/tests/_error_codes: src/arv/error_codes/liberror_codes.a

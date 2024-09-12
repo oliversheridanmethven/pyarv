@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/oliver/ClionProjects/pyarv/src/arv/version/tests/version.c" "src/arv/version/tests/CMakeFiles/version_example.dir/version.c.o" "gcc" "src/arv/version/tests/CMakeFiles/version_example.dir/version.c.o.d"
+  "/Users/oliver/ClionProjects/pyarv/src/arv/version/tests/test_version.c" "src/arv/version/tests/CMakeFiles/version_example.dir/test_version.c.o" "gcc" "src/arv/version/tests/CMakeFiles/version_example.dir/test_version.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

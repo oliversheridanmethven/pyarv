@@ -185,29 +185,29 @@ logging_test/fast:
 	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/logging/tests/CMakeFiles/logging_test.dir/build.make src/arv/logging/tests/CMakeFiles/logging_test.dir/build
 .PHONY : logging_test/fast
 
-logging.o: logging.c.o
-.PHONY : logging.o
+test_logging.o: test_logging.c.o
+.PHONY : test_logging.o
 
 # target to build an object file
-logging.c.o:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/logging/tests/CMakeFiles/logging_test.dir/build.make src/arv/logging/tests/CMakeFiles/logging_test.dir/logging.c.o
-.PHONY : logging.c.o
+test_logging.c.o:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/logging/tests/CMakeFiles/logging_test.dir/build.make src/arv/logging/tests/CMakeFiles/logging_test.dir/test_logging.c.o
+.PHONY : test_logging.c.o
 
-logging.i: logging.c.i
-.PHONY : logging.i
+test_logging.i: test_logging.c.i
+.PHONY : test_logging.i
 
 # target to preprocess a source file
-logging.c.i:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/logging/tests/CMakeFiles/logging_test.dir/build.make src/arv/logging/tests/CMakeFiles/logging_test.dir/logging.c.i
-.PHONY : logging.c.i
+test_logging.c.i:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/logging/tests/CMakeFiles/logging_test.dir/build.make src/arv/logging/tests/CMakeFiles/logging_test.dir/test_logging.c.i
+.PHONY : test_logging.c.i
 
-logging.s: logging.c.s
-.PHONY : logging.s
+test_logging.s: test_logging.c.s
+.PHONY : test_logging.s
 
 # target to generate assembly for a file
-logging.c.s:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/logging/tests/CMakeFiles/logging_test.dir/build.make src/arv/logging/tests/CMakeFiles/logging_test.dir/logging.c.s
-.PHONY : logging.c.s
+test_logging.c.s:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/logging/tests/CMakeFiles/logging_test.dir/build.make src/arv/logging/tests/CMakeFiles/logging_test.dir/test_logging.c.s
+.PHONY : test_logging.c.s
 
 # Help Target
 help:
@@ -223,9 +223,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... logging_test"
-	@echo "... logging.o"
-	@echo "... logging.i"
-	@echo "... logging.s"
+	@echo "... test_logging.o"
+	@echo "... test_logging.i"
+	@echo "... test_logging.s"
 .PHONY : help
 
 

@@ -10,7 +10,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/oliver/ClionProjects/pyarv/CMakeLists.txt"
   "CMakeFiles/3.30.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.3/CMakeSystem.cmake"
-  "/Users/oliver/ClionProjects/pyarv/misc/CMakeLists.txt"
   "/Users/oliver/ClionProjects/pyarv/src/CMakeLists.txt"
   "/Users/oliver/ClionProjects/pyarv/src/arv/CMakeLists.txt"
   "/Users/oliver/ClionProjects/pyarv/src/arv/error_codes/CMakeLists.txt"
@@ -96,7 +95,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/pyarv/version/tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/pyarv/gaussian/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/pyarv/gaussian/tests/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "misc/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -113,5 +111,4 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/DependInfo.cmake"
   "src/pyarv/version/CMakeFiles/version_bindings.dir/DependInfo.cmake"
   "src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/DependInfo.cmake"
-  "misc/CMakeFiles/module_examples.dir/DependInfo.cmake"
   )

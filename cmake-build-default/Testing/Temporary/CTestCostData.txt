@@ -1,10 +1,19 @@
-version_example 1 0.926585
-testing_example 1 1.64238
-logging_example 1 2.14018
-error_codes_example 1 2.63744
+version_example 3 1.24933
+testing_example 3 1.30803
+logging_example 3 1.27422
+error_codes_example 3 1.28739
 numpy_bindings_example 1 4.8031
 simple_bindings_example 1 4.82965
 version_bindings 1 3.00648
 gaussian_bindings 1 3.84542
 module_example 1 2.53205
+test_numpy_bindings_example 5 0.429406
+test_simple_bindings_example 5 0.460756
+test_version_bindings 5 0.296703
+__init__ 1 0.0800049
+test_gaussian_bindings 5 0.42499
+test_version_example 3 0.193469
+test_testing_example 3 0.131165
+test_logging_example 3 0.12996
+test_error_codes_example 3 0.189726
 ---

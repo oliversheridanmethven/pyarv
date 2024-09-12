@@ -4,5 +4,5 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-add_test([=[version_example]=] "/Users/oliver/ClionProjects/pyarv/cmake-build-default/src/arv/version/tests/version_example")
-set_tests_properties([=[version_example]=] PROPERTIES  _BACKTRACE_TRIPLES "/Users/oliver/ClionProjects/pyarv/src/arv/version/tests/CMakeLists.txt;3;add_test;/Users/oliver/ClionProjects/pyarv/src/arv/version/tests/CMakeLists.txt;0;")
+add_test([=[test_version_example]=] "/Users/oliver/ClionProjects/pyarv/cmake-build-default/src/arv/version/tests/version_example")
+set_tests_properties([=[test_version_example]=] PROPERTIES  _BACKTRACE_TRIPLES "/Users/oliver/ClionProjects/pyarv/src/arv/version/tests/CMakeLists.txt;3;add_test;/Users/oliver/ClionProjects/pyarv/src/arv/version/tests/CMakeLists.txt;0;")

@@ -185,29 +185,29 @@ criterion_example/fast:
 	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/testing/tests/CMakeFiles/criterion_example.dir/build.make src/arv/testing/tests/CMakeFiles/criterion_example.dir/build
 .PHONY : criterion_example/fast
 
-criterion_example.o: criterion_example.c.o
-.PHONY : criterion_example.o
+test_criterion_example.o: test_criterion_example.c.o
+.PHONY : test_criterion_example.o
 
 # target to build an object file
-criterion_example.c.o:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/testing/tests/CMakeFiles/criterion_example.dir/build.make src/arv/testing/tests/CMakeFiles/criterion_example.dir/criterion_example.c.o
-.PHONY : criterion_example.c.o
+test_criterion_example.c.o:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/testing/tests/CMakeFiles/criterion_example.dir/build.make src/arv/testing/tests/CMakeFiles/criterion_example.dir/test_criterion_example.c.o
+.PHONY : test_criterion_example.c.o
 
-criterion_example.i: criterion_example.c.i
-.PHONY : criterion_example.i
+test_criterion_example.i: test_criterion_example.c.i
+.PHONY : test_criterion_example.i
 
 # target to preprocess a source file
-criterion_example.c.i:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/testing/tests/CMakeFiles/criterion_example.dir/build.make src/arv/testing/tests/CMakeFiles/criterion_example.dir/criterion_example.c.i
-.PHONY : criterion_example.c.i
+test_criterion_example.c.i:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/testing/tests/CMakeFiles/criterion_example.dir/build.make src/arv/testing/tests/CMakeFiles/criterion_example.dir/test_criterion_example.c.i
+.PHONY : test_criterion_example.c.i
 
-criterion_example.s: criterion_example.c.s
-.PHONY : criterion_example.s
+test_criterion_example.s: test_criterion_example.c.s
+.PHONY : test_criterion_example.s
 
 # target to generate assembly for a file
-criterion_example.c.s:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/testing/tests/CMakeFiles/criterion_example.dir/build.make src/arv/testing/tests/CMakeFiles/criterion_example.dir/criterion_example.c.s
-.PHONY : criterion_example.c.s
+test_criterion_example.c.s:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/testing/tests/CMakeFiles/criterion_example.dir/build.make src/arv/testing/tests/CMakeFiles/criterion_example.dir/test_criterion_example.c.s
+.PHONY : test_criterion_example.c.s
 
 # Help Target
 help:
@@ -223,9 +223,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... criterion_example"
-	@echo "... criterion_example.o"
-	@echo "... criterion_example.i"
-	@echo "... criterion_example.s"
+	@echo "... test_criterion_example.o"
+	@echo "... test_criterion_example.i"
+	@echo "... test_criterion_example.s"
 .PHONY : help
 
 

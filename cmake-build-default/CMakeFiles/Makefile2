@@ -64,33 +64,15 @@ CMAKE_BINARY_DIR = /Users/oliver/ClionProjects/pyarv/cmake-build-default
 
 # The main recursive "all" target.
 all: src/all
-all: misc/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: src/preinstall
-preinstall: misc/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: src/clean
-clean: misc/clean
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory misc
-
-# Recursive "all" directory target.
-misc/all: misc/CMakeFiles/module_examples.dir/all
-.PHONY : misc/all
-
-# Recursive "preinstall" directory target.
-misc/preinstall:
-.PHONY : misc/preinstall
-
-# Recursive "clean" directory target.
-misc/clean: misc/CMakeFiles/module_examples.dir/clean
-.PHONY : misc/clean
 
 #=============================================================================
 # Directory level rules for directory src
@@ -435,7 +417,7 @@ src/pyarv/version/tests/clean:
 src/arv/version/CMakeFiles/version.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/arv/version/CMakeFiles/version.dir/build.make src/arv/version/CMakeFiles/version.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/arv/version/CMakeFiles/version.dir/build.make src/arv/version/CMakeFiles/version.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-default/CMakeFiles --progress-num=28,29,30 "Built target version"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-default/CMakeFiles --progress-num=25,26,27 "Built target version"
 .PHONY : src/arv/version/CMakeFiles/version.dir/all
 
 # Build rule for subdir invocation for target.
@@ -461,7 +443,7 @@ src/arv/version/CMakeFiles/version.dir/clean:
 src/arv/version/tests/CMakeFiles/version_example.dir/all: src/arv/version/CMakeFiles/version.dir/all
 	$(MAKE) $(MAKESILENT) -f src/arv/version/tests/CMakeFiles/version_example.dir/build.make src/arv/version/tests/CMakeFiles/version_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/arv/version/tests/CMakeFiles/version_example.dir/build.make src/arv/version/tests/CMakeFiles/version_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-default/CMakeFiles --progress-num=34,35 "Built target version_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-default/CMakeFiles --progress-num=31,32 "Built target version_example"
 .PHONY : src/arv/version/tests/CMakeFiles/version_example.dir/all
 
 # Build rule for subdir invocation for target.
@@ -644,7 +626,7 @@ src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/all: src/arv
 src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/all: src/arv/examples/CMakeFiles/examples.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-default/CMakeFiles --progress-num=25,26,27 "Built target simple_examples_bindings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-default/CMakeFiles --progress-num=22,23,24 "Built target simple_examples_bindings"
 .PHONY : src/pyarv/bindings/examples/CMakeFiles/simple_examples_bindings.dir/all
 
 # Build rule for subdir invocation for target.
@@ -671,7 +653,7 @@ src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/all: src/arv/
 src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/all: src/arv/examples/CMakeFiles/examples.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/build.make src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-default/CMakeFiles --progress-num=22,23,24 "Built target numpy_examples_bindings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-default/CMakeFiles --progress-num=19,20,21 "Built target numpy_examples_bindings"
 .PHONY : src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/all
 
 # Build rule for subdir invocation for target.
@@ -697,7 +679,7 @@ src/pyarv/bindings/examples/CMakeFiles/numpy_examples_bindings.dir/clean:
 src/pyarv/version/CMakeFiles/version_bindings.dir/all: src/arv/version/CMakeFiles/version.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pyarv/version/CMakeFiles/version_bindings.dir/build.make src/pyarv/version/CMakeFiles/version_bindings.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pyarv/version/CMakeFiles/version_bindings.dir/build.make src/pyarv/version/CMakeFiles/version_bindings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-default/CMakeFiles --progress-num=31,32,33 "Built target version_bindings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-default/CMakeFiles --progress-num=28,29,30 "Built target version_bindings"
 .PHONY : src/pyarv/version/CMakeFiles/version_bindings.dir/all
 
 # Build rule for subdir invocation for target.
@@ -741,32 +723,6 @@ gaussian_bindings: src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/rule
 src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/clean
 .PHONY : src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/clean
-
-#=============================================================================
-# Target rules for target misc/CMakeFiles/module_examples.dir
-
-# All Build rule for target.
-misc/CMakeFiles/module_examples.dir/all:
-	$(MAKE) $(MAKESILENT) -f misc/CMakeFiles/module_examples.dir/build.make misc/CMakeFiles/module_examples.dir/depend
-	$(MAKE) $(MAKESILENT) -f misc/CMakeFiles/module_examples.dir/build.make misc/CMakeFiles/module_examples.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/oliver/ClionProjects/pyarv/cmake-build-default/CMakeFiles --progress-num=19,20,21 "Built target module_examples"
-.PHONY : misc/CMakeFiles/module_examples.dir/all
-
-# Build rule for subdir invocation for target.
-misc/CMakeFiles/module_examples.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/oliver/ClionProjects/pyarv/cmake-build-default/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 misc/CMakeFiles/module_examples.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/oliver/ClionProjects/pyarv/cmake-build-default/CMakeFiles 0
-.PHONY : misc/CMakeFiles/module_examples.dir/rule
-
-# Convenience name for target.
-module_examples: misc/CMakeFiles/module_examples.dir/rule
-.PHONY : module_examples
-
-# clean rule for target.
-misc/CMakeFiles/module_examples.dir/clean:
-	$(MAKE) $(MAKESILENT) -f misc/CMakeFiles/module_examples.dir/build.make misc/CMakeFiles/module_examples.dir/clean
-.PHONY : misc/CMakeFiles/module_examples.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

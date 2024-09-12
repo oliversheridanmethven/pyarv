@@ -185,29 +185,29 @@ version_example/fast:
 	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/version/tests/CMakeFiles/version_example.dir/build.make src/arv/version/tests/CMakeFiles/version_example.dir/build
 .PHONY : version_example/fast
 
-version.o: version.c.o
-.PHONY : version.o
+test_version.o: test_version.c.o
+.PHONY : test_version.o
 
 # target to build an object file
-version.c.o:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/version/tests/CMakeFiles/version_example.dir/build.make src/arv/version/tests/CMakeFiles/version_example.dir/version.c.o
-.PHONY : version.c.o
+test_version.c.o:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/version/tests/CMakeFiles/version_example.dir/build.make src/arv/version/tests/CMakeFiles/version_example.dir/test_version.c.o
+.PHONY : test_version.c.o
 
-version.i: version.c.i
-.PHONY : version.i
+test_version.i: test_version.c.i
+.PHONY : test_version.i
 
 # target to preprocess a source file
-version.c.i:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/version/tests/CMakeFiles/version_example.dir/build.make src/arv/version/tests/CMakeFiles/version_example.dir/version.c.i
-.PHONY : version.c.i
+test_version.c.i:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/version/tests/CMakeFiles/version_example.dir/build.make src/arv/version/tests/CMakeFiles/version_example.dir/test_version.c.i
+.PHONY : test_version.c.i
 
-version.s: version.c.s
-.PHONY : version.s
+test_version.s: test_version.c.s
+.PHONY : test_version.s
 
 # target to generate assembly for a file
-version.c.s:
-	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/version/tests/CMakeFiles/version_example.dir/build.make src/arv/version/tests/CMakeFiles/version_example.dir/version.c.s
-.PHONY : version.c.s
+test_version.c.s:
+	cd /Users/oliver/ClionProjects/pyarv/cmake-build-default && $(MAKE) $(MAKESILENT) -f src/arv/version/tests/CMakeFiles/version_example.dir/build.make src/arv/version/tests/CMakeFiles/version_example.dir/test_version.c.s
+.PHONY : test_version.c.s
 
 # Help Target
 help:
@@ -223,9 +223,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... version_example"
-	@echo "... version.o"
-	@echo "... version.i"
-	@echo "... version.s"
+	@echo "... test_version.o"
+	@echo "... test_version.i"
+	@echo "... test_version.s"
 .PHONY : help
 
 

@@ -327,19 +327,6 @@ gaussian_bindings/fast:
 	$(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/build
 .PHONY : gaussian_bindings/fast
 
-#=============================================================================
-# Target rules for targets named module_examples
-
-# Build rule for target.
-module_examples: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_examples
-.PHONY : module_examples
-
-# fast build rule for target.
-module_examples/fast:
-	$(MAKE) $(MAKESILENT) -f misc/CMakeFiles/module_examples.dir/build.make misc/CMakeFiles/module_examples.dir/build
-.PHONY : module_examples/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -360,7 +347,6 @@ help:
 	@echo "... gaussian"
 	@echo "... gaussian_bindings"
 	@echo "... logging_test"
-	@echo "... module_examples"
 	@echo "... numpy_examples_bindings"
 	@echo "... simple_examples_bindings"
 	@echo "... version"

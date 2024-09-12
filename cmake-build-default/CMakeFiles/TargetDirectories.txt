@@ -157,11 +157,3 @@
 /Users/oliver/ClionProjects/pyarv/cmake-build-default/src/pyarv/gaussian/tests/CMakeFiles/install.dir
 /Users/oliver/ClionProjects/pyarv/cmake-build-default/src/pyarv/gaussian/tests/CMakeFiles/install/local.dir
 /Users/oliver/ClionProjects/pyarv/cmake-build-default/src/pyarv/gaussian/tests/CMakeFiles/install/strip.dir
-/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/CMakeFiles/module_examples.dir
-/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/CMakeFiles/test.dir
-/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/CMakeFiles/edit_cache.dir
-/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/CMakeFiles/rebuild_cache.dir
-/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/CMakeFiles/list_install_components.dir
-/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/CMakeFiles/install.dir
-/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/CMakeFiles/install/local.dir
-/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/CMakeFiles/install/strip.dir

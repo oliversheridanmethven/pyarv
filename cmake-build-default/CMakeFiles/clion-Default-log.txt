@@ -24,7 +24,6 @@ CMake Deprecation Warning:
 -- Installing the Python target numpy_examples_bindings in source at destination: /Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples.
 -- Installing the Python target version_bindings in source at destination: /Users/oliver/ClionProjects/pyarv/src/pyarv/version.
 -- Installing the Python target gaussian_bindings in source at destination: /Users/oliver/ClionProjects/pyarv/src/pyarv/gaussian.
--- Installing the Python target module_examples in source at destination: /Users/oliver/ClionProjects/pyarv/misc.
--- Configuring done (0.9s)
--- Generating done (0.3s)
+-- Configuring done (0.8s)
+-- Generating done (0.2s)
 -- Build files have been written to: /Users/oliver/ClionProjects/pyarv/cmake-build-default

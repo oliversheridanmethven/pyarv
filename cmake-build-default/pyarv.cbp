@@ -5,7 +5,7 @@
 		<Option title="pyarv"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="clang"/>
-		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\arv\;CMake Files\src\arv\version\;CMake Files\src\arv\version\tests\;CMake Files\src\arv\testing\;CMake Files\src\arv\testing\tests\;CMake Files\src\arv\logging\;CMake Files\src\arv\logging\tests\;CMake Files\src\arv\error_codes\;CMake Files\src\arv\error_codes\tests\;CMake Files\src\arv\examples\;CMake Files\src\arv\gaussian\;CMake Files\src\pyarv\;CMake Files\src\pyarv\bindings\;CMake Files\src\pyarv\bindings\examples\;CMake Files\src\pyarv\bindings\examples\tests\;CMake Files\src\pyarv\version\;CMake Files\src\pyarv\version\tests\;CMake Files\src\pyarv\gaussian\;CMake Files\src\pyarv\gaussian\tests\;CMake Files\misc\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\arv\;CMake Files\src\arv\version\;CMake Files\src\arv\version\tests\;CMake Files\src\arv\testing\;CMake Files\src\arv\testing\tests\;CMake Files\src\arv\logging\;CMake Files\src\arv\logging\tests\;CMake Files\src\arv\error_codes\;CMake Files\src\arv\error_codes\tests\;CMake Files\src\arv\examples\;CMake Files\src\arv\gaussian\;CMake Files\src\pyarv\;CMake Files\src\pyarv\bindings\;CMake Files\src\pyarv\bindings\examples\;CMake Files\src\pyarv\bindings\examples\tests\;CMake Files\src\pyarv\version\;CMake Files\src\pyarv\version\tests\;CMake Files\src\pyarv\gaussian\;CMake Files\src\pyarv\gaussian\tests\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/oliver/ClionProjects/pyarv/cmake-build-default"/>
@@ -697,70 +697,14 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/oliver/ClionProjects/pyarv/cmake-build-default/src/pyarv/gaussian/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="module_examples">
-				<Option output="/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/module_examples.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc"/>
-				<Option object_output="./"/>
-				<Option type="3"/>
-				<Option compiler="clang"/>
-				<Compiler>
-					<Add option="-DNPY_NO_DEPRECATED_API=NPY_1_7_API_VERSION"/>
-					<Add directory="/Users/oliver/ClionProjects/pyarv/misc/Python3::NumPy"/>
-					<Add directory="/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12"/>
-					<Add directory="/Users/oliver/ClionProjects/pyarv/Python3::NumPy"/>
-					<Add directory="/Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="."/>
-					<Add directory="/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/Makefile&quot;  VERBOSE=1 module_examples"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="module_examples/fast">
-				<Option output="/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/module_examples.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc"/>
-				<Option object_output="./"/>
-				<Option type="3"/>
-				<Option compiler="clang"/>
-				<Compiler>
-					<Add option="-DNPY_NO_DEPRECATED_API=NPY_1_7_API_VERSION"/>
-					<Add directory="/Users/oliver/ClionProjects/pyarv/misc/Python3::NumPy"/>
-					<Add directory="/Library/Frameworks/Python.framework/Versions/3.12/include/python3.12"/>
-					<Add directory="/Users/oliver/ClionProjects/pyarv/Python3::NumPy"/>
-					<Add directory="/Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="."/>
-					<Add directory="/usr/local/Cellar/llvm/18.1.8/lib/clang/18/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/Makefile&quot;  VERBOSE=1 module_examples/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/oliver/ClionProjects/pyarv/cmake-build-default/misc/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 		</Build>
-		<Unit filename="/Users/oliver/ClionProjects/pyarv/misc/module.c">
-			<Option target="module_examples"/>
-		</Unit>
-		<Unit filename="/Users/oliver/ClionProjects/pyarv/misc/module_implementation.c">
-			<Option target="module_examples"/>
-		</Unit>
 		<Unit filename="/Users/oliver/ClionProjects/pyarv/src/arv/error_codes/error_codes.c">
 			<Option target="error_codes"/>
 		</Unit>
 		<Unit filename="/Users/oliver/ClionProjects/pyarv/src/arv/error_codes/error_codes.h">
 			<Option target="error_codes"/>
 		</Unit>
-		<Unit filename="/Users/oliver/ClionProjects/pyarv/src/arv/error_codes/tests/error_codes.c">
+		<Unit filename="/Users/oliver/ClionProjects/pyarv/src/arv/error_codes/tests/test_error_codes.c">
 			<Option target="_error_codes"/>
 		</Unit>
 		<Unit filename="/Users/oliver/ClionProjects/pyarv/src/arv/examples/numpy_examples.c">
@@ -787,13 +731,13 @@
 		<Unit filename="/Users/oliver/ClionProjects/pyarv/src/arv/gaussian/polynomial.h">
 			<Option target="gaussian"/>
 		</Unit>
-		<Unit filename="/Users/oliver/ClionProjects/pyarv/src/arv/logging/tests/logging.c">
+		<Unit filename="/Users/oliver/ClionProjects/pyarv/src/arv/logging/tests/test_logging.c">
 			<Option target="logging_test"/>
 		</Unit>
-		<Unit filename="/Users/oliver/ClionProjects/pyarv/src/arv/testing/tests/criterion_example.c">
+		<Unit filename="/Users/oliver/ClionProjects/pyarv/src/arv/testing/tests/test_criterion_example.c">
 			<Option target="criterion_example"/>
 		</Unit>
-		<Unit filename="/Users/oliver/ClionProjects/pyarv/src/arv/version/tests/version.c">
+		<Unit filename="/Users/oliver/ClionProjects/pyarv/src/arv/version/tests/test_version.c">
 			<Option target="version_example"/>
 		</Unit>
 		<Unit filename="/Users/oliver/ClionProjects/pyarv/src/arv/version/version.c">
@@ -906,9 +850,6 @@
 		</Unit>
 		<Unit filename="/Users/oliver/ClionProjects/pyarv/src/pyarv/gaussian/tests/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\pyarv\gaussian\tests\"/>
-		</Unit>
-		<Unit filename="/Users/oliver/ClionProjects/pyarv/misc/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\misc\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

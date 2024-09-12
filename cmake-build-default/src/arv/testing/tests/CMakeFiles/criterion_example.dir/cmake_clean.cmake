@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/criterion_example.dir/criterion_example.c.o"
-  "CMakeFiles/criterion_example.dir/criterion_example.c.o.d"
+  "CMakeFiles/criterion_example.dir/test_criterion_example.c.o"
+  "CMakeFiles/criterion_example.dir/test_criterion_example.c.o.d"
   "criterion_example"
   "criterion_example.pdb"
 )

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/_error_codes.dir/error_codes.c.o"
-  "CMakeFiles/_error_codes.dir/error_codes.c.o.d"
+  "CMakeFiles/_error_codes.dir/test_error_codes.c.o"
+  "CMakeFiles/_error_codes.dir/test_error_codes.c.o.d"
   "_error_codes"
   "_error_codes.pdb"
 )

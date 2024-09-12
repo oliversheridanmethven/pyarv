@@ -12,26 +12,28 @@
         <meta name="author" content="Dr Oliver Sheridan-Methven">
       
       
-        <link rel="canonical" href="https://oliversheridanmethven.github.io/pyarv/user_documentation/pyarv/gaussian/polynomial.html">
+        <link rel="canonical" href="https://oliversheridanmethven.github.io/pyarv/getting_started/an_example.html">
       
       
-        <link rel="prev" href="../../arv/gaussian/make_polynomial_coefficients.html">
+        <link rel="prev" href="../developer_notes/build_instructions/python_bindings.html">
       
       
+        <link rel="next" href="installation.html">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
     
     
       
-        <title>polynomial - pyarv</title>
+        <title>An example - pyarv</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.35f28582.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,11 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="../../../mkdoc_scripts/colour_scheme.css">
+      <link rel="stylesheet" href="../mkdoc_scripts/colour_scheme.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -63,11 +65,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="polynomial - pyarv" >
+        <meta  property="og:title"  content="An example - pyarv" >
       
         <meta  property="og:description"  content="The pyarv suite." >
       
-        <meta  property="og:image"  content="https://oliversheridanmethven.github.io/pyarv/assets/images/social/user_documentation/pyarv/gaussian/polynomial.png" >
+        <meta  property="og:image"  content="https://oliversheridanmethven.github.io/pyarv/assets/images/social/getting_started/an_example.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -75,15 +77,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://oliversheridanmethven.github.io/pyarv/user_documentation/pyarv/gaussian/polynomial.html" >
+        <meta  property="og:url"  content="https://oliversheridanmethven.github.io/pyarv/getting_started/an_example.html" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="polynomial - pyarv" >
+        <meta  name="twitter:title"  content="An example - pyarv" >
       
         <meta  name="twitter:description"  content="The pyarv suite." >
       
-        <meta  name="twitter:image"  content="https://oliversheridanmethven.github.io/pyarv/assets/images/social/user_documentation/pyarv/gaussian/polynomial.png" >
+        <meta  name="twitter:image"  content="https://oliversheridanmethven.github.io/pyarv/assets/images/social/getting_started/an_example.png" >
       
     
     
@@ -104,7 +106,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pyarv.gaussian.polynomial" class="md-skip">
+        <a href="#an-example" class="md-skip">
           Skip to content
         </a>
       
@@ -124,7 +126,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../index.html" title="pyarv" class="md-header__button md-logo" aria-label="pyarv" data-md-component="logo">
+    <a href="../index.html" title="pyarv" class="md-header__button md-logo" aria-label="pyarv" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -144,7 +146,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              polynomial
+              An example
             
           </span>
         </div>
@@ -221,7 +223,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../index.html" class="md-tabs__link">
+      <a href="../index.html" class="md-tabs__link">
         
   
     
@@ -238,7 +240,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../LICENSE.html" class="md-tabs__link">
+      <a href="../LICENSE.html" class="md-tabs__link">
         
   
     
@@ -257,7 +259,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../developer_notes/upcoming_features.html" class="md-tabs__link">
+        <a href="../developer_notes/upcoming_features.html" class="md-tabs__link">
           
   
   Developer notes
@@ -276,33 +278,38 @@
   
     
     
-      
-  
-  
-    
-  
-  
-    
-    
-      
-  
-  
-    
-  
-  
-    
-    
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../arv/gaussian/make_polynomial_coefficients.html" class="md-tabs__link">
+        <a href="an_example.html" class="md-tabs__link">
           
   
-  User documentation
+  Getting started
 
         </a>
       </li>
     
   
 
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../user_documentation/gaussian/polynomial.html" class="md-tabs__link">
+          
+  
+  User documentation
+
+        </a>
+      </li>
     
   
 
@@ -338,7 +345,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../index.html" title="pyarv" class="md-nav__button md-logo" aria-label="pyarv" data-md-component="logo">
+    <a href="../index.html" title="pyarv" class="md-nav__button md-logo" aria-label="pyarv" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -368,7 +375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../index.html" class="md-nav__link">
+      <a href="../index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -388,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../LICENSE.html" class="md-nav__link">
+      <a href="../LICENSE.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -446,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../developer_notes/upcoming_features.html" class="md-nav__link">
+      <a href="../developer_notes/upcoming_features.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -467,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../developer_notes/updating_versions_and_releases_and_documentation.html" class="md-nav__link">
+      <a href="../developer_notes/updating_versions_and_releases_and_documentation.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -488,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../developer_notes/why_python_and_c.html" class="md-nav__link">
+      <a href="../developer_notes/why_python_and_c.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -547,7 +554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../developer_notes/build_instructions/from_source.html" class="md-nav__link">
+      <a href="../developer_notes/build_instructions/from_source.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -568,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../developer_notes/build_instructions/in_source.html" class="md-nav__link">
+      <a href="../developer_notes/build_instructions/in_source.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -589,7 +596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../developer_notes/build_instructions/python_bindings.html" class="md-nav__link">
+      <a href="../developer_notes/build_instructions/python_bindings.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -647,7 +654,7 @@
             
   
   <span class="md-ellipsis">
-    User documentation
+    Getting started
   </span>
   
 
@@ -656,6 +663,103 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="an_example.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    An example
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="installation.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    User documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             User documentation
           </label>
@@ -678,48 +782,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
         
           
-          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    arv
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1">
-            <span class="md-nav__icon md-icon"></span>
-            arv
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_1_1" id="__nav_4_1_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -730,8 +796,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
             <span class="md-nav__icon md-icon"></span>
             gaussian
           </label>
@@ -744,142 +810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../arv/gaussian/make_polynomial_coefficients.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    make_polynomial_coefficients
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    pyarv
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4_2">
-            <span class="md-nav__icon md-icon"></span>
-            pyarv
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_1" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4_2_1" id="__nav_4_2_1_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    gaussian
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4_2_1">
-            <span class="md-nav__icon md-icon"></span>
-            gaussian
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    polynomial
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="polynomial.html" class="md-nav__link md-nav__link--active">
+      <a href="../user_documentation/gaussian/polynomial.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -888,50 +819,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pyarv.gaussian.polynomial" class="md-nav__link">
-    <span class="md-ellipsis">
-      polynomial
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pyarv.gaussian.polynomial.polynomial" class="md-nav__link">
-    <span class="md-ellipsis">
-      polynomial
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -969,32 +856,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pyarv.gaussian.polynomial" class="md-nav__link">
-    <span class="md-ellipsis">
-      polynomial
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pyarv.gaussian.polynomial.polynomial" class="md-nav__link">
-    <span class="md-ellipsis">
-      polynomial
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1012,190 +875,29 @@
   
 
 
-  <h1>polynomial</h1>
-
-<div class="doc doc-object doc-module">
-
-
-
-<a id="pyarv.gaussian.polynomial"></a>
-    <div class="doc doc-contents first">
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-<div class="doc doc-object doc-function">
-
-
-<h2 id="pyarv.gaussian.polynomial.polynomial" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">polynomial</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="nb">input</span><span class="p">,</span> <span class="n">output</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span></code>
-
-</h2>
-
-
-    <div class="doc doc-contents ">
-
-        <p>Polynomial approximation to the inverse CDF of the Gaussian ditribution.</p>
-
-
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td><code>input</code></td>
-            <td>
-                  <code><span title="pyarv.gaussian.polynomial.Array">Array</span></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>Uniform random numbers in the range <script type="math/tex"> (0, 1) </script>.</p>
-              </div>
-            </td>
-            <td>
-                <em>required</em>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code>output</code></td>
-            <td>
-                  <code><span title="pyarv.gaussian.polynomial.Array">Array</span></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>Approximate Gaussian random variables.</p>
-              </div>
-            </td>
-            <td>
-                <em>required</em>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code>order</code></td>
-            <td>
-                  <code>int</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>The polynomial order to use:</p>
-<p>1 = linear.
-3 = cubic.</p>
-              </div>
-            </td>
-            <td>
-                  <code>1</code>
-            </td>
-          </tr>
-      </tbody>
-    </table>
-
-
-    <p><span class="doc-section-title">Returns:</span></p>
-    <table>
-      <thead>
-        <tr>
-<th>Name</th>          <th>Type</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-<td><code>output</code></td>            <td>
-                  <code>None</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>The approximate Gaussian random variables.</p>
-              </div>
-            </td>
-          </tr>
-      </tbody>
-    </table>
-
-            <details class="quote">
-              <summary>Source code in <code>src/pyarv/gaussian/polynomial.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span>
-<span class="normal">33</span>
-<span class="normal">34</span>
-<span class="normal">35</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">polynomial</span><span class="p">(</span><span class="o">*</span><span class="p">,</span>
-               <span class="nb">input</span><span class="p">:</span> <span class="n">Array</span><span class="p">,</span>
-               <span class="n">output</span><span class="p">:</span> <span class="n">Array</span><span class="p">,</span>
-               <span class="n">order</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span>
-               <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Polynomial approximation to the inverse CDF of the Gaussian ditribution.</span>
-
-<span class="sd">    Parameters</span>
-<span class="sd">    ----------</span>
-<span class="sd">    input:</span>
-<span class="sd">        Uniform random numbers in the range \( (0, 1) \).</span>
-<span class="sd">    output:</span>
-<span class="sd">        Approximate Gaussian random variables.</span>
-<span class="sd">    order:</span>
-<span class="sd">        The polynomial order to use:</span>
-
-<span class="sd">        1 = linear.</span>
-<span class="sd">        3 = cubic.</span>
-<span class="sd">    Returns</span>
-<span class="sd">    -------</span>
-<span class="sd">    output:</span>
-<span class="sd">        The approximate Gaussian random variables.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">approximations</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="n">linear</span><span class="p">,</span>
-                      <span class="mi">3</span><span class="p">:</span> <span class="n">cubic</span><span class="p">}</span>
-    <span class="n">approximations</span><span class="p">[</span><span class="n">order</span><span class="p">](</span><span class="nb">input</span><span class="o">=</span><span class="nb">input</span><span class="p">,</span> <span class="n">output</span><span class="o">=</span><span class="n">output</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-            </details>
-    </div>
-
+<h1 id="an-example">An example</h1>
+<p>The example showcases the how to use the PyARV package.</p>
+<div class="admonition note">
+<p class="admonition-title">NumPy arrays</p>
+<ul>
+<li>We use numpy arrays, not lists. </li>
+<li>The arrays have a specific datatype, in this case <code>np.float32</code>.</li>
+<li>The function needs a preallocated location to write its results into. </li>
+</ul>
 </div>
+<pre><code class="language-python">import numpy as np
+from pyarv.gaussian.polynomial import polynomial
 
+n_samples = 10_000_000
+u = np.random.uniform(size=n_samples + 1).astype(np.float32)
+z_approx = np.empty_like(u)
+polynomial(input=u, output=z_approx, order=1)
 
-
-  </div>
-
-    </div>
-
-</div>
+print(f&quot;{z_approx = }&quot;)
+</code></pre>
+<p>To see how much faster PyARV is on your system, run:</p>
+<pre><code class="language-bash">python -m pyarv.gaussian.demos.gaussian_speed
+</code></pre>
 
 
 
@@ -1265,7 +967,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../arv/gaussian/make_polynomial_coefficients.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: make_polynomial_coefficients">
+          <a href="../developer_notes/build_instructions/python_bindings.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Python bindings">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1275,11 +977,27 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                make_polynomial_coefficients
+                Python bindings
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="installation.html" class="md-footer__link md-footer__link--next" aria-label="Next: Installation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Installation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
@@ -1340,10 +1058,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "navigation.footer"], "search": "../../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "navigation.footer"], "search": "../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
