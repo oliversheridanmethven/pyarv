@@ -32,7 +32,8 @@ setup(
             "mike",
             "matplotlib",
             "pandas",
-            "scipy"
+            "scipy",
+            "build"
         ]
     },
     packages=package_dirs.keys(),

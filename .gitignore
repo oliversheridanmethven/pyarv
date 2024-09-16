@@ -24,3 +24,5 @@ install_manifest.txt
 *.log
 /src/arv/version/version.c
 *.cbp
+/MANIFEST.in
+/dist/
