@@ -18,3 +18,5 @@ mike
 matplotlib
 pandas
 scipy
+build
+twine

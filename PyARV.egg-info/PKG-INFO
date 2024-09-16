@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: PyARV
-Version: 0.0.3.post4+git.e009311b.dirty
+Version: 0.0.4.post2+git.804577fc
 Summary: Approximate random variables
 Author: Dr Oliver Sheridan-Methven
 License: MIT
@@ -25,3 +25,5 @@ Requires-Dist: mike; extra == "dev"
 Requires-Dist: matplotlib; extra == "dev"
 Requires-Dist: pandas; extra == "dev"
 Requires-Dist: scipy; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
