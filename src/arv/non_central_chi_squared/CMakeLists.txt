@@ -1,2 +1,3 @@
-add_library(non_central_chi_squared polynomial.c linear.c cubic.c)
+add_library(non_central_chi_squared linear.c)
+target_link_libraries(non_central_chi_squared approximation)
 target_include_directories(non_central_chi_squared INTERFACE ..)
