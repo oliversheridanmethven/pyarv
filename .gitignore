@@ -26,3 +26,4 @@ install_manifest.txt
 *.cbp
 /MANIFEST.in
 /dist/
+/Testing/
