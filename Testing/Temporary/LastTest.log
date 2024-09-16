@@ -1,3 +1,161 @@
-Start testing: Sep 12 17:59 BST
+Start testing: Sep 16 09:23 BST
 ----------------------------------------------------------
-End testing: Sep 12 17:59 BST
+1/8 Testing: test_version_example
+1/8 Test: test_version_example
+Command: "/Users/oliver/ClionProjects/pyarv/bin/version_example"
+Directory: /Users/oliver/ClionProjects/pyarv/src/arv/version/tests
+"test_version_example" start time: Sep 16 09:23 BST
+Output:
+----------------------------------------------------------
+Did not match the pattern "^v[[:digit:]]\{1,\}[.][[:digit:]]\{1,\}[.][[:digit:]]\{1,\}.*" to the bad pattern 0.1.0Did not match the pattern "^v[[:digit:]]\{1,\}[.][[:digit:]]\{1,\}[.][[:digit:]]\{1,\}.*" to the bad pattern v0.1Did not match the pattern "^v[[:digit:]]\{1,\}[.][[:digit:]]\{1,\}[.][[:digit:]]\{1,\}.*" to the bad pattern v0..1Did not match the pattern "^v[[:digit:]]\{1,\}[.][[:digit:]]\{1,\}[.][[:digit:]]\{1,\}.*" to the bad pattern v0.a.2Matched the pattern "^v[[:digit:]]\{1,\}[.][[:digit:]]\{1,\}[.][[:digit:]]\{1,\}.*" to v0.0.3-4-ge009311-dirtyMatched the pattern "^v[[:digit:]]\{1,\}[.][[:digit:]]\{1,\}[.][[:digit:]]\{1,\}.*" to v0.1.0Matched the pattern "^v[[:digit:]]\{1,\}[.][[:digit:]]\{1,\}[.][[:digit:]]\{1,\}.*" to v0.1.0-dirtyMatched the pattern "^v[[:digit:]]\{1,\}[.][[:digit:]]\{1,\}[.][[:digit:]]\{1,\}.*" to v0.12.3Version: v0.0.3-4-ge009311-dirty
+[====] Synthesis: Tested: 5 | Passing: 5 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.47 sec
+----------------------------------------------------------
+Test Passed.
+"test_version_example" end time: Sep 16 09:23 BST
+"test_version_example" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/8 Testing: test_testing_example
+2/8 Test: test_testing_example
+Command: "/Users/oliver/ClionProjects/pyarv/bin/criterion_example"
+Directory: /Users/oliver/ClionProjects/pyarv/src/arv/testing/tests
+"test_testing_example" start time: Sep 16 09:23 BST
+Output:
+----------------------------------------------------------
+[====] Synthesis: Tested: 3 | Passing: 3 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.47 sec
+----------------------------------------------------------
+Test Passed.
+"test_testing_example" end time: Sep 16 09:23 BST
+"test_testing_example" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/8 Testing: test_logging_example
+3/8 Test: test_logging_example
+Command: "/Users/oliver/ClionProjects/pyarv/bin/logging_test"
+Directory: /Users/oliver/ClionProjects/pyarv/src/arv/logging/tests
+"test_logging_example" start time: Sep 16 09:23 BST
+Output:
+----------------------------------------------------------
+some errorsome print error
+some warningsome infosome messagesome print
+some debugsome info, some string 10
+[====] Synthesis: Tested: 3 | Passing: 3 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.52 sec
+----------------------------------------------------------
+Test Passed.
+"test_logging_example" end time: Sep 16 09:23 BST
+"test_logging_example" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/8 Testing: test_error_codes_example
+4/8 Test: test_error_codes_example
+Command: "/Users/oliver/ClionProjects/pyarv/bin/_error_codes"
+Directory: /Users/oliver/ClionProjects/pyarv/src/arv/error_codes/tests
+"test_error_codes_example" start time: Sep 16 09:23 BST
+Output:
+----------------------------------------------------------
+[====] Synthesis: Tested: 5 | Passing: 5 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.50 sec
+----------------------------------------------------------
+Test Passed.
+"test_error_codes_example" end time: Sep 16 09:23 BST
+"test_error_codes_example" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/8 Testing: test_numpy_bindings_example
+5/8 Test: test_numpy_bindings_example
+Command: "/Users/oliver/ClionProjects/pyarv/venv/bin/python3.12" "/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/tests/test_numpy_bindings_example.py"
+Directory: /Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/tests
+"test_numpy_bindings_example" start time: Sep 16 09:23 BST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+Running the test of my function.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"test_numpy_bindings_example" end time: Sep 16 09:23 BST
+"test_numpy_bindings_example" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/8 Testing: test_simple_bindings_example
+6/8 Test: test_simple_bindings_example
+Command: "/Users/oliver/ClionProjects/pyarv/venv/bin/python3.12" "/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/tests/test_simple_bindings_example.py"
+Directory: /Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/tests
+"test_simple_bindings_example" start time: Sep 16 09:23 BST
+Output:
+----------------------------------------------------------
+.['/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/tests', '/Users/oliver/ClionProjects/pyarv/src', '/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/tests', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python312.zip', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/lib-dynload', '/Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages']
+We are fatally failing now.
+Hello world from within C.
+The input values are: a = 1 and b = foo
+.A non-fatal error from C in our Python binding.
+.
+----------------------------------------------------------------------
+Ran 3 tests in 0.011s
+
+OK
+We were successfully able to catch an exception: Raising a non-fatal error from C in our Python binding up to Python.
+
+Hello world from within C.
+The input values are: a = 1 and b = foo
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"test_simple_bindings_example" end time: Sep 16 09:23 BST
+"test_simple_bindings_example" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/8 Testing: test_version_bindings
+7/8 Test: test_version_bindings
+Command: "/Users/oliver/ClionProjects/pyarv/venv/bin/python3.12" "/Users/oliver/ClionProjects/pyarv/src/pyarv/version/tests/test_version_bindings.py"
+Directory: /Users/oliver/ClionProjects/pyarv/src/pyarv/version/tests
+"test_version_bindings" start time: Sep 16 09:23 BST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+OK
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"test_version_bindings" end time: Sep 16 09:23 BST
+"test_version_bindings" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/8 Testing: test_gaussian_bindings
+8/8 Test: test_gaussian_bindings
+Command: "/Users/oliver/ClionProjects/pyarv/venv/bin/python3.12" "/Users/oliver/ClionProjects/pyarv/src/pyarv/gaussian/tests/test_gaussian_bindings.py"
+Directory: /Users/oliver/ClionProjects/pyarv/src/pyarv/gaussian/tests
+"test_gaussian_bindings" start time: Sep 16 09:23 BST
+Output:
+----------------------------------------------------------
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"test_gaussian_bindings" end time: Sep 16 09:23 BST
+"test_gaussian_bindings" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 16 09:23 BST
