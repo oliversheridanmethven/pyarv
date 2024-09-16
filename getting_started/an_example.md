@@ -21,5 +21,5 @@ print(f"{z_approx = }")
 
 To see how much faster PyARV is on your system, run:
 ```bash
-python -m pyarv.gaussian.demos.gaussian_speed
+python -m pyarv.gaussian.demos.speed
 ```

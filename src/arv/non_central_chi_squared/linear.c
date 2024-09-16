@@ -54,7 +54,7 @@ void linear(const Float *restrict const input,
             const Float *restrict const non_centrality,
             const Float *restrict const degrees_of_freedom)
 {
-#pragma omp simd
+    //#pragma omp simd
     for (unsigned int i = 0; i < input_buffer_size; i++)
     {
         Float u, p, z, lambda, degree_of_freedom;
