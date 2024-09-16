@@ -1,0 +1,7 @@
+add_subdirectory(tests)
+
+add_library(non_central_chi_squared_bindings MODULE
+        non_central_chi_squared_module.c non_central_chi_squared_bindings.c
+)
+target_link_libraries(non_central_chi_squared_bindings non_central_chi_squared bindings)
+install_python_target(non_central_chi_squared_bindings src/pyarv/non_central_chi_squared)

@@ -2,7 +2,6 @@
 #include "approximation/approximation.h"
 #include <math.h>
 
-#define DOF 1.0f
 #define TABLE_SIZE 16
 #define INTERPOLATION_FUNCTIONS 16
 #define HALVES 2
@@ -52,7 +51,8 @@ static inline Float polynomial_linear_approximation(Float u,
 void linear(const Float *restrict const input,
             Float *restrict const output,
             const size_t input_buffer_size,
-            const Float *restrict non_centrality)
+            const Float *restrict non_centrality,
+            const Float degrees_of_freedom)
 {
 #pragma omp simd
     for (unsigned int i = 0; i < input_buffer_size; i++)
@@ -64,14 +64,14 @@ void linear(const Float *restrict const input,
         u = upper_half ? 1.0f - u : u;
         Float weight_lower, weight_upper;
         UInt interpolation_index_lower, interpolation_index_upper;
-        Float y = DOF / (lambda + DOF);// interpolation_value
+        Float y = degrees_of_freedom / (lambda + degrees_of_freedom);// interpolation_value
         interpolation_indices(y, &interpolation_index_lower, &interpolation_index_upper, &weight_lower, &weight_upper);
         UInt b = get_table_index_from_float_format(u);
         b = cap_index(b, TABLE_MAX_INDEX);
         Float p_lower = polynomial_linear_approximation(u, b, upper_half, interpolation_index_lower);
         Float p_upper = polynomial_linear_approximation(u, b, upper_half, interpolation_index_upper);
         p = weight_lower * p_lower + weight_upper * p_upper;
-        z = lambda + DOF + 2.0f * sqrtf(lambda + DOF) * p;
+        z = lambda + degrees_of_freedom + 2.0f * sqrtf(lambda + degrees_of_freedom) * p;
         output[i] = z;
     }
 }

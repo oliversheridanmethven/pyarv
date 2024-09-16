@@ -2,6 +2,15 @@
 import unittest
 import numpy as np
 from pyarv.gaussian.polynomial import polynomial
+import scipy.integrate as integrate
+from scipy.stats import norm
+
+
+def scalar_approximation(*, u: float, order: int):
+    u = np.array([u], dtype=np.float32)
+    z = u * np.nan
+    polynomial(input=u, output=z, order=order)
+    return z
 
 
 class TestBasicProperties(unittest.TestCase):
@@ -25,6 +34,18 @@ class TestBasicProperties(unittest.TestCase):
             z = u * np.nan
             polynomial(input=u, output=z, order=order)
             self.assertLess([0], z.tolist(), f"The Gaussian approximation {order = } should have positive values above the median.")
+
+    def test_low_relative_error(self):
+        for order in [1, 3]:
+            error_integral = integrate.quad(lambda u: norm.ppf(u) - scalar_approximation(u=u, order=order), 0, 1)
+            self.assertLessEqual(0, error_integral[0] + error_integral[1])
+            self.assertGreaterEqual(0, error_integral[0] - error_integral[1])
+
+    def test_decreasing_relative_error(self):
+        orders = [1, 3]
+        l2_errors = [integrate.quad(lambda u: (norm.ppf(u) - scalar_approximation(u=u, order=order)) ** 2, 0, 1)[0] for order in orders]
+        for order, difference in zip(orders[1:], np.diff(l2_errors)):
+            self.assertLess(difference, 0, f"The difference in l2 errors {difference = } should be decreasing for {order = }")
 
 
 if __name__ == '__main__':
