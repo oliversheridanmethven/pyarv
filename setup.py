@@ -33,7 +33,8 @@ setup(
             "matplotlib",
             "pandas",
             "scipy",
-            "build"
+            "build",
+            "twine"
         ]
     },
     packages=package_dirs.keys(),
