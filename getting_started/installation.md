@@ -1,7 +1,10 @@
 # Installation
 
-To install the latest version run:
-
+To install the most recent release run:
+```bash
+pip install pyarv
+```
+or to install the latest version run:
 ```bash
 pip install git+https://github.com/oliversheridanmethven/pyarv.git
 ```
