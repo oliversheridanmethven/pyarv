@@ -20,3 +20,4 @@ pandas
 scipy
 build
 twine
+varname

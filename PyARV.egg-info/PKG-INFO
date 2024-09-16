@@ -1,10 +1,11 @@
 Metadata-Version: 2.1
 Name: PyARV
-Version: 0.0.4.post2+git.804577fc
+Version: 0.0.6
 Summary: Approximate random variables
 Author: Dr Oliver Sheridan-Methven
 License: MIT
-Requires-Python: >=3.10
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
 License-File: LICENSE.md
 Requires-Dist: numpy
 Provides-Extra: dev
@@ -27,3 +28,27 @@ Requires-Dist: pandas; extra == "dev"
 Requires-Dist: scipy; extra == "dev"
 Requires-Dist: build; extra == "dev"
 Requires-Dist: twine; extra == "dev"
+Requires-Dist: varname; extra == "dev"
+
+# PyARV
+
+Python wrapper of a C implementation of
+approximate random variables as detailed in:
+
+>Michael B. Giles and Oliver Sheridan-Methven. 
+> _Approximating
+inverse cumulative distribution functions to produce
+approximate random variables._ 
+> ACM Transactions
+on Mathematical Software, 49(3), Article 26, September 2023, 29 pages. 
+> [https://doi.org/10.1145/3604935](https://doi.org/10.1145/3604935)
+
+## Authors
+
+Dr Oliver Sheridan-Methven  
+[oliver.sheridan-methven@hotmail.co.uk](mailto:oliver.sheridan-methven@hotmail.co.uk).
+
+## Documentation
+
+The full documentation can be found here: [Documentation](https://oliversheridanmethven.github.io/pyarv/).
+
