@@ -1,7 +1,8 @@
 #define POLYNOMIAL_ORDER 1
 #define TABLE_SIZE 8
 
-#include "polynomial.h"
+#include "linear.h"
+#include "approximation/approximation.h"
 #include "polynomial_coefficients_order_1_table_size_8.h"
 
 #define TABLE_MAX_INDEX (TABLE_SIZE - 1)// Zero indexing...

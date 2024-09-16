@@ -1,5 +1,5 @@
-#ifndef ARV_POLYNOMIAL_H
-#define ARV_POLYNOMIAL_H
+#ifndef PYARV_APPROXIMATION_H
+#define PYARV_APPROXIMATION_H
 
 #include <stddef.h>
 
@@ -15,12 +15,4 @@ UInt float_32_as_uint_32(const Float u);
 UInt get_table_index_from_float_format(const Float u);
 UInt cap_index(const UInt b, const UInt cap);
 
-void linear(const Float *restrict const input,
-            Float *restrict const output,
-            const size_t input_buffer_size);
-
-void cubic(const Float *restrict const input,
-           Float *restrict const output,
-           const size_t input_buffer_size);
-
-#endif//ARV_POLYNOMIAL_H
+#endif//PYARV_APPROXIMATION_H

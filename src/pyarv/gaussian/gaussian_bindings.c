@@ -6,7 +6,8 @@
 #include <numpy/arrayobject.h>
 // clang-format on
 
-#include "gaussian/polynomial.h"
+#include "gaussian/cubic.h"
+#include "gaussian/linear.h"
 
 //TODO: Remove code duplication, perhaps by a macro?
 PyObject *

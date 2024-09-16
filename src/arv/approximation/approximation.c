@@ -1,4 +1,4 @@
-#include "polynomial.h"
+#include "approximation.h"
 
 #define TABLE_SIZE 16
 #define TABLE_MAX_INDEX (TABLE_SIZE - 1)// Zero indexing...
