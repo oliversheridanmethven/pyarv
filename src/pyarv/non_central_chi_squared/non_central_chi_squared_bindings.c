@@ -14,28 +14,30 @@ linear_(PyObject *Py_UNUSED(self), PyObject *args, PyObject *kwargs)
 {
     PyArrayObject *input_array;
     PyArrayObject *output_array;
-    PyArrayObject *non_centrality;
-    npy_float32 degrees_of_freedom;
-#define N_ARRAYS 3
+    PyArrayObject *non_centralities;
+    PyArrayObject *degrees_of_freedom;
+#define N_ARRAYS 4
     PyArrayObject **arrays[N_ARRAYS] = {&input_array,
                                         &output_array,
-                                        &non_centrality};
+                                        &non_centralities,
+                                        &degrees_of_freedom};
     char *arg_names[] = {
             "input",
             "output",
-            "non_centrality",
+            "non_centralities",
             "degrees_of_freedom",
             NULL};
 
     if (!PyArg_ParseTupleAndKeywords(args, kwargs,
-                                     "$O!O!O!f:linear",
+                                     "$O!O!O!O!:linear",
                                      arg_names,
                                      &PyArray_Type,
                                      &input_array,
                                      &PyArray_Type,
                                      &output_array,
                                      &PyArray_Type,
-                                     &non_centrality,
+                                     &non_centralities,
+                                     &PyArray_Type,
                                      &degrees_of_freedom))
     {
         return NULL;
@@ -63,10 +65,12 @@ linear_(PyObject *Py_UNUSED(self), PyObject *args, PyObject *kwargs)
 
     npy_float32 *input_buffer = (npy_float32 *) PyArray_DATA(input_array);
     npy_float32 *output_buffer = (npy_float32 *) PyArray_DATA(output_array);
-    npy_float32 *non_centrality_buffer = (npy_float32 *) PyArray_DATA(output_array);
+    npy_float32 *non_centrality_buffer = (npy_float32 *) PyArray_DATA(non_centralities);
+    npy_float32 *degrees_of_freedom_buffer = (npy_float32 *) PyArray_DATA(degrees_of_freedom);
     size_t input_buffer_size = PyArray_SIZE(input_array);
     size_t output_buffer_size = PyArray_SIZE(output_array);
-    size_t non_centrality_buffer_size = PyArray_SIZE(output_array);
+    size_t non_centrality_buffer_size = PyArray_SIZE(non_centralities);
+    size_t degrees_of_freedom_buffer_size = PyArray_SIZE(degrees_of_freedom);
 
     if (input_buffer_size != output_buffer_size)
     {
@@ -80,16 +84,20 @@ linear_(PyObject *Py_UNUSED(self), PyObject *args, PyObject *kwargs)
         return NULL;
     }
 
-    if (degrees_of_freedom <= 0)
+    if (input_buffer_size != degrees_of_freedom_buffer_size)
     {
-        PyErr_SetString(PyExc_ValueError, "The degrees of freedom should be strictly positive.");
+        PyErr_SetString(PyExc_ValueError, "The input and degrees of freedom arrays are of differing lengths.");
         return NULL;
     }
 
     NPY_BEGIN_THREADS_DEF;
     NPY_BEGIN_THREADS; /* No longer need the Python GIL */
 
-    linear(input_buffer, output_buffer, input_buffer_size, non_centrality_buffer, degrees_of_freedom);
+    linear(input_buffer,
+           output_buffer,
+           input_buffer_size,
+           non_centrality_buffer,
+           degrees_of_freedom_buffer);
 
     NPY_END_THREADS; /* We return the Python GIL. */
 

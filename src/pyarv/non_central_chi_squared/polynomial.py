@@ -10,9 +10,11 @@ def polynomial(*,
                input: Array,
                output: Array,
                order: int = 1,
-               non_centrality: float = 1
+               non_centralities: Array,
+               degrees_of_freedom: Array
                ) -> None:
     """
+
     Polynomial approximation to the inverse CDF of the non-central \( \Chi^2 \) distribution.
 
     Parameters
@@ -26,11 +28,15 @@ def polynomial(*,
         The polynomial order to use:
 
         1 = linear.
-        
+    non_centralities:
+        The non-centralities, positive (zero values correspond to the central \( chi^2 \) distribution).
+    degrees_of_freedom:
+        The degrees of freedom, strictly positive.
+
     Returns
     -------
     output:
         The approximate non-central \( \Chi^2 \) random variables are written into `output`.
     """
     approximations = {1: linear}
-    approximations[order](input=input, output=output, non_centrality=non_centrality)
+    approximations[order](input=input, output=output, non_centralities=non_centralities, degrees_of_freedom=degrees_of_freedom)
