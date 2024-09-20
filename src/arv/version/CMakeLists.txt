@@ -1,6 +1,5 @@
 add_subdirectory(tests)
 
-
 # So we can add versioning to our repo
 find_package(Git)
 set(generated_version_source "${CMAKE_CURRENT_SOURCE_DIR}/version.c")
@@ -15,5 +14,5 @@ add_custom_command(
 )
 
 
-add_library(version ${generated_version_source})
+add_library(version SHARED ${generated_version_source})
 target_include_directories(version INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/..)

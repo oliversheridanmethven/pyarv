@@ -3,6 +3,8 @@ import unittest
 from varname.helpers import jsobj
 import pyarv.version as version
 
+import os
+
 
 class VersionInfo(unittest.TestCase):
 

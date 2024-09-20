@@ -13,8 +13,7 @@ def polynomial(*,
                non_centralities: Array,
                degrees_of_freedom: Array
                ) -> None:
-    """
-
+    r"""
     Polynomial approximation to the inverse CDF of the non-central \( \Chi^2 \) distribution.
 
     Parameters

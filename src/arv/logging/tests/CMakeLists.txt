@@ -1,3 +1,3 @@
-add_executable(logging_test test_logging.c)
-target_link_libraries(logging_test testing logging)
-add_test(NAME test_logging_example COMMAND logging_test)
+add_executable(test_logging logging.c)
+target_link_libraries(test_logging testing logging)
+add_test(NAME test_logging COMMAND test_logging)

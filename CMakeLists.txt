@@ -19,7 +19,7 @@ set(CMAKE_C_EXTENSIONS OFF)
 set(CC ${CMAKE_C_COMPILER})
 message(STATUS "We think we are using the C compiler: ${CMAKE_C_COMPILER_ID} ${CMAKE_C_COMPILER_VERSION}")
 
-set(CMAKE_GENERATOR "Unix Makefiles")
+#set(CMAKE_GENERATOR "Unix Makefiles")
 
 set(ERROR_FLAGS "-Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic")
 if (CMAKE_C_COMPILER_ID STREQUAL "Clang")
@@ -157,6 +157,13 @@ function(install_python_target target destination)
         install(TARGETS ${target} LIBRARY DESTINATION ${destination})
     endif()
 endfunction()
+
+# TODO: Add Glib just to arv logging interface library (My setup if not working at the moment, issuing linking errors).
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(GLIB REQUIRED glib-2.0)
+pkg_search_module(GLIB REQUIRED glib-2.0)
+include_directories(SYSTEM ${GLIB_INCLUDE_DIRS})
+link_directories(${GLIB_LIBRARY_DIRS})
 
 # Where we find the source files for our builds.
 add_subdirectory(src)

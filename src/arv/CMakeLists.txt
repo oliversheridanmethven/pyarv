@@ -1,8 +1,6 @@
 add_subdirectory(version)
 add_subdirectory(testing)
 add_subdirectory(logging)
-add_subdirectory(error_codes)
-add_subdirectory(examples)
 add_subdirectory(approximation)
 add_subdirectory(gaussian)
 add_subdirectory(non_central_chi_squared)

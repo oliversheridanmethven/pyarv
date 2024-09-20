@@ -1,3 +1,3 @@
-add_executable(version_example test_version.c)
-target_link_libraries(version_example version testing logging)
-add_test(NAME test_version_example COMMAND version_example)
+add_executable(test_version_example test_version.c)
+target_link_libraries(test_version_example logging version testing)
+add_test(NAME test_test_version_example COMMAND test_version_example)

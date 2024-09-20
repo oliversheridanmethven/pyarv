@@ -11,7 +11,7 @@ def polynomial(*,
                output: Array,
                order: int = 1
                ) -> None:
-    """
+    r"""
     Polynomial approximation to the inverse CDF of the Gaussian distribution.
 
     Parameters

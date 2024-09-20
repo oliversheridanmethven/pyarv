@@ -13,7 +13,7 @@ setup(
     long_description_content_type='text/markdown',
     license="MIT",
     setuptools_git_versioning={"enabled": True},
-    setup_requires=["setuptools-git-versioning<2"],
+    setup_requires=["setuptools-git-versioning"],
     install_requires=["numpy"],
     extras_require={
         'dev': [
