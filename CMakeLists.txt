@@ -4,9 +4,8 @@ cmake_minimum_required(VERSION 3.25)  # Use the latest and greatest.
 # compilers, so we set our paths to the compilers first.
 # cf: https://stackoverflow.com/a/29904501/5134817
 
-#find_program(CMAKE_C_COMPILER NAMES $ENV{CC} clang-18 clang PATHS ENV PATH NO_DEFAULT_PATH)
-#find_program(CMAKE_C_COMPILER NAMES $ENV{CC} gcc-14 gcc PATHS ENV PATH NO_DEFAULT_PATH)
-find_program(CMAKE_C_COMPILER NAMES $ENV{CC} gcc-14 gcc clang-18 clang PATHS ENV PATH NO_DEFAULT_PATH)
+find_program(CMAKE_C_COMPILER NAMES $ENV{CC} clang-19 clang PATHS ENV PATH NO_DEFAULT_PATH)
+#find_program(CMAKE_C_COMPILER NAMES $ENV{CC} gcc-14 PATHS ENV PATH NO_DEFAULT_PATH)
 
 project(pyarv C)
 
@@ -16,10 +15,11 @@ set(CMAKE_C_STANDARD 23)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS OFF)
 
+
 set(CC ${CMAKE_C_COMPILER})
 message(STATUS "We think we are using the C compiler: ${CMAKE_C_COMPILER_ID} ${CMAKE_C_COMPILER_VERSION}")
 
-#set(CMAKE_GENERATOR "Unix Makefiles")
+set(CMAKE_GENERATOR "Unix Makefiles")
 
 set(ERROR_FLAGS "-Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic")
 if (CMAKE_C_COMPILER_ID STREQUAL "Clang")
@@ -32,7 +32,8 @@ endif()
 
 set(IGNORE_ERROR_FLAGS "-Wno-int-conversion -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-incompatible-pointer-types")
 set(IGNORE_ERROR_FLAGS_C ${IGNORE_ERROR_FLAGS})
-# Not all flags exist for both C and C++, so we possibly filter some out or add some in.
+# Not all flags exist for both languages, so we possibly filter some out or add some in.
+message(DEBUG "The CXX error flags before filtering: ${IGNORE_ERROR_FLAGS_CXX}")
 set(C_ONLY_FLAGS "-Wno-int-conversion;-Wno-incompatible-pointer-types")
 
 set(ERROR_FLAGS_C "${ERROR_FLAGS} ${IGNORE_ERROR_FLAGS_C}")
@@ -41,10 +42,10 @@ message(DEBUG "The C compiler flags are: ${CMAKE_C_FLAGS}")
 message(STATUS "Compiling in mode: ${CMAKE_BUILD_TYPE}")
 if(CMAKE_BUILD_TYPE STREQUAL "Release")
     message(STATUS "Adding optimisation flags.")
-    set(CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS} -O3 -fopenmp-simd")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O2")
 elseif (CMAKE_BUILD_TYPE STREQUAL "Debug")
     message(STATUS "Adding debug flags.")
-    set(CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS} -g -O0")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -O0")
 endif()
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${ERROR_FLAGS_C}")
@@ -72,15 +73,15 @@ else()
 endif()
 
 include(CheckCCompilerFlag)
-CHECK_C_COMPILER_FLAG("-std=c2x" COMPILER_SUPPORTS_C2X)
+CHECK_C_COMPILER_FLAG("-std=c23" COMPILER_SUPPORTS_C2X)
 if(COMPILER_SUPPORTS_C2X)
-    message(STATUS "Compiler ${CMAKE_C_COMPILER} appears to have C2X support.")
+    message(STATUS "Compiler ${CMAKE_C_COMPILER} appears to have C23 support.")
     foreach(i ${CMAKE_C_COMPILE_FEATURES})
         message(DEBUG "Compiler ${CMAKE_C_COMPILER} uses feature: ${i}")
     endforeach()
-    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c2x")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c23")
 else()
-    message(FATAL_ERROR "Compiler ${CMAKE_C_COMPILER} has no C2X support.")
+    message(FATAL_ERROR "Compiler ${CMAKE_C_COMPILER} has no C23 support.")
 endif()
 
 # To enable testing and use of ctest.
@@ -89,16 +90,9 @@ enable_testing()
 # cf. https://stackoverflow.com/questions/54550939/ctest-add-tests-in-subdirectories#comment109191766_55835742
 
 message(DEBUG "Just printing this to supress a warning: ${PYTHON_EXECUTABLE}")
-message(DEBUG "Just printing this to supress a warning: ${Python_EXECUTABLE}")
 set(Python3_FIND_VIRTUALENV FIRST)
 set(Python3_ROOT_DIR "${PROJECT_SOURCE_DIR}/venv")
-find_package(Python 3.12 COMPONENTS Interpreter Development NumPy)
-find_package(Python3 3.12 COMPONENTS Interpreter Development NumPy)
-# Print out the discovered paths
-include(CMakePrintHelpers)
-cmake_print_variables(Python_INCLUDE_DIRS)
-cmake_print_variables(Python_NumPy_INCLUDE_DIRS)
-add_compile_definitions(NPY_NO_DEPRECATED_API=NPY_1_7_API_VERSION)
+find_package(Python3 COMPONENTS Interpreter Development NumPy)
 
 # We use scikit-build to build our CMake project and setup our python wrappers.
 if(SKBUILD)
@@ -110,15 +104,12 @@ else()
     MESSAGE(STATUS "Could not find scikit-build for building.")
 endif()
 
-
 # We get the python libraries for our wrappers.
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/")
 MESSAGE(STATUS "Looking for the python libraries.")
 # We will include and link to all the targets henceforth.
 include_directories(SYSTEM ${Python3_INCLUDE_DIRS})
-include_directories(SYSTEM Python3::NumPy)
 link_libraries(${Python3_LIBRARIES})
-link_libraries(Python3::NumPy)
 
 function(add_all_python_tests)
     file(GLOB_RECURSE python_files *.py)
@@ -158,12 +149,8 @@ function(install_python_target target destination)
     endif()
 endfunction()
 
-# TODO: Add Glib just to arv logging interface library (My setup if not working at the moment, issuing linking errors).
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(GLIB REQUIRED glib-2.0)
-pkg_search_module(GLIB REQUIRED glib-2.0)
-include_directories(SYSTEM ${GLIB_INCLUDE_DIRS})
-link_directories(${GLIB_LIBRARY_DIRS})
-
 # Where we find the source files for our builds.
 add_subdirectory(src)
+
+# Where we find the scratch files for our proto-typing things.
+#add_subdirectory(misc)

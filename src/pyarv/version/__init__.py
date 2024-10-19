@@ -1,1 +1,1 @@
-from .version_bindings import *
+from pyarv.version.version_bindings import *

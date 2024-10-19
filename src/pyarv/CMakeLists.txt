@@ -1,4 +1,4 @@
 add_subdirectory(bindings)
-add_subdirectory(version)
+#add_subdirectory(version)
 add_subdirectory(gaussian)
 add_subdirectory(non_central_chi_squared)

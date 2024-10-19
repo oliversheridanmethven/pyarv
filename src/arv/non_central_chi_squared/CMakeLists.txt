@@ -1,3 +1,3 @@
 add_library(non_central_chi_squared linear.c)
-target_link_libraries(non_central_chi_squared approximation)
+target_link_libraries(non_central_chi_squared approximation Python3::NumPy)
 target_include_directories(non_central_chi_squared INTERFACE ..)
