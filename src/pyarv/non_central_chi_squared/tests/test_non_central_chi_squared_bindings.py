@@ -22,12 +22,38 @@ def scalar_approximation(*,
 class TestBasicProperties(unittest.TestCase):
     def test_low_relative_error(self):
         orders = [1]
-        degrees_of_freedom = [1, 5, 10, 50]
-        non_centralities = [1, 5, 10]
+        degrees_of_freedom = [1.0, 5.0, 10.0, 50.0]
+        non_centralities = [1.0, 5.0, 10.0]
         for order, degree_of_freedom, non_centrality in itertools.product(orders, degrees_of_freedom, non_centralities):
             error_integral = integrate.quad(lambda u: non_central_chi_squared.ppf(u, df=degree_of_freedom, nc=non_centrality) - scalar_approximation(u=u, order=order, degree_of_freedom=degree_of_freedom, non_centrality=non_centrality), 0, 1, limit=1000)
             self.assertLessEqual(0, error_integral[0] + error_integral[1], f"Expected a near zero error for {order = } {degree_of_freedom = } {non_centrality = }")
             self.assertGreaterEqual(0, error_integral[0] - error_integral[1], f"Expected a near zero error for {order = } {degree_of_freedom = } {non_centrality = }")
+
+class TestResultsDiffer(unittest.TestCase):
+    def test_degrees_of_freedom(self):
+        order = 1
+        non_centralities = [1.0, 5.0, 10.0]
+        np.random.seed(1)
+        uniforms = np.random.uniform(size=10)
+        for non_centrality in non_centralities:
+            for u in uniforms:
+                with self.subTest(f"{non_centralities = }"):
+                    degrees_of_freedom = [5.0, 10.0]
+                    self.assertNotEqual(scalar_approximation(u=u, order=order, degree_of_freedom=degrees_of_freedom[0], non_centrality=non_centrality),
+                                        scalar_approximation(u=u, order=order, degree_of_freedom=degrees_of_freedom[1], non_centrality=non_centrality),
+                                        f"Results should differ for  {degrees_of_freedom = }")
+    def test_non_centralities(self):
+        order = 1
+        degrees_of_freedom = [5.0, 10.0]
+        np.random.seed(1)
+        uniforms = np.random.uniform(size=10)
+        for degree_of_freedom in degrees_of_freedom:
+            for u in uniforms:
+                non_centralities = [5.0, 10.0]
+                with self.subTest(f"{degree_of_freedom = }"):
+                    self.assertNotEqual(scalar_approximation(u=u, order=order, degree_of_freedom=degree_of_freedom, non_centrality=non_centralities[0]),
+                                        scalar_approximation(u=u, order=order, degree_of_freedom=degree_of_freedom, non_centrality=non_centralities[0]),
+                                        f"Results should differ for  {degrees_of_freedom = }")
 
 
 if __name__ == '__main__':
