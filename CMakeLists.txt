@@ -149,6 +149,13 @@ function(install_python_target target destination)
     endif()
 endfunction()
 
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(GLIB REQUIRED glib-2.0)
+pkg_search_module(GLIB REQUIRED glib-2.0)
+include_directories(SYSTEM ${GLIB_INCLUDE_DIRS})
+link_directories(${GLIB_LIBRARY_DIRS})
+#link_libraries(${GLIB_LIBRARIES})
+
 # Where we find the source files for our builds.
 add_subdirectory(src)
 
