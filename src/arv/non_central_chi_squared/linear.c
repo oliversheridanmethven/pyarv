@@ -10,7 +10,7 @@
 
 typedef Float Polynomial_Coefficients[HALVES][INTERPOLATION_FUNCTIONS][POLYNOMIAL_ORDER + 1][TABLE_SIZE];
 
-//#pragma omp declare simd
+#pragma omp declare simd
 static inline void interpolation_indices(const Float y,
                                          UInt *restrict interpolation_index_lower,
                                          UInt *restrict interpolation_index_upper,
@@ -24,7 +24,7 @@ static inline void interpolation_indices(const Float y,
     *weight_lower = 1.0f - *weight_upper;
 }
 
-//#pragma omp declare simd
+#pragma omp declare simd
 static inline Float polynomial_linear_approximation(Float u,
                                                     UInt b,
                                                     UInt h,
@@ -54,7 +54,7 @@ void linear(const Float *restrict const input,
             const Float degrees_of_freedom,
             const Float *restrict const polynomial_coefficients)
 {
-    //#pragma omp simd
+    // #pragma omp simd
     for (unsigned int i = 0; i < input_buffer_size; i++)
     {
         Float u, p, z, lambda;
