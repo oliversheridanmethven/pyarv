@@ -1,2 +1,0 @@
-/usr/bin/ar qc libshuffles.a CMakeFiles/shuffles.dir/specific.cpp.o
-/usr/local/opt/llvm/bin/llvm-ranlib libshuffles.a

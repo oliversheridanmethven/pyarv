@@ -1,5 +1,0 @@
-if(EXISTS "/Users/oliver/ClionProjects/testing/build/src/testing/tests/example_cpp[1]_tests.cmake")
-  include("/Users/oliver/ClionProjects/testing/build/src/testing/tests/example_cpp[1]_tests.cmake")
-else()
-  add_test(example_cpp_NOT_BUILT example_cpp_NOT_BUILT)
-endif()

@@ -1,0 +1,10 @@
+test_version_bindings 0 0
+__init__ 2 0.00775248
+test_gaussian_bindings 10 0.102697
+__init__ 2 0.00775248
+test_non_central_chi_squared_bindings 8 0.674679
+__init__ 1 0.0225884
+test_test_version_example 7 0.00778086
+test_criterion_example 7 0.00356336
+test_logging 7 0.00416635
+---

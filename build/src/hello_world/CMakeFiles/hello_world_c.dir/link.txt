@@ -1,2 +1,0 @@
-/opt/local/bin/ar qc libhello_world_c.a CMakeFiles/hello_world_c.dir/hello_world.c.o
-/usr/local/opt/llvm/bin/llvm-ranlib libhello_world_c.a

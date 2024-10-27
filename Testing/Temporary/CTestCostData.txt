@@ -1,9 +1,10 @@
-test_version_example 1 0.473145
-test_testing_example 1 0.469339
-test_logging_example 1 0.523984
-test_error_codes_example 1 0.495722
-test_numpy_bindings_example 1 0.195664
-test_simple_bindings_example 1 0.182885
-test_version_bindings 1 0.0969548
-test_gaussian_bindings 1 0.153213
+test_test_version_example 2 0.0316285
+test_criterion_example 2 0.0136678
+test_logging 2 0.0155335
+test_version_bindings 0 0
+test_gaussian_bindings 0 0
+test_non_central_chi_squared_bindings 0 0
 ---
+test_version_bindings
+test_gaussian_bindings
+test_non_central_chi_squared_bindings

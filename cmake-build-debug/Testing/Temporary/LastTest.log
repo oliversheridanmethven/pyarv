@@ -1,0 +1,117 @@
+Start testing: Oct 27 20:55 +04
+----------------------------------------------------------
+1/5 Testing: test_test_version_example
+1/5 Test: test_test_version_example
+Command: "/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/arv/version/tests/test_version_example"
+Directory: /Users/osm/CLionProjects/pyarv/cmake-build-debug/src/arv/version/tests
+"test_test_version_example" start time: Oct 27 20:55 +04
+Output:
+----------------------------------------------------------
+Version: v0.1.1-12-g95db2ef
+[====] Synthesis: Tested: 5 | Passing: 5 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"test_test_version_example" end time: Oct 27 20:55 +04
+"test_test_version_example" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/5 Testing: test_criterion_example
+2/5 Test: test_criterion_example
+Command: "/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/arv/testing/tests/test_criterion_example"
+Directory: /Users/osm/CLionProjects/pyarv/cmake-build-debug/src/arv/testing/tests
+"test_criterion_example" start time: Oct 27 20:55 +04
+Output:
+----------------------------------------------------------
+[====] Synthesis: Tested: 3 | Passing: 3 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"test_criterion_example" end time: Oct 27 20:55 +04
+"test_criterion_example" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/5 Testing: test_logging
+3/5 Test: test_logging
+Command: "/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/arv/logging/tests/test_logging"
+Directory: /Users/osm/CLionProjects/pyarv/cmake-build-debug/src/arv/logging/tests
+"test_logging" start time: Oct 27 20:55 +04
+Output:
+----------------------------------------------------------
+some info, some string 10
+** INFO: 20:55:50.930: some info
+
+** (process:40582): ERROR **: 20:55:50.930: some error
+** Message: 20:55:50.931: some message
+some print
+some print error
+** (process:40583): DEBUG: 20:55:50.931: some debug
+
+** (process:40583): WARNING **: 20:55:50.931: some warning
+[====] Synthesis: Tested: 3 | Passing: 3 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"test_logging" end time: Oct 27 20:55 +04
+"test_logging" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/5 Testing: test_gaussian_bindings
+4/5 Test: test_gaussian_bindings
+Command: "/Users/osm/CLionProjects/pyarv/venv/bin/python" "/Users/osm/CLionProjects/pyarv/src/pyarv/gaussian/tests/test_gaussian_bindings.py"
+Directory: /Users/osm/CLionProjects/pyarv/cmake-build-debug/src/pyarv/gaussian/tests
+"test_gaussian_bindings" start time: Oct 27 20:55 +04
+Output:
+----------------------------------------------------------
+../Users/osm/CLionProjects/pyarv/venv/lib/python3.12/site-packages/scipy/integrate/_quadpack_py.py:606: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  return _quadpack._qagse(func,a,b,args,full_output,epsabs,epsrel,limit)
+./Users/osm/CLionProjects/pyarv/src/pyarv/gaussian/tests/test_gaussian_bindings.py:40: IntegrationWarning: The maximum number of subdivisions (50) has been achieved.
+  If increasing the limit yields no improvement it is advised to analyze 
+  the integrand in order to determine the difficulties.  If the position of a 
+  local difficulty can be determined (singularity, discontinuity) one will 
+  probably gain from splitting up the interval and calling the integrator 
+  on the subranges.  Perhaps a special-purpose integrator should be used.
+  error_integral = integrate.quad(lambda u: norm.ppf(u) - scalar_approximation(u=u, order=order), 0, 1)
+..
+----------------------------------------------------------------------
+Ran 5 tests in 0.103s
+
+OK
+<end of output>
+Test time =   1.03 sec
+----------------------------------------------------------
+Test Passed.
+"test_gaussian_bindings" end time: Oct 27 20:55 +04
+"test_gaussian_bindings" time elapsed: 00:00:01
+----------------------------------------------------------
+
+5/5 Testing: test_non_central_chi_squared_bindings
+5/5 Test: test_non_central_chi_squared_bindings
+Command: "/Users/osm/CLionProjects/pyarv/venv/bin/python" "/Users/osm/CLionProjects/pyarv/src/pyarv/non_central_chi_squared/tests/test_non_central_chi_squared_bindings.py"
+Directory: /Users/osm/CLionProjects/pyarv/cmake-build-debug/src/pyarv/non_central_chi_squared/tests
+"test_non_central_chi_squared_bindings" start time: Oct 27 20:55 +04
+Output:
+----------------------------------------------------------
+/Users/osm/CLionProjects/pyarv/venv/lib/python3.12/site-packages/scipy/integrate/_quadpack_py.py:606: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  return _quadpack._qagse(func,a,b,args,full_output,epsabs,epsrel,limit)
+/Users/osm/CLionProjects/pyarv/src/pyarv/non_central_chi_squared/tests/test_non_central_chi_squared_bindings.py:28: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  error_integral = integrate.quad(lambda u: non_central_chi_squared.ppf(u, df=degree_of_freedom, nc=non_centrality) - scalar_approximation(u=u, order=order, degree_of_freedom=degree_of_freedom, non_centrality=non_centrality), 0, 1, limit=1000)
+...
+----------------------------------------------------------------------
+Ran 3 tests in 5.146s
+
+OK
+<end of output>
+Test time =   5.40 sec
+----------------------------------------------------------
+Test Passed.
+"test_non_central_chi_squared_bindings" end time: Oct 27 20:55 +04
+"test_non_central_chi_squared_bindings" time elapsed: 00:00:05
+----------------------------------------------------------
+
+End testing: Oct 27 20:55 +04

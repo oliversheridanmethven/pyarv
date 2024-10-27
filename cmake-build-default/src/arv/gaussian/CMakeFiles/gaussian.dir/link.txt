@@ -1,2 +1,0 @@
-/usr/bin/ar qc libgaussian.a CMakeFiles/gaussian.dir/polynomial.c.o CMakeFiles/gaussian.dir/linear.c.o CMakeFiles/gaussian.dir/cubic.c.o
-/usr/local/opt/llvm/bin/llvm-ranlib libgaussian.a

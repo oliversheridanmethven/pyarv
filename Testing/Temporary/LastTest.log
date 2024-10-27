@@ -1,161 +1,137 @@
-Start testing: Sep 16 09:23 BST
+Start testing: Sep 23 19:17 +04
 ----------------------------------------------------------
-1/8 Testing: test_version_example
-1/8 Test: test_version_example
-Command: "/Users/oliver/ClionProjects/pyarv/bin/version_example"
-Directory: /Users/oliver/ClionProjects/pyarv/src/arv/version/tests
-"test_version_example" start time: Sep 16 09:23 BST
+1/6 Testing: test_test_version_example
+1/6 Test: test_test_version_example
+Command: "/Users/osm/CLionProjects/pyarv/bin/test_version_example"
+Directory: /Users/osm/CLionProjects/pyarv/src/arv/version/tests
+"test_test_version_example" start time: Sep 23 19:17 +04
 Output:
 ----------------------------------------------------------
-Did not match the pattern "^v[[:digit:]]\{1,\}[.][[:digit:]]\{1,\}[.][[:digit:]]\{1,\}.*" to the bad pattern 0.1.0Did not match the pattern "^v[[:digit:]]\{1,\}[.][[:digit:]]\{1,\}[.][[:digit:]]\{1,\}.*" to the bad pattern v0.1Did not match the pattern "^v[[:digit:]]\{1,\}[.][[:digit:]]\{1,\}[.][[:digit:]]\{1,\}.*" to the bad pattern v0..1Did not match the pattern "^v[[:digit:]]\{1,\}[.][[:digit:]]\{1,\}[.][[:digit:]]\{1,\}.*" to the bad pattern v0.a.2Matched the pattern "^v[[:digit:]]\{1,\}[.][[:digit:]]\{1,\}[.][[:digit:]]\{1,\}.*" to v0.0.3-4-ge009311-dirtyMatched the pattern "^v[[:digit:]]\{1,\}[.][[:digit:]]\{1,\}[.][[:digit:]]\{1,\}.*" to v0.1.0Matched the pattern "^v[[:digit:]]\{1,\}[.][[:digit:]]\{1,\}[.][[:digit:]]\{1,\}.*" to v0.1.0-dirtyMatched the pattern "^v[[:digit:]]\{1,\}[.][[:digit:]]\{1,\}[.][[:digit:]]\{1,\}.*" to v0.12.3Version: v0.0.3-4-ge009311-dirty
+Version: v0.1.1-8-gf5d63e9-dirty
 [====] Synthesis: Tested: 5 | Passing: 5 | Failing: 0 | Crashing: 0 
 <end of output>
-Test time =   0.47 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Passed.
-"test_version_example" end time: Sep 16 09:23 BST
-"test_version_example" time elapsed: 00:00:00
+"test_test_version_example" end time: Sep 23 19:17 +04
+"test_test_version_example" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/8 Testing: test_testing_example
-2/8 Test: test_testing_example
-Command: "/Users/oliver/ClionProjects/pyarv/bin/criterion_example"
-Directory: /Users/oliver/ClionProjects/pyarv/src/arv/testing/tests
-"test_testing_example" start time: Sep 16 09:23 BST
+2/6 Testing: test_criterion_example
+2/6 Test: test_criterion_example
+Command: "/Users/osm/CLionProjects/pyarv/bin/test_criterion_example"
+Directory: /Users/osm/CLionProjects/pyarv/src/arv/testing/tests
+"test_criterion_example" start time: Sep 23 19:17 +04
 Output:
 ----------------------------------------------------------
 [====] Synthesis: Tested: 3 | Passing: 3 | Failing: 0 | Crashing: 0 
 <end of output>
-Test time =   0.47 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"test_testing_example" end time: Sep 16 09:23 BST
-"test_testing_example" time elapsed: 00:00:00
+"test_criterion_example" end time: Sep 23 19:17 +04
+"test_criterion_example" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/8 Testing: test_logging_example
-3/8 Test: test_logging_example
-Command: "/Users/oliver/ClionProjects/pyarv/bin/logging_test"
-Directory: /Users/oliver/ClionProjects/pyarv/src/arv/logging/tests
-"test_logging_example" start time: Sep 16 09:23 BST
+3/6 Testing: test_logging
+3/6 Test: test_logging
+Command: "/Users/osm/CLionProjects/pyarv/bin/test_logging"
+Directory: /Users/osm/CLionProjects/pyarv/src/arv/logging/tests
+"test_logging" start time: Sep 23 19:17 +04
 Output:
 ----------------------------------------------------------
-some errorsome print error
-some warningsome infosome messagesome print
-some debugsome info, some string 10
+some info, some string 10
+** INFO: 19:17:12.601: some info
+** Message: 19:17:12.602: some message
+some print
+some print error
+** (process:32925): DEBUG: 19:17:12.602: some debug
+
+** (process:32925): WARNING **: 19:17:12.602: some warning
+
+** (process:32924): ERROR **: 19:17:12.601: some error
 [====] Synthesis: Tested: 3 | Passing: 3 | Failing: 0 | Crashing: 0 
 <end of output>
-Test time =   0.52 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"test_logging_example" end time: Sep 16 09:23 BST
-"test_logging_example" time elapsed: 00:00:00
+"test_logging" end time: Sep 23 19:17 +04
+"test_logging" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/8 Testing: test_error_codes_example
-4/8 Test: test_error_codes_example
-Command: "/Users/oliver/ClionProjects/pyarv/bin/_error_codes"
-Directory: /Users/oliver/ClionProjects/pyarv/src/arv/error_codes/tests
-"test_error_codes_example" start time: Sep 16 09:23 BST
+4/6 Testing: test_version_bindings
+4/6 Test: test_version_bindings
+Command: "/Users/osm/CLionProjects/pyarv/venv/bin/python3.12" "/Users/osm/CLionProjects/pyarv/src/pyarv/version/tests/test_version_bindings.py"
+Directory: /Users/osm/CLionProjects/pyarv/src/pyarv/version/tests
+"test_version_bindings" start time: Sep 23 19:17 +04
 Output:
 ----------------------------------------------------------
-[====] Synthesis: Tested: 5 | Passing: 5 | Failing: 0 | Crashing: 0 
+Traceback (most recent call last):
+  File "/Users/osm/CLionProjects/pyarv/src/pyarv/version/tests/test_version_bindings.py", line 4, in <module>
+    import pyarv.version as version
+  File "/Users/osm/CLionProjects/pyarv/src/pyarv/__init__.py", line 1, in <module>
+    from pyarv.version import repo_version
+  File "/Users/osm/CLionProjects/pyarv/src/pyarv/version/__init__.py", line 1, in <module>
+    from pyarv.version.version_bindings import *
+ImportError: dlopen(/Users/osm/CLionProjects/pyarv/src/pyarv/version/version_bindings.so, 0x0002): Library not loaded: @rpath/libversion.dylib
+  Referenced from: <287DB4FD-CB7E-329C-9385-1750C40104F1> /Users/osm/CLionProjects/pyarv/src/pyarv/version/version_bindings.so
+  Reason: tried: '/usr/local/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/lib/libversion.dylib' (no such file), '/opt/homebrew/Cellar/glib/2.82.0/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/glib/2.82.0/lib/libversion.dylib' (no such file), '/opt/homebrew/opt/gettext/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/opt/gettext/lib/libversion.dylib' (no such file), '/Users/osm/CLionProjects/pyarv/src/pyarv/version/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/14/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/14/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/libversion.dylib' (no such file), '/usr/local/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/lib/libversion.dylib' (no such file), '/opt/homebrew/Cellar/glib/2.82.0/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/glib/2.82.0/lib/libversion.dylib' (no such file), '/opt/homebrew/opt/gettext/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/opt/gettext/lib/libversion.dylib' (no such file), '/Users/osm/CLionProjects/pyarv/src/pyarv/version/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/14/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/14/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/libversion.dylib' (no such file), '/opt/homebrew/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/lib/libversion.dylib' (no such file), '/opt/homebrew/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/lib/libversion.dylib' (no such file), '/usr/local/lib/libversion.dylib' (no such file), '/usr/lib/libversion.dylib' (no such file, not in dyld cache)
 <end of output>
-Test time =   0.50 sec
+Test time =   0.04 sec
 ----------------------------------------------------------
-Test Passed.
-"test_error_codes_example" end time: Sep 16 09:23 BST
-"test_error_codes_example" time elapsed: 00:00:00
-----------------------------------------------------------
-
-5/8 Testing: test_numpy_bindings_example
-5/8 Test: test_numpy_bindings_example
-Command: "/Users/oliver/ClionProjects/pyarv/venv/bin/python3.12" "/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/tests/test_numpy_bindings_example.py"
-Directory: /Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/tests
-"test_numpy_bindings_example" start time: Sep 16 09:23 BST
-Output:
-----------------------------------------------------------
-.
-----------------------------------------------------------------------
-Ran 1 test in 0.000s
-
-OK
-Running the test of my function.
-<end of output>
-Test time =   0.20 sec
-----------------------------------------------------------
-Test Passed.
-"test_numpy_bindings_example" end time: Sep 16 09:23 BST
-"test_numpy_bindings_example" time elapsed: 00:00:00
-----------------------------------------------------------
-
-6/8 Testing: test_simple_bindings_example
-6/8 Test: test_simple_bindings_example
-Command: "/Users/oliver/ClionProjects/pyarv/venv/bin/python3.12" "/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/tests/test_simple_bindings_example.py"
-Directory: /Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/tests
-"test_simple_bindings_example" start time: Sep 16 09:23 BST
-Output:
-----------------------------------------------------------
-.['/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/tests', '/Users/oliver/ClionProjects/pyarv/src', '/Users/oliver/ClionProjects/pyarv/src/pyarv/bindings/examples/tests', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python312.zip', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/lib-dynload', '/Users/oliver/ClionProjects/pyarv/venv/lib/python3.12/site-packages']
-We are fatally failing now.
-Hello world from within C.
-The input values are: a = 1 and b = foo
-.A non-fatal error from C in our Python binding.
-.
-----------------------------------------------------------------------
-Ran 3 tests in 0.011s
-
-OK
-We were successfully able to catch an exception: Raising a non-fatal error from C in our Python binding up to Python.
-
-Hello world from within C.
-The input values are: a = 1 and b = foo
-<end of output>
-Test time =   0.18 sec
-----------------------------------------------------------
-Test Passed.
-"test_simple_bindings_example" end time: Sep 16 09:23 BST
-"test_simple_bindings_example" time elapsed: 00:00:00
-----------------------------------------------------------
-
-7/8 Testing: test_version_bindings
-7/8 Test: test_version_bindings
-Command: "/Users/oliver/ClionProjects/pyarv/venv/bin/python3.12" "/Users/oliver/ClionProjects/pyarv/src/pyarv/version/tests/test_version_bindings.py"
-Directory: /Users/oliver/ClionProjects/pyarv/src/pyarv/version/tests
-"test_version_bindings" start time: Sep 16 09:23 BST
-Output:
-----------------------------------------------------------
-.
-----------------------------------------------------------------------
-Ran 1 test in 0.003s
-
-OK
-<end of output>
-Test time =   0.10 sec
-----------------------------------------------------------
-Test Passed.
-"test_version_bindings" end time: Sep 16 09:23 BST
+Test Failed.
+"test_version_bindings" end time: Sep 23 19:17 +04
 "test_version_bindings" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-8/8 Testing: test_gaussian_bindings
-8/8 Test: test_gaussian_bindings
-Command: "/Users/oliver/ClionProjects/pyarv/venv/bin/python3.12" "/Users/oliver/ClionProjects/pyarv/src/pyarv/gaussian/tests/test_gaussian_bindings.py"
-Directory: /Users/oliver/ClionProjects/pyarv/src/pyarv/gaussian/tests
-"test_gaussian_bindings" start time: Sep 16 09:23 BST
+5/6 Testing: test_gaussian_bindings
+5/6 Test: test_gaussian_bindings
+Command: "/Users/osm/CLionProjects/pyarv/venv/bin/python3.12" "/Users/osm/CLionProjects/pyarv/src/pyarv/gaussian/tests/test_gaussian_bindings.py"
+Directory: /Users/osm/CLionProjects/pyarv/src/pyarv/gaussian/tests
+"test_gaussian_bindings" start time: Sep 23 19:17 +04
 Output:
 ----------------------------------------------------------
-...
-----------------------------------------------------------------------
-Ran 3 tests in 0.000s
-
-OK
+Traceback (most recent call last):
+  File "/Users/osm/CLionProjects/pyarv/src/pyarv/gaussian/tests/test_gaussian_bindings.py", line 4, in <module>
+    from pyarv.gaussian.polynomial import polynomial
+  File "/Users/osm/CLionProjects/pyarv/src/pyarv/__init__.py", line 1, in <module>
+    from pyarv.version import repo_version
+  File "/Users/osm/CLionProjects/pyarv/src/pyarv/version/__init__.py", line 1, in <module>
+    from pyarv.version.version_bindings import *
+ImportError: dlopen(/Users/osm/CLionProjects/pyarv/src/pyarv/version/version_bindings.so, 0x0002): Library not loaded: @rpath/libversion.dylib
+  Referenced from: <287DB4FD-CB7E-329C-9385-1750C40104F1> /Users/osm/CLionProjects/pyarv/src/pyarv/version/version_bindings.so
+  Reason: tried: '/usr/local/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/lib/libversion.dylib' (no such file), '/opt/homebrew/Cellar/glib/2.82.0/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/glib/2.82.0/lib/libversion.dylib' (no such file), '/opt/homebrew/opt/gettext/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/opt/gettext/lib/libversion.dylib' (no such file), '/Users/osm/CLionProjects/pyarv/src/pyarv/version/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/14/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/14/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/libversion.dylib' (no such file), '/usr/local/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/lib/libversion.dylib' (no such file), '/opt/homebrew/Cellar/glib/2.82.0/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/glib/2.82.0/lib/libversion.dylib' (no such file), '/opt/homebrew/opt/gettext/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/opt/gettext/lib/libversion.dylib' (no such file), '/Users/osm/CLionProjects/pyarv/src/pyarv/version/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/14/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/14/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/libversion.dylib' (no such file), '/opt/homebrew/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/lib/libversion.dylib' (no such file), '/opt/homebrew/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/lib/libversion.dylib' (no such file), '/usr/local/lib/libversion.dylib' (no such file), '/usr/lib/libversion.dylib' (no such file, not in dyld cache)
 <end of output>
-Test time =   0.15 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
-Test Passed.
-"test_gaussian_bindings" end time: Sep 16 09:23 BST
+Test Failed.
+"test_gaussian_bindings" end time: Sep 23 19:17 +04
 "test_gaussian_bindings" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Sep 16 09:23 BST
+6/6 Testing: test_non_central_chi_squared_bindings
+6/6 Test: test_non_central_chi_squared_bindings
+Command: "/Users/osm/CLionProjects/pyarv/venv/bin/python3.12" "/Users/osm/CLionProjects/pyarv/src/pyarv/non_central_chi_squared/tests/test_non_central_chi_squared_bindings.py"
+Directory: /Users/osm/CLionProjects/pyarv/src/pyarv/non_central_chi_squared/tests
+"test_non_central_chi_squared_bindings" start time: Sep 23 19:17 +04
+Output:
+----------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/osm/CLionProjects/pyarv/src/pyarv/non_central_chi_squared/tests/test_non_central_chi_squared_bindings.py", line 5, in <module>
+    from pyarv.non_central_chi_squared.polynomial import polynomial
+  File "/Users/osm/CLionProjects/pyarv/src/pyarv/__init__.py", line 1, in <module>
+    from pyarv.version import repo_version
+  File "/Users/osm/CLionProjects/pyarv/src/pyarv/version/__init__.py", line 1, in <module>
+    from pyarv.version.version_bindings import *
+ImportError: dlopen(/Users/osm/CLionProjects/pyarv/src/pyarv/version/version_bindings.so, 0x0002): Library not loaded: @rpath/libversion.dylib
+  Referenced from: <287DB4FD-CB7E-329C-9385-1750C40104F1> /Users/osm/CLionProjects/pyarv/src/pyarv/version/version_bindings.so
+  Reason: tried: '/usr/local/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/lib/libversion.dylib' (no such file), '/opt/homebrew/Cellar/glib/2.82.0/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/glib/2.82.0/lib/libversion.dylib' (no such file), '/opt/homebrew/opt/gettext/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/opt/gettext/lib/libversion.dylib' (no such file), '/Users/osm/CLionProjects/pyarv/src/pyarv/version/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/14/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/14/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/libversion.dylib' (no such file), '/usr/local/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/lib/libversion.dylib' (no such file), '/opt/homebrew/Cellar/glib/2.82.0/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/glib/2.82.0/lib/libversion.dylib' (no such file), '/opt/homebrew/opt/gettext/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/opt/gettext/lib/libversion.dylib' (no such file), '/Users/osm/CLionProjects/pyarv/src/pyarv/version/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/14/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/14/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/gcc/libversion.dylib' (no such file), '/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/gcc/14.2.0/lib/gcc/current/libversion.dylib' (no such file), '/opt/homebrew/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/lib/libversion.dylib' (no such file), '/opt/homebrew/lib/libversion.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/lib/libversion.dylib' (no such file), '/usr/local/lib/libversion.dylib' (no such file), '/usr/lib/libversion.dylib' (no such file, not in dyld cache)
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"test_non_central_chi_squared_bindings" end time: Sep 23 19:17 +04
+"test_non_central_chi_squared_bindings" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 23 19:17 +04

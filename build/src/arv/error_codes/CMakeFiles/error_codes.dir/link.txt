@@ -1,2 +1,0 @@
-/opt/local/bin/ar qc liberror_codes.a CMakeFiles/error_codes.dir/error_codes.c.o
-/opt/local/bin/ranlib liberror_codes.a
