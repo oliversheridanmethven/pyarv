@@ -13,7 +13,7 @@ def scalar_approximation(*,
                          degree_of_freedom: float,
                          non_centrality: float
                          ):
-    u, degree_of_freedom, non_centrality = [np.array([i], dtype=np.float32) for i in [u, degree_of_freedom, non_centrality]]
+    u, non_centrality = [np.array([i], dtype=np.float32) for i in [u, non_centrality]]
     z = u * np.nan
     polynomial(input=u, output=z, order=order, degrees_of_freedom=degree_of_freedom, non_centralities=non_centrality)
     return z
@@ -46,14 +46,13 @@ class TestResultsDiffer(unittest.TestCase):
         order = 1
         degrees_of_freedom = [5.0, 10.0]
         np.random.seed(1)
-        uniforms = np.random.uniform(size=10)
-        for degree_of_freedom in degrees_of_freedom:
-            for u in uniforms:
-                non_centralities = [5.0, 10.0]
-                with self.subTest(f"{degree_of_freedom = }"):
-                    self.assertNotEqual(scalar_approximation(u=u, order=order, degree_of_freedom=degree_of_freedom, non_centrality=non_centralities[0]),
-                                        scalar_approximation(u=u, order=order, degree_of_freedom=degree_of_freedom, non_centrality=non_centralities[0]),
-                                        f"Results should differ for  {degrees_of_freedom = }")
+        uniforms = np.array([0.3, 0.5, 0.7])
+        non_centrality = 5.0
+        for u in uniforms:
+            with self.subTest(f"{u =}, {non_centrality = }"):
+                self.assertNotEqual(scalar_approximation(u=u, order=order, degree_of_freedom=degrees_of_freedom[0], non_centrality=non_centrality),
+                                    scalar_approximation(u=u, order=order, degree_of_freedom=degrees_of_freedom[1], non_centrality=non_centrality),
+                                    f"Results should differ for  {degrees_of_freedom = }")
 
 
 if __name__ == '__main__':

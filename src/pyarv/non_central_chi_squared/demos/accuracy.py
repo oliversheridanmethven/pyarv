@@ -13,12 +13,11 @@ if __name__ == "__main__":
     n_samples = 1_000
     u = np.linspace(0, 1, n_samples + 1, dtype=np.float32)[1:-1]
     order = 1
-    degree_of_freedom = 10.0
+    degrees_of_freedom = 10.0
     plt.ion()
     plt.clf()
     for non_centrality in [1.0, 10.0, 20.0]:
-        z_exact = ncx2.ppf(u, df=degree_of_freedom, nc=non_centrality)
-        degrees_of_freedom = np.zeros_like(u) + degree_of_freedom
+        z_exact = ncx2.ppf(u, df=degrees_of_freedom, nc=non_centrality)
         non_centralities = np.zeros_like(u) + non_centrality
         z_approx_linear = np.empty_like(u)
         polynomial(input=u, output=z_approx_linear, order=order, non_centralities=non_centralities, degrees_of_freedom=degrees_of_freedom)

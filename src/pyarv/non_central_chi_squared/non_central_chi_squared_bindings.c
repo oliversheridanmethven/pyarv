@@ -15,21 +15,29 @@ linear_(PyObject *Py_UNUSED(self), PyObject *args, PyObject *kwargs)
     PyArrayObject *input_array;
     PyArrayObject *output_array;
     PyArrayObject *non_centralities;
-    PyArrayObject *degrees_of_freedom;
+    float degrees_of_freedom;
+    PyArrayObject *polynomial_coefficients;
 #define N_ARRAYS 4
     PyArrayObject **arrays[N_ARRAYS] = {&input_array,
                                         &output_array,
                                         &non_centralities,
-                                        &degrees_of_freedom};
+                                        &polynomial_coefficients};
     char *arg_names[] = {
             "input",
             "output",
             "non_centralities",
             "degrees_of_freedom",
+            "polynomial_coefficients",
             NULL};
 
     if (!PyArg_ParseTupleAndKeywords(args, kwargs,
-                                     "$O!O!O!O!:linear",
+                                     "$"   // Keyword arguments
+                                     "O!"  // input
+                                     "O!"  // output
+                                     "O!"  // non centralities
+                                     "f"   // DOF
+                                     "O!"  // Coefficients
+                                     ":linear",
                                      arg_names,
                                      &PyArray_Type,
                                      &input_array,
@@ -37,8 +45,9 @@ linear_(PyObject *Py_UNUSED(self), PyObject *args, PyObject *kwargs)
                                      &output_array,
                                      &PyArray_Type,
                                      &non_centralities,
+                                     &degrees_of_freedom,
                                      &PyArray_Type,
-                                     &degrees_of_freedom))
+                                     &polynomial_coefficients))
     {
         return NULL;
     }
@@ -66,11 +75,12 @@ linear_(PyObject *Py_UNUSED(self), PyObject *args, PyObject *kwargs)
     npy_float32 *input_buffer = (npy_float32 *) PyArray_DATA(input_array);
     npy_float32 *output_buffer = (npy_float32 *) PyArray_DATA(output_array);
     npy_float32 *non_centrality_buffer = (npy_float32 *) PyArray_DATA(non_centralities);
-    npy_float32 *degrees_of_freedom_buffer = (npy_float32 *) PyArray_DATA(degrees_of_freedom);
+    npy_float32 *polynomial_coefficients_buffer = (npy_float32 *) PyArray_DATA(polynomial_coefficients);
     size_t input_buffer_size = PyArray_SIZE(input_array);
     size_t output_buffer_size = PyArray_SIZE(output_array);
     size_t non_centrality_buffer_size = PyArray_SIZE(non_centralities);
-    size_t degrees_of_freedom_buffer_size = PyArray_SIZE(degrees_of_freedom);
+    [[maybe_unused]] size_t polynomial_coefficients_buffer_size = PyArray_SIZE(polynomial_coefficients);
+    // We could check this if open up the interface more.
 
     if (input_buffer_size != output_buffer_size)
     {
@@ -84,11 +94,6 @@ linear_(PyObject *Py_UNUSED(self), PyObject *args, PyObject *kwargs)
         return NULL;
     }
 
-    if (input_buffer_size != degrees_of_freedom_buffer_size)
-    {
-        PyErr_SetString(PyExc_ValueError, "The input and degrees of freedom arrays are of differing lengths.");
-        return NULL;
-    }
 
     NPY_BEGIN_THREADS_DEF;
     NPY_BEGIN_THREADS; /* No longer need the Python GIL */
@@ -97,7 +102,8 @@ linear_(PyObject *Py_UNUSED(self), PyObject *args, PyObject *kwargs)
            output_buffer,
            input_buffer_size,
            non_centrality_buffer,
-           degrees_of_freedom_buffer);
+           degrees_of_freedom,
+           polynomial_coefficients_buffer);
 
     NPY_END_THREADS; /* We return the Python GIL. */
 

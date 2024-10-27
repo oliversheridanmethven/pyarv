@@ -18,7 +18,7 @@ from tqdm import tqdm as progressbar
 
 def dyadic_function_approximation_constructor(func, n_intervals, polynomial_order):
     """
-    Constructs a piecewise linear approximation which is piecewise
+    Constructs a piecewise polynomial approximation which is piecewise
     L2 optimal on dyadic intervals on the intervals [0, 1/2) and [1,2, 1].
     :param func: Function.
     :param n_intervals: Int.
@@ -62,15 +62,15 @@ def construct_inverse_non_central_chi_squared_interpolated_polynomial_approximat
     interpolation_function_deriv_first = lambda f: 0.5 * f ** -0.5
     interpolation_function_deriv_second = lambda f: -0.25 * f ** -1.5
 
-    # We approximate the function P
     interpolation_function_contour_spacing = 1.0 / (n_interpolating_functions - 1)
     interpolation_values = ([interpolation_function(1.0) - n * interpolation_function_contour_spacing for n in range(n_interpolating_functions - 1)] + [interpolation_function(0)])[::-1]  # interpolation key values
     interpolation_points = [0.0] + [root_scalar(lambda a: interpolation_function(a) - y, x0=0.5, bracket=[0.0, 1.0], fprime=interpolation_function_deriv_first, fprime2=interpolation_function_deriv_second).root for y in interpolation_values[1:-1]] + [1.0]  # non-centrality for interpolating functions
+    # We approximate the function P
     functions_exact = [None] * n_interpolating_functions  # The exact functions
     functions_exact[0] = norm.ppf  # Limiting case as y -> 0
     # The following odd syntax with y=... ensures y is evaluated at declaration and not taken by reference:
     functions_exact[1:-1] = [lambda u, y=y_interpolation_points: np.sqrt(dof / (4.0 * y)) * (y / dof * ncx2.ppf(u, df=dof, nc=(1.0 - y) * dof / y) - 1.0) for y_interpolation_points in interpolation_points[1:-1]]
-    functions_exact[-1] = lambda u: np.sqrt(dof / 4.0) * (1.0 / dof * chi2.ppf(u, df=dof) - 1.0)
+    functions_exact[-1] = lambda u: np.sqrt(dof / 4.0) * (chi2.ppf(u, df=dof) / dof - 1.0)
     functions_approx = [dyadic_function_approximation_constructor(f, n_intervals, polynomial_order) for f in progressbar(functions_exact)]  # By piecewise dyadic construction
 
     def construct_linear_interpolation(functions, weightings):
