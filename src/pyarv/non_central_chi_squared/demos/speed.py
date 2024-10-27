@@ -13,15 +13,19 @@ if __name__ == "__main__":
     nus = [1, 5, 10, 50, 100]
     lambdas = [1, 5, 10, 50, 100, 200, 500, 1000]
     order = 1
-    n_samples = 1_000
+    n_samples = 4_000
     u = np.random.uniform(size=n_samples).astype(np.float32)
+    z_approx = np.empty_like(u)
+    # We cache the tables for each DOF so their computation isn't timed.
+    for degree_of_freedom in nus:
+        polynomial(input=u, output=z_approx, order=order, non_centralities=np.ones_like(u), degrees_of_freedom=degree_of_freedom)
     res = {nu: {} for nu in nus}
     for degree_of_freedom, non_centrality in progressbar(list(itertools.product(nus, lambdas)), leave=False):
         start = time.time()
         z_exact = ncx2.ppf(u, df=degree_of_freedom, nc=non_centrality)
         elapsed_ncx2 = (time.time() - start) / n_samples
         z_approx = np.empty_like(u)
-        degrees_of_freedom = np.zeros_like(u) + degree_of_freedom
+        degrees_of_freedom = degree_of_freedom
         non_centralities = np.zeros_like(u) + non_centrality
         start = time.time()
         polynomial(input=u, output=z_approx, order=order, non_centralities=non_centralities, degrees_of_freedom=degrees_of_freedom)

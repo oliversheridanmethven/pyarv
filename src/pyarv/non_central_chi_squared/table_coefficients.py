@@ -47,11 +47,5 @@ def generate_non_central_chi_squared_coefficients(*,
         polynomial_coefficients[lower_half][interpolation_function_index] = coeffs_lower
         polynomial_coefficients[upper_half][interpolation_function_index] = coeffs_upper
 
-    print(polynomial_coefficients)
     assert all([i is not None for i in polynomial_coefficients.flatten()]), f"The polynomial coefficients contain a missing value."
     return np.ascontiguousarray(polynomial_coefficients.flatten(order="C"), dtype=dtype)
-
-print(generate_non_central_chi_squared_coefficients(n_intervals=16,
-                                                    n_interpolation_functions=16,
-                                                    n_polynomial_orders=2,
-                                                    dof=1.0))
