@@ -1,16 +1,16 @@
 # Upcoming features
 
-Here we sketch out some of the milestone we would like to achieve
+Here we sketch out some of the milestones we would like to achieve
 and a collection of our higher level ambitions from this project.
 
 ## Motivation 
 
-This project is currently constructed as a learning exercise. While we
+This project is currently constructed primarily as a learning exercise. While we
 hope it picks up traction and becomes wildly popular, that is not our
 primary goal. Our aim is to use this as a development testbed for
 documentation generation, repository hosting, testing frameworks,
-PyPI deployment, build system integration with pip and CMake
-(or e.g. Bazel), type hinting and sanitisers, etc.   
+PyPI deployment, build system integration with `pip` and CMake
+(or e.g. Bazel), type hinting, sanitisers, etc.   
 
 ## Versions
 
@@ -30,7 +30,7 @@ pip from PyPI or from a git clone of the repo.
 
 #### 0.3
 
-- Other distributions such as: Poisson, Beta, etc. 
+- Other distributions such as: Poisson, Beta, \( \chi^2 \), etc. 
 
 ### Release 1
 

@@ -8,7 +8,7 @@ Description:
     Approximation of the non-central chi-squared.
 """
 
-from pyarv.approximation_utils.approximating_polynomials import piecewise_polynomial_coefficients_in_half_interval, construct_index_of_dyadic_interval
+from pyarv._approximation_utils.approximating_polynomials import piecewise_polynomial_coefficients_in_half_interval, construct_index_of_dyadic_interval
 import numpy as np
 from scipy.stats import ncx2, norm, chi2
 from scipy.optimize import root_scalar

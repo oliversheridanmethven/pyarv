@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.25)  # Use the latest and greatest.
 
-# Declaring the project and it's languages also sets the,
+# Declaring the project and its languages also sets the,
 # compilers, so we set our paths to the compilers first.
 # cf: https://stackoverflow.com/a/29904501/5134817
 

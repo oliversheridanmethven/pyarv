@@ -1,6 +1,6 @@
 # An example
 
-The example showcases the how to use the PyARV package.
+The example showcases how to use the PyARV package.
 
 !!! note "NumPy arrays"
     - We use numpy arrays, not lists. 

@@ -50,7 +50,8 @@ plugins:
   - social
   - gen-files:
       scripts:
-        - mkdoc_scripts/generate_documentation_pages.py
+        - mkdoc_scripts/generate_user_documentation.py
+        - mkdoc_scripts/generate_developer_documentation.py
   - mkdocstrings:
       handlers:
         python:

@@ -2,7 +2,7 @@ import numpy as np
 from scipy.stats import ncx2, norm, chi2
 from scipy.optimize import root_scalar
 
-from pyarv.approximation_utils.approximating_polynomials import piecewise_polynomial_coefficients_in_half_interval
+from pyarv._approximation_utils.approximating_polynomials import piecewise_polynomial_coefficients_in_half_interval
 
 
 def generate_non_central_chi_squared_coefficients(*,
