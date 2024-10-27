@@ -13,12 +13,15 @@ if __name__ == "__main__":
     nus = [1, 5, 10, 50, 100]
     lambdas = [1, 5, 10, 50, 100, 200, 500, 1000]
     order = 1
-    n_samples = 4_000
+    n_samples = 10
     u = np.random.uniform(size=n_samples).astype(np.float32)
     z_approx = np.empty_like(u)
     # We cache the tables for each DOF so their computation isn't timed.
     for degree_of_freedom in nus:
         polynomial(input=u, output=z_approx, order=order, non_centralities=np.ones_like(u), degrees_of_freedom=degree_of_freedom)
+    n_samples = 10_000 # Should only take a second or two in release mode.
+    u = np.random.uniform(size=n_samples).astype(np.float32)
+    z_approx = np.empty_like(u)
     res = {nu: {} for nu in nus}
     for degree_of_freedom, non_centrality in progressbar(list(itertools.product(nus, lambdas)), leave=False):
         start = time.time()
