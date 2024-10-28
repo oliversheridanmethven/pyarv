@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: PyARV
-Version: 0.2.0
+Version: 0.2.1.post1+git.37abde23
 Summary: Approximate random variables
 Author: Dr Oliver Sheridan-Methven
 License: MIT

@@ -55,7 +55,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}/Users/osm/CLionProjects/pyarv/src/pyarv/_version/version_bindings.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/Users/osm/CLionProjects/pyarv/src/pyarv/_version/version_bindings.so")
     execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/osm/CLionProjects/pyarv/cmake-build-release/src/_arv/version"
+      -delete_rpath "/Users/osm/CLionProjects/pyarv/cmake-build-release/src/arv/version"
       "$ENV{DESTDIR}/Users/osm/CLionProjects/pyarv/src/pyarv/_version/version_bindings.so")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/opt/local/bin/strip" -x "$ENV{DESTDIR}/Users/osm/CLionProjects/pyarv/src/pyarv/_version/version_bindings.so")

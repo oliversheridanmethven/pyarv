@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/_arv/cmake_install.cmake")
+  include("/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/arv/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

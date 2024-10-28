@@ -1,69 +1,89 @@
-Start testing: Oct 28 23:54 +04
+Start testing: Oct 29 00:31 +04
 ----------------------------------------------------------
-1/5 Testing: test_test_version_example
-1/5 Test: test_test_version_example
-Command: "/Users/osm/CLionProjects/pyarv/cmake-build-release/src/_arv/version/tests/test_version_example"
-Directory: /Users/osm/CLionProjects/pyarv/cmake-build-release/src/_arv/version/tests
-"test_test_version_example" start time: Oct 28 23:54 +04
+1/6 Testing: test_test_version_example
+1/6 Test: test_test_version_example
+Command: "/Users/osm/CLionProjects/pyarv/cmake-build-release/src/arv/version/tests/test_version_example"
+Directory: /Users/osm/CLionProjects/pyarv/cmake-build-release/src/arv/version/tests
+"test_test_version_example" start time: Oct 29 00:31 +04
 Output:
 ----------------------------------------------------------
-Version: v0.2.0-1-gded3d08-dirty
+Version: v0.2.1-dirty
 [====] Synthesis: Tested: 5 | Passing: 5 | Failing: 0 | Crashing: 0 
 <end of output>
 Test time =   0.05 sec
 ----------------------------------------------------------
 Test Passed.
-"test_test_version_example" end time: Oct 28 23:54 +04
+"test_test_version_example" end time: Oct 29 00:31 +04
 "test_test_version_example" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/5 Testing: test_criterion_example
-2/5 Test: test_criterion_example
-Command: "/Users/osm/CLionProjects/pyarv/cmake-build-release/src/_arv/testing/tests/test_criterion_example"
-Directory: /Users/osm/CLionProjects/pyarv/cmake-build-release/src/_arv/testing/tests
-"test_criterion_example" start time: Oct 28 23:54 +04
+2/6 Testing: test_criterion_example
+2/6 Test: test_criterion_example
+Command: "/Users/osm/CLionProjects/pyarv/cmake-build-release/src/arv/testing/tests/test_criterion_example"
+Directory: /Users/osm/CLionProjects/pyarv/cmake-build-release/src/arv/testing/tests
+"test_criterion_example" start time: Oct 29 00:31 +04
 Output:
 ----------------------------------------------------------
-[====] Synthesis: Tested: 3 | Passing: 3 | Failing: 0 | Crashing: 0 
-<end of output>
-Test time =   0.02 sec
-----------------------------------------------------------
-Test Passed.
-"test_criterion_example" end time: Oct 28 23:54 +04
-"test_criterion_example" time elapsed: 00:00:00
-----------------------------------------------------------
-
-3/5 Testing: test_logging
-3/5 Test: test_logging
-Command: "/Users/osm/CLionProjects/pyarv/cmake-build-release/src/_arv/logging/tests/test_logging"
-Directory: /Users/osm/CLionProjects/pyarv/cmake-build-release/src/_arv/logging/tests
-"test_logging" start time: Oct 28 23:54 +04
-Output:
-----------------------------------------------------------
-some info, some string 10
-** INFO: 23:54:17.871: some info
-** Message: 23:54:17.872: some message
-some print
-some print error
-
-** (process:30751): ERROR **: 23:54:17.871: some error
-** (process:30752): DEBUG: 23:54:17.872: some debug
-
-** (process:30752): WARNING **: 23:54:17.872: some warning
 [====] Synthesis: Tested: 3 | Passing: 3 | Failing: 0 | Crashing: 0 
 <end of output>
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"test_logging" end time: Oct 28 23:54 +04
+"test_criterion_example" end time: Oct 29 00:31 +04
+"test_criterion_example" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/6 Testing: test_logging
+3/6 Test: test_logging
+Command: "/Users/osm/CLionProjects/pyarv/cmake-build-release/src/arv/logging/tests/test_logging"
+Directory: /Users/osm/CLionProjects/pyarv/cmake-build-release/src/arv/logging/tests
+"test_logging" start time: Oct 29 00:31 +04
+Output:
+----------------------------------------------------------
+some info, some string 10
+** INFO: 00:31:35.516: some info
+** Message: 00:31:35.517: some message
+some print
+some print error
+** (process:46226): DEBUG: 00:31:35.517: some debug
+
+** (process:46226): WARNING **: 00:31:35.517: some warning
+
+** (process:46225): ERROR **: 00:31:35.516: some error
+[====] Synthesis: Tested: 3 | Passing: 3 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"test_logging" end time: Oct 29 00:31 +04
 "test_logging" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/5 Testing: test_gaussian_bindings
-4/5 Test: test_gaussian_bindings
+4/6 Testing: test_version_bindings
+4/6 Test: test_version_bindings
+Command: "/Users/osm/CLionProjects/pyarv/venv/bin/python" "/Users/osm/CLionProjects/pyarv/src/pyarv/version/tests/test_version_bindings.py"
+Directory: /Users/osm/CLionProjects/pyarv/cmake-build-release/src/pyarv/version/tests
+"test_version_bindings" start time: Oct 29 00:31 +04
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"test_version_bindings" end time: Oct 29 00:31 +04
+"test_version_bindings" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/6 Testing: test_gaussian_bindings
+5/6 Test: test_gaussian_bindings
 Command: "/Users/osm/CLionProjects/pyarv/venv/bin/python" "/Users/osm/CLionProjects/pyarv/src/pyarv/gaussian/tests/test_gaussian_bindings.py"
 Directory: /Users/osm/CLionProjects/pyarv/cmake-build-release/src/pyarv/gaussian/tests
-"test_gaussian_bindings" start time: Oct 28 23:54 +04
+"test_gaussian_bindings" start time: Oct 29 00:31 +04
 Output:
 ----------------------------------------------------------
 ../Users/osm/CLionProjects/pyarv/venv/lib/python3.12/site-packages/scipy/integrate/_quadpack_py.py:606: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
@@ -77,26 +97,24 @@ Output:
   error_integral = integrate.quad(lambda u: norm.ppf(u) - scalar_approximation(u=u, order=order), 0, 1)
 ..
 ----------------------------------------------------------------------
-Ran 5 tests in 0.099s
+Ran 5 tests in 0.103s
 
 OK
 <end of output>
-Test time =   0.35 sec
+Test time =   0.37 sec
 ----------------------------------------------------------
 Test Passed.
-"test_gaussian_bindings" end time: Oct 28 23:54 +04
+"test_gaussian_bindings" end time: Oct 29 00:31 +04
 "test_gaussian_bindings" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-5/5 Testing: test_non_central_chi_squared_bindings
-5/5 Test: test_non_central_chi_squared_bindings
+6/6 Testing: test_non_central_chi_squared_bindings
+6/6 Test: test_non_central_chi_squared_bindings
 Command: "/Users/osm/CLionProjects/pyarv/venv/bin/python" "/Users/osm/CLionProjects/pyarv/src/pyarv/non_central_chi_squared/tests/test_non_central_chi_squared_bindings.py"
 Directory: /Users/osm/CLionProjects/pyarv/cmake-build-release/src/pyarv/non_central_chi_squared/tests
-"test_non_central_chi_squared_bindings" start time: Oct 28 23:54 +04
+"test_non_central_chi_squared_bindings" start time: Oct 29 00:31 +04
 Output:
 ----------------------------------------------------------
-/Users/osm/CLionProjects/pyarv/src/pyarv/non_central_chi_squared/_table_coefficients.py:15: SyntaxWarning: invalid escape sequence '\('
-  """
 /Users/osm/CLionProjects/pyarv/venv/lib/python3.12/site-packages/scipy/integrate/_quadpack_py.py:606: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
   return _quadpack._qagse(func,a,b,args,full_output,epsabs,epsrel,limit)
 /Users/osm/CLionProjects/pyarv/src/pyarv/non_central_chi_squared/tests/test_non_central_chi_squared_bindings.py:28: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
@@ -105,15 +123,15 @@ Output:
   error_integral = integrate.quad(lambda u: non_central_chi_squared.ppf(u, df=degree_of_freedom, nc=non_centrality) - scalar_approximation(u=u, order=order, degree_of_freedom=degree_of_freedom, non_centrality=non_centrality), 0, 1, limit=1000)
 ...
 ----------------------------------------------------------------------
-Ran 3 tests in 5.052s
+Ran 3 tests in 5.370s
 
 OK
 <end of output>
-Test time =   5.30 sec
+Test time =   5.65 sec
 ----------------------------------------------------------
 Test Passed.
-"test_non_central_chi_squared_bindings" end time: Oct 28 23:54 +04
+"test_non_central_chi_squared_bindings" end time: Oct 29 00:31 +04
 "test_non_central_chi_squared_bindings" time elapsed: 00:00:05
 ----------------------------------------------------------
 
-End testing: Oct 28 23:54 +04
+End testing: Oct 29 00:31 +04
