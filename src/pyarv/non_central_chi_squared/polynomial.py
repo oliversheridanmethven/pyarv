@@ -37,14 +37,14 @@ def polynomial(*,
 
         1 = linear.
     non_centralities:
-        The non-centralities, positive (zero values correspond to the central \( chi^2 \) distribution).
+        The non-centralities, positive (zero values correspond to the central \( \chi^2 \) distribution).
     degrees_of_freedom:
         The degrees of freedom, strictly positive, assumed to be fixed for all values.
 
     Returns
     -------
     output:
-        The approximate non-central \( \Chi^2 \) random variables are written into `output`.
+        The approximate non-central \( \chi^2 \) random variables are written into `output`.
     """
     approximations = {1: linear}
     if order not in approximations.keys():
