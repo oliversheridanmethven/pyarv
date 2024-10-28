@@ -1,4 +1,4 @@
-#include "_bindings/wrappers.h"
+#include "bindings/wrappers.h"
 #include "version_bindings.h"
 
 static PyMethodDef version_methods[] = {

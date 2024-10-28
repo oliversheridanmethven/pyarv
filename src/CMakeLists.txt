@@ -1,2 +1,2 @@
-add_subdirectory(_arv)
+add_subdirectory(arv)
 add_subdirectory(pyarv)
