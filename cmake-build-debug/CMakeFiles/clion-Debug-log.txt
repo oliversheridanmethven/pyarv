@@ -1,17 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -DINSOURCE_BUILD=True -DCMAKE_INSTALL_RPATH_USE_LINK_PATH=ON -G Ninja -DPython_EXECUTABLE=/Users/osm/CLionProjects/pyarv/venv/bin/python -DPython3_EXECUTABLE=/Users/osm/CLionProjects/pyarv/venv/bin/python -S /Users/osm/CLionProjects/pyarv -B /Users/osm/CLionProjects/pyarv/cmake-build-debug
--- We think we are using the C compiler: GNU 14.2.0
--- Setting some extra GNU specific flags.
--- Compiling in mode: Debug
--- Adding debug flags.
--- We think we have 16 cores on this machine.
--- Trying to set the build and tests to use parallel cores.
--- Our default make tool is: /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja
--- Using an in source python path.
--- Compiler /opt/homebrew/bin/gcc-14 appears to have C23 support.
--- Could not find scikit-build for building.
--- Looking for the python libraries.
--- Installing the Python target gaussian_bindings in source at destination: /Users/osm/CLionProjects/pyarv/src/pyarv/gaussian.
--- Installing the Python target non_central_chi_squared_bindings in source at destination: /Users/osm/CLionProjects/pyarv/src/pyarv/non_central_chi_squared.
--- Configuring done (0.2s)
--- Generating done (0.0s)
--- Build files have been written to: /Users/osm/CLionProjects/pyarv/cmake-build-debug
+Cannot generate into /Users/osm/CLionProjects/pyarv
+It was created with incompatible generator 'Unix Makefiles'
+
+Please either delete it manually or select another generation directory

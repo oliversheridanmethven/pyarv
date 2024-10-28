@@ -2,74 +2,142 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/index.html</loc>
-         <lastmod>2024-10-27</lastmod>
+         <lastmod>2024-10-28</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/LICENSE.html</loc>
-         <lastmod>2024-10-27</lastmod>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/FAQs/index.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/FAQs/why_python_and_c.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/User_API/SUMMARY.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/User_API/gaussian/index.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/User_API/gaussian/polynomial.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/User_API/non_central_chi_squared/index.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/User_API/non_central_chi_squared/polynomial.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/about/index.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/developer_notes/index.html</loc>
+         <lastmod>2024-10-28</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/developer_notes/deployment.html</loc>
-         <lastmod>2024-10-27</lastmod>
+         <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/developer_notes/upcoming_features.html</loc>
-         <lastmod>2024-10-27</lastmod>
+         <loc>https://oliversheridanmethven.github.io/pyarv/developer_notes/documentation_conventions.html</loc>
+         <lastmod>2024-10-28</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/developer_notes/updating_versions_and_releases_and_documentation.html</loc>
-         <lastmod>2024-10-27</lastmod>
-    </url>
-    <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/developer_notes/why_python_and_c.html</loc>
-         <lastmod>2024-10-27</lastmod>
+         <lastmod>2024-10-28</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/developer_notes/build_instructions/from_source.html</loc>
-         <lastmod>2024-10-27</lastmod>
+         <lastmod>2024-10-28</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/developer_notes/build_instructions/in_source.html</loc>
-         <lastmod>2024-10-27</lastmod>
+         <lastmod>2024-10-28</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/developer_notes/build_instructions/python_bindings.html</loc>
-         <lastmod>2024-10-27</lastmod>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/developer_reference/SUMMARY.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/developer_reference/_approximation_utils/index.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/developer_reference/_approximation_utils/approximating_polynomials.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/developer_reference/_type_hints/arrays.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/developer_reference/_version/index.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/developer_reference/gaussian/index.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/developer_reference/gaussian/polynomial.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/developer_reference/non_central_chi_squared/index.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/developer_reference/non_central_chi_squared/_approximate_non_central_chi_squared.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/developer_reference/non_central_chi_squared/_approximate_non_central_chi_squared_demonstrations.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/developer_reference/non_central_chi_squared/_table_coefficients.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/developer_reference/non_central_chi_squared/polynomial.html</loc>
+         <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://oliversheridanmethven.github.io/pyarv/getting_started/index.html</loc>
+         <lastmod>2024-10-28</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/getting_started/an_example.html</loc>
-         <lastmod>2024-10-27</lastmod>
+         <lastmod>2024-10-28</lastmod>
     </url>
     <url>
          <loc>https://oliversheridanmethven.github.io/pyarv/getting_started/installation.html</loc>
-         <lastmod>2024-10-27</lastmod>
+         <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/user_documentation/SUMMARY.html</loc>
-         <lastmod>2024-10-27</lastmod>
+         <loc>https://oliversheridanmethven.github.io/pyarv/release_history/index.html</loc>
+         <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/user_documentation/approximation_utils/approximating_polynomials.html</loc>
-         <lastmod>2024-10-27</lastmod>
+         <loc>https://oliversheridanmethven.github.io/pyarv/release_history/change_log.html</loc>
+         <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/user_documentation/gaussian/polynomial.html</loc>
-         <lastmod>2024-10-27</lastmod>
-    </url>
-    <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/user_documentation/non_central_chi_squared/approximate_non_central_chi_squared.html</loc>
-         <lastmod>2024-10-27</lastmod>
-    </url>
-    <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/user_documentation/non_central_chi_squared/approximate_non_central_chi_squared_demonstrations.html</loc>
-         <lastmod>2024-10-27</lastmod>
-    </url>
-    <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/user_documentation/non_central_chi_squared/polynomial.html</loc>
-         <lastmod>2024-10-27</lastmod>
-    </url>
-    <url>
-         <loc>https://oliversheridanmethven.github.io/pyarv/user_documentation/non_central_chi_squared/table_coefficients.html</loc>
-         <lastmod>2024-10-27</lastmod>
+         <loc>https://oliversheridanmethven.github.io/pyarv/release_history/upcoming_features.html</loc>
+         <lastmod>2024-10-28</lastmod>
     </url>
 </urlset>
