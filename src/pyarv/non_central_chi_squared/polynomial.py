@@ -1,7 +1,7 @@
 import logging
 
 from pyarv.non_central_chi_squared.non_central_chi_squared_bindings import linear
-from pyarv.non_central_chi_squared.table_coefficients import generate_non_central_chi_squared_coefficients
+from pyarv.non_central_chi_squared._table_coefficients import generate_non_central_chi_squared_coefficients
 import numpy as np
 import numpy.typing as npt
 from typing import Annotated, Literal

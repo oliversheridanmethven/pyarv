@@ -9,7 +9,7 @@ nav = mkdocs_gen_files.Nav()
 
 root = Path(__file__).parent.parent
 src = root / "src/pyarv"
-generated_directory_name = "developer_documentation"
+generated_directory_name = "developer_reference"
 
 for path in sorted(src.rglob("*.py")):
     ignore_final_dirs = ["tests", "demos"]
@@ -29,7 +29,7 @@ for path in sorted(src.rglob("*.py")):
 
     if parts[-1] == "__init__":
         parts = parts[:-1]
-        continue
+        # continue
         # Do nothing with the __init__ stuff.
         rename_init_as = "index"
         doc_path = doc_path.with_name(f"{rename_init_as}.md")
@@ -37,8 +37,12 @@ for path in sorted(src.rglob("*.py")):
     elif parts[-1] == "__main__":
         continue
 
-    print(f"{parts = } {doc_path = }")
-    nav[parts] = doc_path.as_posix()
+    if not parts:
+        # Skipping the __init__ that might be in the root module.
+        continue
+
+    part_names = tuple([part.replace("_", " ").strip() for part in parts])
+    nav[part_names] = doc_path.as_posix()
 
     with mkdocs_gen_files.open(full_doc_path, "w") as fd:
         ident = ".".join(parts)

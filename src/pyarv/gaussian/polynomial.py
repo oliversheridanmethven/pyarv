@@ -1,9 +1,6 @@
 from pyarv.gaussian.gaussian_bindings import linear, cubic
-import numpy as np
-import numpy.typing as npt
-from typing import Annotated, Literal
+from pyarv._type_hints.arrays import Array
 
-Array = Annotated[npt.NDArray[np.float32], Literal["N"]]
 
 
 def polynomial(*,
@@ -12,7 +9,7 @@ def polynomial(*,
                order: int = 1
                ) -> None:
     r"""
-    Polynomial approximation to the inverse CDF of the Gaussian distribution.
+    Polynomial approximation to the inverse CDF of the Gaussian distribution,  \( \Phi^{-1} \).
 
     Parameters
     ----------
@@ -24,7 +21,7 @@ def polynomial(*,
     order:
         The polynomial order to use:
 
-        1 = linear.
+        1 = linear.  
         3 = cubic.
         
     Returns

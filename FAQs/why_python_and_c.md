@@ -32,7 +32,7 @@ and this is something we take advantage of for optimisation.
 - Python and NumPy have C APIs, and these are the initial 
 targets for our wrappers.
 
-### Why not C++, Fortran, Rust, Julia, MATLAB, JavaScript, etc. 
+## Why not C++, Fortran, Rust, Julia, MATLAB, JavaScript, etc. 
 
 Creating interfaces for the various
 languages should be easy enough, and if the package proves

@@ -5,7 +5,7 @@
 #include <numpy/arrayobject.h>
 // clang-format on
 
-#include "bindings/wrappers.h"
+#include "_bindings/wrappers.h"
 
 PyMethodDef gaussian_methods[] = {
         {"linear", PyFunc(linear_), METH_VARARGS | METH_KEYWORDS, NULL},

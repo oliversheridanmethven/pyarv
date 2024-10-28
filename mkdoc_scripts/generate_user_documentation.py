@@ -1,6 +1,6 @@
 """Generate the code reference pages and navigation."""
 
-from pathlib import Path, PurePath
+from pathlib import Path
 import logging
 
 import mkdocs_gen_files
@@ -9,16 +9,15 @@ nav = mkdocs_gen_files.Nav()
 
 root = Path(__file__).parent.parent
 src = root / "src/pyarv"
-generated_directory_name = "user_documentation"
+generated_directory_name = "User_API"
 
 for path in sorted(src.rglob("*.py")):
     ignore_final_dirs = ["tests", "demos"]
     if (
             any([path.parent.as_posix().endswith(ignore_dir) for ignore_dir in ignore_final_dirs])
-            or any([part.startswith("_") for part in PurePath(path).parts])
-            or path.name.startswith("_")
+            or any([part.startswith("_") or part.endswith("_") for part in path.relative_to(src).parent.parts])
+            or ((path.name.startswith("_") or path.name.endswith("_.py")) and not path.name == "__init__.py")
     ):
-        logging.info(f"Ignoring {path = }")
         continue
 
     module_path = path.relative_to(src).with_suffix("")
@@ -37,7 +36,12 @@ for path in sorted(src.rglob("*.py")):
     elif parts[-1] == "__main__":
         continue
 
-    nav[parts] = doc_path.as_posix()
+    if not parts:
+        # Skipping the __init__ that might be in the root module.
+        continue
+
+    part_names = tuple([part.replace("_", " ").strip() for part in parts])
+    nav[part_names] = doc_path.as_posix()
 
     with mkdocs_gen_files.open(full_doc_path, "w") as fd:
         ident = ".".join(parts)

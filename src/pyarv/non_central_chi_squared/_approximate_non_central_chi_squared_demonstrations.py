@@ -1,13 +1,3 @@
-"""
-Author:
-
-    Oliver Sheridan-Methven September 2020.
-
-Description:
-
-    Comparison of the non-central chi^2 to the Gaussian.
-"""
-
 import matplotlib
 import platform
 if platform.system() == 'Darwin':
@@ -15,7 +5,7 @@ if platform.system() == 'Darwin':
 import matplotlib.pylab as plt
 from numpy import linspace
 from scipy.stats import uniform, ncx2
-from pyarv.non_central_chi_squared.approximate_non_central_chi_squared import construct_inverse_non_central_chi_squared_interpolated_polynomial_approximation
+from pyarv.non_central_chi_squared._approximate_non_central_chi_squared import construct_inverse_non_central_chi_squared_interpolated_polynomial_approximation
 
 uniform_numbers = lambda n_samples: uniform.rvs(size=n_samples)
 ncx2_exact = ncx2.ppf

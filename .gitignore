@@ -22,7 +22,7 @@ misc/
 install_manifest.txt
 .cmake/
 *.log
-/src/arv/version/version.c
+/src/_arv/version/version.c
 *.cbp
 /MANIFEST.in
 /dist/

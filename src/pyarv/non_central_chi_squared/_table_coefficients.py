@@ -3,15 +3,30 @@ from scipy.stats import ncx2, norm, chi2
 from scipy.optimize import root_scalar
 
 from pyarv._approximation_utils.approximating_polynomials import piecewise_polynomial_coefficients_in_half_interval
-
+from pyarv._type_hints.arrays import Array
 
 def generate_non_central_chi_squared_coefficients(*,
     n_intervals: int,
     n_interpolation_functions: int,
     n_polynomial_orders: int,
     dof: float,
-    dtype=np.float32
-    ):
+    dtype: type = np.float32
+    ) -> Array:
+    """
+    Generate coefficient tables for the non-central \( \chi^@ \) distribution.
+    
+    Parameters
+    ----------
+    n_intervals
+    n_interpolation_functions
+    n_polynomial_orders
+    dof
+    dtype
+
+    Returns
+    -------
+
+    """
     n_halves=2
     lower_half, upper_half = [0, 1]
     polynomial_order = n_polynomial_orders - 1
