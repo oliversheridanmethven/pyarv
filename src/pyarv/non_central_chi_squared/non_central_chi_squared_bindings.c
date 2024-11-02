@@ -23,8 +23,8 @@ linear_(PyObject *Py_UNUSED(self), PyObject *args, PyObject *kwargs)
                                         &non_centralities,
                                         &polynomial_coefficients};
     char *arg_names[] = {
-            "input",
-            "output",
+            "inputs",
+            "outputs",
             "non_centralities",
             "degrees_of_freedom",
             "polynomial_coefficients",

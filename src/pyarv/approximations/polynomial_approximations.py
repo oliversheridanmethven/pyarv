@@ -1,5 +1,8 @@
-import abc
+"""
+The interface we specify for our approximations.
+"""
 
+import abc
 import numpy as np
 from typing import Any
 
@@ -26,6 +29,12 @@ class PolynomialApproximationTransformer(abc.ABC):
             Whether to use a user provided array with preallocated memory.
         order
             The polynomial order.
+            
+            0 = constant.  
+            1 = linear.  
+            2 = quadratic.  
+            3 = cubic.  
+            ... etc. ...
         cache_table
             Should any coefficient tables be cached?
         try_cached_table
@@ -46,11 +55,16 @@ class PolynomialApproximationTransformer(abc.ABC):
         
     @abc.abstractmethod
     def approximation(self,
-                      *,
-                      inputs: Array,
-                      outputs: Array,
-                      order: int,
-                      **kwargs): ...
+                      *args,
+                      **kwargs) -> None:
+        """
+        The underlying approximation and the interface between the Python
+        and C functions. This may have additional parameters beyond those 
+        described by `transform`. (Also responsible for generating coefficient tables
+        and caching). 
+        """
+        ...
+    
     def transform(self, 
                    inputs: Array, 
                    /, 
@@ -68,7 +82,7 @@ class PolynomialApproximationTransformer(abc.ABC):
         outputs
             A pre-allocated array containing the outputs if requested. 
         kwargs
-            Keyword arguments needed for any specific distribution. 
+            Keyword arguments needed for any specific distribution's `approximation` implementation. 
 
         Returns
         -------

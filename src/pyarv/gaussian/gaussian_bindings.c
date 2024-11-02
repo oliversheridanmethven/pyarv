@@ -18,8 +18,8 @@ linear_(PyObject *Py_UNUSED(self), PyObject *args, PyObject *kwargs)
 #define N_ARRAYS 2
     PyArrayObject **arrays[N_ARRAYS] = {&input_array, &output_array};
     char *arg_names[] = {
-            "input",
-            "output",
+            "inputs",
+            "outputs",
             NULL};
 
     if (!PyArg_ParseTupleAndKeywords(args, kwargs,
@@ -82,8 +82,8 @@ cubic_(PyObject *Py_UNUSED(self), PyObject *args, PyObject *kwargs)
 #define N_ARRAYS 2
     PyArrayObject **arrays[N_ARRAYS] = {&input_array, &output_array};
     char *arg_names[] = {
-            "input",
-            "output",
+            "inputs",
+            "outputs",
             NULL};
 
     if (!PyArg_ParseTupleAndKeywords(args, kwargs,

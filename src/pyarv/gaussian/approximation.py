@@ -7,12 +7,12 @@ class Gaussian(PolynomialApproximationTransformer):
     """Polynomial approximation to the inverse CDF of the Gaussian distribution,  \( \Phi^{-1} \)."""
     
     def approximation(self,
-                      *,
-                      inputs: Array,
-                      outputs: Array,
-                      order: int = 1,
+                      *args, 
+                      order: int,  # This will be removed with injection.
                       **kwargs
                       ) -> None:
         approximations = {1: linear,
                           3: cubic}
-        approximations[order](input=inputs, output=outputs)
+        if self.order not in approximations.keys():
+            raise NotImplementedError(f"We have not yet implemented interfaced for higher order approximations. Currently we only support orders: {approximations.keys()}")
+        approximations[self.order](*args, **kwargs)

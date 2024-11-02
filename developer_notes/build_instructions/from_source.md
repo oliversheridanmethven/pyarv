@@ -1,7 +1,5 @@
 # Building from source
 
-
-
 ## Out-of-source builds 
 
 We follow the CMake convention by only encouraging "out-of-source"
@@ -33,8 +31,8 @@ correctly and many of the tests can be expected to fail.
 ### Modern C23 compilers
 
 We are trying to use a very modern C standard
-(C23 is brand new at the time of writing), and compiler
-support for this is very limited. To ensure `cmake` can find
+(C23 is quite new at the time of writing), and compiler
+support for this is limited. To ensure `cmake` can find
 a sufficiently new compiler version, it may be necessary to
 hardwire paths to these in your invocation of `cmake`, e.g.:
 

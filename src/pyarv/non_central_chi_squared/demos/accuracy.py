@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import ncx2
 
-from pyarv.non_central_chi_squared.polynomial import polynomial
+from pyarv.non_central_chi_squared.approximation import polynomial
 
 if __name__ == "__main__":
     n_samples = 1_000

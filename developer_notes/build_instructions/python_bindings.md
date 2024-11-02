@@ -1,6 +1,6 @@
 # Python bindings
 
-We have setup this project to wrap some of the various C/C++
+We have setup this project to wrap some of the various C
 libraries with Python bindings. To install these, run
 ```bash
 cd build
