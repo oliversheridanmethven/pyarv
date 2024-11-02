@@ -21,10 +21,11 @@ Choosing between C and C++ was a hard decision, and either
 would be a good platform to implement the underlying routines. 
 So why C and not C++:
 
-- The approximation uses some type punning (between `int` and `float`), 
+- The approximations use some type punning (between `int` and `float`), 
 and this is 
-easily done in C using unions (and is defined behaviour), 
-whereas in C++ type punning is much trickier to do correctly. 
+easily done in C using unions (and is defined behaviour!), 
+whereas in C++ type punning is much trickier to do correctly 
+(without producing undefined behaviour). 
 - C has the keyword `restrict` which does not exist in C++ without 
 compiler extensions (which we would prefer to avoid for portability),
 and this is something we take advantage of for optimisation.

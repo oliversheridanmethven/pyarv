@@ -3,7 +3,7 @@ import numpy as np
 from scipy.stats import norm
 import time
 
-from pyarv.gaussian.polynomial import polynomial
+from pyarv.gaussian.approximation import polynomial
 
 if __name__ == "__main__":
     for order in [1, 3]:
@@ -12,7 +12,7 @@ if __name__ == "__main__":
         u = np.linspace(0, 1, n_samples + 1, dtype=np.float32)[1:-1]
         z_exact = norm.ppf(u)
         z_approx = np.empty_like(u)
-        polynomial(input=u, output=z_approx, order=order)
+        polynomial(inputs=u, outputs=z_approx, order=order)
 
         n_samples = 10_000_000
         u = np.random.uniform(size=n_samples + 1).astype(np.float32)
@@ -21,7 +21,7 @@ if __name__ == "__main__":
         scipy_end = time.time()
         z_approx = np.empty_like(u)
         pyarv_start = time.time()
-        polynomial(input=u, output=z_approx, order=order)
+        polynomial(inputs=u, outputs=z_approx, order=order)
         pyarv_end = time.time()
         print(f"scipy = {scipy_end - scipy_start}")
         print(f"pyarv = {pyarv_end - pyarv_start}")
@@ -33,10 +33,10 @@ if __name__ == "__main__":
         pyarv_numpy_start = time.time()
         u = np.random.uniform(size=n_samples + 1).astype(np.float32)
         z_approx = np.empty_like(u)
-        polynomial(input=u, output=z_approx, order=order)
+        polynomial(inputs=u, outputs=z_approx, order=order)
         pyarv_numpy_end = time.time()
         pyarv_start = time.time()
-        polynomial(input=u, output=z_approx, order=order)
+        polynomial(inputs=u, outputs=z_approx, order=order)
         pyarv_end = time.time()
         uniforms_start = time.time()
         u = np.random.uniform(size=n_samples + 1).astype(np.float32)
