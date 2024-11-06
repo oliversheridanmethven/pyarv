@@ -15,7 +15,7 @@
 ########################
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=/opt/homebrew/opt/llvm/bin/llvm-addr2line
+CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/opt/local/bin/ar
@@ -28,16 +28,15 @@ CMAKE_BUILD_TYPE:STRING=Debug
 CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
 
 //C compiler
-CMAKE_C_COMPILER:STRING=/opt/homebrew/opt/llvm/bin/clang-19
+CMAKE_C_COMPILER:STRING=/opt/homebrew/bin/gcc-14
 
-//LLVM archiver
-CMAKE_C_COMPILER_AR:FILEPATH=/opt/homebrew/Cellar/llvm/19.1.1/bin/llvm-ar
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_AR:FILEPATH=/opt/homebrew/bin/gcc-ar-14
 
-//`clang-scan-deps` dependency scanner
-CMAKE_C_COMPILER_CLANG_SCAN_DEPS:FILEPATH=/opt/homebrew/Cellar/llvm/19.1.1/bin/clang-scan-deps
-
-//Generate index for LLVM archive
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/opt/homebrew/Cellar/llvm/19.1.1/bin/llvm-ranlib
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/opt/homebrew/bin/gcc-ranlib-14
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -55,7 +54,7 @@ CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Path to a program.
-CMAKE_DLLTOOL:FILEPATH=/opt/homebrew/opt/llvm/bin/llvm-dlltool
+CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
 
 //Flags used by the linker during all build types.
 CMAKE_EXE_LINKER_FLAGS:STRING=
@@ -114,13 +113,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=/opt/homebrew/opt/llvm/bin/llvm-nm
+CMAKE_NM:FILEPATH=/opt/local/bin/nm
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=/opt/homebrew/opt/llvm/bin/llvm-objcopy
+CMAKE_OBJCOPY:FILEPATH=CMAKE_OBJCOPY-NOTFOUND
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=/opt/homebrew/opt/llvm/bin/llvm-objdump
+CMAKE_OBJDUMP:FILEPATH=/opt/local/bin/objdump
 
 //Build architectures for OSX
 CMAKE_OSX_ARCHITECTURES:STRING=
@@ -131,7 +130,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 
 //The product will be built against the headers and libraries located
 // inside the indicated SDK.
-CMAKE_OSX_SYSROOT:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+CMAKE_OSX_SYSROOT:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -143,10 +142,10 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=pyarv
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=/opt/homebrew/opt/llvm/bin/llvm-ranlib
+CMAKE_RANLIB:FILEPATH=/opt/local/bin/ranlib
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=/opt/homebrew/opt/llvm/bin/llvm-readelf
+CMAKE_READELF:FILEPATH=CMAKE_READELF-NOTFOUND
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -207,35 +206,17 @@ CMAKE_TAPI:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/tapi
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Path to a file.
-CRITERION_INCLUDE_DIR:PATH=/opt/homebrew/include
-
-//Path to a library.
-CRITERION_LIBRARY:FILEPATH=/opt/homebrew/lib/libcriterion.dylib
-
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 
 //No help, variable specified on the command line.
 INSOURCE_BUILD:UNINITIALIZED=True
 
-//Arguments to supply to pkg-config
-PKG_CONFIG_ARGN:STRING=
-
-//pkg-config executable
-PKG_CONFIG_EXECUTABLE:FILEPATH=/opt/homebrew/bin/pkg-config
-
 //No help, variable specified on the command line.
 Python3_EXECUTABLE:UNINITIALIZED=/Users/osm/CLionProjects/pyarv/venv/bin/python
 
 //No help, variable specified on the command line.
 Python_EXECUTABLE:UNINITIALIZED=/Users/osm/CLionProjects/pyarv/venv/bin/python
-
-//Path to a library.
-pkgcfg_lib_GLIB_glib-2.0:FILEPATH=/opt/homebrew/Cellar/glib/2.82.1/lib/libglib-2.0.dylib
-
-//Path to a library.
-pkgcfg_lib_GLIB_intl:FILEPATH=/opt/homebrew/opt/gettext/lib/libintl.dylib
 
 //Value Computed by CMake
 pyarv_BINARY_DIR:STATIC=/Users/osm/CLionProjects/pyarv/cmake-build-debug
@@ -273,8 +254,6 @@ CMAKE_CTEST_COMMAND:INTERNAL=/Applications/CLion.app/Contents/bin/cmake/mac/aarc
 CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_AR
 CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_COMPILER_CLANG_SCAN_DEPS
-CMAKE_C_COMPILER_CLANG_SCAN_DEPS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
 CMAKE_C_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS
@@ -333,7 +312,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -378,65 +357,18 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//Test COMPILER_SUPPORTS_C2X
-COMPILER_SUPPORTS_C2X:INTERNAL=1
-//ADVANCED property for variable: CRITERION_INCLUDE_DIR
-CRITERION_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CRITERION_LIBRARY
-CRITERION_LIBRARY-ADVANCED:INTERNAL=1
-//Details about finding Criterion
-FIND_PACKAGE_MESSAGE_DETAILS_Criterion:INTERNAL=[/opt/homebrew/lib/libcriterion.dylib][/opt/homebrew/include][v()]
+//Test COMPILER_SUPPORTS_C99
+COMPILER_SUPPORTS_C99:INTERNAL=1
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.39.5 (Apple Git-154)()]
-//Details about finding PkgConfig
-FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/opt/homebrew/bin/pkg-config][v0.29.2()]
 //Details about finding Python3
 FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/Users/osm/CLionProjects/pyarv/venv/bin/python][/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12][/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib][/Users/osm/CLionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include][cfound components: Interpreter Development NumPy Development.Module Development.Embed ][v3.12.6()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
-GLIB_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/glib/2.82.1/include/glib-2.0;-I/opt/homebrew/Cellar/glib/2.82.1/lib/glib-2.0/include;-I/opt/homebrew/opt/gettext/include;-I/opt/homebrew/Cellar/pcre2/10.44/include
-GLIB_CFLAGS_I:INTERNAL=
-GLIB_CFLAGS_OTHER:INTERNAL=
-GLIB_FOUND:INTERNAL=1
-GLIB_INCLUDEDIR:INTERNAL=/opt/homebrew/Cellar/glib/2.82.1/include
-GLIB_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/glib/2.82.1/include/glib-2.0;/opt/homebrew/Cellar/glib/2.82.1/lib/glib-2.0/include;/opt/homebrew/opt/gettext/include;/opt/homebrew/Cellar/pcre2/10.44/include
-GLIB_LDFLAGS:INTERNAL=-L/opt/homebrew/Cellar/glib/2.82.1/lib;-L/opt/homebrew/opt/gettext/lib;-lglib-2.0;-lintl
-GLIB_LDFLAGS_OTHER:INTERNAL=
-GLIB_LIBDIR:INTERNAL=/opt/homebrew/Cellar/glib/2.82.1/lib
-GLIB_LIBRARIES:INTERNAL=glib-2.0;intl
-GLIB_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/glib/2.82.1/lib;/opt/homebrew/opt/gettext/lib
-GLIB_LIBS:INTERNAL=
-GLIB_LIBS_L:INTERNAL=
-GLIB_LIBS_OTHER:INTERNAL=
-GLIB_LIBS_PATHS:INTERNAL=
-GLIB_MODULE_NAME:INTERNAL=glib-2.0
-GLIB_PREFIX:INTERNAL=/opt/homebrew/Cellar/glib/2.82.1
-GLIB_STATIC_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/glib/2.82.1/include/glib-2.0;-I/opt/homebrew/Cellar/glib/2.82.1/lib/glib-2.0/include;-I/opt/homebrew/opt/gettext/include;-I/opt/homebrew/Cellar/pcre2/10.44/include
-GLIB_STATIC_CFLAGS_I:INTERNAL=
-GLIB_STATIC_CFLAGS_OTHER:INTERNAL=
-GLIB_STATIC_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/glib/2.82.1/include/glib-2.0;/opt/homebrew/Cellar/glib/2.82.1/lib/glib-2.0/include;/opt/homebrew/opt/gettext/include;/opt/homebrew/Cellar/pcre2/10.44/include
-GLIB_STATIC_LDFLAGS:INTERNAL=-L/opt/homebrew/Cellar/glib/2.82.1/lib;-L/opt/homebrew/opt/gettext/lib;-L/opt/homebrew/Cellar/pcre2/10.44/lib;-lglib-2.0;-lintl;-liconv;-lm;-framework;Foundation;-framework;CoreFoundation;-framework;AppKit;-framework;Carbon;-lpcre2-8;-D_THREAD_SAFE;-pthread
-GLIB_STATIC_LDFLAGS_OTHER:INTERNAL=-framework;Foundation;-framework;CoreFoundation;-framework;AppKit;-framework;Carbon;-D_THREAD_SAFE;-pthread
-GLIB_STATIC_LIBDIR:INTERNAL=
-GLIB_STATIC_LIBRARIES:INTERNAL=glib-2.0;intl;iconv;m;pcre2-8
-GLIB_STATIC_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/glib/2.82.1/lib;/opt/homebrew/opt/gettext/lib;/opt/homebrew/Cellar/pcre2/10.44/lib
-GLIB_STATIC_LIBS:INTERNAL=
-GLIB_STATIC_LIBS_L:INTERNAL=
-GLIB_STATIC_LIBS_OTHER:INTERNAL=
-GLIB_STATIC_LIBS_PATHS:INTERNAL=
-GLIB_VERSION:INTERNAL=2.82.1
-GLIB_glib-2.0_INCLUDEDIR:INTERNAL=
-GLIB_glib-2.0_LIBDIR:INTERNAL=
-GLIB_glib-2.0_PREFIX:INTERNAL=
-GLIB_glib-2.0_VERSION:INTERNAL=
-//ADVANCED property for variable: PKG_CONFIG_ARGN
-PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
-PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //Compiler reason failure
 _Python3_Compiler_REASON_FAILURE:INTERNAL=
-_Python3_DEVELOPMENT_EMBED_SIGNATURE:INTERNAL=3522820916836bbf8ee0f5e579c271e0
-_Python3_DEVELOPMENT_MODULE_SIGNATURE:INTERNAL=72f75e6776008abd05912fc9ca9ca247
+_Python3_DEVELOPMENT_EMBED_SIGNATURE:INTERNAL=e19c61e9e065dcb9fced6b17c46d616b
+_Python3_DEVELOPMENT_MODULE_SIGNATURE:INTERNAL=7b8d2dad53456c6b46d7f3670a12ef02
 //Development reason failure
 _Python3_Development_REASON_FAILURE:INTERNAL=
 _Python3_EXECUTABLE:INTERNAL=/Users/osm/CLionProjects/pyarv/venv/bin/python
@@ -444,17 +376,12 @@ _Python3_EXECUTABLE:INTERNAL=/Users/osm/CLionProjects/pyarv/venv/bin/python
 _Python3_INCLUDE_DIR:INTERNAL=/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;6;64;;cpython-312-darwin;abi3;/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12;/Users/osm/CLionProjects/pyarv/venv/lib/python3.12;/Users/osm/CLionProjects/pyarv/venv/lib/python3.12/site-packages;/Users/osm/CLionProjects/pyarv/venv/lib/python3.12/site-packages
-_Python3_INTERPRETER_SIGNATURE:INTERNAL=42cb51ab213cb5c8252d2ac96452e1a0
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=775bd35b8e43f9d3f73ea9e0cf200188
+//Interpreter reason failure
+_Python3_Interpreter_REASON_FAILURE:INTERNAL=
 //Path to a library.
 _Python3_LIBRARY_RELEASE:INTERNAL=/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib
-_Python3_NUMPY_SIGNATURE:INTERNAL=6b945125758b053af5e8bb03492d48ae
+_Python3_NUMPY_SIGNATURE:INTERNAL=d66daf4a546cd217c514265f80a75408
 //Path to a file.
 _Python3_NumPy_INCLUDE_DIR:INTERNAL=/Users/osm/CLionProjects/pyarv/venv/lib/python3.12/site-packages/numpy/_core/include
-__pkg_config_arguments_GLIB:INTERNAL=REQUIRED;glib-2.0
-__pkg_config_checked_GLIB:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_GLIB_glib-2.0
-pkgcfg_lib_GLIB_glib-2.0-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_GLIB_intl
-pkgcfg_lib_GLIB_intl-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=/opt/homebrew/Cellar/glib/2.82.1/lib
 

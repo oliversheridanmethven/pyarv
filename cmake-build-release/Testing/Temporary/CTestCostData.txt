@@ -1,7 +1,7 @@
-test_test_version_example 18 0.00275565
-test_criterion_example 18 0.00152285
-test_logging 18 0.00179518
-test_gaussian_bindings 12 0.030489
-test_non_central_chi_squared_bindings 11 0.51355
-test_version_bindings 3 0.0142222
+test_test_version_example 1 1.85935
+test_criterion_example 1 0.440644
+test_logging 1 0.522107
+test_version_bindings 2 0.675244
+test_gaussian_bindings 2 0.377598
+test_non_central_chi_squared_bindings 2 8.76701
 ---

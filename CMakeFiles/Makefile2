@@ -97,8 +97,6 @@ src/clean: src/pyarv/clean
 
 # Recursive "all" directory target.
 src/arv/all: src/arv/version/all
-src/arv/all: src/arv/testing/all
-src/arv/all: src/arv/logging/all
 src/arv/all: src/arv/approximation/all
 src/arv/all: src/arv/gaussian/all
 src/arv/all: src/arv/non_central_chi_squared/all
@@ -106,8 +104,6 @@ src/arv/all: src/arv/non_central_chi_squared/all
 
 # Recursive "preinstall" directory target.
 src/arv/preinstall: src/arv/version/preinstall
-src/arv/preinstall: src/arv/testing/preinstall
-src/arv/preinstall: src/arv/logging/preinstall
 src/arv/preinstall: src/arv/approximation/preinstall
 src/arv/preinstall: src/arv/gaussian/preinstall
 src/arv/preinstall: src/arv/non_central_chi_squared/preinstall
@@ -115,8 +111,6 @@ src/arv/preinstall: src/arv/non_central_chi_squared/preinstall
 
 # Recursive "clean" directory target.
 src/arv/clean: src/arv/version/clean
-src/arv/clean: src/arv/testing/clean
-src/arv/clean: src/arv/logging/clean
 src/arv/clean: src/arv/approximation/clean
 src/arv/clean: src/arv/gaussian/clean
 src/arv/clean: src/arv/non_central_chi_squared/clean
@@ -153,38 +147,6 @@ src/arv/gaussian/clean: src/arv/gaussian/CMakeFiles/gaussian.dir/clean
 .PHONY : src/arv/gaussian/clean
 
 #=============================================================================
-# Directory level rules for directory src/arv/logging
-
-# Recursive "all" directory target.
-src/arv/logging/all: src/arv/logging/CMakeFiles/logging.dir/all
-src/arv/logging/all: src/arv/logging/tests/all
-.PHONY : src/arv/logging/all
-
-# Recursive "preinstall" directory target.
-src/arv/logging/preinstall: src/arv/logging/tests/preinstall
-.PHONY : src/arv/logging/preinstall
-
-# Recursive "clean" directory target.
-src/arv/logging/clean: src/arv/logging/CMakeFiles/logging.dir/clean
-src/arv/logging/clean: src/arv/logging/tests/clean
-.PHONY : src/arv/logging/clean
-
-#=============================================================================
-# Directory level rules for directory src/arv/logging/tests
-
-# Recursive "all" directory target.
-src/arv/logging/tests/all: src/arv/logging/tests/CMakeFiles/test_logging.dir/all
-.PHONY : src/arv/logging/tests/all
-
-# Recursive "preinstall" directory target.
-src/arv/logging/tests/preinstall:
-.PHONY : src/arv/logging/tests/preinstall
-
-# Recursive "clean" directory target.
-src/arv/logging/tests/clean: src/arv/logging/tests/CMakeFiles/test_logging.dir/clean
-.PHONY : src/arv/logging/tests/clean
-
-#=============================================================================
 # Directory level rules for directory src/arv/non_central_chi_squared
 
 # Recursive "all" directory target.
@@ -200,66 +162,19 @@ src/arv/non_central_chi_squared/clean: src/arv/non_central_chi_squared/CMakeFile
 .PHONY : src/arv/non_central_chi_squared/clean
 
 #=============================================================================
-# Directory level rules for directory src/arv/testing
-
-# Recursive "all" directory target.
-src/arv/testing/all: src/arv/testing/tests/all
-.PHONY : src/arv/testing/all
-
-# Recursive "preinstall" directory target.
-src/arv/testing/preinstall: src/arv/testing/tests/preinstall
-.PHONY : src/arv/testing/preinstall
-
-# Recursive "clean" directory target.
-src/arv/testing/clean: src/arv/testing/tests/clean
-.PHONY : src/arv/testing/clean
-
-#=============================================================================
-# Directory level rules for directory src/arv/testing/tests
-
-# Recursive "all" directory target.
-src/arv/testing/tests/all: src/arv/testing/tests/CMakeFiles/test_criterion_example.dir/all
-.PHONY : src/arv/testing/tests/all
-
-# Recursive "preinstall" directory target.
-src/arv/testing/tests/preinstall:
-.PHONY : src/arv/testing/tests/preinstall
-
-# Recursive "clean" directory target.
-src/arv/testing/tests/clean: src/arv/testing/tests/CMakeFiles/test_criterion_example.dir/clean
-.PHONY : src/arv/testing/tests/clean
-
-#=============================================================================
 # Directory level rules for directory src/arv/version
 
 # Recursive "all" directory target.
 src/arv/version/all: src/arv/version/CMakeFiles/version.dir/all
-src/arv/version/all: src/arv/version/tests/all
 .PHONY : src/arv/version/all
 
 # Recursive "preinstall" directory target.
-src/arv/version/preinstall: src/arv/version/tests/preinstall
+src/arv/version/preinstall:
 .PHONY : src/arv/version/preinstall
 
 # Recursive "clean" directory target.
 src/arv/version/clean: src/arv/version/CMakeFiles/version.dir/clean
-src/arv/version/clean: src/arv/version/tests/clean
 .PHONY : src/arv/version/clean
-
-#=============================================================================
-# Directory level rules for directory src/arv/version/tests
-
-# Recursive "all" directory target.
-src/arv/version/tests/all: src/arv/version/tests/CMakeFiles/test_version_example.dir/all
-.PHONY : src/arv/version/tests/all
-
-# Recursive "preinstall" directory target.
-src/arv/version/tests/preinstall:
-.PHONY : src/arv/version/tests/preinstall
-
-# Recursive "clean" directory target.
-src/arv/version/tests/clean: src/arv/version/tests/CMakeFiles/test_version_example.dir/clean
-.PHONY : src/arv/version/tests/clean
 
 #=============================================================================
 # Directory level rules for directory src/pyarv
@@ -403,7 +318,7 @@ src/pyarv/version/tests/clean:
 src/arv/version/CMakeFiles/version.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/arv/version/CMakeFiles/version.dir/build.make src/arv/version/CMakeFiles/version.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/arv/version/CMakeFiles/version.dir/build.make src/arv/version/CMakeFiles/version.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=22,23,24 "Built target version"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=14,15,16 "Built target version"
 .PHONY : src/arv/version/CMakeFiles/version.dir/all
 
 # Build rule for subdir invocation for target.
@@ -421,111 +336,6 @@ version: src/arv/version/CMakeFiles/version.dir/rule
 src/arv/version/CMakeFiles/version.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/arv/version/CMakeFiles/version.dir/build.make src/arv/version/CMakeFiles/version.dir/clean
 .PHONY : src/arv/version/CMakeFiles/version.dir/clean
-
-#=============================================================================
-# Target rules for target src/arv/version/tests/CMakeFiles/test_version_example.dir
-
-# All Build rule for target.
-src/arv/version/tests/CMakeFiles/test_version_example.dir/all: src/arv/version/CMakeFiles/version.dir/all
-src/arv/version/tests/CMakeFiles/test_version_example.dir/all: src/arv/logging/CMakeFiles/logging.dir/all
-	$(MAKE) $(MAKESILENT) -f src/arv/version/tests/CMakeFiles/test_version_example.dir/build.make src/arv/version/tests/CMakeFiles/test_version_example.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/arv/version/tests/CMakeFiles/test_version_example.dir/build.make src/arv/version/tests/CMakeFiles/test_version_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=20,21 "Built target test_version_example"
-.PHONY : src/arv/version/tests/CMakeFiles/test_version_example.dir/all
-
-# Build rule for subdir invocation for target.
-src/arv/version/tests/CMakeFiles/test_version_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/arv/version/tests/CMakeFiles/test_version_example.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 0
-.PHONY : src/arv/version/tests/CMakeFiles/test_version_example.dir/rule
-
-# Convenience name for target.
-test_version_example: src/arv/version/tests/CMakeFiles/test_version_example.dir/rule
-.PHONY : test_version_example
-
-# clean rule for target.
-src/arv/version/tests/CMakeFiles/test_version_example.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/arv/version/tests/CMakeFiles/test_version_example.dir/build.make src/arv/version/tests/CMakeFiles/test_version_example.dir/clean
-.PHONY : src/arv/version/tests/CMakeFiles/test_version_example.dir/clean
-
-#=============================================================================
-# Target rules for target src/arv/testing/tests/CMakeFiles/test_criterion_example.dir
-
-# All Build rule for target.
-src/arv/testing/tests/CMakeFiles/test_criterion_example.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/arv/testing/tests/CMakeFiles/test_criterion_example.dir/build.make src/arv/testing/tests/CMakeFiles/test_criterion_example.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/arv/testing/tests/CMakeFiles/test_criterion_example.dir/build.make src/arv/testing/tests/CMakeFiles/test_criterion_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=16,17 "Built target test_criterion_example"
-.PHONY : src/arv/testing/tests/CMakeFiles/test_criterion_example.dir/all
-
-# Build rule for subdir invocation for target.
-src/arv/testing/tests/CMakeFiles/test_criterion_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/arv/testing/tests/CMakeFiles/test_criterion_example.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 0
-.PHONY : src/arv/testing/tests/CMakeFiles/test_criterion_example.dir/rule
-
-# Convenience name for target.
-test_criterion_example: src/arv/testing/tests/CMakeFiles/test_criterion_example.dir/rule
-.PHONY : test_criterion_example
-
-# clean rule for target.
-src/arv/testing/tests/CMakeFiles/test_criterion_example.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/arv/testing/tests/CMakeFiles/test_criterion_example.dir/build.make src/arv/testing/tests/CMakeFiles/test_criterion_example.dir/clean
-.PHONY : src/arv/testing/tests/CMakeFiles/test_criterion_example.dir/clean
-
-#=============================================================================
-# Target rules for target src/arv/logging/CMakeFiles/logging.dir
-
-# All Build rule for target.
-src/arv/logging/CMakeFiles/logging.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/arv/logging/CMakeFiles/logging.dir/build.make src/arv/logging/CMakeFiles/logging.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/arv/logging/CMakeFiles/logging.dir/build.make src/arv/logging/CMakeFiles/logging.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=9,10 "Built target logging"
-.PHONY : src/arv/logging/CMakeFiles/logging.dir/all
-
-# Build rule for subdir invocation for target.
-src/arv/logging/CMakeFiles/logging.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/arv/logging/CMakeFiles/logging.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 0
-.PHONY : src/arv/logging/CMakeFiles/logging.dir/rule
-
-# Convenience name for target.
-logging: src/arv/logging/CMakeFiles/logging.dir/rule
-.PHONY : logging
-
-# clean rule for target.
-src/arv/logging/CMakeFiles/logging.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/arv/logging/CMakeFiles/logging.dir/build.make src/arv/logging/CMakeFiles/logging.dir/clean
-.PHONY : src/arv/logging/CMakeFiles/logging.dir/clean
-
-#=============================================================================
-# Target rules for target src/arv/logging/tests/CMakeFiles/test_logging.dir
-
-# All Build rule for target.
-src/arv/logging/tests/CMakeFiles/test_logging.dir/all: src/arv/logging/CMakeFiles/logging.dir/all
-	$(MAKE) $(MAKESILENT) -f src/arv/logging/tests/CMakeFiles/test_logging.dir/build.make src/arv/logging/tests/CMakeFiles/test_logging.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/arv/logging/tests/CMakeFiles/test_logging.dir/build.make src/arv/logging/tests/CMakeFiles/test_logging.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=18,19 "Built target test_logging"
-.PHONY : src/arv/logging/tests/CMakeFiles/test_logging.dir/all
-
-# Build rule for subdir invocation for target.
-src/arv/logging/tests/CMakeFiles/test_logging.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/arv/logging/tests/CMakeFiles/test_logging.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 0
-.PHONY : src/arv/logging/tests/CMakeFiles/test_logging.dir/rule
-
-# Convenience name for target.
-test_logging: src/arv/logging/tests/CMakeFiles/test_logging.dir/rule
-.PHONY : test_logging
-
-# clean rule for target.
-src/arv/logging/tests/CMakeFiles/test_logging.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/arv/logging/tests/CMakeFiles/test_logging.dir/build.make src/arv/logging/tests/CMakeFiles/test_logging.dir/clean
-.PHONY : src/arv/logging/tests/CMakeFiles/test_logging.dir/clean
 
 #=============================================================================
 # Target rules for target src/arv/approximation/CMakeFiles/approximation.dir
@@ -586,7 +396,7 @@ src/arv/gaussian/CMakeFiles/gaussian.dir/clean:
 src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/all: src/arv/approximation/CMakeFiles/approximation.dir/all
 	$(MAKE) $(MAKESILENT) -f src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/build.make src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/build.make src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=11,12 "Built target non_central_chi_squared"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=9,10 "Built target non_central_chi_squared"
 .PHONY : src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/all
 
 # Build rule for subdir invocation for target.
@@ -612,7 +422,7 @@ src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/clean:
 src/pyarv/version/CMakeFiles/version_bindings.dir/all: src/arv/version/CMakeFiles/version.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pyarv/version/CMakeFiles/version_bindings.dir/build.make src/pyarv/version/CMakeFiles/version_bindings.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pyarv/version/CMakeFiles/version_bindings.dir/build.make src/pyarv/version/CMakeFiles/version_bindings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=25,26,27 "Built target version_bindings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=17,18,19 "Built target version_bindings"
 .PHONY : src/pyarv/version/CMakeFiles/version_bindings.dir/all
 
 # Build rule for subdir invocation for target.
@@ -666,7 +476,7 @@ src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.di
 src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.dir/all: src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.dir/build.make src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.dir/build.make src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=13,14,15 "Built target non_central_chi_squared_bindings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=11,12,13 "Built target non_central_chi_squared_bindings"
 .PHONY : src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.dir/all
 
 # Build rule for subdir invocation for target.
