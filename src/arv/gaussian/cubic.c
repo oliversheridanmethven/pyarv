@@ -8,6 +8,10 @@
 #define TABLE_MAX_INDEX (TABLE_SIZE - 1)// Zero indexing...
 
 #include <stdlib.h>
+#if __STDC_VERSION__ < 202311L
+#include <stdbool.h>
+#endif
+
 
 static inline Float polynomial_approximation(Float u, UInt b)
 {

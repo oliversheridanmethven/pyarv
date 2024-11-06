@@ -79,7 +79,7 @@ linear_(PyObject *Py_UNUSED(self), PyObject *args, PyObject *kwargs)
     size_t input_buffer_size = PyArray_SIZE(input_array);
     size_t output_buffer_size = PyArray_SIZE(output_array);
     size_t non_centrality_buffer_size = PyArray_SIZE(non_centralities);
-    [[maybe_unused]] size_t polynomial_coefficients_buffer_size = PyArray_SIZE(polynomial_coefficients);
+    // [[maybe_unused]] size_t polynomial_coefficients_buffer_size = PyArray_SIZE(polynomial_coefficients);
     // We could check this if open up the interface more.
 
     if (input_buffer_size != output_buffer_size)

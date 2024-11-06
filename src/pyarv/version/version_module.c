@@ -27,7 +27,7 @@ PyInit_version_bindings(void)
     if (!module)
     {
         fprintf(stderr, "Unable to create the version module.");
-        return nullptr;
+        return NULL;
     }
 
     return module;

@@ -23,7 +23,8 @@ So why C and not C++:
 
 - The approximations use some type punning (between `int` and `float`), 
 and this is 
-easily done in C using unions (and is defined behaviour!), 
+easily done in C using unions (and is defined behaviour in C, including C99 onwards, 
+cf. https://stackoverflow.com/a/25664954/5134817 and https://stackoverflow.com/a/25672839/5134817), 
 whereas in C++ type punning is much trickier to do correctly 
 (without producing undefined behaviour). 
 - C has the keyword `restrict` which does not exist in C++ without 

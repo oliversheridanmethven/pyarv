@@ -4,14 +4,14 @@ cmake_minimum_required(VERSION 3.25)  # Use the latest and greatest.
 # compilers, so we set our paths to the compilers first.
 # cf: https://stackoverflow.com/a/29904501/5134817
 
-find_program(CMAKE_C_COMPILER NAMES $ENV{CC} clang-19 clang PATHS ENV PATH NO_DEFAULT_PATH)
-#find_program(CMAKE_C_COMPILER NAMES $ENV{CC} gcc-14 PATHS ENV PATH NO_DEFAULT_PATH)
+#find_program(CMAKE_C_COMPILER NAMES $ENV{CC} clang-19 clang PATHS ENV PATH NO_DEFAULT_PATH)
+find_program(CMAKE_C_COMPILER NAMES $ENV{CC} gcc-14 PATHS ENV PATH NO_DEFAULT_PATH)
 
 project(pyarv C)
 
 # We want to use the latest standards.
 # Only some of the latest and greatest compilers offer the appropriate level of support.
-set(CMAKE_C_STANDARD 23)
+set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS OFF)
 
@@ -24,6 +24,9 @@ set(CMAKE_GENERATOR "Unix Makefiles")
 set(ERROR_FLAGS "-Wall -Wextra -Werror -Wattributes -Wunused-result -Wpedantic -pedantic")
 if (CMAKE_C_COMPILER_ID STREQUAL "Clang")
     message(STATUS "Setting some extra Clang specific flags.")
+    set(ERROR_FLAGS "${ERROR_FLAGS} -Wreserved-identifier")
+elseif (CMAKE_C_COMPILER_ID STREQUAL "AppleClang")
+    message(STATUS "Setting some extra AppleClang specific flags.")
     set(ERROR_FLAGS "${ERROR_FLAGS} -Wreserved-identifier")
 elseif (CMAKE_C_COMPILER_ID STREQUAL "GNU")
     message(STATUS "Setting some extra GNU specific flags.")
@@ -42,13 +45,24 @@ message(DEBUG "The C compiler flags are: ${CMAKE_C_FLAGS}")
 message(STATUS "Compiling in mode: ${CMAKE_BUILD_TYPE}")
 if(CMAKE_BUILD_TYPE STREQUAL "Release")
     message(STATUS "Adding optimisation flags.")
-    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3 -fopenmp")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3")
 elseif (CMAKE_BUILD_TYPE STREQUAL "Debug")
     message(STATUS "Adding debug flags.")
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -O0")
 endif()
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${ERROR_FLAGS_C}")
+if (CMAKE_C_COMPILER_ID STREQUAL "Clang")
+    message(STATUS "Setting some extra Clang specific flags.")
+    set(OPENMP_FLAGS "-fopenmp")
+elseif (CMAKE_C_COMPILER_ID STREQUAL "AppleClang")
+    message(STATUS "Setting some extra AppleClang specific flags.")
+    set(OPENMP_FLAGS "-Xclang -fopenmp")
+elseif (CMAKE_C_COMPILER_ID STREQUAL "GNU")
+    message(STATUS "Setting some extra GNU specific flags.")
+    set(OPENMP_FLAGS "-fopenmp")
+endif()
+
+set(CMAKE_C_FLAGS "-fPIC ${OPENMP_FLAGS} ${CMAKE_C_FLAGS} ${ERROR_FLAGS_C}")
 
 cmake_host_system_information(RESULT N_CORES QUERY NUMBER_OF_LOGICAL_CORES)
 message(STATUS "We think we have ${N_CORES} cores on this machine.")
@@ -73,15 +87,15 @@ else()
 endif()
 
 include(CheckCCompilerFlag)
-CHECK_C_COMPILER_FLAG("-std=c23" COMPILER_SUPPORTS_C2X)
-if(COMPILER_SUPPORTS_C2X)
-    message(STATUS "Compiler ${CMAKE_C_COMPILER} appears to have C23 support.")
+CHECK_C_COMPILER_FLAG("-std=c99" COMPILER_SUPPORTS_C99)
+if(COMPILER_SUPPORTS_C99)
+    message(STATUS "Compiler ${CMAKE_C_COMPILER} appears to have C99 support.")
     foreach(i ${CMAKE_C_COMPILE_FEATURES})
-        message(DEBUG "Compiler ${CMAKE_C_COMPILER} uses feature: ${i}")
+    message(DEBUG "Compiler ${CMAKE_C_COMPILER} uses feature: ${i}")
     endforeach()
-    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c23")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99")
 else()
-    message(FATAL_ERROR "Compiler ${CMAKE_C_COMPILER} has no C23 support.")
+    message(FATAL_ERROR "Compiler ${CMAKE_C_COMPILER} has no C99 support.")
 endif()
 
 # To enable testing and use of ctest.
@@ -89,9 +103,7 @@ enable_testing()
 # ^ This must be before any calls to add_subdirectory to ensure it is enabled recursively.
 # cf. https://stackoverflow.com/questions/54550939/ctest-add-tests-in-subdirectories#comment109191766_55835742
 
-message(DEBUG "Just printing this to supress a warning: ${PYTHON_EXECUTABLE}")
 set(Python3_FIND_VIRTUALENV FIRST)
-set(Python3_ROOT_DIR "${PROJECT_SOURCE_DIR}/venv")
 find_package(Python3 COMPONENTS Interpreter Development NumPy)
 
 # We use scikit-build to build our CMake project and setup our python wrappers.
@@ -148,13 +160,6 @@ function(install_python_target target destination)
         install(TARGETS ${target} LIBRARY DESTINATION ${destination})
     endif()
 endfunction()
-
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(GLIB REQUIRED glib-2.0)
-pkg_search_module(GLIB REQUIRED glib-2.0)
-include_directories(SYSTEM ${GLIB_INCLUDE_DIRS})
-link_directories(${GLIB_LIBRARY_DIRS})
-#link_libraries(${GLIB_LIBRARIES})
 
 # Where we find the source files for our builds.
 add_subdirectory(src)
