@@ -1,5 +1,5 @@
 from pyarv.gaussian.gaussian_bindings import linear, cubic
-from pyarv._type_hints.arrays import Array
+from pyarv.type_hints.arrays import Array
 
 from pyarv.approximations.polynomial_approximations import PolynomialApproximationTransformer
 

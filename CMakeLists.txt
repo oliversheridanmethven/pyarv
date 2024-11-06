@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.25)  # Use the latest and greatest.
 # cf: https://stackoverflow.com/a/29904501/5134817
 
 #find_program(CMAKE_C_COMPILER NAMES $ENV{CC} clang-19 clang PATHS ENV PATH NO_DEFAULT_PATH)
-find_program(CMAKE_C_COMPILER NAMES $ENV{CC} gcc-14 PATHS ENV PATH NO_DEFAULT_PATH)
+#find_program(CMAKE_C_COMPILER NAMES $ENV{CC} gcc-14 PATHS ENV PATH NO_DEFAULT_PATH)
 
 project(pyarv C)
 

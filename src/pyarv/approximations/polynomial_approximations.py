@@ -6,7 +6,7 @@ import abc
 import numpy as np
 from typing import Any
 
-from pyarv._type_hints.arrays import Array
+from pyarv.type_hints.arrays import Array
 import warnings
 class PolynomialApproximationTransformer(abc.ABC):
     """

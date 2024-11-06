@@ -10,7 +10,7 @@ from numpy import array, zeros
 from numpy.linalg import solve
 from scipy.integrate import quad
 from tqdm import tqdm as progressbar
-from pyarv._type_hints.arrays import Array
+from pyarv.type_hints.arrays import Array
 
 
 def _integrate(*args, **kwargs):
@@ -66,14 +66,30 @@ def dyadic_intervals_in_half_interval(n_intervals: int) -> list[list[float]]:
     return intervals
 
 
-def piecewise_polynomial_coefficients_in_half_interval(func: Callable, n_intervals: int, polynomial_order: int) -> Array:
+def piecewise_polynomial_coefficients_in_half_interval(f: Callable, 
+                                                       n_intervals: int, 
+                                                       polynomial_order: int) -> Array:
     """
-    Computes the coefficients of a piecewise polynomial approximation
-    using dyadic intervals in the interval [0, 1/2]
+    Computes the coefficients of a piecewise polynomial approximation to a function \( f \)
+    using dyadic intervals in \( [0, 1/2] \).
+     
+    Parameters
+    ----------
+    f
+        \( f \). 
+    n_intervals
+        The number of intervals. 
+    polynomial_order
+        The polynomial order. 
+
+    Returns
+    -------
+    Array
+        The polynomial coefficient tables. 
     """
     intervals = dyadic_intervals_in_half_interval(n_intervals)
     coefficients = zeros((polynomial_order + 1, n_intervals))
     for i in range(n_intervals):
         a, b = intervals[i]
-        coefficients[:, i] = optimal_polynomial_coefficients(f=func, polynomial_order=polynomial_order, lower_limit=a, upper_limit=b) if a != b else func(b)
+        coefficients[:, i] = optimal_polynomial_coefficients(f=f, polynomial_order=polynomial_order, lower_limit=a, upper_limit=b) if a != b else f(b)
     return coefficients
