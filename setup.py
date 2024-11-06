@@ -8,10 +8,16 @@ package_dirs = {package: f"src/{package.replace('.', '/')}" for package in find_
 setup(
     name="PyARV",
     author="Dr Oliver Sheridan-Methven",
+    author_email = "oliver.sheridan-methven@hotmail.co.uk",
     description="Approximate random variables",
     long_description=(Path(__file__).parent / "README.md").read_text(),
     long_description_content_type='text/markdown',
     license="MIT",
+    project_urls = {
+        'Home': 'https://github.com/oliversheridanmethven/pyarv',
+        'Source': 'https://github.com/oliversheridanmethven/pyarv',
+        'Documentation': 'https://oliversheridanmethven.github.io/pyarv/',
+    },
     setuptools_git_versioning={"enabled": True},
     setup_requires=["setuptools-git-versioning"],
     install_requires=["numpy"],
