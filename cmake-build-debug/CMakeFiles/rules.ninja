@@ -25,7 +25,7 @@ rule CUSTOM_COMMAND
 rule C_COMPILER__version_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}/opt/homebrew/bin/gcc-14 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}/Library/Developer/CommandLineTools/usr/bin/cc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -33,26 +33,7 @@ rule C_COMPILER__version_unscanned_Debug
 # Rule for linking C static library.
 
 rule C_STATIC_LIBRARY_LINKER__version_Debug
-  command = $PRE_LINK && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f $TARGET_FILE && /opt/local/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /opt/local/bin/ranlib $TARGET_FILE && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
-  description = Linking C static library $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling C files.
-
-rule C_COMPILER__approximation_unscanned_Debug
-  depfile = $DEP_FILE
-  deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}/opt/homebrew/bin/gcc-14 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building C object $out
-
-
-#############################################
-# Rule for linking C static library.
-
-rule C_STATIC_LIBRARY_LINKER__approximation_Debug
-  command = $PRE_LINK && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f $TARGET_FILE && /opt/local/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /opt/local/bin/ranlib $TARGET_FILE && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  command = $PRE_LINK && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f $TARGET_FILE && /Library/Developer/CommandLineTools/usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /Library/Developer/CommandLineTools/usr/bin/ranlib $TARGET_FILE && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -63,7 +44,7 @@ rule C_STATIC_LIBRARY_LINKER__approximation_Debug
 rule C_COMPILER__gaussian_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}/opt/homebrew/bin/gcc-14 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}/Library/Developer/CommandLineTools/usr/bin/cc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -71,7 +52,7 @@ rule C_COMPILER__gaussian_unscanned_Debug
 # Rule for linking C static library.
 
 rule C_STATIC_LIBRARY_LINKER__gaussian_Debug
-  command = $PRE_LINK && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f $TARGET_FILE && /opt/local/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /opt/local/bin/ranlib $TARGET_FILE && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  command = $PRE_LINK && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f $TARGET_FILE && /Library/Developer/CommandLineTools/usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /Library/Developer/CommandLineTools/usr/bin/ranlib $TARGET_FILE && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -82,7 +63,7 @@ rule C_STATIC_LIBRARY_LINKER__gaussian_Debug
 rule C_COMPILER__non_central_chi_squared_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}/opt/homebrew/bin/gcc-14 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}/Library/Developer/CommandLineTools/usr/bin/cc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -90,7 +71,7 @@ rule C_COMPILER__non_central_chi_squared_unscanned_Debug
 # Rule for linking C static library.
 
 rule C_STATIC_LIBRARY_LINKER__non_central_chi_squared_Debug
-  command = $PRE_LINK && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f $TARGET_FILE && /opt/local/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /opt/local/bin/ranlib $TARGET_FILE && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  command = $PRE_LINK && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f $TARGET_FILE && /Library/Developer/CommandLineTools/usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /Library/Developer/CommandLineTools/usr/bin/ranlib $TARGET_FILE && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -101,7 +82,7 @@ rule C_STATIC_LIBRARY_LINKER__non_central_chi_squared_Debug
 rule C_COMPILER__version_bindings_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}/opt/homebrew/bin/gcc-14 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}/Library/Developer/CommandLineTools/usr/bin/cc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -109,7 +90,7 @@ rule C_COMPILER__version_bindings_unscanned_Debug
 # Rule for linking C shared module.
 
 rule C_MODULE_LIBRARY_LINKER__version_bindings_Debug
-  command = $PRE_LINK && /opt/homebrew/bin/gcc-14 $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS -bundle -Wl,-headerpad_max_install_names $LINK_FLAGS -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  command = $PRE_LINK && /Library/Developer/CommandLineTools/usr/bin/cc $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS -bundle -Wl,-headerpad_max_install_names $LINK_FLAGS -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking C shared module $TARGET_FILE
   restat = $RESTAT
 
@@ -120,7 +101,7 @@ rule C_MODULE_LIBRARY_LINKER__version_bindings_Debug
 rule C_COMPILER__gaussian_bindings_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}/opt/homebrew/bin/gcc-14 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}/Library/Developer/CommandLineTools/usr/bin/cc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -128,7 +109,7 @@ rule C_COMPILER__gaussian_bindings_unscanned_Debug
 # Rule for linking C shared module.
 
 rule C_MODULE_LIBRARY_LINKER__gaussian_bindings_Debug
-  command = $PRE_LINK && /opt/homebrew/bin/gcc-14 $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS -bundle -Wl,-headerpad_max_install_names $LINK_FLAGS -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  command = $PRE_LINK && /Library/Developer/CommandLineTools/usr/bin/cc $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS -bundle -Wl,-headerpad_max_install_names $LINK_FLAGS -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking C shared module $TARGET_FILE
   restat = $RESTAT
 
@@ -139,7 +120,7 @@ rule C_MODULE_LIBRARY_LINKER__gaussian_bindings_Debug
 rule C_COMPILER__non_central_chi_squared_bindings_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}/opt/homebrew/bin/gcc-14 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}/Library/Developer/CommandLineTools/usr/bin/cc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -147,7 +128,7 @@ rule C_COMPILER__non_central_chi_squared_bindings_unscanned_Debug
 # Rule for linking C shared module.
 
 rule C_MODULE_LIBRARY_LINKER__non_central_chi_squared_bindings_Debug
-  command = $PRE_LINK && /opt/homebrew/bin/gcc-14 $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS -bundle -Wl,-headerpad_max_install_names $LINK_FLAGS -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  command = $PRE_LINK && /Library/Developer/CommandLineTools/usr/bin/cc $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS -bundle -Wl,-headerpad_max_install_names $LINK_FLAGS -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking C shared module $TARGET_FILE
   restat = $RESTAT
 

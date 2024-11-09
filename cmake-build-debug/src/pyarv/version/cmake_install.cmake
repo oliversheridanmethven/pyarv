@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/opt/local/bin/objdump")
+  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -55,7 +55,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}/Users/osm/CLionProjects/pyarv/src/pyarv/version/version_bindings.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/Users/osm/CLionProjects/pyarv/src/pyarv/version/version_bindings.so")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/opt/local/bin/strip" -x "$ENV{DESTDIR}/Users/osm/CLionProjects/pyarv/src/pyarv/version/version_bindings.so")
+      execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/strip" -x "$ENV{DESTDIR}/Users/osm/CLionProjects/pyarv/src/pyarv/version/version_bindings.so")
     endif()
   endif()
 endif()

@@ -1993,12 +1993,12 @@ produced by the scikit build procedure. This means code
 which is under development can be more easily accessed by
 an IDE or interpreter. </p>
 <h2 id="making-in-source-builds">Making in source builds</h2>
-<p>From the projects root directory run </p>
-<pre><code class="language-bash">cmake .
-make 
-make install
-make test 
-</code></pre>
+<p>From the projects root directory run 
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cmake<span class="w"> </span>.
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>make<span class="w"> </span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>make<span class="w"> </span>install
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>make<span class="w"> </span><span class="nb">test</span><span class="w"> </span>
+</span></code></pre></div></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This is run from the project's root directory, not from a 
@@ -2011,19 +2011,19 @@ IDE to propagate the appropriate source path, which is useful for
 e.g. running the tests. </p>
 </div>
 <h1 id="cleaning-everything-up">Cleaning everything up</h1>
-<p>To clean everything up, run </p>
-<pre><code class="language-bash">make clean
-./cmake_uninstall.sh
-</code></pre>
+<p>To clean everything up, run 
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>make<span class="w"> </span>clean
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>./cmake_uninstall.sh
+</span></code></pre></div></p>
 <h3 id="adjusting-your-pythonpath">Adjusting your <code>PYTHONPATH</code></h3>
 <p>If you plan on testing out the code using the source code in 
 the repository, such as for use in a terminal setting or an 
 IDE, then it might be useful to add the contents of <code>src/</code> to
 your <code>PYTHONPATH</code> environment variable. To do just this we
 have the script <code>add_src_to_python_path.sh</code> which can be run 
-from the project's root directory by calling:</p>
-<pre><code class="language-bash">source add_src_to_python_path.sh
-</code></pre>
+from the project's root directory by calling:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">source</span><span class="w"> </span>add_src_to_python_path.sh
+</span></code></pre></div></p>
 
 
 
@@ -2184,7 +2184,7 @@ from the project's root directory by calling:</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.code.select", "navigation.footer"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>

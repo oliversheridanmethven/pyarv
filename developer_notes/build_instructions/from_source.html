@@ -2015,13 +2015,13 @@
 <p>We follow the CMake convention by only encouraging "out-of-source"
 builds, hence the reason for this build directory existing.
 This directory exists only for manual building and testing with <code>cmake</code> et al.</p>
-<p>To build the project:</p>
-<pre><code class="language-bash">cd build
-cmake .. 
-make 
-pip3 install .. 
-ctest 
-</code></pre>
+<p>To build the project:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>build
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>cmake<span class="w"> </span>..<span class="w"> </span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>make<span class="w"> </span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>pip3<span class="w"> </span>install<span class="w"> </span>..<span class="w"> </span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>ctest<span class="w"> </span>
+</span></code></pre></div></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><code>make test</code> and <code>ctest</code> are synonymous.</p>
@@ -2043,13 +2043,13 @@ correctly and many of the tests can be expected to fail. </p>
 support for this is limited. To ensure <code>cmake</code> can find
 a sufficiently new compiler version, it may be necessary to
 hardwire paths to these in your invocation of <code>cmake</code>, e.g.:</p>
-<pre><code class="language-bash">cmake -D CMAKE_C_COMPILER=/usr/local/Cellar/gcc/13.1.0/bin/gcc-13 -D CMAKE_CXX_COMPILER=/usr/local/Cellar/gcc/13.1.0/bin/g++-13 ..
-</code></pre>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>cmake<span class="w"> </span>-D<span class="w"> </span><span class="nv">CMAKE_C_COMPILER</span><span class="o">=</span>/usr/local/Cellar/gcc/13.1.0/bin/gcc-13<span class="w"> </span>-D<span class="w"> </span><span class="nv">CMAKE_CXX_COMPILER</span><span class="o">=</span>/usr/local/Cellar/gcc/13.1.0/bin/g++-13<span class="w"> </span>..
+</span></code></pre></div>
 <h2 id="debugging">Debugging</h2>
 <p>If any tests are failing, then these
-can be debugged further by running</p>
-<pre><code class="language-bash">ctest --rerun-failed --output-on-failure
-</code></pre>
+can be debugged further by running
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ctest<span class="w"> </span>--rerun-failed<span class="w"> </span>--output-on-failure
+</span></code></pre></div></p>
 
 
 
@@ -2210,7 +2210,7 @@ can be debugged further by running</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.code.select", "navigation.footer"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>

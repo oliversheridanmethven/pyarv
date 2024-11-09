@@ -120,7 +120,7 @@ src/arv/clean: src/arv/non_central_chi_squared/clean
 # Directory level rules for directory src/arv/approximation
 
 # Recursive "all" directory target.
-src/arv/approximation/all: src/arv/approximation/CMakeFiles/approximation.dir/all
+src/arv/approximation/all:
 .PHONY : src/arv/approximation/all
 
 # Recursive "preinstall" directory target.
@@ -128,7 +128,7 @@ src/arv/approximation/preinstall:
 .PHONY : src/arv/approximation/preinstall
 
 # Recursive "clean" directory target.
-src/arv/approximation/clean: src/arv/approximation/CMakeFiles/approximation.dir/clean
+src/arv/approximation/clean:
 .PHONY : src/arv/approximation/clean
 
 #=============================================================================
@@ -318,7 +318,7 @@ src/pyarv/version/tests/clean:
 src/arv/version/CMakeFiles/version.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/arv/version/CMakeFiles/version.dir/build.make src/arv/version/CMakeFiles/version.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/arv/version/CMakeFiles/version.dir/build.make src/arv/version/CMakeFiles/version.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=14,15,16 "Built target version"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=12,13,14 "Built target version"
 .PHONY : src/arv/version/CMakeFiles/version.dir/all
 
 # Build rule for subdir invocation for target.
@@ -338,44 +338,18 @@ src/arv/version/CMakeFiles/version.dir/clean:
 .PHONY : src/arv/version/CMakeFiles/version.dir/clean
 
 #=============================================================================
-# Target rules for target src/arv/approximation/CMakeFiles/approximation.dir
-
-# All Build rule for target.
-src/arv/approximation/CMakeFiles/approximation.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/arv/approximation/CMakeFiles/approximation.dir/build.make src/arv/approximation/CMakeFiles/approximation.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/arv/approximation/CMakeFiles/approximation.dir/build.make src/arv/approximation/CMakeFiles/approximation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=1,2 "Built target approximation"
-.PHONY : src/arv/approximation/CMakeFiles/approximation.dir/all
-
-# Build rule for subdir invocation for target.
-src/arv/approximation/CMakeFiles/approximation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/arv/approximation/CMakeFiles/approximation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 0
-.PHONY : src/arv/approximation/CMakeFiles/approximation.dir/rule
-
-# Convenience name for target.
-approximation: src/arv/approximation/CMakeFiles/approximation.dir/rule
-.PHONY : approximation
-
-# clean rule for target.
-src/arv/approximation/CMakeFiles/approximation.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/arv/approximation/CMakeFiles/approximation.dir/build.make src/arv/approximation/CMakeFiles/approximation.dir/clean
-.PHONY : src/arv/approximation/CMakeFiles/approximation.dir/clean
-
-#=============================================================================
 # Target rules for target src/arv/gaussian/CMakeFiles/gaussian.dir
 
 # All Build rule for target.
-src/arv/gaussian/CMakeFiles/gaussian.dir/all: src/arv/approximation/CMakeFiles/approximation.dir/all
+src/arv/gaussian/CMakeFiles/gaussian.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/arv/gaussian/CMakeFiles/gaussian.dir/build.make src/arv/gaussian/CMakeFiles/gaussian.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/arv/gaussian/CMakeFiles/gaussian.dir/build.make src/arv/gaussian/CMakeFiles/gaussian.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=3,4,5 "Built target gaussian"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=1,2,3 "Built target gaussian"
 .PHONY : src/arv/gaussian/CMakeFiles/gaussian.dir/all
 
 # Build rule for subdir invocation for target.
 src/arv/gaussian/CMakeFiles/gaussian.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/arv/gaussian/CMakeFiles/gaussian.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 0
 .PHONY : src/arv/gaussian/CMakeFiles/gaussian.dir/rule
@@ -393,15 +367,15 @@ src/arv/gaussian/CMakeFiles/gaussian.dir/clean:
 # Target rules for target src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir
 
 # All Build rule for target.
-src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/all: src/arv/approximation/CMakeFiles/approximation.dir/all
+src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/build.make src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/build.make src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=9,10 "Built target non_central_chi_squared"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=7,8 "Built target non_central_chi_squared"
 .PHONY : src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/all
 
 # Build rule for subdir invocation for target.
 src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 0
 .PHONY : src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/rule
@@ -422,7 +396,7 @@ src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/clean:
 src/pyarv/version/CMakeFiles/version_bindings.dir/all: src/arv/version/CMakeFiles/version.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pyarv/version/CMakeFiles/version_bindings.dir/build.make src/pyarv/version/CMakeFiles/version_bindings.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pyarv/version/CMakeFiles/version_bindings.dir/build.make src/pyarv/version/CMakeFiles/version_bindings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=17,18,19 "Built target version_bindings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=15,16,17 "Built target version_bindings"
 .PHONY : src/pyarv/version/CMakeFiles/version_bindings.dir/all
 
 # Build rule for subdir invocation for target.
@@ -445,16 +419,15 @@ src/pyarv/version/CMakeFiles/version_bindings.dir/clean:
 # Target rules for target src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir
 
 # All Build rule for target.
-src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/all: src/arv/approximation/CMakeFiles/approximation.dir/all
 src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/all: src/arv/gaussian/CMakeFiles/gaussian.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/build.make src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=6,7,8 "Built target gaussian_bindings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=4,5,6 "Built target gaussian_bindings"
 .PHONY : src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/all
 
 # Build rule for subdir invocation for target.
 src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 0
 .PHONY : src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/rule
@@ -472,16 +445,15 @@ src/pyarv/gaussian/CMakeFiles/gaussian_bindings.dir/clean:
 # Target rules for target src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.dir
 
 # All Build rule for target.
-src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.dir/all: src/arv/approximation/CMakeFiles/approximation.dir/all
 src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.dir/all: src/arv/non_central_chi_squared/CMakeFiles/non_central_chi_squared.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.dir/build.make src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.dir/build.make src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=11,12,13 "Built target non_central_chi_squared_bindings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/osm/CLionProjects/pyarv/CMakeFiles --progress-num=9,10,11 "Built target non_central_chi_squared_bindings"
 .PHONY : src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.dir/all
 
 # Build rule for subdir invocation for target.
 src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/osm/CLionProjects/pyarv/CMakeFiles 0
 .PHONY : src/pyarv/non_central_chi_squared/CMakeFiles/non_central_chi_squared_bindings.dir/rule

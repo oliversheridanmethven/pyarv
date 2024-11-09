@@ -1961,27 +1961,27 @@
 
 
 <h1 id="updating-the-git-versions-and-releases">Updating the git versions and releases</h1>
-<p>To list the git version tags: </p>
-<pre><code class="language-bash">git tag -l
-</code></pre>
-<p>To list the git version tags along with a brief 1-line description (<code>-n&lt;K&gt;</code> for <code>K</code> lines):</p>
-<pre><code class="language-bash">git tag -l -n1
-</code></pre>
-<p>To add a tag use:</p>
-<pre><code class="language-bash">git tag -a &lt;vX.Y.Z&gt; -m &quot;&lt;SOME BRIEF MESSAGE&gt;&quot;
-</code></pre>
-<p>The tag then needs to be pushed:</p>
-<pre><code class="language-bash">git push --tags
-</code></pre>
-<p>To set a release with a tag:</p>
-<pre><code class="language-bash">gh release create $(git describe --tags --abbrev=0)
-</code></pre>
+<p>To list the git version tags: 
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>tag<span class="w"> </span>-l
+</span></code></pre></div></p>
+<p>To list the git version tags along with a brief 1-line description (<code>-n&lt;K&gt;</code> for <code>K</code> lines):
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>tag<span class="w"> </span>-l<span class="w"> </span>-n1
+</span></code></pre></div></p>
+<p>To add a tag use:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git<span class="w"> </span>tag<span class="w"> </span>-a<span class="w"> </span>&lt;vX.Y.Z&gt;<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;&lt;SOME BRIEF MESSAGE&gt;&quot;</span>
+</span></code></pre></div></p>
+<p>The tag then needs to be pushed:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>push<span class="w"> </span>--tags
+</span></code></pre></div></p>
+<p>To set a release with a tag:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>gh<span class="w"> </span>release<span class="w"> </span>create<span class="w"> </span><span class="k">$(</span>git<span class="w"> </span>describe<span class="w"> </span>--tags<span class="w"> </span>--abbrev<span class="o">=</span><span class="m">0</span><span class="k">)</span>
+</span></code></pre></div></p>
 <h2 id="updating-the-remote-documentation">Updating the remote documentation.</h2>
 <p>To update the documentation hosted remotely (e.g. on GitHub Pages), 
 then on <code>master</code> we need to redeploy the documents after 
-the most relevant commit by calling:</p>
-<pre><code class="language-bash">mkdocs gh-deploy --clean
-</code></pre>
+the most relevant commit by calling:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>mkdocs<span class="w"> </span>gh-deploy<span class="w"> </span>--clean
+</span></code></pre></div></p>
 
 
 
@@ -2142,7 +2142,7 @@ the most relevant commit by calling:</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "navigation.footer"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.code.select", "navigation.footer"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>

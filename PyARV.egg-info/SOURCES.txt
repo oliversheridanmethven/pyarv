@@ -14,7 +14,6 @@ setup.py
 PyARV.egg-info/PKG-INFO
 PyARV.egg-info/SOURCES.txt
 PyARV.egg-info/dependency_links.txt
-PyARV.egg-info/not-zip-safe
 PyARV.egg-info/requires.txt
 PyARV.egg-info/top_level.txt
 _skbuild/macosx-14.0-arm64-3.12/cmake-install/src/pyarv/__init__.py
@@ -141,12 +140,13 @@ src/pyarv/README.md
 src/pyarv/__init__.py
 src/pyarv/_approximation_utils/__init__.py
 src/pyarv/_approximation_utils/approximating_polynomials.py
-src/pyarv/_type_hints/__init__.py
-src/pyarv/_type_hints/arrays.py
+src/pyarv/approximations/__init__.py
+src/pyarv/approximations/polynomial_approximations.py
 src/pyarv/bindings/CMakeLists.txt
 src/pyarv/bindings/wrappers.h
 src/pyarv/gaussian/CMakeLists.txt
 src/pyarv/gaussian/__init__.py
+src/pyarv/gaussian/approximation.py
 src/pyarv/gaussian/gaussian_bindings.c
 src/pyarv/gaussian/gaussian_bindings.h
 src/pyarv/gaussian/gaussian_module.c
@@ -159,8 +159,8 @@ src/pyarv/gaussian/tests/test_gaussian_bindings.py
 src/pyarv/non_central_chi_squared/CMakeLists.txt
 src/pyarv/non_central_chi_squared/__init__.py
 src/pyarv/non_central_chi_squared/_approximate_non_central_chi_squared.py
-src/pyarv/non_central_chi_squared/_approximate_non_central_chi_squared_demonstrations.py
 src/pyarv/non_central_chi_squared/_table_coefficients.py
+src/pyarv/non_central_chi_squared/approximation.py
 src/pyarv/non_central_chi_squared/non_central_chi_squared_bindings.c
 src/pyarv/non_central_chi_squared/non_central_chi_squared_bindings.h
 src/pyarv/non_central_chi_squared/non_central_chi_squared_module.c
@@ -170,6 +170,8 @@ src/pyarv/non_central_chi_squared/demos/speed.py
 src/pyarv/non_central_chi_squared/tests/CMakeLists.txt
 src/pyarv/non_central_chi_squared/tests/__init__.py
 src/pyarv/non_central_chi_squared/tests/test_non_central_chi_squared_bindings.py
+src/pyarv/type_hints/__init__.py
+src/pyarv/type_hints/arrays.py
 src/pyarv/version/CMakeLists.txt
 src/pyarv/version/README.md
 src/pyarv/version/__init__.py

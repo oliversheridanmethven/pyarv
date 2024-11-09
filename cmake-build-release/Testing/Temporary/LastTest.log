@@ -1,3 +1,71 @@
-Start testing: Nov 06 23:59 +04
+Start testing: Nov 09 16:59 +04
 ----------------------------------------------------------
-End testing: Nov 06 23:59 +04
+1/3 Testing: test_version_bindings
+1/3 Test: test_version_bindings
+Command: "/Users/osm/CLionProjects/pyarv/venv/bin/python" "/Users/osm/CLionProjects/pyarv/src/pyarv/version/tests/test_version_bindings.py"
+Directory: /Users/osm/CLionProjects/pyarv/cmake-build-release/src/pyarv/version/tests
+"test_version_bindings" start time: Nov 09 16:59 +04
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+<end of output>
+Test time =   1.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_version_bindings" end time: Nov 09 16:59 +04
+"test_version_bindings" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: test_gaussian_bindings
+2/3 Test: test_gaussian_bindings
+Command: "/Users/osm/CLionProjects/pyarv/venv/bin/python" "/Users/osm/CLionProjects/pyarv/src/pyarv/gaussian/tests/test_gaussian_bindings.py"
+Directory: /Users/osm/CLionProjects/pyarv/cmake-build-release/src/pyarv/gaussian/tests
+"test_gaussian_bindings" start time: Nov 09 16:59 +04
+Output:
+----------------------------------------------------------
+../Users/osm/CLionProjects/pyarv/venv/lib/python3.12/site-packages/scipy/integrate/_quadpack_py.py:606: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  return _quadpack._qagse(func,a,b,args,full_output,epsabs,epsrel,limit)
+...
+----------------------------------------------------------------------
+Ran 5 tests in 0.039s
+
+OK
+<end of output>
+Test time =   0.63 sec
+----------------------------------------------------------
+Test Passed.
+"test_gaussian_bindings" end time: Nov 09 16:59 +04
+"test_gaussian_bindings" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: test_non_central_chi_squared_bindings
+3/3 Test: test_non_central_chi_squared_bindings
+Command: "/Users/osm/CLionProjects/pyarv/venv/bin/python" "/Users/osm/CLionProjects/pyarv/src/pyarv/non_central_chi_squared/tests/test_non_central_chi_squared_bindings.py"
+Directory: /Users/osm/CLionProjects/pyarv/cmake-build-release/src/pyarv/non_central_chi_squared/tests
+"test_non_central_chi_squared_bindings" start time: Nov 09 16:59 +04
+Output:
+----------------------------------------------------------
+/Users/osm/CLionProjects/pyarv/venv/lib/python3.12/site-packages/scipy/integrate/_quadpack_py.py:606: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  return _quadpack._qagse(func,a,b,args,full_output,epsabs,epsrel,limit)
+/Users/osm/CLionProjects/pyarv/src/pyarv/non_central_chi_squared/tests/test_non_central_chi_squared_bindings.py:31: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  error_integral = integrate.quad(lambda u: non_central_chi_squared.ppf(u, df=degree_of_freedom, nc=non_centrality) - scalar_approximation(transformer=transformer, u=u, degree_of_freedom=degree_of_freedom, non_centrality=non_centrality), 0, 1, limit=1000)
+...
+----------------------------------------------------------------------
+Ran 3 tests in 17.332s
+
+OK
+<end of output>
+Test time =  17.93 sec
+----------------------------------------------------------
+Test Passed.
+"test_non_central_chi_squared_bindings" end time: Nov 09 17:00 +04
+"test_non_central_chi_squared_bindings" time elapsed: 00:00:17
+----------------------------------------------------------
+
+End testing: Nov 09 17:00 +04

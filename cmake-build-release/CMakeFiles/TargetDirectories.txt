@@ -27,7 +27,6 @@
 /Users/osm/CLionProjects/pyarv/cmake-build-release/src/arv/version/CMakeFiles/install.dir
 /Users/osm/CLionProjects/pyarv/cmake-build-release/src/arv/version/CMakeFiles/install/local.dir
 /Users/osm/CLionProjects/pyarv/cmake-build-release/src/arv/version/CMakeFiles/install/strip.dir
-/Users/osm/CLionProjects/pyarv/cmake-build-release/src/arv/approximation/CMakeFiles/approximation.dir
 /Users/osm/CLionProjects/pyarv/cmake-build-release/src/arv/approximation/CMakeFiles/test.dir
 /Users/osm/CLionProjects/pyarv/cmake-build-release/src/arv/approximation/CMakeFiles/edit_cache.dir
 /Users/osm/CLionProjects/pyarv/cmake-build-release/src/arv/approximation/CMakeFiles/rebuild_cache.dir
