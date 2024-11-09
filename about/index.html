@@ -105,6 +105,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#the-pyarv-package" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -914,6 +919,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="index.html" class="md-nav__link md-nav__link--active">
         
@@ -924,6 +942,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-packages-mission" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the package's mission?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#should-i-be-using-the-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      Should I be using the package?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-does-the-package-originate-from" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where does the package originate from?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-does-the-package-exist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why does the package exist?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1873,6 +1946,52 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-packages-mission" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the package's mission?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#should-i-be-using-the-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      Should I be using the package?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-does-the-package-originate-from" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where does the package originate from?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-does-the-package-exist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why does the package exist?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1890,9 +2009,64 @@
   
 
 
-  <h1>About</h1>
-
-<p>Information about the PyARV project. </p>
+<h1 id="the-pyarv-package">The PyARV package</h1>
+<p><strong><em>The fastest random numbers in Python.</em></strong> </p>
+<h2 id="what-is-the-packages-mission">What is the package's mission?</h2>
+<p>The PyARV package was designed to:</p>
+<ol>
+<li>Provide a clean C library implementation of 
+approximate random variables, to either be used directly 
+in C applications, indirectly through wrappers and bindings, 
+or purely as a reference implementation for porting to 
+other languages.</li>
+<li>Make most of this performance accessible for 
+Python applications. </li>
+</ol>
+<h2 id="should-i-be-using-the-package">Should I be using the package?</h2>
+<p>You <strong>should</strong> be using the package if:</p>
+<ul>
+<li>You have an optimised application spending most of its time generating random numbers.</li>
+<li>You are a scientist or a researcher investigating applications which make extensive
+use of random numbers. </li>
+</ul>
+<p>You probably <strong>should not</strong> be using the package if:</p>
+<ul>
+<li>You are spending a negligible amount of time generating random numbers. </li>
+<li>You require cryptographically secure random numbers. </li>
+<li>You don't care about performance and haven't optimised your application already. </li>
+</ul>
+<h2 id="where-does-the-package-originate-from">Where does the package originate from?</h2>
+<p>Generating random numbers from desired distributions
+can be a bottleneck in many applications (e.g. in Monte Carlo 
+simulations). Approximate random variables (the "ARV" in PyARV) 
+were developed and analysed by Prof. Mike Giles and Dr Oliver 
+Sheridan-Methven as a method of alleviating this problem,
+offering considerable speed improvements. (They further showed that using
+nested multilevel Monte Carlo can allow full accuracy to be all-the-while maintained).
+These were implemented in C by Dr Oliver Sheridan-Methven with the 
+assistance of Prof. Mike Giles and the Performance Libraries team of Arm
+led by Dr Christopher Goodyer. </p>
+<p>The code was originally developed as part of Dr Oliver Sheridan-Methven's 
+doctoral thesis. After a few iterations of cleaning the code for various 
+publications and hand-overs, the code has been pruned and improved, and has
+transitioned from a proof-of-concept, messy, and "rough around the edges" codebase, 
+into a much cleaner, better documented, better tested code base. There is still 
+much room for improvement, but the code has certainly come a long way. </p>
+<p>The repository preceeding PyArv was: <a href="https://github.com/oliversheridanmethven/approximate_random_variables"><code>approximate_random_variables</code></a>,
+and this contains various "how-to" and "getting started" guides, alongside 
+implementations specialised for Intel AVX-512, Nvidia, and Arm ThunderX2 VLA SVE hardwares.
+The core C libraries in PyARV are lifted from this repo. </p>
+<h2 id="why-does-the-package-exist">Why does the package exist?</h2>
+<p>This package is a selection of cherry-picked implementations which are suitable for 
+a broad range of hardwares. (There are other hardware specific specialisations which 
+are even faster, targetting Arm and Intel, which are not included in this package).</p>
+<p>The underlying C implementations are the core of the package, and arguably the most valuable
+part of the package. However, to promote the use of approximate random numbers more
+broadly, 
+we created this package to expose the core functionality to the Python community.
+While this won't of course make Python a HPC language, it will bring considerable
+HPC capabilities into the reach of Python applications, at least in so far as random
+number generation is concerned. </p>
 
 
 
@@ -1915,7 +2089,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 28, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 9, 2024</span>
   </span>
 
     

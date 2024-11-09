@@ -378,6 +378,8 @@ _Python3_INCLUDE_DIR:INTERNAL=/opt/homebrew/opt/python@3.12/Frameworks/Python.fr
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;6;64;;cpython-312-darwin;abi3;/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12;/Users/osm/CLionProjects/pyarv/venv/lib/python3.12;/Users/osm/CLionProjects/pyarv/venv/lib/python3.12/site-packages;/Users/osm/CLionProjects/pyarv/venv/lib/python3.12/site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=775bd35b8e43f9d3f73ea9e0cf200188
+//Interpreter reason failure
+_Python3_Interpreter_REASON_FAILURE:INTERNAL=
 //Path to a library.
 _Python3_LIBRARY_RELEASE:INTERNAL=/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib
 _Python3_NUMPY_SIGNATURE:INTERNAL=d66daf4a546cd217c514265f80a75408
