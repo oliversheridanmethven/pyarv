@@ -11,6 +11,8 @@ approximate random variables._
 on Mathematical Software, 49(3), Article 26, September 2023, 29 pages. 
 > [https://doi.org/10.1145/3604935](https://doi.org/10.1145/3604935)
 
+For projects using this package, please cite the ACM TOMS paper. 
+
 ## Authors
 
 Dr Oliver Sheridan-Methven  
