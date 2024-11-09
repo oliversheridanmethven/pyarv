@@ -60,16 +60,17 @@ void linear(const Float *restrict const input,
         Float u, p, z, lambda;
         u = input[i];
         lambda = non_centrality[i];
-        UInt upper_half = u > 0.5f;
-        u = upper_half ? 1.0f - u : u;
+        bool in_upper_half = u > 0.5f;
+        u = ternary(in_upper_half, 1.0f - u, u);
+        UInt which_half = (UInt) in_upper_half;
         Float weight_lower, weight_upper;
         UInt interpolation_index_lower, interpolation_index_upper;
         Float y = degrees_of_freedom / (lambda + degrees_of_freedom);// interpolation_value
         interpolation_indices(y, &interpolation_index_lower, &interpolation_index_upper, &weight_lower, &weight_upper);
         UInt b = get_table_index_from_float_format(u);
         b = cap_index(b, TABLE_MAX_INDEX);
-        Float p_lower = polynomial_linear_approximation(u, b, upper_half, interpolation_index_lower, polynomial_coefficients);
-        Float p_upper = polynomial_linear_approximation(u, b, upper_half, interpolation_index_upper, polynomial_coefficients);
+        Float p_lower = polynomial_linear_approximation(u, b, which_half, interpolation_index_lower, polynomial_coefficients);
+        Float p_upper = polynomial_linear_approximation(u, b, which_half, interpolation_index_upper, polynomial_coefficients);
         p = weight_lower * p_lower + weight_upper * p_upper;
         z = lambda + degrees_of_freedom + 2.0f * sqrtf(lambda + degrees_of_freedom) * p;
         output[i] = z;

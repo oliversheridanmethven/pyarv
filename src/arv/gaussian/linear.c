@@ -27,11 +27,11 @@ void linear(const Float *restrict const input,
         Float x, z;
         x = input[i];
         bool predicate = x < 0.5f;
-        x = predicate ? x : 1.0f - x;
+        x = ternary(predicate, x, 1.0f - x);
         UInt b = get_table_index_from_float_format(x);
         b = cap_index(b, TABLE_MAX_INDEX);
         z = polynomial_approximation(x, b);
-        z = predicate ? z : -z;
+        z = ternary(predicate, z, -z);
         output[i] = z;
     }
 }

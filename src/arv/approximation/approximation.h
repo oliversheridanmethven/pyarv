@@ -2,6 +2,11 @@
 #define PYARV_APPROXIMATION_H
 
 #include <stddef.h>
+#include <stdlib.h>
+#if __STDC_VERSION__ < 202311L
+#include <stdbool.h>
+#endif
+#include <iso646.h>
 
 typedef unsigned int UInt;// We assume IEEE754
 typedef float Float;      // We assume IEEE754
@@ -23,9 +28,6 @@ inline UInt float_32_as_uint_32(const Float u)
     const union FloatAndInt fi = {u};
     return fi.i;
 }
-
-typedef const Float *restrict input;
-typedef Float *restrict output;
 
 #pragma omp declare simd
 inline UInt get_table_index_from_float_format(const Float u)
@@ -60,5 +62,14 @@ inline UInt cap_index(const UInt b, const UInt cap)
     return b > cap ? cap : b;// Ensuring we don't overflow out of the table.
 }
 
+#pragma omp declare simd
+static inline Float ternary(bool p, const Float t, const Float f) {
+    /*
+     * Branches (and hence ternary expressions) can trip up some vectorisation routines.
+     * This is a version which selects from both branches results as appropriate
+     * which is doesn't trip up most vectorising compilers. 
+     */
+    return p * t + (not p) * f;
+}
 
 #endif//PYARV_APPROXIMATION_H
