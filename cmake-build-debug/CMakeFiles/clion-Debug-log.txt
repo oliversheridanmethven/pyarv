@@ -1,4 +1,32 @@
-Cannot generate into /Users/osm/CLionProjects/pyarv
-It was created with incompatible generator 'Unix Makefiles'
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -DINSOURCE_BUILD=True -DCMAKE_INSTALL_RPATH_USE_LINK_PATH=ON -G Ninja -DPython_EXECUTABLE=/Users/osm/CLionProjects/pyarv/venv/bin/python -DPython3_EXECUTABLE=/Users/osm/CLionProjects/pyarv/venv/bin/python -S /Users/osm/CLionProjects/pyarv -B /Users/osm/CLionProjects/pyarv/cmake-build-debug
+-- The C compiler identification is Clang 19.1.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/homebrew/opt/llvm/bin/clang-19 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- We think we are using the C compiler: Clang 19.1.1
+-- Setting some extra Clang specific flags.
+-- Compiling in mode: Debug
+-- Adding debug flags.
+-- Setting some extra Clang specific flags.
+-- We think we have 16 cores on this machine.
+-- Trying to set the build and tests to use parallel cores.
+-- Our default make tool is: /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja
+-- Using an in source python path.
+-- Found Python3: /Users/osm/CLionProjects/pyarv/venv/bin/python (found version "3.12.6") found components: Interpreter Development NumPy Development.Module Development.Embed
+-- Could not find scikit-build for building.
+-- Looking for the python libraries.
+-- Found Git: /usr/bin/git (found version "2.39.5 (Apple Git-154)")
+-- Installing the Python target version_bindings in source at destination: /Users/osm/CLionProjects/pyarv/src/pyarv/version.
+-- Installing the Python target gaussian_bindings in source at destination: /Users/osm/CLionProjects/pyarv/src/pyarv/gaussian.
+-- Installing the Python target non_central_chi_squared_bindings in source at destination: /Users/osm/CLionProjects/pyarv/src/pyarv/non_central_chi_squared.
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
 
-Please either delete it manually or select another generation directory
+    Python_EXECUTABLE
+
+
+-- Build files have been written to: /Users/osm/CLionProjects/pyarv/cmake-build-debug

@@ -15,10 +15,10 @@
 ########################
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
+CMAKE_ADDR2LINE:FILEPATH=/opt/homebrew/opt/llvm/bin/llvm-addr2line
 
 //Path to a program.
-CMAKE_AR:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ar
+CMAKE_AR:FILEPATH=/opt/local/bin/ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
@@ -28,7 +28,16 @@ CMAKE_BUILD_TYPE:STRING=Release
 CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/cc
+CMAKE_C_COMPILER:STRING=/opt/homebrew/opt/llvm/bin/clang-19
+
+//LLVM archiver
+CMAKE_C_COMPILER_AR:FILEPATH=/opt/homebrew/Cellar/llvm/19.1.1/bin/llvm-ar
+
+//`clang-scan-deps` dependency scanner
+CMAKE_C_COMPILER_CLANG_SCAN_DEPS:FILEPATH=/opt/homebrew/Cellar/llvm/19.1.1/bin/clang-scan-deps
+
+//Generate index for LLVM archive
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/opt/homebrew/Cellar/llvm/19.1.1/bin/llvm-ranlib
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -46,7 +55,7 @@ CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Path to a program.
-CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
+CMAKE_DLLTOOL:FILEPATH=/opt/homebrew/opt/llvm/bin/llvm-dlltool
 
 //Flags used by the linker during all build types.
 CMAKE_EXE_LINKER_FLAGS:STRING=
@@ -79,7 +88,7 @@ CMAKE_INSTALL_PREFIX:PATH=/usr/local
 CMAKE_INSTALL_RPATH_USE_LINK_PATH:UNINITIALIZED=ON
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ld
+CMAKE_LINKER:FILEPATH=/opt/local/bin/ld
 
 //No help, variable specified on the command line.
 CMAKE_MAKE_PROGRAM:UNINITIALIZED=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja
@@ -105,13 +114,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/nm
+CMAKE_NM:FILEPATH=/opt/homebrew/opt/llvm/bin/llvm-nm
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=CMAKE_OBJCOPY-NOTFOUND
+CMAKE_OBJCOPY:FILEPATH=/opt/homebrew/opt/llvm/bin/llvm-objcopy
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/objdump
+CMAKE_OBJDUMP:FILEPATH=/opt/homebrew/opt/llvm/bin/llvm-objdump
 
 //Build architectures for OSX
 CMAKE_OSX_ARCHITECTURES:STRING=
@@ -134,10 +143,10 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=pyarv
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ranlib
+CMAKE_RANLIB:FILEPATH=/opt/homebrew/opt/llvm/bin/llvm-ranlib
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=CMAKE_READELF-NOTFOUND
+CMAKE_READELF:FILEPATH=/opt/homebrew/opt/llvm/bin/llvm-readelf
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -187,7 +196,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/strip
+CMAKE_STRIP:FILEPATH=/opt/local/bin/strip
 
 //Path to a program.
 CMAKE_TAPI:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/tapi
@@ -244,6 +253,12 @@ CMAKE_CPACK_COMMAND:INTERNAL=/Applications/CLion.app/Contents/bin/cmake/mac/aarc
 CMAKE_CTEST_COMMAND:INTERNAL=/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest
 //ADVANCED property for variable: CMAKE_C_COMPILER
 CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_AR
+CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_CLANG_SCAN_DEPS
+CMAKE_C_COMPILER_CLANG_SCAN_DEPS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
+CMAKE_C_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS
 CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: PyARV
-Version: 0.2.6
+Version: 0.2.7
 Summary: Approximate random variables
 Author: Dr Oliver Sheridan-Methven
 Author-email: oliver.sheridan-methven@hotmail.co.uk
@@ -33,6 +33,7 @@ Requires-Dist: scipy; extra == "dev"
 Requires-Dist: build; extra == "dev"
 Requires-Dist: twine; extra == "dev"
 Requires-Dist: varname; extra == "dev"
+Requires-Dist: tqdm; extra == "dev"
 
 # PyARV
 
@@ -50,7 +51,7 @@ on Mathematical Software, 49(3), Article 26, September 2023, 29 pages.
 ## Authors
 
 Dr Oliver Sheridan-Methven  
-[oliver.sheridan-methven@hotmail.co.uk](mailto:oliver.sheridan-methven@hotmail.co.uk).
+[oliver.sheridan-methven@hotmail.co.uk](mailto:oliver.sheridan-methven@hotmail.co.uk)
 
 ## Documentation
 

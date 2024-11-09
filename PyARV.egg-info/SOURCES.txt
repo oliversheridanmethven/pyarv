@@ -115,7 +115,6 @@ src/__init__.py
 src/arv/CMakeLists.txt
 src/arv/README.md
 src/arv/approximation/CMakeLists.txt
-src/arv/approximation/approximation.c
 src/arv/approximation/approximation.h
 src/arv/gaussian/CMakeLists.txt
 src/arv/gaussian/cubic.c

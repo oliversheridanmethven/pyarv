@@ -21,3 +21,4 @@ scipy
 build
 twine
 varname
+tqdm
