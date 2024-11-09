@@ -14,7 +14,7 @@ on Mathematical Software, 49(3), Article 26, September 2023, 29 pages.
 ## Authors
 
 Dr Oliver Sheridan-Methven  
-[oliver.sheridan-methven@hotmail.co.uk](mailto:oliver.sheridan-methven@hotmail.co.uk).
+[oliver.sheridan-methven@hotmail.co.uk](mailto:oliver.sheridan-methven@hotmail.co.uk)
 
 ## Documentation
 

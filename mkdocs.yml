@@ -25,6 +25,7 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - content.code.select
     - navigation.footer
   icon:
     repo: fontawesome/brands/github
@@ -86,3 +87,10 @@ extra_javascript:
 markdown_extensions:
   - mdx_math
   - admonition # Gives nice highlight fields.
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences

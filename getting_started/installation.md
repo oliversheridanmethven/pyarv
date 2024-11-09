@@ -1,12 +1,16 @@
 # Installation
 
-To install the most recent release run:
+To install the most recent stable release run:
 ```bash
 pip install pyarv
 ```
 or to install the latest version run:
 ```bash
 pip install git+https://github.com/oliversheridanmethven/pyarv.git
+```
+For developers, to pull in all the required packages, run:
+```bash
+pip install pyarv[dev]
 ```
 
 To test the installation is working fine run:

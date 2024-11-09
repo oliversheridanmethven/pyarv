@@ -2,7 +2,6 @@
 import itertools
 
 import numpy as np
-from scipy.odr import polynomial
 from scipy.stats import ncx2
 import time
 import pandas as pd

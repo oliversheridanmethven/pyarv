@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 import numpy as np
-from mpl_toolkits.mplot3d.proj3d import transform
-from scipy.odr import polynomial
 from scipy.stats import norm
 import time
 
@@ -9,7 +7,7 @@ from pyarv.gaussian.approximation import Gaussian
 
 if __name__ == "__main__":
     for order in [1, 3]:
-        print(f"\n\n\n{order = }\n")
+        print(f"\n{order = }\n" + "-"*50)
         n_samples = 1_000
         u = np.linspace(0, 1, n_samples + 1, dtype=np.float32)[1:-1]
         z_exact = norm.ppf(u)
@@ -26,6 +24,7 @@ if __name__ == "__main__":
         pyarv_start = time.time()
         polynomial.transform(u, outputs=z_approx)
         pyarv_end = time.time()
+        print(f"The inverse transform method: ")
         print(f"scipy = {scipy_end - scipy_start}")
         print(f"pyarv = {pyarv_end - pyarv_start}")
 
@@ -44,7 +43,9 @@ if __name__ == "__main__":
         uniforms_start = time.time()
         u = np.random.uniform(size=n_samples + 1).astype(np.float32)
         uniforms_end = time.time()
+        print(f"Random number generation: ")
         print(f"numpy = {numpy_end - numpy_start}")
         print(f"pyarv + uniforms = {pyarv_numpy_end - pyarv_numpy_start}")
         print(f"uniforms = {uniforms_end - uniforms_start}")
-        print(f"pyarv = {pyarv_end - pyarv_start}")
+        print(f"pyarv without uniforms = {pyarv_end - pyarv_start}")
+        print("\n")

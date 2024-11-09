@@ -42,7 +42,8 @@ setup(
             "scipy",
             "build",
             "twine",
-            "varname"
+            "varname",
+            "tqdm"
         ]
     },
     packages=package_dirs.keys(),
