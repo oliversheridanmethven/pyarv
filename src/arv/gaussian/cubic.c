@@ -28,6 +28,7 @@ void cubic(const Float *restrict const input,
            Float *restrict const output,
            const size_t input_buffer_size)
 {
+    #pragma omp simd
     for (size_t i = 0; i < input_buffer_size; i++)
     {
         Float x, z;

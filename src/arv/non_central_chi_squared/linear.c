@@ -54,7 +54,7 @@ void linear(const Float *restrict const input,
             const Float degrees_of_freedom,
             const Float *restrict const polynomial_coefficients)
 {
-    // #pragma omp simd
+    #pragma omp simd
     for (unsigned int i = 0; i < input_buffer_size; i++)
     {
         Float u, p, z, lambda;

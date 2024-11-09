@@ -1,2 +1,2 @@
-add_library(approximation approximation.c)
+add_library(approximation INTERFACE)
 target_include_directories(approximation INTERFACE ..)

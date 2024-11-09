@@ -6,6 +6,7 @@
 #include <numpy/arrayobject.h>
 // clang-format on
 
+#include "approximation/approximation.h"
 #include "gaussian/cubic.h"
 #include "gaussian/linear.h"
 
