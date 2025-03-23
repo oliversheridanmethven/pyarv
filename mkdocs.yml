@@ -61,6 +61,9 @@ plugins:
             docstring_style: numpy
             inherited_members: true
             merge_init_into_class: true
+            allow_inspection: true
+            show_if_no_docstring: false
+            member_order: source
   - exclude:
       glob:
         - venv/*
@@ -82,10 +85,9 @@ plugins:
   - literate-nav:
       nav_file: SUMMARY.md
   - section-index
-extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 markdown_extensions:
-  - mdx_math
+  - pymdownx.arithmatex:
+      generic: true
   - admonition # Gives nice highlight fields.
   - pymdownx.highlight:
       anchor_linenums: true
@@ -94,3 +96,6 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+extra_javascript:
+  - javascripts/mathjax.js  
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
