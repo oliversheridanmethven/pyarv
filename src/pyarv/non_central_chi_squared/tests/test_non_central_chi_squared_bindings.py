@@ -5,7 +5,7 @@ from idlelib.pyparse import trans
 
 import numpy as np
 from pyarv.approximations.polynomial_approximations import PolynomialApproximationTransformer
-from pyarv.non_central_chi_squared.approximation import NonCentralChiSquared
+from pyarv.non_central_chi_squared import NonCentralChiSquared
 import scipy.integrate as integrate
 from scipy.stats import ncx2 as non_central_chi_squared
 

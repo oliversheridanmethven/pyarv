@@ -7,7 +7,7 @@ import time
 import pandas as pd
 from tqdm import tqdm as progressbar
 
-from pyarv.non_central_chi_squared.approximation import NonCentralChiSquared
+from pyarv.non_central_chi_squared import NonCentralChiSquared
 
 if __name__ == "__main__":
     nus = [1, 5, 10, 50, 100]

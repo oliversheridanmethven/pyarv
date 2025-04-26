@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import unittest
 import numpy as np
-from pyarv.gaussian.approximation import Gaussian
+from pyarv.gaussian import Gaussian
 import scipy.integrate as integrate
 from scipy.stats import norm
 
