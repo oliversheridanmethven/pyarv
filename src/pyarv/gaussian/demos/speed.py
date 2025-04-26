@@ -3,7 +3,7 @@ import numpy as np
 from scipy.stats import norm
 import time
 
-from pyarv.gaussian.approximation import Gaussian
+from pyarv.gaussian import Gaussian
 
 if __name__ == "__main__":
     for order in [1, 3]:

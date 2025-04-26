@@ -67,8 +67,7 @@ class PolynomialApproximationTransformer(abc.ABC):
     
     def transform(self, 
                    inputs: Array, 
-                   /, 
-                   *, 
+                   *args, 
                    outputs: Array | None = None, 
                    **kwargs: dict[str, Any])\
             -> Array | None:
