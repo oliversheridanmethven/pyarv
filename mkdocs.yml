@@ -52,6 +52,7 @@ plugins:
   - gen-files:
       scripts:
         - mkdoc_scripts/generate_user_documentation.py
+#        - mkdoc_scripts/generate_user_c_documentation.py
         - mkdoc_scripts/generate_developer_documentation.py
   - mkdocstrings:
       handlers:

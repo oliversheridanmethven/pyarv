@@ -32,6 +32,7 @@ setup(
             "mkdocs-material[imaging]",
             "mkdocstrings",
             "mkdocstrings-python",
+            "mkdocstrings-c",
             "mkdocs-literate-nav",
             "mkdocs-section-index",
             "mkdocs-gen-files",
