@@ -1,5 +1,6 @@
-#include "bindings/wrappers.h"
 #include "version_bindings.h"
+#include "bindings/wrappers.h"
+#include <stdio.h>
 
 static PyMethodDef version_methods[] = {
         {"repo_name", PyFunc(repo_name_), METH_VARARGS | METH_KEYWORDS,
