@@ -16,6 +16,14 @@ typedef float Float;      // We assume IEEE754
 #define FLOAT32_EXPONENT_BIAS 127
 #define FLOAT32_EXPONENT_BIAS_TABLE_OFFSET (FLOAT32_EXPONENT_BIAS - 1)
 
+/*
+ * NB - The static in the function signatures below seems required
+ * in my newest CMake setup (very fragile and hacky, I know...),
+ * else on my Mac I get complaints about the symbols not existing
+ * the flat name space. Seems to have happened after some compiler
+ * and OS upgrades. 
+ */
+
 union FloatAndInt
 {
     Float f;
@@ -23,14 +31,14 @@ union FloatAndInt
 };
 
 #pragma omp declare simd
-inline UInt float_32_as_uint_32(const Float u)
+static inline UInt float_32_as_uint_32(const Float u)
 {
     const union FloatAndInt fi = {u};
     return fi.i;
 }
 
 #pragma omp declare simd
-inline UInt get_table_index_from_float_format(const Float u)
+static inline UInt get_table_index_from_float_format(const Float u)
 {
     /*
      * Takes the approximate logarithm of a floating point number and maps this to
@@ -57,7 +65,7 @@ inline UInt get_table_index_from_float_format(const Float u)
 }
 
 #pragma omp declare simd
-inline UInt cap_index(const UInt b, const UInt cap)
+static inline UInt cap_index(const UInt b, const UInt cap)
 {
     return b > cap ? cap : b;// Ensuring we don't overflow out of the table.
 }
