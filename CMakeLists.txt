@@ -12,7 +12,7 @@ project(pyarv C)
 
 # We want to use the latest standards.
 # Only some of the latest and greatest compilers offer the appropriate level of support.
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD 23)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS OFF)
 
@@ -66,7 +66,7 @@ else()
     set(OPENMP_FLAGS "-fopenmp -fvectorize")
 endif()
 
-set(CMAKE_C_FLAGS "-fPIC -march=native ${OPENMP_FLAGS} ${CMAKE_C_FLAGS} ${ERROR_FLAGS_C}")
+set(CMAKE_C_FLAGS "-fPIC -std=c23 -march=native ${OPENMP_FLAGS} ${CMAKE_C_FLAGS} ${ERROR_FLAGS_C}")
 
 cmake_host_system_information(RESULT N_CORES QUERY NUMBER_OF_LOGICAL_CORES)
 message(STATUS "We think we have ${N_CORES} cores on this machine.")
