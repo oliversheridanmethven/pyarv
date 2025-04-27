@@ -44,7 +44,8 @@ setup(
             "build",
             "twine",
             "varname",
-            "tqdm"
+            "tqdm",
+            "setuptools-git-versioning",
         ]
     },
     packages=package_dirs.keys(),
