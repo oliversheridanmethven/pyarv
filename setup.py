@@ -32,6 +32,7 @@ setup(
             "mkdocs-material[imaging]",
             "mkdocstrings",
             "mkdocstrings-python",
+            "mkdocstrings-c",
             "mkdocs-literate-nav",
             "mkdocs-section-index",
             "mkdocs-gen-files",
@@ -43,7 +44,8 @@ setup(
             "build",
             "twine",
             "varname",
-            "tqdm"
+            "tqdm",
+            "setuptools-git-versioning",
         ]
     },
     packages=package_dirs.keys(),
