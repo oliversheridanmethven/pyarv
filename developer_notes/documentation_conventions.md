@@ -14,4 +14,4 @@ conditions:
 * A parent directory contains a leading or training underscore, e.g. 
 `_foo/`, `foo_/`, or `_foo_/`.
 * A parent directory is called `tests` or `demos`. 
-* A file contains a leading or trailing undercore (except `__init__.py`). 
+* A file contains a leading or trailing underscore (except `__init__.py`). 

@@ -27,3 +27,5 @@ install_manifest.txt
 /MANIFEST.in
 /dist/
 /Testing/
+.DS_Store
+report/

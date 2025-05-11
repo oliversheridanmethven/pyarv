@@ -24,7 +24,7 @@ make install
 make test 
 ```
 
-!!! note 
+!!! note "Run from the root directory"
     This is run from the project's root directory, not from a 
     separate dedicated build directory.
 
