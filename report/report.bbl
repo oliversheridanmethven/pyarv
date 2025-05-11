@@ -1,0 +1,116 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Blair et~al.(1976)Blair, Edwards, and
+  Johnson]{blair1976rational_chebyshev}
+J.~M. Blair, C.~A. Edwards, and J.~H. Johnson.
+\newblock Rational {C}hebyshev approximations for the inverse of the error
+  function.
+\newblock \emph{Mathematics of computation}, 30\penalty0 (136):\penalty0
+  827--830, 1976.
+
+\bibitem[Box and Muller(1958)]{box1958note}
+George~E.P. Box and Mervin~E. Muller.
+\newblock A note on the generation of random normal deviates.
+\newblock \emph{The annals of mathematical statistics}, 29:\penalty0 610--611,
+  1958.
+
+\bibitem[Cheung et~al.(2007)Cheung, Lee, Luk, and
+  Villasenor]{cheung2007hardware}
+Ray C.~C. Cheung, Dong-U Lee, Wayne Luk, and John~D. Villasenor.
+\newblock Hardware generation of arbitrary random number distributions from
+  uniform distributions via the inversion method.
+\newblock \emph{{IEEE} Transactions on Very Large Scale Integration ({VLSI})
+  Systems}, 15\penalty0 (8):\penalty0 952--962, 2007.
+
+\bibitem[Giles and Sheridan-Methven(2022)]{giles2022approximate}
+Michael~B. Giles and Oliver Sheridan-Methven.
+\newblock Analysis of nested multilevel {M}onte {C}arlo using approximate
+  normal random variables.
+\newblock \emph{{SIAM/ASA} {J}ournal on {U}ncertainty {Q}uantification},
+  10\penalty0 (1):\penalty0 200--226, 2022.
+
+\bibitem[Giles and Sheridan-Methven(2023)]{giles2023approximating}
+Michael~B. Giles and Oliver Sheridan-Methven.
+\newblock Approximating inverse cumulative distribution functions to produce
+  approximate random variables.
+\newblock \emph{{ACM} {T}ransactions on {M}athematical {S}oftware}, 49\penalty0
+  (3), September 2023.
+
+\bibitem[Giles and Sheridan-Methven(2024)]{giles2024rounding}
+Michael~B. Giles and Oliver Sheridan-Methven.
+\newblock Rounding error using low precision approximate random variables.
+\newblock \emph{{SIAM} {J}ournal on {S}cientific {C}omputing}, 46\penalty0
+  (4):\penalty0 B502--B526, 2024.
+
+\bibitem[Glasserman(2003)]{glasserman2003monte}
+Paul Glasserman.
+\newblock \emph{{M}onte {C}arlo methods in financial engineering}, volume~53 of
+  \emph{Stochastic modelling and applied probability}.
+\newblock {S}pringer, 2003.
+
+\bibitem[Haas and Giles(2025)]{haas2025monte}
+Irina-Beatrice Haas and Michael~B. Giles.
+\newblock A nested {MLMC} framework for efficient simulations on {FPGA}s.
+\newblock \emph{{M}onte {C}arlo Methods and Applications}, 2025.
+\newblock Accepted for publication, pending journal issue.
+
+\bibitem[Hastings~Jr et~al.(1955)Hastings~Jr, Wayward, and
+  Wong~Jr]{hastings1955approximations}
+Cecil Hastings~Jr, Jeanne~T. Wayward, and James~P. Wong~Jr.
+\newblock \emph{Approximations for digital computers}.
+\newblock {P}rinceton {U}niversity press, 1955.
+
+\bibitem[Knuth(2019)]{knuth2019art_semi}
+Donald~E. Knuth.
+\newblock \emph{The Art of Computer Programming: Seminumerical Algorithms,
+  Volume 2}.
+\newblock {A}ddison-{W}esley, \nth{3} edition, June 2019.
+\newblock \nth{37} printing.
+
+\bibitem[Marsaglia and Bray(1964)]{marsaglia1964convenient}
+George Marsaglia and T.A. Bray.
+\newblock A convenient method for generating normal variables.
+\newblock \emph{SIAM Review}, 6\penalty0 (3):\penalty0 260--264, 1964.
+
+\bibitem[Marsaglia and Tsang(2000)]{marsaglia2000ziggurat}
+George Marsaglia and Wai~Wan Tsang.
+\newblock The {Z}iggurat method for generating random variables.
+\newblock \emph{Journal of statistical software}, 5\penalty0 (1):\penalty0
+  1--7, 2000.
+
+\bibitem[Mazzucotelli(2025)]{mazzucotelli2025mkdocstringc}
+Timoth\'{e}e Mazzucotelli.
+\newblock mkdocstrings-c: a {C} handler for mkdocstrings, 2025.
+\newblock URL \url{github.com/mkdocstrings/c}.
+\newblock GitHub repository.
+
+\bibitem[M\"{u}ller et~al.(2015)M\"{u}ller, Scheichl, and
+  Shardlow]{muller2015improving}
+Eike~H. M\"{u}ller, Rob Scheichl, and Tony Shardlow.
+\newblock Improving multilevel {M}onte {C}arlo for stochastic differential
+  equations with application to the {L}angevin equation.
+\newblock \emph{Proceedings of the royal society of {L}ondon {A}: mathematical,
+  physical and engineering sciences}, 471\penalty0 (2176), 2015.
+
+\bibitem[Sheridan-Methven(2020)]{sheridan2020approximate_random}
+Oliver Sheridan-Methven.
+\newblock Getting started with approximate random variables: a brief guide for
+  practitioners, 2020.
+\newblock URL
+  \url{github.com/oliversheridanmethven/approximate_random_variables}.
+\newblock GitHub repository.
+
+\bibitem[Sheridan-Methven(2021)]{sheridan2020nested}
+Oliver Sheridan-Methven.
+\newblock Nested multilevel {M}onte {C}arlo methods and a modified
+  {E}uler-{M}aruyama scheme utilising approximate {G}aussian random variables
+  suitable for vectorised hardware and low-precisions, 2021.
+\newblock {DP}hil.\ thesis, {M}athematical {I}nstitute, {U}niversity of
+  {O}xford.
+
+\end{thebibliography}

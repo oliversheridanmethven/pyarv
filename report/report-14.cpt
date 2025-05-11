@@ -1,0 +1,29 @@
+
+Give an example in the following settings:
+\begin{itemize}
+\item using a naive Rademacher Random variables and using a zeroth order single interval dyadic.
+
+\item Give a Gaussian example with simple Monte Carlo estimation (e.g. estiamte pi or something similar as an example of numerical integration unrelated to SDEs, or some high dimensional problem).
+
+\item Give an SDE example pricing a call option, so we can compare to the analytic formula.
+
+\item Give a more involved CIR example with the non central chi-squared distribution.
+
+\item Give a multi-level Monte Carlo application showing the impact of the MLMC correction step, showing accuracy is maintained.
+
+\item Find some example using a Possion distribution.
+
+\item Perhaps I can give an example for hypothesis testing parameters from some empirical distributions, such as parameter estimation for a Dirchlet distribution from a Bayesian framework.
+
+
+\item Perform a Bayesian Monte Carlo or Markov Chain Monte Carlo using some empirical distribution or some custom distribution which might be some polynomial (maybe a polynomial is a poor example, so perhaps a sinusoidal distribution with a discontinuity)
+
+\item Can I give an example using a Cauchy distribution?
+
+\item Find examples from outside Monte Carlo. (Chaos theory, weather simulation, random matrices, etc.)
+
+\item Give an example using quasi-random numbers.
+\end{itemize}
+
+For several of these examples, they could easily be measured by the metric of ``time to achieve a given accuracy'', or conversely ''accuracy achieved in a given time'' (e.g. 5-10 mins). I think the ``accuracy achieved in a given time'' for the Monte Carlo applications could be readily measured by using a timeout decorator (like the one in orsm) and then the error in the estimate (given by the empirical variance) can be compared. We can do a sanity check that the exact answer is within the expected bounds and see the exact level of error (although this is a random variable), so this might require several repetitions and some bootstrapping.
+^^E^^L 

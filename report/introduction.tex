@@ -1,0 +1,76 @@
+\section{Introduction}
+\label{sec:introduction}
+
+In this \namecref{sec:introduction} we introduce the reader to the topic of efficient random number generation, and introduce the \arv and \pyarv packages in this context, outlining the our contributions, and detailing the structure of this report.
+
+\subsection{Random number generation}
+
+Random numbers are a staple component of the mathematical, physical, and computation sciences. Their significance stems both from their theoretical underpinning of probabilistic and stochastic systems, to their applications in scientific computing, with notable examples \textit{par excellence} including Monte Carlo simulations and cryptography. The utility of random numbers cannot be understated, as surmised by \citet[p.\,189]{knuth2019art_semi}: ``\textit{Almost all good computer programs contain at least one random number generator}''. Random numbers, while simple enough to comprehend intuitively, are very tricky to tackle analytically and computationally. This article details the \arv and \pyarv software packages, which make available ultra fast random numbers for both low and high level applications. 
+
+Not all random numbers are created equal, and there are low quality random numbers, and high quality ones, and differing metrics by which we can judge and compare random number and their generators. Random numbers come in different flavours, such a pseudo or quasi random numbers. Furthermore, they can have differing strengths, such as whether they are cryptographically secure or not. Random numbers can come from an endless selection of possible distributions (e.g.\ uniform, Gaussian, Poisson, etc.). Lastly, random number generators can be computationally cheap or extremely expensive. While there are numerous random numbers which should almost always be avoided (e.g.\ the infamous \inlinec|RANDU| \citep[p.\,107, 188]{knuth2019art_semi}), no single random number generator is optimal under the lens of all these metrics. Consequently, it is left to the discretion and expertise of an application's architect to choose the random number generator(s) most suitable for their specific application's needs. 
+
+The setting we will focus our attention on concerns the speed with which random numbers can be generated. Our aim is to generate vast quantities of random numbers \textit{en masse}, so the quicker a random number can be generated, the better. This setting is self evidently highly applicable to Monte Carlo simulation. There are two mechanism by which we can achieve our goal. The first is to ensure that the chosen random number generator's algorithm is implemented such that it achieves maximal performance on the available computational hardware, efficiently leveraging parallel calculation units (e.g.\ SIMD units, GPUs, FPGAs, etc.), the cache hierarchy, reduced precision data-types, etc. The second is to choose [or construct] the quickest random number generator algorithm appropriate for the desired task alongside the distribution and hardware, utilising clever approximations, dynamically adjusting and reducing precisions where permissible, etc. The \arv package exploits both these mechanisms, and the underlying implementation showed speed improvements by a factor of 7 for the simple Gaussian distribution \citep[\S\,3.4]{giles2024rounding}, up to factors of \qty{6000}{} for the more complicated non-central \( \chi^2 \) distribution \citep[p.\,26:22, tab.\,5(b)]{giles2024rounding}. 
+
+\subsection{The \arv and \pyarv packages}
+
+In this paper we introduce the \arv and \pyarv packages. The acronym \arv stands for \textit{approximate random variables} \citep[\S,2]{giles2023approximating}, which are random variables sampled using the inverse transform method \citep[\S\,2.2.1]{glasserman2003monte}, but with the inverse cumulative distribution function replaced by an approximation. (The different nomenclature of ``random numbers'' and ``random variables'' is a minor mathematical detail we will overlook, and henceforth we will freely interchange between the two).  Numerous approximations (and analyses) have been produced, including the approximation by constants, polynomials, piecewise polynomials, dyadic intervals, Pad\'{e} approximations, Chebyshev polynomials, and several other methods \citep{sheridan2020nested,giles2023approximating,cheung2007hardware,blair1976rational_chebyshev,hastings1955approximations}. The \arv package utilises piecewise polynomial approximations on dyadic subintervals, the analysis and implementation of which is detailed by \citet{giles2023approximating}, and highly optimised specialist implementations utilising inlined assembly targetting Intel AVX512 and Arm ThunderX2 SVE VLA architectures are detailed by \citet[\S\,4.3.3]{sheridan2020nested}. The \arv package is a C library implementing and extending upon the algorithms outlined in \citep{giles2023approximating}, and \pyarv is a library which wraps \arv, exposing a Python interface. 
+
+The goal of the \arv and \pyarv packages is to take the algorithms detailed in \citep{giles2023approximating} and their prototype implementations from \citep{sheridan2020approximate_random}, and package these as a polished, coherent, structured, professional grade software library, with thorough documentation, tests, and error handling, and to make these available to the Python and C-style languages.  The motivation to do so is to ease and encourage further work utilising approximate random variables (both from academia and industry), to consolidate and refine the current implementations, and to improve the accessibility for both high and low level programming languages. 
+
+\subsection{Applications suitable for approximate random variables}
+
+Before proceeding with the remainder of this report, we should make clear our intended audience by detailing which applications would benefit from using approximate random variables, and which would not. 
+
+Our target audience who are most likely to benefit from approximate variables, and find the \arv and \pyarv packages beneficial and interesting, include practitioners and researchers investigating:
+\begin{itemize}
+\item High performance computing applications that have random number generation as their primary bottle neck. Obvious examples typically include Monte Carlo applications in finance, weather forecasting, etc. 
+
+\item Programs computing random numbers on vectorised hardware, such as modern CPUs, GPUs, FPGAs, etc. 
+
+\item Applications using very low precisions data types. 
+
+\item Mathematical and statistical software libraries. 
+
+\item Numerical analysis of quasi-random numbers, low discrepancy sequences, Monte Carlo methods, function approximation, rounding error models, stochastic rounding, alternative number representations (e.g.\ posits), etc.
+\end{itemize}
+
+Importantly though, we should detail \textbf{inappropriate applications} for approximate random variables, which would include the scenarios where:
+\begin{itemize}
+\item Applications have not undergone considerable optimisation and performance profiling. 
+
+\item Programs run on antiquated or low-end hardware, or embedded devices without floating point support. 
+
+\item Random number generation is not the dominant computational cost. 
+
+\item Random variables are drawn only from the uniform distribution. 
+
+\item Cryptographically secure random numbers are required or applications are security critical running in malicious environments.\footnote{These settings do not necessarily preclude the use of approximate random variables, but such settings were not prioritised nor analysed in any way during the development of the underlying methods used in our construction of approximate random variables. Consequently, we make no guarantees about their utility or suitability for such situations.}
+
+\item Applications require highly accurate evaluations of certain statistical properties, such as double precision accurate estimation of percentile values in some statistical tests. 
+\end{itemize}
+
+
+\subsection{Contributions of this report}
+
+Our research has generated the following contributions, which we list in the order of their significance:
+\begin{longdescription}
+\item[\arv] A coherent, polished, and hardware agnostic C library implementing approximate random variables for a range of distributions. The implementation is highly optimised to fully exploit SIMD capable vectorised CPUs. The library is easily portable to other C-style languages such as e.g.\ C++.  
+\item[\pyarv] A Python library exposing the \arv functionality. 
+\item[More distributions implemented] Alongside the Gaussian and non-central \( \chi^2 \) distributions, we now support implementations for \todo[inline=true]{the Poisson distribution?} 
+\item[Programming know-how and compiler shortcomings] Several limitations of compilers and their ability to effectively vectorise code patterns have been identified. In doing so we have learnt, and can herein share, much of the know-how about how to write code amenable to vectorising compilers. 
+\end{longdescription}
+
+
+\subsection{Structure of this report}
+
+The remains of this report are structured as follows:
+\begin{longdescription}
+\item[\Cref{sec:mathematical_preliminaries}] Introduces the mathematical preliminaries necessary to understand what \arv is doing in its implementation and to explain the \pyarv interface. 
+\item[\Cref{sec:getting_started_with_pyarv}] Showcases how to get started with the \pyarv package, covering installation, performance checks, and a simple usage example.
+\item[\Cref{sec:design_choices}] Discusses several of the design choices made, what the package's goals are and are not. 
+\item[\Cref{sec:advanced_usage}] Explains the more advanced features and capabilities, such as dynamically generated approximations and parametrised distributions.
+\item[\Cref{sec:examples}] Demonstrates numerous examples benefiting from our packages.
+\item[\Cref{sec:future_plans}] Explores the future plans for the project and how people can meaningfully contribute to the effort.
+\item[\Cref{sec:conclusions}] Presents the conclusions from this report.
+\end{longdescription}
+ 

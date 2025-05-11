@@ -1,0 +1,2 @@
+/opt/local/bin/ar qc libnon_central_chi_squared.a CMakeFiles/non_central_chi_squared.dir/linear.c.o
+/opt/homebrew/opt/llvm/bin/llvm-ranlib libnon_central_chi_squared.a

@@ -1,0 +1,21 @@
+There are some things I want to mention in this article:
+	\begin{itemize}
+		\item The distributions included and omitted:
+		\begin{itemize}
+			\item Gaussian.
+			\item Non-central \( \chi^2 \).
+			\item \( \chi^2 \).
+			\item Poisson.
+			\item Student-\( t \).
+			\item \( \beta \).
+			\item Cauchy.
+		\end{itemize}
+		And measure how these compare to what's available in Python already, (skip and what's in C or C++ as this was done in a previous paper and for now the front end is Python.).
+		\item What are the current difficulties:
+		\begin{itemize}
+			\item Compilers with scatter and gather.
+			\item Writing agnostic implementations that are well suited to AVX512.
+			\item User defined specialisations and parametrisations.
+		\end{itemize}
+	\end{itemize}
+^^E^^L 

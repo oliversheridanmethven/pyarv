@@ -1,0 +1,1 @@
+Mention that as we do some checking on the arrays (contiguous, right length, etc., and then in the C backend we rely on the compiler to check the types, we don't do \textit{much} python type checking with tools such as mypy.^^E^^L 

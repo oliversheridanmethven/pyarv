@@ -1,0 +1,50 @@
+\section{Future plans}
+\label{sec:future_plans}
+
+In this \namecref{sec:future_plans} we outline our plans for the future of \arv and \pyarv. In addition, we invite contributions to the project, highlighting the avenues of work which would most benefit and advance the project. 
+
+\subsection{Major changes and features}
+
+In this report, we are announcing only the first release of \arv and \pyarv. Whilst we hope the packages will both pique the readers' interest and benefit numerous computer applications, should our packages gain traction, we anticipate there are several new features and major changes that would follow in future releases. These would include (but are certainly not limited to):
+\begin{longdescription}
+\item[More data types] Currently only \qty{32}{\bit} single precision is supported. We do anticipate utility in supporting \qty{16}{\bit} half precision, and perhaps even \qty{64}{\bit} double precision.
+\item[Shipping the packages separately] \pyarv is so tightly coupled to \arv that in this first release is makes sense to ship the two packages together. In the future we would prefer to split these into two separately managed projects. 
+\item[More distributions of interest] While we support dynamically constructed user approximations, having more distributions with native support would increase the utility of \arv and likely offer superior performance resulting from compiler optimisations. 
+\item[More language bindings] Numerous other languages besides Python would benefit from being able to interface to \arv.
+\end{longdescription}
+
+Equally important perhaps is to mention what we anticipate as very unlikely to change in any future releases:
+\begin{longdescription}
+\item[Exclusively percentiles] Most statistical libraries offer functions to evaluate numerous properties of a probability distribution, such as its cumulative distribution function, the probability mass function, the moment generating function, etc. The \textit{only} function we offer is the inverse cumulative distribution function.
+\item[Multithreading] The user is solely responsible for ensuring threads are utilised and handling distributed workloads.  
+\item[Accelerators] Support for accelerators, such as GPUs, while possible, will not be supported by \arv.
+\item[Specalisations] Hardware specific specialisations will not be supported by \arv.
+\item[Non IEEE floats] The only floating point standard supported by \arv will be IEEE floating point for the foreseeable future. 
+\end{longdescription}
+
+
+\subsection{Contributing to the project}
+
+At the time of writing, birthing this project into a publishable state has been the individual effort of the author. However, the author's time and skills are finite, and the project would benefit hugely from a wider pool of contributors. A non exhaustive list of tasks which would considerably benefit the project include: 
+\begin{longdescription}
+	\item[CICD] The project is currently built and tested manually, and would benefit immensely from a proper CICD framework, whereby the tests, builds, documentation generation, package publishing, formatters, sanitizers, type-checkers, etc., are run in an automated and continuous fashion of GitHub for a range of platforms and environments. 
+	
+	\item[Packaging and distribution] The \arv package is currently a subcomponent of the \pyarv package, and is not stand-alone. Splitting this off into a separate stand-alone library and setting up the build and packaging system to manage dependency of \pyarv on \arv would greatly improve the project's organisation and dependencies. 
+	
+	\item[Build systems] As \pyarv is built on bindings over C modules, we are required (to the best of our knowledge) to rely on \inlineplain|setuptools| and \inlineplain|setup.py| to manage python packaging. This is not easy. Similarly, to manage the \arv component, we rely on \inlineplain|cmake|, and managing the reliance on compilers and C libraries is trickier still. If we can port these setups to easier to use and more portable solutions, this would improve the robustness and purview of the library's packaging and shipping. Ideally then we could install the package easily on a range of operating systems, and install the necessary dependencies where required.
+	
+	\item[Type safety] The \arv suite is written in C, so leverages the type system there, and the \pyarv suite uses Python type annotations, but marrying the two should be done both for documentation tools and type checking tools (e.g.\ \inlineplain|mypy|).
+	
+	\item[Lower precisions] The implementation utilises \qty{32}{\bit} single precision floating point data types for its calculations. Support for \qty{16}{\bit} half precision floating point types would be interesting. 
+	\item[Windows] The code is written on a MacOS platform, but targets all Unix-style operating systems (i.e.\ GNU/Linux). Windows support would be beneficial.  
+	
+	\item[Documentation] The documentation can always be improved, both being more thorough, having wider coverage, and having automated components, such as code outputs being dynamically generated rather than manually copied as text. The C codebase would also benefit from adopting the very new \inlineplain|mkdocstrings| C-handler \citep{mazzucotelli2025mkdocstringc}. 
+	
+	\item[Tests] There can always be more tests, targetting different Python versions, hardwares, etc., and these should be automated, include coverage reports, and possibly also use sanitisers and touch upon fuzzing. 
+	\item[Compilation] Having several compilers optimise the code fully has proved a tricky and fragile dark art. In several places the compiler struggles or fails, and expertise on improving, the code, the compiler support, and the compiler diagnostics would be invaluable. 
+	
+	\item[Other languages] The core \arv package has only be wrapped for Python. It would be a small effort to port or wrap the implementations to other languages. An obvious and immediate candidate would be C++, and then further candidates include Rust, Julia, etc. Expertise on how to handle the type-punning, memory restrictions, and compiler directives would be required, and possibly also the packaging. 
+\end{longdescription}
+
+If the reader is able to provide \textit{any} assistance or guidance in these areas (or knows someone who could), \textbf{please contact the author}, or submit pull requests, issues, code reviews, feature requests, etc., at the project's repository:\\
+\centerline{\url{github.com/oliversheridanmethven/pyarv}}

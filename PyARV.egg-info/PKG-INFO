@@ -1,6 +1,6 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: PyARV
-Version: 0.2.8
+Version: 0.2.8.post5+git.81ea569f.dirty
 Summary: Approximate random variables
 Author: Dr Oliver Sheridan-Methven
 Author-email: oliver.sheridan-methven@hotmail.co.uk
@@ -34,6 +34,17 @@ Requires-Dist: build; extra == "dev"
 Requires-Dist: twine; extra == "dev"
 Requires-Dist: varname; extra == "dev"
 Requires-Dist: tqdm; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
 
 # PyARV
 
@@ -47,6 +58,8 @@ approximate random variables._
 > ACM Transactions
 on Mathematical Software, 49(3), Article 26, September 2023, 29 pages. 
 > [https://doi.org/10.1145/3604935](https://doi.org/10.1145/3604935)
+
+For projects using this package, please cite the ACM TOMS paper. 
 
 ## Authors
 

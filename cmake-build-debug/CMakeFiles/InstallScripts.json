@@ -1,0 +1,21 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/osm/CLionProjects/pyarv/cmake-build-debug/cmake_install.cmake",
+		"/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/cmake_install.cmake",
+		"/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/arv/cmake_install.cmake",
+		"/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/arv/version/cmake_install.cmake",
+		"/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/arv/approximation/cmake_install.cmake",
+		"/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/arv/gaussian/cmake_install.cmake",
+		"/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/arv/non_central_chi_squared/cmake_install.cmake",
+		"/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/pyarv/cmake_install.cmake",
+		"/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/pyarv/bindings/cmake_install.cmake",
+		"/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/pyarv/version/cmake_install.cmake",
+		"/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/pyarv/version/tests/cmake_install.cmake",
+		"/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/pyarv/gaussian/cmake_install.cmake",
+		"/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/pyarv/gaussian/tests/cmake_install.cmake",
+		"/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/pyarv/non_central_chi_squared/cmake_install.cmake",
+		"/Users/osm/CLionProjects/pyarv/cmake-build-debug/src/pyarv/non_central_chi_squared/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

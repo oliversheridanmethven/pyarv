@@ -1,12 +1,13 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -DINSOURCE_BUILD=True -DCMAKE_INSTALL_RPATH_USE_LINK_PATH=ON -G Ninja -DPython_EXECUTABLE=/Users/osm/CLionProjects/pyarv/venv/bin/python -DPython3_EXECUTABLE=/Users/osm/CLionProjects/pyarv/venv/bin/python -S /Users/osm/CLionProjects/pyarv -B /Users/osm/CLionProjects/pyarv/cmake-build-debug
--- We think we are using the C compiler: Clang 19.1.1
+/opt/homebrew/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -DINSOURCE_BUILD=True -DCMAKE_INSTALL_RPATH_USE_LINK_PATH=ON -DPython_EXECUTABLE=/Users/osm/CLionProjects/pyarv/.venv/bin/python -DPython3_EXECUTABLE=/Users/osm/CLionProjects/pyarv/.venv/bin/python -S /Users/osm/CLionProjects/pyarv -B /Users/osm/CLionProjects/pyarv
+-- We think we are using the C compiler: Clang 20.1.3
 -- Setting some extra Clang specific flags.
 -- Compiling in mode: Debug
 -- Adding debug flags.
 -- Setting some extra Clang specific flags.
 -- We think we have 16 cores on this machine.
 -- Trying to set the build and tests to use parallel cores.
--- Our default make tool is: /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja
+-- Our default make tool is: /usr/bin/make
+-- Producing an in-source build. (This is only recommended for developers!).
 -- Using an in source python path.
 -- Could not find scikit-build for building.
 -- Looking for the python libraries.
@@ -15,4 +16,4 @@
 -- Installing the Python target non_central_chi_squared_bindings in source at destination: /Users/osm/CLionProjects/pyarv/src/pyarv/non_central_chi_squared.
 -- Configuring done (0.2s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/osm/CLionProjects/pyarv/cmake-build-debug
+-- Build files have been written to: /Users/osm/CLionProjects/pyarv

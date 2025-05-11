@@ -1,0 +1,108 @@
+\section{Design choices}
+\label{sec:design_choices}
+
+In this \namecref{sec:design_choices} we discuss several of choices made when designing and implementing \arv and \pyarv. 
+
+\subsection{Implementation decisions and frequently asked questions}
+
+Several decisions were made in the implementation of \arv and \pyarv, and based on preliminary discussions, we collect together and answer some of the more pivotal and frequently asked questions. 
+
+\subsubsection{Why make a Python frontend?}
+
+Many developers may consider the phrase ``high performance Python'' an oxymoron, and certainly there is a degree of truth in this. For the ultimate performance it is necessary for applications to concern themselves with multithreading, memory management, alignment, cache usage, data sizes, data bandwidths, vector hardware and accelerator utilisation, etc., and most of these are inaccessible in Python. Consequently, high performance computing is usually done in low level compiled languages such as C, C++ and Fortran. However, Python regularly acts as a front end providing a user friendly interface on top of lower level and higher performance back end implementations (examples include \inlineplain|numpy|, \inlineplain|polars|, etc.). As Python is increasingly popular for both research and production applications, rather than forsake the Python community, we wrote \pyarv to enable them to benefit in large part from the performance achievable from the \arv package. 
+
+\subsubsection{Why implement \arv in C?}
+
+A high performance implementation of approximate random variables requires the use of a low level compiled language. The most important capabilities required is being able to specify the sizes of the data types, and have fine grained control over performing vectorised floating point operations. This leaves C, C++, Fortran, and Rust as notable candidates. The author chose C for the following reasons:
+\begin{longdescription}
+\item[Simplicity] C is simple and minimalist. 
+
+\item[Portability] C is the \textit{lingua franca} for high performance computing and portability. Most languages support C extensions and bindings. Importantly, NumPy only offers a C based API, and C++ can use C functionality through C++'s \inlineplain|extern| keyword.
+
+\item[Memory aliasing] C supports the \inlinec|restrict| keyword, which is core to our implementation. 
+
+\item[Compiler support] The language is extremely well supported by compilers.
+
+\item[Type punning] This is defined behaviour in C using \inlineplain|union| types, and is utilised for very fast bit manipulation and indexing operations on floating point data types. 
+\end{longdescription}
+
+\subsubsection{Why two separate packages?}
+
+We separated out the high performance \arv implementation from the Python binding. This is because we want the core library to be accessible to non Python high performance users. Although \arv and \pyarv are very closely coupled, in the future we hope \arv will have several other binding interfaces beyond \pyarv, so it was important not to keep the \arv implementation stand alone. However, packaging and distributing the two separately is difficult, so in lieu of further demand and developer support, the two are bundled together in one repository and build process for now. 
+
+\subsubsection{Why use CMake and \inlineplain|setuptools|?}
+
+The use of C bindings and custom compilations and builds in \pyarv necessitates \inlineplain|setuptools| and \inlineplain|setup.py| to manage building the Python package, and precludes use of other tools and methods such as uv, poetry, hatchling, \inlineplain|pyproject.toml|, etc. To manage the build system for the \arv C library and the NumPy and Python C APIs we chose CMake as this is well maintained, documented, and supports build process intermixing Python and C via \inlineplain|scikit-build|. 
+
+\subsubsection{Why single precision?}
+
+The package is intended to work with floating point data types, and the C standard defines \inlineplain|Float16|, \inlineplain|float|, \inlineplain|double|, and \inlineplain|long double|, which \textit{usually} correspond to 16, 32, 64, and \qty{80}{\bit} data types respectively.  \todo[inline=true]{double check the float16 data type name and long double size } Of these, the \arv package implements approximations using the single precision \inlineplain|float| type assuming a \qty{32}{\bit} precision IEEE floating point representation.
+\todo[inline=true]{clarify and cite that this is IEEE 754, and possibly also the IEEE-656(?) spec as well.} In the NumPy C API, the NumPy \inlineplain|float32| data type maps to the C \inlineplain|float| type, and hence in \cref{code:api_usage_example} we perform the cast operation on \cref{code:api_usage_example:line:downcast}. The question remains though as to why other precisions are not yet supported? As was demonstrated in \citep{giles2024rounding}, for stochastic simulation settings, which are the motivating example \textit{par excellence} for using approximate random variables, double precision was superfluously precise,\footnote{The calculation of derivatives and sensitivities by finite difference based methods (a.k.a.\ Greeks) is an obvious case where higher precision data types are usually still desirable.} and half precision quickly required compensation schemes (such as Kahan compensated summation \citep{todo}) to fend off rounding error \citep[fig.\,3.1]{giles2024rounding}. Consequently, single precision presents a suitable primary precision for a first release of our packages. Users who haven't yet investigated dropping the precisions of their floating point calculations should almost certainly do so \textit{before} using our packages. 
+
+\subsubsection{Why are there precomputed coefficient tables?}
+
+Users perusing the C implementation of \arv will notice that coefficient tables for the linear and cubic approximations may be pre-computed. This is atypical, as most of the approximations will have the coefficient tables passed in from the Python interface in \pyarv. The explanation for this is improved performance. The default tables contain 16 coefficients, which for \qty{32}{\bit} floating point data types, totals \qty{512}{\bit}. Being able to pack the polynomial coefficients into this many bits means that they can all be read in a single cache line, and are small enough to fit inside a single vector register. Furthermore, if there are only one a small few of these tables (such as for low order linear or cubic approximations), this means all the coefficients can reside exclusively in vector registers, and so is even quicker to access than the L1-cache. As these arrays are of a known fixed size and are known at compile time, the compiler is free to exploit this for sufficiently high optimisation settings. Of course, users compiling the package on machines with smaller vector widths (typical for laptops and desktops) will not be able to enjoy these benefits to the same degree. Similarly, users who wish to use more arbitrary polynomial orders and table sizes will have to pass in arrays of coefficients into \arv which are not known at compile time, so won't be as amenable to compiler optimisations. 
+
+\subsubsection{Logging, tests, documentation, etc.}
+
+The \arv package is relatively light weight, and as it is intended to be used in an intensive computational pipeline, it does not perform any logging. There are such a small number of supporting routines in the \arv package that we have not required written a testing library installation, but instead enforce...
+\todo[inline=true]{Decide what I want to do here for testing. I can either require some tests written using Criterion, write my own tests, (e.g. using static assert), or just have all my tests written in the Python layer. All that really needs testing from \arv is the approximation.h functions which do some type punning, getting indices from floats. I am hesitant to say that it is really so trivial it doesn't need testing... (certainly doesn't warrant an entire testing library).} The \pyarv front end has unit tests, but not regression tests (as these are too tightly coupled to the underlying hardware and compilers). Again there is no logging in \pyarv as it is not needed. 
+The API for both packages is documented and hosted on github. 
+\todo[inline=true]{Try the C-API for mkdocstring.}
+\todo[inline=true]{There is not much that can be tested in general in the PyArv package, other than handling bad input, but otherwise we do some tests for zero values for symmetric distributions and certain things are monotonically increasing, but much of this doesn't hold, so there are very few things that in face make sense to test.}
+\todo[inline=true]{Mention that it is the users responsibility to ensure input is sufficiently sanitised, and we do not make any guarantees about subnormal numbers, the exact values of zero and 1, minus zero, nan, signalling nan, etc. Similarly, we require the user to preallocate correct arrays with suitable alignment and correct lengths, and all the rest. We trust the user to read the documentation and write correct code.}
+\todo[inline=true]{Mention that as we do some checking on the arrays (contiguous, right length, etc., and then in the C backend we rely on the compiler to check the types, we don't do \textit{much} python type checking with tools such as mypy.}
+
+\subsection{The package's goals and omissions}
+
+The package's goals are quite simple:
+\begin{longdescription}
+\item[\arv] To provide and showcase a reusable, lean, and highly optimised implementation of approximate random numbers which out competes all other major random number generators and commercial libraries. 
+\item[\pyarv] To make many of the benefits of \arv accessible to the Python community. 
+\end{longdescription}
+These are clearly very lofty ambitions, and to achieve these our packages have had to undertake certain responsibilities and make several assumptions. Even more importantly perhaps are the range of omissions and what has been designated as being outside of the scope for the packages.
+
+In order to achieve high performance, we assume that the user cares sufficiently enough about high performance that they are using the most up-to-date technologies and hardwares available. Our assumptions and requirements include:
+\begin{itemize}
+\item Extremely recent versions of \mbox{Python\,3.13} and \mbox{C\,23}, and similarly \mbox{Clang\,19} or \mbox{GCC\,14}
+
+\item A high end CPU supporting vectorised SIMD floating point operations (e.g.\ AVX512, SVE, etc.).
+
+\item The user will manage populating and pinning processes to each available thread.
+
+\item A large, aligned, and contiguous supply of uniform random variables in the correct data type in the appropriate container with the correct access specifiers (e.g.\ non \inlineplain|volatile| arrays).
+
+\item A UNIX-style operating system. 
+
+\item A POSIX file system.
+
+\item No competition against others programs (or possibly a hypervisor) for system resources. 
+\end{itemize}
+
+Just as important are what we consider outside of the purview of our packages, which include:
+\begin{itemize}
+\item Specialisations targetting specific hardwares, such as Intel AVX512 or Arm SVE. Specific optimisations for these written using inline assembly can be found in \citep{todo}, and are discussed in depth in \citep[\S\,4.3.3]{sheridan2020nested}. 
+
+\item Specialisations targetting specific compilers, such as Intel's \inlineplain|icc| or Nvidia's \inlineplain|nvcc|. 
+
+\item Distributed systems running across multiple threads and machines. 
+
+\item Non standard systems and implementations. We assume the C compiler is fully standards compliant and implements all the optional parts of the C standard pertaining to floating point arithmetic. We do not support extensions of the C language offered by compilers. Analogous assumptions hold for Python and NumPy.
+
+\item Non IEEE floating point implementations.
+
+\item Floating point rounding modes.
+
+\item Big or little endian storage. 
+
+\item The memory model and whether this is unified, NUMA, etc., and also the cache hierarchy on the specific machine. 
+
+\item The atomicity of operations. 
+
+\item Commercial or non-mainstream systems.
+
+\item Languages other than C and Python.
+
+\item Legacy systems and non-recent language versions.
+\end{itemize}
+In an effort to keep the implementation lean and generic, we have purposefully excluded settings specific to any particular hardware or compiler. To keep the code base manageable and succinct, we assume standards compliance, IEEE representations. Additionally, as a matter of pragmatism, scalability, and expense, we are unable to test the fully range of commercial compilers, software libraries, and hardwares that exist, whose multiplicity is far too expansive, and so limit our report to what is readily available to the author.

@@ -1,0 +1,1 @@
+There is not much that can be tested in general in the PyArv package, other than handling bad input, but otherwise we do some tests for zero values for symmetric distributions and certain things are monotonically increasing, but much of this doesn't hold, so there are very few things that in face make sense to test.^^E^^L 

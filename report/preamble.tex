@@ -1,0 +1,457 @@
+% Author: 
+%
+%	Oliver Sheridan-Methven.
+%	
+% Description:
+%
+%	A collection of extremely useful packages 
+%	which have been accumulated over a long time,
+%	all of which combine to make very nice LaTeX
+%	documents. 
+
+
+
+\usepackage{adjustbox} % Nice alternative to minipage.
+\usepackage{afterpage} % To give the title page its own geometry.
+\usepackage[boxed,noline,linesnumbered,resetcount,algosection,noend]{algorithm2e}
+\usepackage{algpseudocode}
+
+\usepackage{amsmath} % Nice maths symbols.
+\usepackage{amssymb} % Nice variable symbols.
+\let\amsDiamond=\Diamond
+\usepackage{amsthm}
+\usepackage{array} % Allow for custom column widths in tables.
+\usepackage{ltablex} % For long tables spanning multiple pages. % Must be before ARYDSHLN package!
+\keepXColumns % Keeps the X column
+\usepackage{arydshln} % Dashed lines using \hdashline \cdashline
+\usepackage[english]{babel} % (I only use this to give blindmath math symbols.)
+\usepackage{bbm} % Gives Blackboard fonts.
+\usepackage{blindtext} % Generates dummy maths. cf. lipsum.
+\usepackage{calc} % Calculates widths of words. 
+\let\counterwithout\relax
+\let\counterwithin\relax
+\usepackage{chngcntr} % Changing counters, e.g. with footnotes.
+\usepackage{cuted} % For single column modes in twocolumn mode. 
+%\AtBeginEnvironment{strip}{\leavevmode}
+%\AfterEndEnvironment{strip}{\leavevmode} % cf. https://tex.stackexchange.com/a/264551/106804
+\usepackage{cprotect} % For verbatim like environments in todonotes. 
+\usepackage{datenumber}
+\usepackage{datetime}
+\usepackage[scale=3, color={[gray]{0.9}}]{draftwatermark} % Gives a draft overlay. Use options [nostamp] or [final].
+\usepackage[spaced=-1,mleftright]{diffcoeff}
+\usepackage{emptypage} % Empty pages have no headers and footers.
+\usepackage{paralist} % Must be loaded before enumitem.
+\usepackage{enumitem} % Nice listing options in itemize and enumerate. 
+%\usepackage{enumerate} % A seemingly nicer package than enumitem. PREFER ENUMITEM cf. https://tex.stackexchange.com/a/519982/106804
+\usepackage{etoolbox} % For defining conditionals. 
+\usepackage{fancyhdr} % Nice headers.
+\usepackage{float} % Nice figure placement.
+\usepackage[T1]{fontenc} % Nice range of text characters and accents.
+\usepackage[bottom,multiple]{footmisc} % Nice footnote formatting.
+\usepackage{graphicx} % Include figures.
+\usepackage[notquote]{hanging} % For indenting later lines in a paragraph. USE the 'noquote' option else the `'` is overwritten, and breaks in maths mode!
+
+% Sadly using Arial font is a constraint, and Helvet is the closest thing that LaTeX can easily offer. 
+%\renewcommand{\familydefault}{\sfdefault}
+%\usepackage[scaled=1]{helvet}
+%\usepackage[helvet]{sfmath}
+%\everymath={\sf}
+%\renewcommand{\ttdefault}{pcr}
+
+
+\usepackage{ifoddpage} % Checks for odd or even page.
+\usepackage[geometry]{ifsym} % Useful symbols.
+\usepackage{imakeidx} % Makes the index.
+\usepackage{indentfirst} % Indents the first paragraph.
+\usepackage{letltxmacro} % For defining a nice SQRT symbol.
+\usepackage[switch, columnwise]{lineno} % For line numbers. 
+\usepackage{lipsum} % Useful for adding jargon.
+\usepackage{listings} % The listings package for code.
+\usepackage{marginnote} % For nice margin notes.
+\usepackage{mathtools} % Gives the colon equals symbol.
+\usepackage[framed,numbered,useliterate]{mcode} % Inports Listings package ideal for MATLAB.
+\usepackage[framemethod=tikz]{mdframed} % Gives nices boxed and sidesrules.
+\usepackage{mleftright}
+\usepackage{multirow} % Nice table cells spanning many rows.
+\usepackage{multicol} % If I want to use multiple columns.
+\usepackage[numbers, sort&compress]{natbib} % Nice references.
+%\usepackage{sansmath} % Gives a changing math font. %% Must be before newpxtext/newpxmath ! %%
+%\usepackage{newpxtext} % Gives Palatino and Helvetica fonts.
+%\usepackage{newpxmath} % Gives Palatino and Helvetica fonts in maths. 
+\usepackage{bm} % Bold math symbols. %% Needs to be loaded after newpxtext/math. %%
+\usepackage{nicefrac} % Gives nice fractions for superscripts.
+\usepackage{nomencl} % Gives a symbol nomenclature. 
+\usepackage[super]{nth} % Gives nice ordinal superscripts, eg 1st, 2nd, etc.
+\usepackage{parskip} % Gives nicer indenting.
+\usepackage{ragged2e} % For nice allignment.
+\usepackage{realboxes}
+%\usepackage[norefs]{refcheck} % Can show any unused references.
+\usepackage{romannum} % Nice typing for roman numerals.
+\usepackage{rotating} % For sideways figures.
+\usepackage[scr,scaled=1.1]{rsfso} % Gives Script fonts which are not so slanted. 
+%\usepackage[subtle]{savetrees}  % Choose from options: [subtle, moderate, extreme]
+\usepackage{setspace} % Ideal for increasing line spacing. E.g.  \doublespacing
+%\usepackage{showframe}
+\usepackage{siunitx} % Nice formating of units.
+\usepackage{soul}
+%\usepackage{sidenotes} % Nice margin figures and margin tables. % Doesn't play well with figure* in twocolumn mode, and should be commented out in such cases. 
+\usepackage{subcaption} % Side by side figures.
+\usepackage[textsize=small]{todonotes} % A nice TODO list. [disable] to supress.
+\usepackage{tikz} % Nice diagrams.
+\usepackage{titling} % Access title variables. 
+\usepackage{titlesec} % Nice section title colouring options.
+\usepackage[nottoc]{tocbibind} % Gives nices Table of Contents
+\usepackage[hyphens,spaces,obeyspaces]{url}
+\usepackage{verbatimbox} % For verbatim inside todonotes. 
+\usepackage{wasysym}
+\usepackage{xcolor} % This is useful for making greyed table cells, nice for headers. Known preamble placement issues.
+\usepackage{xifthen}% Provides \isempty test.
+\usepackage{xparse} % Gives \NewDocumentEnvironment which has nice optional argument handling.
+\usepackage{xpatch}
+\usepackage{xspace} % Gives nice spacing for commands.
+\usepackage{xurl} % Nicer leanbreaks for URLs. 
+%%%% Generally HYPERREF should be imported last. %%%%
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black,anchorcolor=black]{hyperref} % Colour links.
+%%%% Should be loaded after hyperref. %%%%
+\usepackage[noabbrev]{cleveref} % Gives smart referencing. %% After Hyperref
+\usepackage[margin=10pt,font=small,labelfont=bf,labelsep=endash,figurewithin=section,tablewithin=section]{caption} % Caption figures and tables nicely. %% After cleveref.
+\usepackage[top=10mm, right=20mm, left=20mm, bottom=60mm]{geometry} % Use nice margins. Does give a small change in the default page margins. 
+\usepackage{graphicx}
+
+% Spacing between columns in multicolumn settings. 
+%\setlength{\columnsep}{10mm}
+
+% Ensures subsecs are numbered.
+\setcounter{secnumdepth}{3}
+
+% Making an index. 
+\makeindex
+
+% Making a nomenclature. 
+\makenomenclature
+% The column width for any nomenclature. 
+\setlength\nomlabelwidth{0.2\linewidth}
+
+% Set the table of content depth to only subsections. 
+\setcounter{tocdepth}{2}
+
+% Makes math bold in headers and titles. 
+\makeatletter
+\g@addto@macro\bfseries{\boldmath}
+\makeatother
+
+% Fixes line breaks before subeqtuations. (cf. https://tex.stackexchange.com/a/27058/106804)
+\preto\subequations{\ifhmode\unskip\fi}
+
+
+% Nicer algorithms
+\SetAlCapSkip{1em} % Increase algorithm spacing between box and caption.
+\SetAlCapNameFnt{\small}
+\SetAlCapFnt{\small}
+\SetAlFnt{\small}
+\SetAlgoCaptionSeparator{ \textendash}
+\setlength{\algomargin}{2em}
+\makeatletter
+ %Remove right hand margin in algorithm
+\patchcmd{\@algocf@start}% <cmd>
+  {-1.5em}% <search>
+  {-1em}% <replace>
+{}{}% <success><failure>
+\makeatother
+\newcommand{\algrule}[1][0.2pt]{\par\vskip.2\baselineskip\hrule height #1\par\vskip.2\baselineskip}
+%cf. https://tex.stackexchange.com/a/323331/106804
+% remove all the "do, then" statements
+\SetKw{KwGoTo}{go to}
+\SetKwIF{If}{ElseIf}{Else}{if}{}{else if}{else}{end if}%
+\SetKwFor{While}{while}{}{endw}%
+\SetKwFor{ForEach}{for each}{}{endfch}
+\SetKwRepeat{Do}{do}{while}
+\SetInd{1em}{0em}
+
+
+% Have theorems and lemmas be referenced by name if applicable.
+\makeatletter
+\renewrobustcmd{\cref}{\@osmcref{cref}}
+\renewrobustcmd{\Cref}{\@osmcref{Cref}}
+\def\@osmcref#1#2{%
+    \begingroup
+    \ifcsundef{r@#2}
+    {}
+    {\expandafter\expandafter\expandafter\expandafter\expandafter
+        \expandafter\expandafter\def
+        \expandafter\expandafter\expandafter\expandafter\expandafter
+        \expandafter\expandafter\@osmcref@name
+        \expandafter\expandafter\expandafter\expandafter\expandafter
+        \expandafter\expandafter{%
+            \expandafter\expandafter\expandafter
+            \@thirdoffive\csname r@#2\endcsname}}%
+    \ifcsundef{r@#2@cref}
+    {}
+    {\cref@gettype{#2}{\@osmcref@type}}%
+    \ifboolexpr{not test {\ifdefvoid{\@osmcref@name}}
+        and (test {\ifdefstring{\@osmcref@type}{theorem}}
+        or test {\ifdefstring{\@osmcref@type}{lemma}}
+        or test {\ifdefstring{\@osmcref@type}{corollary}})}
+    {\nameref{#2} (\@cref{#1}{#2})}
+    {\@cref{#1}{#2}}%
+    \endgroup
+}
+\makeatother
+
+% Giving correct theorem and lemma environments. 
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{remark}{Remark}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{assumption}{Assumption}[section]
+% Naming these nicely.
+\crefname{lemma}{lemma}{lemmas}
+\Crefname{lemma}{Lemma}{Lemmas}
+\crefname{theorem}{theorem}{theorems}
+\Crefname{theorem}{Theorem}{Theorems}
+\crefname{corollary}{corollary}{corollaries}
+\Crefname{corollary}{Corollary}{Corollaries}
+\Crefname{proposition}{proposition}{propositions}
+\Crefname{proposition}{Proposition}{Propositions}
+\crefname{remark}{remark}{remarks}
+\Crefname{remark}{Remark}{Remarks}
+\crefname{definition}{definition}{definitions}
+\Crefname{definition}{Definition}{Definitions}
+\crefname{assumption}{assumption}{assumptions}
+\Crefname{assumption}{Assumption}{Assumptions}
+% Change the end of proof symbol
+\renewcommand\qedsymbol{\textbf{QED}}
+% Making the proof in bold so it stands out more.  (cf. https://tex.stackexchange.com/a/724697/106804)
+\newcommand{\prooffont}{\upshape\bfseries}
+\xpatchcmd{\proof}{\itshape}{\prooffont}{}{}
+
+% Give bold names to definitions and similar environments. 
+\makeatletter
+\def\th@plain{%
+    \thm@notefont{}% same as heading font
+    \itshape % body font
+}
+\def\th@definition{%
+    \thm@notefont{}% same as heading font
+    \normalfont % body font
+}
+\makeatother
+
+
+% Supressing bad box warnings
+%\hbadness=10000 
+
+% Where to search for figures. 
+\graphicspath{{.}{../figures/}}
+
+% Present the references in the order they are used.
+%\bibliographystyle{unsrtnat}
+
+\bibliographystyle{plainnat}
+% Reduce spacing between references. 
+\setlength{\bibsep}{0pt plus 0.3ex}
+
+% Listing -> Code in environment labels.
+\renewcommand{\lstlistingname}{Code}
+\crefname{listing}{code}{codes}
+\Crefname{listing}{Code}{Codes}
+\definecolor{codegray}{rgb}{0.9,0.9,0.9}
+\lstset{
+    numbers=left, 
+    basicstyle=\ttfamily\footnotesize,
+    frame=single, % adds a frame around the code
+    xleftmargin=20.4pt,
+    xrightmargin=3.4pt,
+    %	numbersep=3mm,
+    aboveskip=0.5em,
+    belowskip=0.em,
+    breaklines=true,
+    breakatwhitespace=true,
+    backgroundcolor=\color{codegray},
+}
+\newfloat{lstfloat}{htbp}{lop} % environment for placing lisings in to make them float. 
+
+% Nice paragraph indents.
+\setlength{\parindent}{2em}
+
+% Giving the references the right title.
+\renewcommand{\bibname}{References}
+\renewcommand{\bibsection}{\section*{References}} % For Natbib
+\renewcommand{\refname}{References}
+\addto\captionsenglish{\renewcommand\bibname{References}} % When using babel
+\addto\captionsenglish{\renewcommand\refname{References}} % When using babel
+\renewcommand{\listfigurename}{List of figures}
+\renewcommand{\listtablename}{List of tables}
+
+% Removes most hyphenation.
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+% To change the spacing in lists:
+%\setlist{noitemsep} % or \setlist{noitemsep} to leave space around whole list
+%% or
+%\setenumerate{itemsep=-0.2em,topsep=0.5em} % Seems to look nice.
+
+% Custom column widths using C{2cm}, L, R, etc.
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% Gives a nice column separation in multicolumn mode.
+\setlength{\columnsep}{5mm}
+
+% Figure environment for use in multicolumn. To put in captions use \captionof{figure}{content of caption}.
+\newenvironment{Figure}
+{\par\medskip\noindent\minipage{\linewidth}}
+{\endminipage\par\medskip}
+
+% Gives the nice SQRT symbol.
+\makeatletter
+\let\oldr@@t\r@@t
+\def\r@@t#1#2{%
+    \setbox0=\hbox{\(\oldr@@t#1{#2\,}\)}\dimen0=\ht0
+    \advance\dimen0-0.2\ht0
+    \setbox2=\hbox{\vrule height\ht0 depth -\dimen0}%
+    {\box0\lower0.4pt\box2}}
+\LetLtxMacro{\oldsqrt}{\sqrt}
+\renewcommand*{\sqrt}[2][\ ]{\oldsqrt[#1]{#2}}
+\makeatother
+
+% Some common math operators which need their own typesetting.
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
+
+% Number equations down to the subection level, e.g. 1.2.3 is the third equation in
+% subsection 2 of section 1.
+\numberwithin{equation}{section}
+\newcommand*\tageq{\refstepcounter{equation}\tag{\theequation}}
+% Ensure equations are correctly formatted with cleverref
+\crefname{equation}{}{}
+\creflabelformat{equation}{(#2#1#3)}
+
+% Nice spacing in the first row of a table
+\newcommand{\firstrowspacing}{\rule{0pt}{2.6ex}}
+% For a more open look in tables.
+\setlength\extrarowheight{3pt} 
+
+% For nice headers and footers.
+\pagestyle{fancy}
+% Specifying the headers and footers. 
+\fancyhf{}
+\renewcommand*{\footrulewidth}{1pt}%
+\renewcommand*{\headrulewidth}{0pt}%
+\fancyfoot[L]{Notes:}
+\fancypagestyle{plain}{%
+	\fancyhf{}%
+	\renewcommand*{\headrulewidth}{0pt}%
+}
+\cfoot{\raisebox{-45mm}{\thepage}}
+
+% Nice spacing in lists
+\setlist{listparindent=\parindent,parsep=1ex} 
+
+% The oxford comma from cref for multiple citations. 
+\newcommand{\creflastconjunction}{, and\nobreakspace}
+
+% Define the dummy sentence, an ancient palindrome.
+\def\sator{Sator Arepo tenet opera rotas.\xspace}
+
+% A command to print the sentence repeatedly.
+% Argument #1 is the number of times to repeat it.
+\newcount\loopcounter
+\def\dummysentences#1{%
+    \loopcounter = #1
+    \loop
+    \sator\ %
+    \advance\loopcounter by -1
+    \ifnum\loopcounter > 0
+    \repeat%
+}
+
+
+% Enable blind maths. 
+\blindmathtrue
+
+% Ensures the SI command detects the local environment (e.g. in captions).
+\sisetup{detect-weight=true, detect-family=true, 
+     group-separator = {\text{'}},
+     group-minimum-digits=4
+     }
+
+\NewCommandCopy\oldtodo\todo
+\outer\def\todo[#1]{\icprotect{\oldtodo[#1]}}
+
+
+\makeatletter
+\xpretocmd\lstinline{\Colorbox{codegray}\bgroup\appto\lst@DeInit{\egroup}}{}{}
+\makeatother
+
+\lstdefinestyle{longline}
+{numbers=none,
+frame=none, 
+xleftmargin=0.2em, 
+xrightmargin=0em, 
+framexleftmargin=0.2em,
+}
+
+
+\newcommand{\mylistlabelfont}[1]{\normalfont\textit{#1:}}
+\newlist{longdescription}{description}{1}
+\setlist[longdescription]{%
+  style=unboxed,
+  font=\mylistlabelfont
+}
+
+
+\newcommand{\inlinec}{\lstinline[language=C,basicstyle=\ttfamily]}
+\newcommand{\inlineplain}{\lstinline[language={},basicstyle=\ttfamily]}
+
+%\newcommand*{\lstitem}[1]{
+%  \setbox0\hbox{\lstinline[language={},basicstyle=\bfseries\ttfamily]{#1}}  
+%  \item[\usebox0] 
+%}
+
+%to show the frame in two column mode with showfame package cf. https://tex.stackexchange.com/a/271294/106804
+%\newlength\Fcolumnseprule
+%\setlength\Fcolumnseprule{0.4pt}
+%
+%\makeatletter
+%\def\@outputdblcol{%
+%  \if@firstcolumn
+%    \global \@firstcolumnfalse
+%    \global \setbox\@leftcolumn \box\@outputbox
+%  \else
+%    \global \@firstcolumntrue
+%    \setbox\@outputbox \vbox {%
+%                         \hb@xt@\textwidth {%
+%                           \hb@xt@\columnwidth {%
+%                             \box\@leftcolumn \hss}%
+%                           \vrule \@width\Fcolumnseprule\hfil
+%                                {\normalcolor\vrule \@width\columnseprule}%original:
+%                                                %\normalcolor\vrule \@width\columnseprule
+%                           \hfil\vrule \@width\Fcolumnseprule
+%                           \hb@xt@\columnwidth {%
+%                             \box\@outputbox \hss}%
+%                                             }%
+%                              }%
+%    \@combinedblfloats
+%    \@outputpage
+%    \begingroup
+%      \@dblfloatplacement
+%      \@startdblcolumn
+%      \@whilesw\if@fcolmade \fi
+%        {\@outputpage
+%         \@startdblcolumn}%
+%    \endgroup
+%  \fi
+%}
+%\makeatother
+
+\DeclareMathOperator{\trace}{trace}
+\DeclareMathOperator{\diag}{diag}

@@ -1,0 +1,85 @@
+\section{Getting started with \pyarv}
+\label{sec:getting_started_with_pyarv}
+
+In this \namecref{sec:getting_started_with_pyarv} we show how to use the \pyarv package, covering the required dependencies, installation, tests, and writing your first program using the \pyarv package. We will primarily showcase the \pyarv frontend for simplicity and because it is currently the primary means of installing the functionality, but nonetheless the \arv library be similarly interfaced. \pyarv is currently only tested on Unix-style operating systems (e.g.\ MacOS and GNU/Linux), and support for Windows may come at a later date, (any operability on Windows is currently entirely good fortune and coincidental). 
+
+\subsection{Dependencies}
+\label{sec:dependencies}
+
+This package is targetting users who care considerably about high performance computing. Consequently, we have given ourselves license to operate at the cutting edge of what modern software and hardware can support. As such, our libraries have been written and developed with the latest toolchains in mind. At the time of writing, this has meant we have used \mbox{Python\,3.13}, \mbox{C\,23}, SIMD capable hardware, \mbox{GCC\,14} and \mbox{Clang\,19}, recent versions of CMake, etc.\footnote{Please consult the repository for the exact requirements, as these are continually incrementing.} However, the author tries to avoid making assumptions about the hardware and user's environment as much as possible. For this reason, while our implementations are very high performance, if the reader wants the \emph{ultimate} in performance, really they should be using a compiled language, using the \arv library, and they have to take responsibility for multi-threading, thread pinning, compilations targetting specific hardware, memory alignment, data precisions, and related high performance computing matters. 
+
+\subsection{Installation}
+\label{sec:installation}
+
+Installing the package is as simple as running \inlineplain|pip install pyarv|. To check the package is installed correctly, you can run the package's tests with \inlineplain|python -m unittest discover pyarv|. 
+
+\subsection{A simple example}
+
+To use the \pyarv library in Python applications, you pick the desired distribution and transform NumPy arrays of uniform random variables. An example is given in \cref{code:api_usage_example}. 
+
+\begin{lstfloat}[htb]
+\begin{lstlisting}[language={python}, caption={Example usage of the \pyarv API.}, label={code:api_usage_example}, escapechar=|]
+import numpy as np 
+from numpy.random import uniform 
+from scipy.stats import norm
+from pyarv.gaussian import Gaussian|\label{code:api_usage_example:line:import_pyarv}|
+
+size = 10_000_000  
+u = uniform(size=size).astype(np.float32)|\label{code:api_usage_example:line:downcast}|
+# Approximate random variables
+approx = Gaussian(order=1).transform(u)|\label{code:api_usage_example:line:approx_transform}|
+# Exact random variables
+exact = norm.ppf(u)|\label{code:api_usage_example:line:exact_transform}|
+\end{lstlisting}
+\end{lstfloat}
+
+In \cref{code:api_usage_example} we import \inlineplain|numpy| and \inlineplain|scipy| as one usually would, but additionally on \cref{code:api_usage_example:line:import_pyarv} we import the piecewise linear approximation to the Gaussian distribution from the \inlineplain|pyarv| package. We generate a large number of uniform random variables, and for compatibility with [and computationally efficiency within] \pyarv these uniforms random variables are cast on \cref{code:api_usage_example:line:downcast} to \qty{32}{\bit} single precision floating point data types. On \cref{code:api_usage_example:line:approx_transform} we transform these into their corresponding approximate random variables \inlineplain|approx| using an order 1 (a.k.a.\ linear) piecewise polynomial. For comparison, the transformation to give exact random variables \inlineplain|exact| using \cref{eqt:inverse_transform_method} is shown on \cref{code:api_usage_example:line:exact_transform}.
+
+
+\subsection{Checking the performance}
+\label{sec:checking_the_performance}
+
+The package's installation involves extensive and heavily optimised compilation of C modules, so it is important to double check that the package has not only compiled, but been well optimised too. To assess this, the package proved some example scripts to demonstrate its high performance. To see these demonstrations run 
+\inlineplain|python -m <module>|, substituting \inlineplain|<module>| with either of the modules
+\inlineplain|pyarv.non_central_chi_squared.demos.speed| or \inlineplain|pyarv.gaussian.demos.speed|. Consult the output generated to verify that indeed \pyarv is much fast than the equivalent routines coming from either NumPy or SciPy. The results from the Gaussian example are surmised in \cref{tabl:costs_generating_gaussian}.
+
+\begin{table}[htb]
+\centering
+\begin{subtable}[t]{\linewidth}
+	\centering
+	\begin{tabular}{llr@{}l}
+		Package & Function & \multicolumn{2}{c}{Time} \\
+		\hline
+		SciPy & \inlineplain|ppf| & 220 &(20) \\
+		\pyarv & \inlineplain|transform| & 5 &(1) \\
+	\end{tabular}
+\subcaption{The inverse transform method.}
+\end{subtable}
+\begin{subtable}[t]{\linewidth}
+	\centering
+	\begin{tabular}{llr@{}l}
+		Package & Function & \multicolumn{2}{c}{Time} \\
+		\hline
+		NumPy & \inlineplain|uniform| & 45 &(5) \\
+		PyTorch & \inlineplain|rand| & 25 &(5) \\
+	\end{tabular}
+	\subcaption{Uniform random numbers.}
+\end{subtable}
+\begin{subtable}[t]{\linewidth}
+\centering
+\begin{tabular}{llr@{}l}
+	Package & Function & \multicolumn{2}{c}{Time} \\
+	\hline
+	NumPy & \inlineplain|normal| & 110 &(5) \\
+	PyTorch & \inlineplain|randn| & 75 &(5) \\
+\end{tabular}
+\subcaption{Gaussian random numbers.}
+\end{subtable}
+\caption{Computational costs (\qty{}{\milli\second}) for generating \qty{e7}{} random numbers using \qty{32}{\bit} precision with \pyarv and the other major Python packages.}
+\label{tabl:costs_generating_gaussian}
+\end{table}
+
+At the time of writing, on the author's laptop\footnote{A \qty{48}{\giga\byte} 2023 Apple MacBook Pro M3 Max 16 core running MacOS Sequoia 15.3.2 Darwin 24.3.0 AArch64 ArmV8.3 which is NEON SIMD capable.} the inverse transform method is over 30 and \qtyrange{300}{4500}{} times faster than SciPy for the Gaussian and non-central \( \chi^2 \) distributions respectively, and 20 times faster than NumPy for the Gaussian distribution. The approximation is so fast that in fact the uniform random number generation in NumPy has become the computational bottleneck. Switching the uniform random generation from NumPy to PyTorch considerably improved the speed to generate the uniform random numbers, but does not change the conclusions. Accounting for the costs of generating the uniform random numbers in the first place, then \pyarv is still several thousand times faster for the non-central \( \chi^2 \) distribution, and for the Gaussian distribution is 3 times faster than SciPy and 2 times faster than NumPy. Such speed improvements are not to be scoffed at, and even though we are so fast that we now violate an \textit{a priori} presumptions of approximate random variables---that generating the uniforms is negligible in comparison to the transform in \cref{eqt:inverse_transform_method}---the approach still offers considerable time savings. As can be seen in this example, the savings only improve as we transition from simpler to more challenging distributions. 
+
+Hardware support for \qty{16}{\bit} half precision floating point is not universal, and so \arv currently implements our approximations for \qty{32}{\bit} single precision floating point data types. For users wondering if such low precisions can be meaningfully utilised in Monte Carlo simulations, \citet{giles2024rounding} develop an appropriate round error model and derive round error bounds and convergence rates for multilevel Monte Carlo simulations using low precision approximate random variables. There results indicate potential speed ups by a factor of 14 from switching to \qty{16}{\bit} half precision floating point data types. Recent work by \citet{haas2025monte} into varying precision multilevel Monte Carlo applications using approximate random variables on FPGAs indicate further speed improvements by a factor of \qtyrange{5}{7}{} are possible.
+

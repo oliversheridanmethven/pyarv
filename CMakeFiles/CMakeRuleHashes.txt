@@ -1,2 +1,2 @@
 # Hashes of file build rules.
-37846e1067b20160018ad13e2c77b0a9 src/arv/version/version.c
+3b14c8d70bb543c1d85239de6222b41a src/arv/version/version.c

@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: report.aux
+The style file: plainnat.bst
+Database file #1: references.bib
+Warning--I didn't find a database entry for "todo"
+You've used 16 entries,
+            2773 wiz_defined-function locations,
+            698 strings with 7949 characters,
+and the built_in function-call counts, 6432 in all, are:
+= -- 569
+> -- 326
+< -- 13
++ -- 112
+- -- 96
+* -- 490
+:= -- 1000
+add.period$ -- 52
+call.type$ -- 16
+change.case$ -- 78
+chr.to.int$ -- 16
+cite$ -- 32
+duplicate$ -- 307
+empty$ -- 567
+format.name$ -- 126
+if$ -- 1342
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 16
+newline$ -- 92
+num.names$ -- 64
+pop$ -- 162
+preamble$ -- 1
+purify$ -- 64
+quote$ -- 0
+skip$ -- 236
+stack$ -- 0
+substring$ -- 193
+swap$ -- 20
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 161
+warning$ -- 0
+while$ -- 60
+width$ -- 0
+write$ -- 218
+(There was 1 warning)

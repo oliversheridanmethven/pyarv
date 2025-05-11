@@ -1,0 +1,10 @@
+Possible journals for MLMC paper:
+
+Siam SISC * 
+Siam numerical analysis
+Journal of machine learning research
+NeruIPS?
+Stochastic and PDEs, analysis and computations * 
+PDEs and applications * 
+
+Numerische Mathematik

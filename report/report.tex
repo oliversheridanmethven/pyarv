@@ -1,0 +1,134 @@
+\documentclass[10pt, a4paper, english, twocolumn]{extarticle}
+
+\input{preamble}
+%\mathtoolsset{showonlyrefs=true}
+
+\lstset{captionpos=b}
+
+% Makes most (all) math environements use \textstyle 
+\let\displaystyle\textstyle
+\xpatchcmd{\mathdisplay}{$$}{$$\textstyle}{}{}
+
+\newcommand{\pyarv}{PyARV\xspace}
+\newcommand{\arv}{ARV\xspace}
+
+\title{\arv \& \pyarv: fast approximate random numbers in C \& Python}
+\author{Dr Oliver Sheridan-Methven\thanks{\href{mailto:oliver.sheridan-methven@hotmail.co.uk}{\texttt{oliver.sheridan-methven@hotmail.co.uk}}.\newline \hspace*{0.8\footnotemargin} The code used to generate the results and figures herein is hosted at \href{https://github.com/oliversheridanmethven/pyarv_article}{\url{github.com/oliversheridanmethven/pyarv_article}}.}}
+\date{\datedayname\ \nth{\the\day} \monthname\ \the\year}
+
+\begin{document}
+\runningpagewiselinenumbers
+\linenumbers
+\pagenumbering{arabic}
+%\onecolumn
+\setlength{\droptitle}{-3em}   % To raise or lower the maketitle
+\maketitle
+%\doublespacing
+
+\input{contents}
+\newpage
+\todo[inline=true, caption={}]{There are some things I want to mention in this article:
+	\begin{itemize}
+		\item The distributions included and omitted:
+		\begin{itemize}
+			\item Gaussian. 
+			\item Non-central \( \chi^2 \). 
+			\item \( \chi^2 \).
+			\item Poisson. 
+			\item Student-\( t \).
+			\item \( \beta \). 
+			\item Cauchy. 
+		\end{itemize}
+		And measure how these compare to what's available in Python already, (skip and what's in C or C++ as this was done in a previous paper and for now the front end is Python.). 
+		\item What are the current difficulties:
+		\begin{itemize}
+			\item Compilers with scatter and gather. 
+			\item Writing agnostic implementations that are well suited to AVX512. 
+			\item User defined specialisations and parametrisations. 
+		\end{itemize}
+	\end{itemize}
+}
+
+\begin{small}
+%\textbf{CCS Concepts:} 
+%\textbf{$\bullet$~Software and its engineering$\sim$Software notations and tools$\sim$Software libraries and repositories $\bullet$~Mathematics of computing$\sim$Mathematical software$\sim$Statistical software $\bullet$~Applied computing$\sim$Physical sciences and engineering$\sim$Mathematics and statistics} $\bullet$~Computing methodologies$\sim$Parallel computing methodologies$\sim$Parallel algorithms$\sim$Vector / streaming algorithms $\bullet$~Mathematics of computing$\sim$Probability and statistics$\sim$Distribution functions $\bullet$~Mathematics of computing$\sim$Mathematical analysis$\sim$Numerical analysis $\bullet$~Computing methodologies$\sim$Modeling and simulation$\sim$Simulation types and techniques~Massively parallel and high-performance simulations.
+
+%\begin{CCSXML}
+%	<ccs2012>
+%	<concept>
+%	<concept_id>10011007.10011006.10011072</concept_id>
+%	<concept_desc>Software and its engineering~Software libraries and repositories</concept_desc>
+%	<concept_significance>500</concept_significance>
+%	</concept>
+%	<concept>
+%	<concept_id>10002950.10003705.10003708</concept_id>
+%	<concept_desc>Mathematics of computing~Statistical software</concept_desc>
+%	<concept_significance>500</concept_significance>
+%	</concept>
+%	<concept>
+%	<concept_id>10010405.10010432.10010442</concept_id>
+%	<concept_desc>Applied computing~Mathematics and statistics</concept_desc>
+%	<concept_significance>500</concept_significance>
+%	</concept>
+%	<concept>
+%	<concept_id>10010147.10010169.10010170.10010173</concept_id>
+%	<concept_desc>Computing methodologies~Vector / streaming algorithms</concept_desc>
+%	<concept_significance>300</concept_significance>
+%	</concept>
+%	<concept>
+%	<concept_id>10002950.10003648.10003703</concept_id>
+%	<concept_desc>Mathematics of computing~Distribution functions</concept_desc>
+%	<concept_significance>300</concept_significance>
+%	</concept>
+%	<concept>
+%	<concept_id>10002950.10003714.10003715</concept_id>
+%	<concept_desc>Mathematics of computing~Numerical analysis</concept_desc>
+%	<concept_significance>100</concept_significance>
+%	</concept>
+%	<concept>
+%	<concept_id>10010147.10010341.10010349.10010362</concept_id>
+%	<concept_desc>Computing methodologies~Massively parallel and high-performance simulations</concept_desc>
+%	<concept_significance>300</concept_significance>
+%	</concept>
+%	</ccs2012>
+%\end{CCSXML}
+%
+%\ccsdesc[500]{Software and its engineering~Software libraries and repositories}
+%\ccsdesc[500]{Mathematics of computing~Statistical software}
+%\ccsdesc[500]{Applied computing~Mathematics and statistics}
+%\ccsdesc[300]{Computing methodologies~Vector / streaming algorithms}
+%\ccsdesc[300]{Mathematics of computing~Distribution functions}
+%\ccsdesc[100]{Mathematics of computing~Numerical analysis}
+%\ccsdesc[300]{Computing methodologies~Massively parallel and high-performance simulations}
+\noindent
+\textbf{AMS MSC classifications:} 
+11K45, % Pseudo-random numbers; Monte Carlo methods [See also 65C05, 65C10]
+62-04, %  	Software, source code, etc. for problems pertaining to statistics
+62E17, %  	Approximations to statistical distributions
+65-04, %  	Software, source code, etc. for problems pertaining to numerical analysis
+65C05, %  	Monte Carlo methods [See also 82M31]
+65C10, % Random number generation in numerical analysis [See also 11K45]
+65D15, %  	Algorithms for approximation of functions
+65Y05, %  	Parallel numerical computation
+65Y20, %  	Complexity and performance of numerical algorithms
+68W10, %  	Parallel algorithms in computer science
+and
+68W25. %  	Approximation algorithms
+
+\noindent
+\textbf{Keywords:} Approximate random variables, random number generation, numerical analysis, Monte Carlo, C, Python, and high performance computing. 
+\end{small}
+
+\input{abstract}
+\input{introduction}
+\input{mathematical_preliminaries}
+\input{getting_started}
+\input{design_choices}
+\input{advanced_usage}
+\input{examples}
+\input{future_plans}
+\input{conclusions}
+
+%\newpage
+\input{bibliography}
+\end{document}

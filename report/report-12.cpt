@@ -1,0 +1,20 @@
+
+\begin{itemize}
+\item Higher order polynomials
+
+\item More dyadic intervals.
+
+\item high accuracy approximations.
+
+
+\item Parametrised distributions.
+
+\item Asymmetric distributions.
+
+\item Custom distributions.
+
+\item For the custom distributions, showcase for a variety of these how fast they are.
+
+\item Discuss distributions which do not have an L2 norm, such as the Cauchy distribution, and how this related to the proofs in the ACM toms paper.
+\end{itemize}
+^^E^^L 
