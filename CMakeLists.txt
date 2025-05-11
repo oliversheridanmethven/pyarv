@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 4.0)  # Use the latest and greatest.
 # compilers, so we set our paths to the compilers first.
 # cf: https://stackoverflow.com/a/29904501/5134817
 
-#find_program(CMAKE_C_COMPILER NAMES $ENV{CC} clang-mp-20 clang PATHS ENV PATH NO_DEFAULT_PATH)
+find_program(CMAKE_C_COMPILER NAMES $ENV{CC} clang-mp-20 clang PATHS ENV PATH NO_DEFAULT_PATH)
 #find_program(CMAKE_C_COMPILER NAMES $ENV{CC} gcc-mp-14 PATHS ENV PATH NO_DEFAULT_PATH)
 # Soon gcc-15 should be released with support from macports and brew.
 
