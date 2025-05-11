@@ -67,6 +67,7 @@ plugins:
   - exclude:
       glob:
         - venv/*
+        - .venv/*
         - lib/*
         - src/*
         - bin/*
